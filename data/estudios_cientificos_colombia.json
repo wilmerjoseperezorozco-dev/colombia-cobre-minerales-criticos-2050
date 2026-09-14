@@ -1,0 +1,72 @@
+[
+  {
+    "institucion": "UPME (Unidad de Planeación Minero-Energética)",
+    "titulo": "Mapa Metalogénico de Colombia (versión 2022, base Sepúlveda Ospina et al., 2020)",
+    "año": 2022,
+    "hallazgo_clave": "Identifica cinturones metalogénicos, ocurrencias, prospectos y depósitos de oro y cobre por región; recursos hipotéticos de 37,3 Mt de cobre en el cinturón andino, de los cuales Colombia tendría un potencial de 9,7 Mt.",
+    "url": "https://www1.upme.gov.co/simco/PlaneacionSector/Documents/Fase_III_Plan_Nacional_de_Desarrollo_Minero_2024_2035.pdf"
+  },
+  {
+    "institucion": "UPME",
+    "titulo": "Caracterización de aspectos sociales y ambientales en proyectos mineros de cobre en Colombia",
+    "año": 2025,
+    "hallazgo_clave": "Identifica los cinco proyectos cupríferos estratégicos del país (El Roble, Quebradona, Soto Norte, Libero Cooper, El Alacrán) y sus retos socioambientales específicos por cinturón metalogénico.",
+    "url": "https://www1.upme.gov.co/simco/Cifras-Sectoriales/EstudiosPublicaciones/Definitivo_Caracterizacion_de_aspectos_sociales_y_ambientales_pry_min_cobre_Colombia_2025.pdf"
+  },
+  {
+    "institucion": "UPME",
+    "titulo": "Plan Nacional de Desarrollo Minero 2024-2035, Fase III",
+    "año": 2024,
+    "hallazgo_clave": "Marco de planeación de mediano plazo del sector minero colombiano; referencia normativa para la ronda de áreas estratégicas.",
+    "url": "https://www1.upme.gov.co/simco/PlaneacionSector/Documents/Fase_III_Plan_Nacional_de_Desarrollo_Minero_2024_2035.pdf"
+  },
+  {
+    "institucion": "Universidad Nacional de Colombia - Facultad de Minas (Medellín)",
+    "titulo": "Diagnóstico minero y económico del departamento de Antioquia",
+    "año": null,
+    "hallazgo_clave": "Elementos técnicos y ambientales para la planificación minera de Antioquia, base para mejoras en proyectos de explotación.",
+    "url": "https://revistas.unal.edu.co/index.php/rbct/article/download/35048/45878"
+  },
+  {
+    "institucion": "Universidad Nacional de Colombia - Facultad de Minas",
+    "titulo": "Semana de la Minería / Congreso Cobre Colombia 2025",
+    "año": 2025,
+    "hallazgo_clave": "Espacio académico-industrial dedicado específicamente al cobre como 'piedra angular del futuro energético'; primer encuentro internacional de estudiantes de la industria extractiva.",
+    "url": "https://minas.medellin.unal.edu.co/noticias/facultad/6370-cobre-piedra-angular-del-futuro-energetico"
+  },
+  {
+    "institucion": "Universidad Nacional de Colombia",
+    "titulo": "Primeros mapas geoquímicos departamentales de Colombia",
+    "año": null,
+    "hallazgo_clave": "Localización de materiales desde oro hasta manganeso, incluyendo cobre, níquel, molibdeno y otros — insumo directo para el mapeo de prospectividad con IA.",
+    "url": "https://periodico.unal.edu.co/articulos/en-colombia-el-70-de-la-explotacion-minera-esta-en-manos-de-las-multinacionales/"
+  },
+  {
+    "institucion": "Universidad de Antioquia - Facultad de Ingeniería",
+    "titulo": "Revisión sobre mejora de la gestión del agua en la minería informal de oro en Colombia",
+    "año": 2016,
+    "hallazgo_clave": "Estrategias de reducción de impactos de agua en minería informal, aplicables como base metodológica a la gestión hídrica en proyectos formales de cobre.",
+    "url": "https://doi.org/10.17533/udea.redin.n79a16"
+  },
+  {
+    "institucion": "Resource Governance Institute",
+    "titulo": "Incertidumbres sobre el cobre en Colombia — Proyecto Mocoa, Putumayo",
+    "año": 2025,
+    "hallazgo_clave": "Análisis independiente de los riesgos regulatorios y sociales del proyecto Libero Cooper en Mocoa, Putumayo.",
+    "url": "https://resourcegovernance.org/sites/default/files/2025-11/Cobre%20en%20Colombia_Proyecto%20Mocoa_%20Putumayo.pdf"
+  },
+  {
+    "institucion": "Servicio Geológico Colombiano (SGC)",
+    "titulo": "Investigación geocientífica básica y aplicada del subsuelo colombiano",
+    "año": null,
+    "hallazgo_clave": "Entidad centenaria adscrita al Ministerio de Minas y Energía; administra la información del subsuelo y monitorea amenazas de origen geológico — es la fuente primaria de datos geológicos para cualquier modelo de IA de prospectividad mineral en Colombia.",
+    "url": "https://www.eltiempo.com/economia/empresas/que-es-y-que-funcion-tiene-el-servicio-geologico-colombiano-792746"
+  },
+  {
+    "institucion": "Literatura académica internacional (múltiples, vía MDPI / ScienceDirect / Springer)",
+    "titulo": "Machine Learning-Based Mineral Prospectivity Mapping (varios estudios 2023-2026)",
+    "año": 2026,
+    "hallazgo_clave": "Random Forest, CNN y 'deep forest' aplicados a datos geoquímicos + sensores remotos logran mapear objetivos de exploración de cobre pórfido con precisión creciente; principal limitación: escasez de muestras etiquetadas e interpretabilidad del modelo — exactamente el tipo de reto que Colombia enfrentaría al aplicar esto sobre su 97% de territorio sin explorar.",
+    "url": "https://www.mdpi.com/2072-4292/15/15/3708"
+  }
+]

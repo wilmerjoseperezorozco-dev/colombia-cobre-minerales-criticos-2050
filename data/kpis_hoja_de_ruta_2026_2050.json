@@ -1,0 +1,62 @@
+{
+  "actualizado": "2026-09-14",
+  "advertencia": "Las metas 2028/2030 provienen del informe original (estimaciones razonadas propias, no oficiales). Las metas 2035/2040/2050 son proyecciones de escenario, aún más inciertas, construidas por extrapolación de la tendencia de demanda global y del potencial geológico de UPME (9.7 Mt). Deben tratarse como hipótesis de planificación, no como pronóstico.",
+  "kpis": [
+    {
+      "indicador": "Producción nacional de cobre (t/año)",
+      "2026": "~7.000 (solo El Roble)",
+      "2028": "35.000 - 50.000",
+      "2030": "90.000 - 120.000",
+      "2035": "180.000 - 250.000 (si El Alacrán y 2-3 proyectos adicionales alcanzan régimen)",
+      "2050": "El 100% del potencial identificado (9,7 Mt) implicaría ~25 años de vida útil agregada a un ritmo de ~380.000 t/año sostenido"
+    },
+    {
+      "indicador": "Proyectos en producción comercial",
+      "2026": 1,
+      "2028": 3,
+      "2030": "5-6",
+      "2035": "8-10 (incluye 2ª generación de la ronda de 14 áreas)",
+      "2050": "Depende de si se descubren nuevos distritos vía IA/exploración del 97% no explorado"
+    },
+    {
+      "indicador": "Capacidad de fundición-refinería nacional (t/año)",
+      "2026": 0,
+      "2028": "Estudio de factibilidad concluido",
+      "2030": "Planta piloto 30.000-50.000 t/año en construcción",
+      "2035": "Planta piloto operando + evaluación de una segunda planta a escala industrial",
+      "2050": "Colombia exporta cátodo, no concentrado, como estándar de la industria"
+    },
+    {
+      "indicador": "Origen del capital en proyectos estratégicos (diversificación)",
+      "2026": "Predominancia de capital chino en el proyecto más avanzado (El Alacrán)",
+      "2028": "Meta: al menos 2 proyectos con capital de EE.UU./aliados en construcción",
+      "2030": "Meta: ningún inversionista extranjero controla más del 40% de la producción nacional de cobre",
+      "2035": "Cartera de capital diversificada (EE.UU., Canadá, Europa, Asia no concentrada en un solo país)",
+      "2050": "Cadena de valor con participación mayoritaria de capital colombiano en la fase de fundición-refinería"
+    },
+    {
+      "indicador": "Inversión extranjera directa movilizada",
+      "2026": "USD 0 desembolsados bajo el marco (firmado sep-2026)",
+      "2028": "USD 800-1.500 M comprometidos",
+      "2030": "USD 3.000-5.000 M comprometidos/desembolsados",
+      "2035": "USD 8.000-12.000 M acumulados",
+      "2050": "Depende de renovación de marcos bilaterales sucesivos; no proyectable de forma responsable a este horizonte"
+    },
+    {
+      "indicador": "Incidentes ambientales mayores (relaves, vertimientos)",
+      "2026": 0,
+      "2028": 0,
+      "2030": 0,
+      "2035": 0,
+      "2050": "Meta permanente: 0 — ningún horizonte de tiempo relaja este KPI"
+    },
+    {
+      "indicador": "% de territorio con mapeo de prospectividad asistido por IA",
+      "2026": "0% (no existe programa formal)",
+      "2028": "Piloto en 1-2 cinturones metalogénicos prioritarios",
+      "2030": "30% del territorio de interés geológico prioritario mapeado con IA",
+      "2035": "70% del territorio de interés geológico prioritario mapeado con IA",
+      "2050": "Cobertura completa y actualización continua con datos satelitales"
+    }
+  ]
+}

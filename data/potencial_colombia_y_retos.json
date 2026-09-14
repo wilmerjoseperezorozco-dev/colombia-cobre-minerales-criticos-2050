@@ -1,0 +1,51 @@
+{
+  "actualizado": "2026-09-14",
+  "potencial_geologico": {
+    "cinturon_metalogenico_andino_recursos_hipoteticos_mt_cu": 37.3,
+    "potencial_colombia_mt_cu": 9.7,
+    "territorio_nacional_sin_explorar_pct": 97,
+    "fuente": "UPME - Mapa Metalogénico de Colombia (Sepúlveda Ospina et al., 2020) + Informe Cobre UPME"
+  },
+  "inversion_exploracion": {
+    "actual_usd_anual": 90000000,
+    "potencial_con_apoyo_estatal_usd_anual": 500000000,
+    "fuente": "Infobae, 04-sep-2026 - Colombia abre la puerta al cobre, níquel y tungsteno"
+  },
+  "impacto_crisis_reciente": {
+    "caida_ied_minera_pct": 88,
+    "caida_pib_minero_pct": 18,
+    "reduccion_operaciones_ferroniquel_pct": 50,
+    "razon_ferroniquel": "restricciones de suministro de gas"
+  },
+  "mineria_ilegal": {
+    "departamentos_afectados": 29,
+    "departamentos_totales": 32,
+    "bloqueos_reportados": 800,
+    "incursiones_no_autorizadas": 3600,
+    "oro_comercializado_origen_ilegal_pct": 85
+  },
+  "tiempos_de_maduracion": {
+    "promedio_anos_hallazgo_a_operacion": 15,
+    "el_alacran_tramite_licencia_anos": 4
+  },
+  "puntos_a_favor": [
+    "Marco bilateral EE.UU.-Colombia con financiamiento comprometido y plazo definido (6 meses desde sep-2026).",
+    "Déficit estructural global de cobre garantiza demanda y precios sostenidos a largo plazo (hasta 30% de brecha de oferta en 2035 según IEA).",
+    "Potencial geológico real y cuantificado: 9,7 Mt de cobre dentro de un cinturón andino de 37,3 Mt, con 97% del territorio nacional aún sin explorar.",
+    "El Alacrán ya demostró que obtener la primera licencia ambiental de cobre a gran escala del país es posible, aunque lento (~4 años).",
+    "Infraestructura portuaria y logística del Caribe en crecimiento (Barranquilla, Santa Marta, Cartagena), con zonas francas ganando participación (11%→17% de exportaciones del Atlántico desde prepandemia).",
+    "Ecosistema de centros de datos e IA en expansión en Colombia (mercado de USD 450M en 2025 a USD 1.440M en 2031), generando demanda doméstica adicional de cobre para infraestructura eléctrica.",
+    "Base científica ya existente: mapas metalogénicos y geoquímicos de UPME/SGC, y grupos de investigación en Universidad Nacional y Universidad de Antioquia, sobre los cuales construir sin partir de cero.",
+    "Herramientas de IA para mapeo de prospectividad mineral (Random Forest, CNN, deep forest sobre datos geoquímicos y remotos) permiten acelerar la exploración del 97% de territorio no explorado con menor costo relativo."
+  ],
+  "puntos_en_contra": [
+    "RIESGO GEOPOLÍTICO CENTRAL: el proyecto de cobre más avanzado del país (El Alacrán) es 100% de capital chino (JCHX Mining, tras comprar el 50% restante a la canadiense Cordoba Minerals por USD 128M en mayo de 2025) — en tensión directa con el objetivo explícito del marco EE.UU.-Colombia de reducir la dependencia de China en minerales críticos.",
+    "Incertidumbre regulatoria activa y cambiante: Quebradona frenado por la Resolución 855/2025; Soto Norte sin licencia ambiental tras años de intento.",
+    "Minería ilegal masiva que compite por territorio y legitimidad: 85% del oro comercializado es de origen ilegal, 29 de 32 departamentos afectados, más de 800 bloqueos y 3.600 incursiones no autorizadas contra operaciones legales.",
+    "Caída fuerte y reciente de la inversión extranjera directa minera (-88%) y del PIB minero (-18%): hay que revertir una tendencia negativa, no solo capturar una oportunidad nueva.",
+    "Tiempos de maduración largos: ~15 años promedio desde el hallazgo hasta la operación comercial.",
+    "Sin fundición-refinería nacional: Colombia sigue exportando materia prima de bajo valor agregado, dejando la mayor parte del valor de la cadena fuera del país.",
+    "Restricciones de infraestructura energética compartida: reducción del 50% en operaciones de ferroníquel por restricciones de gas — señal de que la red energética ya está bajo estrés antes de sumar nueva demanda industrial de fundición de cobre.",
+    "Divergencia de escenarios de demanda entre fuentes serias (IEA NZE ~37-40 Mtpa a 2050 vs. proyecciones de mercado hasta 70+ Mtpa): la planificación de infraestructura no puede apostar a un solo escenario sin margen de error."
+  ]
+}

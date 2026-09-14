@@ -1,0 +1,49 @@
+{
+  "actualizado": "2026-09-14",
+  "nota_metodologica": "Existen divergencias entre fuentes porque parten de escenarios distintos (IEA modela política climática explícita en 3 escenarios; S&P/Wood Mackenzie/ICSG modelan mercado observado + intensidad tecnológica). Usar rangos, no un único número, para decisiones de infraestructura.",
+  "demanda_historica_y_proyectada_mtpa": {
+    "2024": { "valor": 27, "fuente": "IEA Global Critical Minerals Outlook 2025" },
+    "2025": { "valor": 34.5, "fuente": "S&P Global / Wood Mackenzie (consenso de mercado)" },
+    "2030": { "valor": 42, "fuente": "S&P Global / Wood Mackenzie" },
+    "2035_steps": { "valor": 35, "fuente": "IEA - escenario de políticas actuales (STEPS)" },
+    "2050_nze": { "valor": [37, 40], "fuente": "IEA - escenario net-zero 2050 (NZE)" },
+    "2050_mercado": { "valor": 70, "fuente": "S&P Global / Wood Mackenzie (proyección de intensidad tecnológica alta)" }
+  },
+  "escenarios_iea": {
+    "STEPS": "Solo políticas climáticas y energéticas ya implementadas o anunciadas oficialmente — trayectoria más conservadora.",
+    "APS": "Los países cumplen totalmente sus metas climáticas anunciadas, incluyendo objetivos 2030 y net-zero de largo plazo.",
+    "NZE": "El sector energético global alcanza cero emisiones netas de CO2 para 2050."
+  },
+  "deficit_estructural_oferta": {
+    "2030_mt": 4,
+    "2035_pct_brecha_oferta": 30,
+    "crecimiento_anual_oferta_minera_pct": 2,
+    "fuente": "IEA Global Critical Minerals Outlook 2025 / Wood Mackenzie"
+  },
+  "intensidad_de_cobre_por_uso": {
+    "vehiculo_electrico_kg": 83,
+    "vehiculo_combustion_interna_kg": 23,
+    "aerogenerador_offshore_t": [4, 15],
+    "red_electrica_global_2030_mt_año": 1.1,
+    "centro_datos_ia_2030_mt_año": [0.25, 0.55],
+    "centro_datos_300mw_t": [6000, 9000]
+  },
+  "precios_usd_por_tonelada": {
+    "mayo_2026_spot": 13500,
+    "consenso_2026_promedio": 12075,
+    "largo_plazo_decada_proyectado": 12000,
+    "alerta_temprana_riesgo_precio_bajo_usd": 8000
+  },
+  "electricidad_data_centers_globales": {
+    "2024_twh": 415,
+    "2030_twh_proyectado": 945,
+    "eeuu_2026_twh": 180,
+    "eeuu_2030_twh_proyectado": [400, 600],
+    "eeuu_participacion_demanda_electrica_2026_pct": 5,
+    "eeuu_participacion_demanda_electrica_2030_pct": 14,
+    "deficit_potencia_eeuu_2026_gw": 9.3,
+    "deficit_potencia_eeuu_2028_gw": 45,
+    "espera_transformadores_semanas": 120,
+    "crecimiento_interanual_demanda_cobre_data_centers_pct": 30
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "actualizado": "2026-09-14",
+  "fuente_principal": "UPME - Caracterización de aspectos sociales y ambientales en proyectos mineros de cobre en Colombia (2025); prensa especializada",
+  "proyectos": [
+    {
+      "nombre": "El Roble",
+      "departamento": "Chocó",
+      "operador": "Atico Mining Corporation (Canadá)",
+      "estado": "En producción — única mina de cobre a gran escala operando en Colombia",
+      "produccion_diaria_t": 850,
+      "produccion_historica_t_concentrado_1990_2016": 242141,
+      "capital_origen": "Canadá",
+      "licencia_ambiental": "Vigente / operativa",
+      "notas": "Referencia operativa de largo plazo del sector, pero de escala pequeña frente al potencial nacional.",
+      "fuente_url": "https://forbes.co/editors-picks/colombia-potencia-mundial-del-cobre"
+    },
+    {
+      "nombre": "El Alacrán",
+      "departamento": "Córdoba (Puerto Libertador)",
+      "operador": "CMH Colombia, controlada por JCHX Mining Management Co. (China)",
+      "estado": "Primer proyecto de cobre a gran escala con licencia ambiental completa en Colombia (2026); en búsqueda de capital para construcción",
+      "reservas_estimadas_t": 97000000,
+      "ley_promedio_cobre_pct": 0.42,
+      "extraccion_acumulada_proyectada_lb": 797000000,
+      "extraccion_acumulada_proyectada_t_cu": 361580,
+      "inversion_construccion_usd": 700000000,
+      "capital_buscado_siguiente_etapa_usd": 470000000,
+      "capital_origen": "China (100% desde may-2025)",
+      "venta_relevante": {
+        "vendedor": "Cordoba Minerals Corp. (subsidiaria de Ivanhoe Electric, Canadá)",
+        "comprador": "Consorcio chino liderado por JCHX Mining Management Co. (ya poseía el 50% restante)",
+        "monto_usd": 128000000,
+        "estructura": "US$88M pago inicial + US$12M diferido + hasta US$28M contingente al precio del cobre",
+        "fecha": "2025-05-09"
+      },
+      "licencia_ambiental": "Otorgada por ANLA tras más de 4 años de trámite",
+      "alerta_geopolitica": "Es el proyecto de cobre más avanzado del país y es 100% de capital chino, en tensión directa con el objetivo declarado del marco EE.UU.-Colombia (sep-2026) de reducir la dependencia de China en minerales críticos.",
+      "fuente_url": "https://www.elcolombiano.com/negocios/cordoba-minerals-vende-mina-de-cobre-mas-importante-colombia-a-grupo-chino-JA27360955"
+    },
+    {
+      "nombre": "Quebradona",
+      "departamento": "Antioquia (Jericó y Támesis)",
+      "operador": "AngloGold Ashanti (Sudáfrica)",
+      "estado": "Exploración prorrogada hasta dic-2027; frenado por declaratoria de zona de reserva ambiental",
+      "reservas_estimadas_t_cu": 2500000,
+      "reservas_estimadas_oz_au": 3850000,
+      "inversion_estimada_usd": 1400000000,
+      "capital_origen": "Sudáfrica",
+      "conflicto_regulatorio": "Resolución 855 de 2025 declaró zona de reserva de recursos naturales renovables sobre municipios del suroeste de Antioquia que incluyen el área del proyecto",
+      "licencia_ambiental": "En trámite / bloqueada por superposición de figura de protección ambiental",
+      "fuente_url": "https://www.reporteminero.cl/noticia/noticias/2025/10/colombia-anglogold-proyecto-quebradona-anm"
+    },
+    {
+      "nombre": "Soto Norte",
+      "departamento": "Santander (Provincia de Soto Norte)",
+      "operador": "Aris Mining (Canadá) + fondo árabe",
+      "estado": "Detenido por falta de licencia ambiental",
+      "capital_origen": "Canadá / Medio Oriente",
+      "licencia_ambiental": "Negada / no otorgada",
+      "fuente_url": "https://www.infobae.com/colombia/2026/09/04/colombia-abre-la-puerta-al-cobre-niquel-y-tungsteno-la-apuesta-minera-que-busca-nuevos-mercados/"
+    },
+    {
+      "nombre": "Libero Cooper",
+      "departamento": "Putumayo (Mocoa)",
+      "operador": "Libero Copper & Gold (Canadá)",
+      "estado": "Exploración; con controversia socioambiental documentada",
+      "capital_origen": "Canadá",
+      "notas": "Analizado en el informe de Resource Governance Institute sobre incertidumbres del cobre en Colombia (proyecto Mocoa, Putumayo).",
+      "fuente_url": "https://resourcegovernance.org/sites/default/files/2025-11/Cobre%20en%20Colombia_Proyecto%20Mocoa_%20Putumayo.pdf"
+    },
+    {
+      "nombre": "Titiribí",
+      "departamento": "Antioquia (Armenia y Titiribí)",
+      "operador": "GoldMining Inc. (Canadá)",
+      "estado": "Exploración — proyecto conjunto de oro y cobre",
+      "capital_origen": "Canadá",
+      "fuente_url": "https://en.wikipedia.org/wiki/Quebradona"
+    },
+    {
+      "nombre": "Ronda ANM - 14 Áreas Estratégicas Mineras",
+      "departamento": "Antioquia, La Guajira, Cesar, Tolima",
+      "operador": "Por adjudicar (ronda abierta 16-dic-2025)",
+      "estado": "Ronda de licitación abierta para cobre, oro y polimetálicos",
+      "notas": "Áreas ya cuentan con certificación ambiental preliminar, verificación de no requerir consulta previa inicial, y acuerdos con autoridades locales.",
+      "fuente_url": "https://www.anm.gov.co/gobierno-nacional-abre-ronda-minera-con-14-areas-estrategicas-para-impulsar-la-transicion"
+    }
+  ],
+  "otros_proyectos_mencionados_gobierno_sep2026": [
+    "La Malota (San Roque, Antioquia) - oro y cobre",
+    "Jericó (Antioquia)",
+    "Amacá (Tolima)",
+    "Exploración cobre y tungsteno en Chocó y Caldas"
+  ]
+}
