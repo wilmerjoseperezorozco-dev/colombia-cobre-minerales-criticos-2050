@@ -91,6 +91,19 @@ Estructurados en JSON para reutilizar en cualquier análisis posterior con IA:
 
 ---
 
+## 🗺️ Organización del proyecto (issues, milestones, citación)
+
+| Elemento | Estado |
+|---|---|
+| Milestones | [v0.1 y v0.2 completados](../../milestones?state=closed) · [v0.3, v1.0, v2.0 en curso](../../milestones) |
+| Issues abiertos | [14 issues reales](../../issues) — pipeline, investigación, monitoreo regulatorio/de mercado, y la ruta a Zenodo |
+| Topics | `copper` `critical-minerals` `colombia` `mining` `data-pipeline` `open-data` `energy-transition` `geopolitics` `reproducible-research` `usgs` `iea` `python` |
+| Citación | [`CITATION.cff`](CITATION.cff) — listo para que GitHub muestre el botón "Cite this repository" |
+| Licencia | [`LICENSE`](LICENSE) — CC BY 4.0 (con excepción explícita para el archivo de IEA) |
+| Zenodo/DOI | **Pendiente de decisión** — ver [issue #4](../../issues/4): la integración automática de Zenodo solo archiva repositorios **públicos**; este repo es privado hoy |
+
+**Sobre autoría de la investigación:** este repositorio documenta con fecha (commits, `CITATION.cff`, y en su momento un DOI de Zenodo) el momento en que se realizó este análisis integrado de cobre/minerales críticos en Colombia con pipeline de datos reproducible — útil como registro de prioridad si esta línea de investigación se formaliza más adelante (tesis, paper, propuesta institucional).
+
 ## ⚠️ Nota metodológica (leer antes de citar cualquier cifra)
 
 Las cifras de inversión movilizable, las metas intermedias (2028/2030) y las proyecciones de escenario (2035/2040/2050) son **estimaciones razonadas construidas por extrapolación** de datos de proyectos individuales y reportes de mercado citados en las fuentes. **No son cifras oficiales** del Gobierno de Colombia, la ANM ni la UPME, y deben validarse con esas entidades antes de circularse como posición oficial. Los datos de proyectos, marcos institucionales y hechos verificables (fechas, montos de transacciones, licencias otorgadas) sí provienen directamente de las fuentes primarias listadas.

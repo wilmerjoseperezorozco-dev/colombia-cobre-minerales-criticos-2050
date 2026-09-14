@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Si usa este repositorio, cítelo por favor de la siguiente forma."
+title: "Colombia y el Cobre del Futuro: Inteligencia de Datos sobre Minerales Críticos, 2026-2050"
+type: dataset
+authors:
+  - family-names: "Pérez Orozco"
+    given-names: "Wilmer José"
+    affiliation: "Barranquilla, Atlántico, Colombia"
+repository-code: "https://github.com/wilmerjoseperezorozco-dev/colombia-cobre-minerales-criticos-2050"
+abstract: >
+  Pipeline de datos reproducible y análisis estratégico sobre el cobre y los
+  minerales críticos en Colombia, en el contexto del marco de cooperación
+  Colombia-Estados Unidos de minerales críticos (firmado en Barranquilla,
+  septiembre de 2026). Integra datos primarios oficiales de UPME, USGS,
+  IEA y FRED con investigación institucional y jurídica propia, incluyendo
+  un análisis a nivel de artículo científico (estructura IMRaD) con
+  hallazgos reproducibles y correcciones metodológicas documentadas.
+keywords:
+  - cobre
+  - copper
+  - minerales críticos
+  - critical minerals
+  - Colombia
+  - minería
+  - transición energética
+  - geopolítica
+  - reproducibilidad
+license: CC-BY-4.0
+version: 0.3.0
+date-released: "2026-09-14"

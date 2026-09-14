@@ -1,0 +1,38 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Wilmer José Pérez Orozco
+
+Este repositorio (investigación, documentos, datos estructurados y código
+del pipeline) se publica bajo la licencia Creative Commons Attribution 4.0
+International (CC BY 4.0).
+
+Usted es libre de:
+  - Compartir — copiar y redistribuir el material en cualquier medio o formato.
+  - Adaptar — remezclar, transformar y construir a partir del material,
+    para cualquier propósito, incluso comercialmente.
+
+Bajo los siguientes términos:
+  - Atribución — Debe dar crédito de manera adecuada, brindar un enlace a
+    la licencia, e indicar si se han realizado cambios. Puede hacerlo en
+    cualquier forma razonable, pero no de forma tal que sugiera que usted
+    o su uso tienen el apoyo del licenciante.
+  - Sin restricciones adicionales — No puede aplicar términos legales ni
+    medidas tecnológicas que restrinjan legalmente a otros a hacer
+    cualquier uso permitido por la licencia.
+
+Texto legal completo: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+EXCEPCIÓN — datos de terceros con licencia propia:
+
+El archivo `pipeline/_manual_uploads/IEA_Critical_Minerals_Dataset_2026.xlsx`
+proviene de la International Energy Agency (IEA) bajo los términos de su
+cuenta de usuario gratuita (uso personal/no comercial) y NO queda cubierto
+por la licencia CC BY 4.0 de este repositorio. Ver el aviso específico en
+`data/live/iea_critical_minerals_copper.json` y en
+`docs/09-metodologia-pipeline.md`. No redistribuir ese archivo por separado.
+
+Los datos citados de UPME, USGS, ANM, ANLA y SGC son de dominio público /
+información gubernamental de libre consulta; se referencian con su fuente
+original en `docs/05-fuentes.md`.
