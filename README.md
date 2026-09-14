@@ -1,8 +1,19 @@
 # 🇨🇴 Colombia · Cobre y Minerales Críticos — Inteligencia 2026–2050
 
-**Repositorio privado de investigación estratégica.** Cobre, minerales críticos, alianza Colombia–EE. UU. y manufactura avanzada global, con foco en visibilidad institucional y optimización de decisiones.
+**Repositorio privado de investigación estratégica con pipeline de datos ejecutable.** Cobre, minerales críticos, alianza Colombia–EE. UU. y manufactura avanzada global — investigación primero, automatización después.
 
-> Última actualización de datos: **14 de septiembre de 2026**
+> Última corrida del pipeline: ver `data/consolidado/dataset_maestro.json → generado_utc` · Curación de investigación: 14-sep-2026
+
+## 🔴🟢 Estado del pipeline
+
+| Fase | Script | Última corrida verificada | Resultado real |
+|---|---|---|---|
+| 1 — Semilla | [`pipeline/phase1_seed/validate_seed.py`](pipeline/phase1_seed/validate_seed.py) | ✅ OK | 7 proyectos validados, 0 errores de esquema |
+| 2 — Precio en vivo (FRED) | [`pipeline/phase2_live_fetch/fetch_copper_price_fred.py`](pipeline/phase2_live_fetch/fetch_copper_price_fred.py) | ✅ OK | 415 observaciones (1992→2026); último dato **USD 13.542,82/t** (jul-2026) |
+| 3 — Snapshot fuentes oficiales | [`pipeline/phase3_scrape_oficiales/fetch_fuentes_colombianas.py`](pipeline/phase3_scrape_oficiales/fetch_fuentes_colombianas.py) | ✅ OK | ANM, UPME, SGC, ANLA — 5/5 fuentes con HTTP 200 |
+| 4 — Consolidación | [`pipeline/phase4_consolidacion/build_dataset_maestro.py`](pipeline/phase4_consolidacion/build_dataset_maestro.py) | ✅ OK | `data/consolidado/dataset_maestro.json` — CAGR cobre 5a: **7,46% anual** |
+
+**Ejecutarlo tú mismo:** `pip install -r pipeline/requirements.txt && python pipeline/run_pipeline.py` — corre en ~8 segundos. Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
 
 ---
 
@@ -42,7 +53,22 @@
 | [`docs/06-soluciones-juridicas-e-institucionales.md`](docs/06-soluciones-juridicas-e-institucionales.md) | Fallos clave (SU-095/2018, Cajamarca/La Colosa), Decreto 0742/2026 de cierre de minas, pulso estatización vs. desregulación, y la vía más segura y barata |
 | [`docs/07-blindaje-social-barranquilla.md`](docs/07-blindaje-social-barranquilla.md) | Caso de alerta (polvo de concentrado en Antofagasta) y el paquete de blindaje social preventivo para el puerto de Barranquilla |
 | [`docs/08-oportunidades-inversion.md`](docs/08-oportunidades-inversion.md) | Mapa informativo de empresas públicas con exposición a cobre colombiano (no es asesoría financiera) |
+| [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md) | Arquitectura del pipeline por fases, procedencia de datos, cómo ejecutarlo y roadmap de fases futuras |
+| [`docs/10-articulo-analisis-cientifico.md`](docs/10-articulo-analisis-cientifico.md) | Análisis con estructura IMRaD (hipótesis, métodos, resultados reproducibles, discusión, limitaciones) |
 | [`Colombia_Cobre_Mineria_2026-2030.docx`](Colombia_Cobre_Mineria_2026-2030.docx) | Informe original en Word (portada, tablas, hoja de ruta 2026-2030) |
+
+## ⚙️ Pipeline de datos (`/pipeline`)
+
+```
+pipeline/
+├── phase1_seed/               Valida data/*.json curados contra esquema (bloqueante)
+├── phase2_live_fetch/         Precio de cobre EN VIVO desde FRED, API pública real (bloqueante)
+├── phase3_scrape_oficiales/   Snapshot + detección de cambios en ANM/UPME/SGC/ANLA (best-effort)
+├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante)
+└── run_pipeline.py            Orquestador de las 4 fases
+```
+
+Cada bloque de [`data/consolidado/dataset_maestro.json`](data/consolidado/dataset_maestro.json) queda etiquetado con su **origen** (`curado_investigacion_humana` / `api_publica_en_vivo` / `snapshot_html_sin_api` / `estimacion_propia_razonada`) para que nunca se confunda una estimación con un dato verificado.
 
 ## 🗂️ Datos crudos (`/data`)
 

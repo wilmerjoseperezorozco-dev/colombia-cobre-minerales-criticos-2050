@@ -1,0 +1,40 @@
+name: Actualizar dataset de cobre y minerales críticos
+
+on:
+  schedule:
+    # Todos los lunes a las 09:00 UTC (04:00 hora Colombia)
+    - cron: "0 9 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ejecutar-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias del pipeline
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Ejecutar pipeline completo (fases 1-4)
+        run: python pipeline/run_pipeline.py
+
+      - name: Commit y push si hay cambios en los datos
+        run: |
+          git config user.name "pipeline-cobre-colombia[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/live data/consolidado pipeline/_out
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos — no se hace commit."
+          else
+            git commit -m "chore(datos): actualización automática del pipeline [skip ci]"
+            git push
+          fi

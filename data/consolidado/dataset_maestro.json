@@ -1,0 +1,2172 @@
+{
+  "generado_utc": "2026-09-14T22:49:19.731437+00:00",
+  "esquema_version": "1.0",
+  "bloques": {
+    "proyectos_cobre_colombia": {
+      "origen": "curado_investigacion_humana",
+      "confiabilidad": "alta — verificado contra prensa especializada y comunicados oficiales, con fecha de corte explícita",
+      "datos": {
+        "actualizado": "2026-09-14",
+        "fuente_principal": "UPME - Caracterización de aspectos sociales y ambientales en proyectos mineros de cobre en Colombia (2025); prensa especializada",
+        "proyectos": [
+          {
+            "nombre": "El Roble",
+            "departamento": "Chocó",
+            "operador": "Atico Mining Corporation (Canadá)",
+            "estado": "En producción — única mina de cobre a gran escala operando en Colombia",
+            "produccion_diaria_t": 850,
+            "produccion_historica_t_concentrado_1990_2016": 242141,
+            "capital_origen": "Canadá",
+            "licencia_ambiental": "Vigente / operativa",
+            "notas": "Referencia operativa de largo plazo del sector, pero de escala pequeña frente al potencial nacional.",
+            "fuente_url": "https://forbes.co/editors-picks/colombia-potencia-mundial-del-cobre"
+          },
+          {
+            "nombre": "El Alacrán",
+            "departamento": "Córdoba (Puerto Libertador)",
+            "operador": "CMH Colombia, controlada por JCHX Mining Management Co. (China)",
+            "estado": "Primer proyecto de cobre a gran escala con licencia ambiental completa en Colombia (2026); en búsqueda de capital para construcción",
+            "reservas_estimadas_t": 97000000,
+            "ley_promedio_cobre_pct": 0.42,
+            "extraccion_acumulada_proyectada_lb": 797000000,
+            "extraccion_acumulada_proyectada_t_cu": 361580,
+            "inversion_construccion_usd": 700000000,
+            "capital_buscado_siguiente_etapa_usd": 470000000,
+            "capital_origen": "China (100% desde may-2025)",
+            "venta_relevante": {
+              "vendedor": "Cordoba Minerals Corp. (subsidiaria de Ivanhoe Electric, Canadá)",
+              "comprador": "Consorcio chino liderado por JCHX Mining Management Co. (ya poseía el 50% restante)",
+              "monto_usd": 128000000,
+              "estructura": "US$88M pago inicial + US$12M diferido + hasta US$28M contingente al precio del cobre",
+              "fecha": "2025-05-09"
+            },
+            "licencia_ambiental": "Otorgada por ANLA tras más de 4 años de trámite",
+            "alerta_geopolitica": "Es el proyecto de cobre más avanzado del país y es 100% de capital chino, en tensión directa con el objetivo declarado del marco EE.UU.-Colombia (sep-2026) de reducir la dependencia de China en minerales críticos.",
+            "fuente_url": "https://www.elcolombiano.com/negocios/cordoba-minerals-vende-mina-de-cobre-mas-importante-colombia-a-grupo-chino-JA27360955"
+          },
+          {
+            "nombre": "Quebradona",
+            "departamento": "Antioquia (Jericó y Támesis)",
+            "operador": "AngloGold Ashanti (Sudáfrica)",
+            "estado": "Exploración prorrogada hasta dic-2027; frenado por declaratoria de zona de reserva ambiental",
+            "reservas_estimadas_t_cu": 2500000,
+            "reservas_estimadas_oz_au": 3850000,
+            "inversion_estimada_usd": 1400000000,
+            "capital_origen": "Sudáfrica",
+            "conflicto_regulatorio": "Resolución 855 de 2025 declaró zona de reserva de recursos naturales renovables sobre municipios del suroeste de Antioquia que incluyen el área del proyecto",
+            "licencia_ambiental": "En trámite / bloqueada por superposición de figura de protección ambiental",
+            "fuente_url": "https://www.reporteminero.cl/noticia/noticias/2025/10/colombia-anglogold-proyecto-quebradona-anm"
+          },
+          {
+            "nombre": "Soto Norte",
+            "departamento": "Santander (Provincia de Soto Norte)",
+            "operador": "Aris Mining (Canadá) + fondo árabe",
+            "estado": "Detenido por falta de licencia ambiental",
+            "capital_origen": "Canadá / Medio Oriente",
+            "licencia_ambiental": "Negada / no otorgada",
+            "fuente_url": "https://www.infobae.com/colombia/2026/09/04/colombia-abre-la-puerta-al-cobre-niquel-y-tungsteno-la-apuesta-minera-que-busca-nuevos-mercados/"
+          },
+          {
+            "nombre": "Libero Cooper",
+            "departamento": "Putumayo (Mocoa)",
+            "operador": "Libero Copper & Gold (Canadá)",
+            "estado": "Exploración; con controversia socioambiental documentada",
+            "capital_origen": "Canadá",
+            "notas": "Analizado en el informe de Resource Governance Institute sobre incertidumbres del cobre en Colombia (proyecto Mocoa, Putumayo).",
+            "fuente_url": "https://resourcegovernance.org/sites/default/files/2025-11/Cobre%20en%20Colombia_Proyecto%20Mocoa_%20Putumayo.pdf"
+          },
+          {
+            "nombre": "Titiribí",
+            "departamento": "Antioquia (Armenia y Titiribí)",
+            "operador": "GoldMining Inc. (Canadá)",
+            "estado": "Exploración — proyecto conjunto de oro y cobre",
+            "capital_origen": "Canadá",
+            "fuente_url": "https://en.wikipedia.org/wiki/Quebradona"
+          },
+          {
+            "nombre": "Ronda ANM - 14 Áreas Estratégicas Mineras",
+            "departamento": "Antioquia, La Guajira, Cesar, Tolima",
+            "operador": "Por adjudicar (ronda abierta 16-dic-2025)",
+            "estado": "Ronda de licitación abierta para cobre, oro y polimetálicos",
+            "notas": "Áreas ya cuentan con certificación ambiental preliminar, verificación de no requerir consulta previa inicial, y acuerdos con autoridades locales.",
+            "fuente_url": "https://www.anm.gov.co/gobierno-nacional-abre-ronda-minera-con-14-areas-estrategicas-para-impulsar-la-transicion"
+          }
+        ],
+        "otros_proyectos_mencionados_gobierno_sep2026": [
+          "La Malota (San Roque, Antioquia) - oro y cobre",
+          "Jericó (Antioquia)",
+          "Amacá (Tolima)",
+          "Exploración cobre y tungsteno en Chocó y Caldas"
+        ]
+      }
+    },
+    "demanda_global_cobre": {
+      "origen": "curado_investigacion_humana",
+      "confiabilidad": "media-alta — cifras de IEA/S&P/Wood Mackenzie citadas, divergentes entre sí por escenario (ver nota metodológica del archivo)",
+      "datos": {
+        "actualizado": "2026-09-14",
+        "nota_metodologica": "Existen divergencias entre fuentes porque parten de escenarios distintos (IEA modela política climática explícita en 3 escenarios; S&P/Wood Mackenzie/ICSG modelan mercado observado + intensidad tecnológica). Usar rangos, no un único número, para decisiones de infraestructura.",
+        "demanda_historica_y_proyectada_mtpa": {
+          "2024": {
+            "valor": 27,
+            "fuente": "IEA Global Critical Minerals Outlook 2025"
+          },
+          "2025": {
+            "valor": 34.5,
+            "fuente": "S&P Global / Wood Mackenzie (consenso de mercado)"
+          },
+          "2030": {
+            "valor": 42,
+            "fuente": "S&P Global / Wood Mackenzie"
+          },
+          "2035_steps": {
+            "valor": 35,
+            "fuente": "IEA - escenario de políticas actuales (STEPS)"
+          },
+          "2050_nze": {
+            "valor": [
+              37,
+              40
+            ],
+            "fuente": "IEA - escenario net-zero 2050 (NZE)"
+          },
+          "2050_mercado": {
+            "valor": 70,
+            "fuente": "S&P Global / Wood Mackenzie (proyección de intensidad tecnológica alta)"
+          }
+        },
+        "escenarios_iea": {
+          "STEPS": "Solo políticas climáticas y energéticas ya implementadas o anunciadas oficialmente — trayectoria más conservadora.",
+          "APS": "Los países cumplen totalmente sus metas climáticas anunciadas, incluyendo objetivos 2030 y net-zero de largo plazo.",
+          "NZE": "El sector energético global alcanza cero emisiones netas de CO2 para 2050."
+        },
+        "deficit_estructural_oferta": {
+          "2030_mt": 4,
+          "2035_pct_brecha_oferta": 30,
+          "crecimiento_anual_oferta_minera_pct": 2,
+          "fuente": "IEA Global Critical Minerals Outlook 2025 / Wood Mackenzie"
+        },
+        "intensidad_de_cobre_por_uso": {
+          "vehiculo_electrico_kg": 83,
+          "vehiculo_combustion_interna_kg": 23,
+          "aerogenerador_offshore_t": [
+            4,
+            15
+          ],
+          "red_electrica_global_2030_mt_año": 1.1,
+          "centro_datos_ia_2030_mt_año": [
+            0.25,
+            0.55
+          ],
+          "centro_datos_300mw_t": [
+            6000,
+            9000
+          ]
+        },
+        "precios_usd_por_tonelada": {
+          "mayo_2026_spot": 13500,
+          "consenso_2026_promedio": 12075,
+          "largo_plazo_decada_proyectado": 12000,
+          "alerta_temprana_riesgo_precio_bajo_usd": 8000
+        },
+        "electricidad_data_centers_globales": {
+          "2024_twh": 415,
+          "2030_twh_proyectado": 945,
+          "eeuu_2026_twh": 180,
+          "eeuu_2030_twh_proyectado": [
+            400,
+            600
+          ],
+          "eeuu_participacion_demanda_electrica_2026_pct": 5,
+          "eeuu_participacion_demanda_electrica_2030_pct": 14,
+          "deficit_potencia_eeuu_2026_gw": 9.3,
+          "deficit_potencia_eeuu_2028_gw": 45,
+          "espera_transformadores_semanas": 120,
+          "crecimiento_interanual_demanda_cobre_data_centers_pct": 30
+        }
+      }
+    },
+    "potencial_colombia_y_retos": {
+      "origen": "curado_investigacion_humana",
+      "confiabilidad": "alta para hechos verificables (UPME, prensa), media para estimaciones propias marcadas como tal",
+      "datos": {
+        "actualizado": "2026-09-14",
+        "potencial_geologico": {
+          "cinturon_metalogenico_andino_recursos_hipoteticos_mt_cu": 37.3,
+          "potencial_colombia_mt_cu": 9.7,
+          "territorio_nacional_sin_explorar_pct": 97,
+          "fuente": "UPME - Mapa Metalogénico de Colombia (Sepúlveda Ospina et al., 2020) + Informe Cobre UPME"
+        },
+        "inversion_exploracion": {
+          "actual_usd_anual": 90000000,
+          "potencial_con_apoyo_estatal_usd_anual": 500000000,
+          "fuente": "Infobae, 04-sep-2026 - Colombia abre la puerta al cobre, níquel y tungsteno"
+        },
+        "impacto_crisis_reciente": {
+          "caida_ied_minera_pct": 88,
+          "caida_pib_minero_pct": 18,
+          "reduccion_operaciones_ferroniquel_pct": 50,
+          "razon_ferroniquel": "restricciones de suministro de gas"
+        },
+        "mineria_ilegal": {
+          "departamentos_afectados": 29,
+          "departamentos_totales": 32,
+          "bloqueos_reportados": 800,
+          "incursiones_no_autorizadas": 3600,
+          "oro_comercializado_origen_ilegal_pct": 85
+        },
+        "tiempos_de_maduracion": {
+          "promedio_anos_hallazgo_a_operacion": 15,
+          "el_alacran_tramite_licencia_anos": 4
+        },
+        "puntos_a_favor": [
+          "Marco bilateral EE.UU.-Colombia con financiamiento comprometido y plazo definido (6 meses desde sep-2026).",
+          "Déficit estructural global de cobre garantiza demanda y precios sostenidos a largo plazo (hasta 30% de brecha de oferta en 2035 según IEA).",
+          "Potencial geológico real y cuantificado: 9,7 Mt de cobre dentro de un cinturón andino de 37,3 Mt, con 97% del territorio nacional aún sin explorar.",
+          "El Alacrán ya demostró que obtener la primera licencia ambiental de cobre a gran escala del país es posible, aunque lento (~4 años).",
+          "Infraestructura portuaria y logística del Caribe en crecimiento (Barranquilla, Santa Marta, Cartagena), con zonas francas ganando participación (11%→17% de exportaciones del Atlántico desde prepandemia).",
+          "Ecosistema de centros de datos e IA en expansión en Colombia (mercado de USD 450M en 2025 a USD 1.440M en 2031), generando demanda doméstica adicional de cobre para infraestructura eléctrica.",
+          "Base científica ya existente: mapas metalogénicos y geoquímicos de UPME/SGC, y grupos de investigación en Universidad Nacional y Universidad de Antioquia, sobre los cuales construir sin partir de cero.",
+          "Herramientas de IA para mapeo de prospectividad mineral (Random Forest, CNN, deep forest sobre datos geoquímicos y remotos) permiten acelerar la exploración del 97% de territorio no explorado con menor costo relativo."
+        ],
+        "puntos_en_contra": [
+          "RIESGO GEOPOLÍTICO CENTRAL: el proyecto de cobre más avanzado del país (El Alacrán) es 100% de capital chino (JCHX Mining, tras comprar el 50% restante a la canadiense Cordoba Minerals por USD 128M en mayo de 2025) — en tensión directa con el objetivo explícito del marco EE.UU.-Colombia de reducir la dependencia de China en minerales críticos.",
+          "Incertidumbre regulatoria activa y cambiante: Quebradona frenado por la Resolución 855/2025; Soto Norte sin licencia ambiental tras años de intento.",
+          "Minería ilegal masiva que compite por territorio y legitimidad: 85% del oro comercializado es de origen ilegal, 29 de 32 departamentos afectados, más de 800 bloqueos y 3.600 incursiones no autorizadas contra operaciones legales.",
+          "Caída fuerte y reciente de la inversión extranjera directa minera (-88%) y del PIB minero (-18%): hay que revertir una tendencia negativa, no solo capturar una oportunidad nueva.",
+          "Tiempos de maduración largos: ~15 años promedio desde el hallazgo hasta la operación comercial.",
+          "Sin fundición-refinería nacional: Colombia sigue exportando materia prima de bajo valor agregado, dejando la mayor parte del valor de la cadena fuera del país.",
+          "Restricciones de infraestructura energética compartida: reducción del 50% en operaciones de ferroníquel por restricciones de gas — señal de que la red energética ya está bajo estrés antes de sumar nueva demanda industrial de fundición de cobre.",
+          "Divergencia de escenarios de demanda entre fuentes serias (IEA NZE ~37-40 Mtpa a 2050 vs. proyecciones de mercado hasta 70+ Mtpa): la planificación de infraestructura no puede apostar a un solo escenario sin margen de error."
+        ]
+      }
+    },
+    "estudios_cientificos_colombia": {
+      "origen": "curado_investigacion_humana",
+      "confiabilidad": "alta — inventario de fuentes primarias con URL",
+      "datos": [
+        {
+          "institucion": "UPME (Unidad de Planeación Minero-Energética)",
+          "titulo": "Mapa Metalogénico de Colombia (versión 2022, base Sepúlveda Ospina et al., 2020)",
+          "año": 2022,
+          "hallazgo_clave": "Identifica cinturones metalogénicos, ocurrencias, prospectos y depósitos de oro y cobre por región; recursos hipotéticos de 37,3 Mt de cobre en el cinturón andino, de los cuales Colombia tendría un potencial de 9,7 Mt.",
+          "url": "https://www1.upme.gov.co/simco/PlaneacionSector/Documents/Fase_III_Plan_Nacional_de_Desarrollo_Minero_2024_2035.pdf"
+        },
+        {
+          "institucion": "UPME",
+          "titulo": "Caracterización de aspectos sociales y ambientales en proyectos mineros de cobre en Colombia",
+          "año": 2025,
+          "hallazgo_clave": "Identifica los cinco proyectos cupríferos estratégicos del país (El Roble, Quebradona, Soto Norte, Libero Cooper, El Alacrán) y sus retos socioambientales específicos por cinturón metalogénico.",
+          "url": "https://www1.upme.gov.co/simco/Cifras-Sectoriales/EstudiosPublicaciones/Definitivo_Caracterizacion_de_aspectos_sociales_y_ambientales_pry_min_cobre_Colombia_2025.pdf"
+        },
+        {
+          "institucion": "UPME",
+          "titulo": "Plan Nacional de Desarrollo Minero 2024-2035, Fase III",
+          "año": 2024,
+          "hallazgo_clave": "Marco de planeación de mediano plazo del sector minero colombiano; referencia normativa para la ronda de áreas estratégicas.",
+          "url": "https://www1.upme.gov.co/simco/PlaneacionSector/Documents/Fase_III_Plan_Nacional_de_Desarrollo_Minero_2024_2035.pdf"
+        },
+        {
+          "institucion": "Universidad Nacional de Colombia - Facultad de Minas (Medellín)",
+          "titulo": "Diagnóstico minero y económico del departamento de Antioquia",
+          "año": null,
+          "hallazgo_clave": "Elementos técnicos y ambientales para la planificación minera de Antioquia, base para mejoras en proyectos de explotación.",
+          "url": "https://revistas.unal.edu.co/index.php/rbct/article/download/35048/45878"
+        },
+        {
+          "institucion": "Universidad Nacional de Colombia - Facultad de Minas",
+          "titulo": "Semana de la Minería / Congreso Cobre Colombia 2025",
+          "año": 2025,
+          "hallazgo_clave": "Espacio académico-industrial dedicado específicamente al cobre como 'piedra angular del futuro energético'; primer encuentro internacional de estudiantes de la industria extractiva.",
+          "url": "https://minas.medellin.unal.edu.co/noticias/facultad/6370-cobre-piedra-angular-del-futuro-energetico"
+        },
+        {
+          "institucion": "Universidad Nacional de Colombia",
+          "titulo": "Primeros mapas geoquímicos departamentales de Colombia",
+          "año": null,
+          "hallazgo_clave": "Localización de materiales desde oro hasta manganeso, incluyendo cobre, níquel, molibdeno y otros — insumo directo para el mapeo de prospectividad con IA.",
+          "url": "https://periodico.unal.edu.co/articulos/en-colombia-el-70-de-la-explotacion-minera-esta-en-manos-de-las-multinacionales/"
+        },
+        {
+          "institucion": "Universidad de Antioquia - Facultad de Ingeniería",
+          "titulo": "Revisión sobre mejora de la gestión del agua en la minería informal de oro en Colombia",
+          "año": 2016,
+          "hallazgo_clave": "Estrategias de reducción de impactos de agua en minería informal, aplicables como base metodológica a la gestión hídrica en proyectos formales de cobre.",
+          "url": "https://doi.org/10.17533/udea.redin.n79a16"
+        },
+        {
+          "institucion": "Resource Governance Institute",
+          "titulo": "Incertidumbres sobre el cobre en Colombia — Proyecto Mocoa, Putumayo",
+          "año": 2025,
+          "hallazgo_clave": "Análisis independiente de los riesgos regulatorios y sociales del proyecto Libero Cooper en Mocoa, Putumayo.",
+          "url": "https://resourcegovernance.org/sites/default/files/2025-11/Cobre%20en%20Colombia_Proyecto%20Mocoa_%20Putumayo.pdf"
+        },
+        {
+          "institucion": "Servicio Geológico Colombiano (SGC)",
+          "titulo": "Investigación geocientífica básica y aplicada del subsuelo colombiano",
+          "año": null,
+          "hallazgo_clave": "Entidad centenaria adscrita al Ministerio de Minas y Energía; administra la información del subsuelo y monitorea amenazas de origen geológico — es la fuente primaria de datos geológicos para cualquier modelo de IA de prospectividad mineral en Colombia.",
+          "url": "https://www.eltiempo.com/economia/empresas/que-es-y-que-funcion-tiene-el-servicio-geologico-colombiano-792746"
+        },
+        {
+          "institucion": "Literatura académica internacional (múltiples, vía MDPI / ScienceDirect / Springer)",
+          "titulo": "Machine Learning-Based Mineral Prospectivity Mapping (varios estudios 2023-2026)",
+          "año": 2026,
+          "hallazgo_clave": "Random Forest, CNN y 'deep forest' aplicados a datos geoquímicos + sensores remotos logran mapear objetivos de exploración de cobre pórfido con precisión creciente; principal limitación: escasez de muestras etiquetadas e interpretabilidad del modelo — exactamente el tipo de reto que Colombia enfrentaría al aplicar esto sobre su 97% de territorio sin explorar.",
+          "url": "https://www.mdpi.com/2072-4292/15/15/3708"
+        }
+      ]
+    },
+    "kpis_hoja_de_ruta": {
+      "origen": "estimacion_propia_razonada",
+      "confiabilidad": "baja-media — hipótesis de planificación explícitamente marcada como no oficial",
+      "datos": {
+        "actualizado": "2026-09-14",
+        "advertencia": "Las metas 2028/2030 provienen del informe original (estimaciones razonadas propias, no oficiales). Las metas 2035/2040/2050 son proyecciones de escenario, aún más inciertas, construidas por extrapolación de la tendencia de demanda global y del potencial geológico de UPME (9.7 Mt). Deben tratarse como hipótesis de planificación, no como pronóstico.",
+        "kpis": [
+          {
+            "indicador": "Producción nacional de cobre (t/año)",
+            "2026": "~7.000 (solo El Roble)",
+            "2028": "35.000 - 50.000",
+            "2030": "90.000 - 120.000",
+            "2035": "180.000 - 250.000 (si El Alacrán y 2-3 proyectos adicionales alcanzan régimen)",
+            "2050": "El 100% del potencial identificado (9,7 Mt) implicaría ~25 años de vida útil agregada a un ritmo de ~380.000 t/año sostenido"
+          },
+          {
+            "indicador": "Proyectos en producción comercial",
+            "2026": 1,
+            "2028": 3,
+            "2030": "5-6",
+            "2035": "8-10 (incluye 2ª generación de la ronda de 14 áreas)",
+            "2050": "Depende de si se descubren nuevos distritos vía IA/exploración del 97% no explorado"
+          },
+          {
+            "indicador": "Capacidad de fundición-refinería nacional (t/año)",
+            "2026": 0,
+            "2028": "Estudio de factibilidad concluido",
+            "2030": "Planta piloto 30.000-50.000 t/año en construcción",
+            "2035": "Planta piloto operando + evaluación de una segunda planta a escala industrial",
+            "2050": "Colombia exporta cátodo, no concentrado, como estándar de la industria"
+          },
+          {
+            "indicador": "Origen del capital en proyectos estratégicos (diversificación)",
+            "2026": "Predominancia de capital chino en el proyecto más avanzado (El Alacrán)",
+            "2028": "Meta: al menos 2 proyectos con capital de EE.UU./aliados en construcción",
+            "2030": "Meta: ningún inversionista extranjero controla más del 40% de la producción nacional de cobre",
+            "2035": "Cartera de capital diversificada (EE.UU., Canadá, Europa, Asia no concentrada en un solo país)",
+            "2050": "Cadena de valor con participación mayoritaria de capital colombiano en la fase de fundición-refinería"
+          },
+          {
+            "indicador": "Inversión extranjera directa movilizada",
+            "2026": "USD 0 desembolsados bajo el marco (firmado sep-2026)",
+            "2028": "USD 800-1.500 M comprometidos",
+            "2030": "USD 3.000-5.000 M comprometidos/desembolsados",
+            "2035": "USD 8.000-12.000 M acumulados",
+            "2050": "Depende de renovación de marcos bilaterales sucesivos; no proyectable de forma responsable a este horizonte"
+          },
+          {
+            "indicador": "Incidentes ambientales mayores (relaves, vertimientos)",
+            "2026": 0,
+            "2028": 0,
+            "2030": 0,
+            "2035": 0,
+            "2050": "Meta permanente: 0 — ningún horizonte de tiempo relaja este KPI"
+          },
+          {
+            "indicador": "% de territorio con mapeo de prospectividad asistido por IA",
+            "2026": "0% (no existe programa formal)",
+            "2028": "Piloto en 1-2 cinturones metalogénicos prioritarios",
+            "2030": "30% del territorio de interés geológico prioritario mapeado con IA",
+            "2035": "70% del territorio de interés geológico prioritario mapeado con IA",
+            "2050": "Cobertura completa y actualización continua con datos satelitales"
+          }
+        ]
+      }
+    },
+    "precio_cobre_serie_historica": {
+      "origen": "api_publica_en_vivo",
+      "confiabilidad": "alta — FRED/FMI, dato oficial actualizado en cada corrida del pipeline",
+      "metricas_calculadas": {
+        "cagr_5_anos_pct": 7.46,
+        "volatilidad_desv_estandar_ultimo_ano": 1509.97,
+        "volatilidad_desv_estandar_5_anos": 1517.1,
+        "n_observaciones_5_anos": 61
+      },
+      "datos": {
+        "fuente": "FRED (Federal Reserve Bank of St. Louis) — serie PCOPPUSDM, origen FMI Primary Commodity Prices",
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM",
+        "unidad": "USD por tonelada métrica",
+        "frecuencia": "mensual",
+        "extraido_utc": "2026-09-14T22:49:15.252421+00:00",
+        "num_observaciones": 415,
+        "rango_fechas": [
+          "1992-01-01",
+          "2026-07-01"
+        ],
+        "ultimo_dato": {
+          "fecha": "2026-07-01",
+          "precio_usd_por_tonelada": 13542.82
+        },
+        "estadisticas_ultimo_ano": {
+          "promedio": 11903.42,
+          "minimo": 9671.88,
+          "maximo": 13552.04
+        },
+        "estadisticas_5_anos": {
+          "promedio": 9608.58,
+          "minimo": 7544.81,
+          "maximo": 13552.04
+        },
+        "serie_completa": [
+          {
+            "fecha": "1992-01-01",
+            "precio_usd_por_tonelada": 2150.58
+          },
+          {
+            "fecha": "1992-02-01",
+            "precio_usd_por_tonelada": 2208.89
+          },
+          {
+            "fecha": "1992-03-01",
+            "precio_usd_por_tonelada": 2231.79
+          },
+          {
+            "fecha": "1992-04-01",
+            "precio_usd_por_tonelada": 2214.17
+          },
+          {
+            "fecha": "1992-05-01",
+            "precio_usd_por_tonelada": 2219.32
+          },
+          {
+            "fecha": "1992-06-01",
+            "precio_usd_por_tonelada": 2296.44
+          },
+          {
+            "fecha": "1992-07-01",
+            "precio_usd_por_tonelada": 2527.29
+          },
+          {
+            "fecha": "1992-08-01",
+            "precio_usd_por_tonelada": 2513.47
+          },
+          {
+            "fecha": "1992-09-01",
+            "precio_usd_por_tonelada": 2419.61
+          },
+          {
+            "fecha": "1992-10-01",
+            "precio_usd_por_tonelada": 2262.46
+          },
+          {
+            "fecha": "1992-11-01",
+            "precio_usd_por_tonelada": 2161.79
+          },
+          {
+            "fecha": "1992-12-01",
+            "precio_usd_por_tonelada": 2211.95
+          },
+          {
+            "fecha": "1993-01-01",
+            "precio_usd_por_tonelada": 2264.21
+          },
+          {
+            "fecha": "1993-02-01",
+            "precio_usd_por_tonelada": 2212.18
+          },
+          {
+            "fecha": "1993-03-01",
+            "precio_usd_por_tonelada": 2152.38
+          },
+          {
+            "fecha": "1993-04-01",
+            "precio_usd_por_tonelada": 1953.62
+          },
+          {
+            "fecha": "1993-05-01",
+            "precio_usd_por_tonelada": 1799.35
+          },
+          {
+            "fecha": "1993-06-01",
+            "precio_usd_por_tonelada": 1857.87
+          },
+          {
+            "fecha": "1993-07-01",
+            "precio_usd_por_tonelada": 1927.34
+          },
+          {
+            "fecha": "1993-08-01",
+            "precio_usd_por_tonelada": 1951.07
+          },
+          {
+            "fecha": "1993-09-01",
+            "precio_usd_por_tonelada": 1858.25
+          },
+          {
+            "fecha": "1993-10-01",
+            "precio_usd_por_tonelada": 1647.0
+          },
+          {
+            "fecha": "1993-11-01",
+            "precio_usd_por_tonelada": 1632.57
+          },
+          {
+            "fecha": "1993-12-01",
+            "precio_usd_por_tonelada": 1723.63
+          },
+          {
+            "fecha": "1994-01-01",
+            "precio_usd_por_tonelada": 1807.07
+          },
+          {
+            "fecha": "1994-02-01",
+            "precio_usd_por_tonelada": 1865.08
+          },
+          {
+            "fecha": "1994-03-01",
+            "precio_usd_por_tonelada": 1913.17
+          },
+          {
+            "fecha": "1994-04-01",
+            "precio_usd_por_tonelada": 1881.37
+          },
+          {
+            "fecha": "1994-05-01",
+            "precio_usd_por_tonelada": 2144.5
+          },
+          {
+            "fecha": "1994-06-01",
+            "precio_usd_por_tonelada": 2363.09
+          },
+          {
+            "fecha": "1994-07-01",
+            "precio_usd_por_tonelada": 2447.24
+          },
+          {
+            "fecha": "1994-08-01",
+            "precio_usd_por_tonelada": 2409.75
+          },
+          {
+            "fecha": "1994-09-01",
+            "precio_usd_por_tonelada": 2504.84
+          },
+          {
+            "fecha": "1994-10-01",
+            "precio_usd_por_tonelada": 2546.02
+          },
+          {
+            "fecha": "1994-11-01",
+            "precio_usd_por_tonelada": 2803.55
+          },
+          {
+            "fecha": "1994-12-01",
+            "precio_usd_por_tonelada": 2980.7
+          },
+          {
+            "fecha": "1995-01-01",
+            "precio_usd_por_tonelada": 3003.26
+          },
+          {
+            "fecha": "1995-02-01",
+            "precio_usd_por_tonelada": 2870.45
+          },
+          {
+            "fecha": "1995-03-01",
+            "precio_usd_por_tonelada": 2919.67
+          },
+          {
+            "fecha": "1995-04-01",
+            "precio_usd_por_tonelada": 2894.89
+          },
+          {
+            "fecha": "1995-05-01",
+            "precio_usd_por_tonelada": 2771.57
+          },
+          {
+            "fecha": "1995-06-01",
+            "precio_usd_por_tonelada": 2987.68
+          },
+          {
+            "fecha": "1995-07-01",
+            "precio_usd_por_tonelada": 3076.45
+          },
+          {
+            "fecha": "1995-08-01",
+            "precio_usd_por_tonelada": 3040.14
+          },
+          {
+            "fecha": "1995-09-01",
+            "precio_usd_por_tonelada": 2910.43
+          },
+          {
+            "fecha": "1995-10-01",
+            "precio_usd_por_tonelada": 2810.07
+          },
+          {
+            "fecha": "1995-11-01",
+            "precio_usd_por_tonelada": 2981.62
+          },
+          {
+            "fecha": "1995-12-01",
+            "precio_usd_por_tonelada": 2918.21
+          },
+          {
+            "fecha": "1996-01-01",
+            "precio_usd_por_tonelada": 2605.0
+          },
+          {
+            "fecha": "1996-02-01",
+            "precio_usd_por_tonelada": 2544.67
+          },
+          {
+            "fecha": "1996-03-01",
+            "precio_usd_por_tonelada": 2563.35
+          },
+          {
+            "fecha": "1996-04-01",
+            "precio_usd_por_tonelada": 2594.17
+          },
+          {
+            "fecha": "1996-05-01",
+            "precio_usd_por_tonelada": 2658.76
+          },
+          {
+            "fecha": "1996-06-01",
+            "precio_usd_por_tonelada": 2177.6
+          },
+          {
+            "fecha": "1996-07-01",
+            "precio_usd_por_tonelada": 1983.93
+          },
+          {
+            "fecha": "1996-08-01",
+            "precio_usd_por_tonelada": 2017.86
+          },
+          {
+            "fecha": "1996-09-01",
+            "precio_usd_por_tonelada": 1935.07
+          },
+          {
+            "fecha": "1996-10-01",
+            "precio_usd_por_tonelada": 1960.2
+          },
+          {
+            "fecha": "1996-11-01",
+            "precio_usd_por_tonelada": 2215.43
+          },
+          {
+            "fecha": "1996-12-01",
+            "precio_usd_por_tonelada": 2264.6
+          },
+          {
+            "fecha": "1997-01-01",
+            "precio_usd_por_tonelada": 2427.27
+          },
+          {
+            "fecha": "1997-02-01",
+            "precio_usd_por_tonelada": 2406.63
+          },
+          {
+            "fecha": "1997-03-01",
+            "precio_usd_por_tonelada": 2420.18
+          },
+          {
+            "fecha": "1997-04-01",
+            "precio_usd_por_tonelada": 2389.32
+          },
+          {
+            "fecha": "1997-05-01",
+            "precio_usd_por_tonelada": 2513.3
+          },
+          {
+            "fecha": "1997-06-01",
+            "precio_usd_por_tonelada": 2611.29
+          },
+          {
+            "fecha": "1997-07-01",
+            "precio_usd_por_tonelada": 2449.2
+          },
+          {
+            "fecha": "1997-08-01",
+            "precio_usd_por_tonelada": 2250.1
+          },
+          {
+            "fecha": "1997-09-01",
+            "precio_usd_por_tonelada": 2104.31
+          },
+          {
+            "fecha": "1997-10-01",
+            "precio_usd_por_tonelada": 2050.7
+          },
+          {
+            "fecha": "1997-11-01",
+            "precio_usd_por_tonelada": 1918.5
+          },
+          {
+            "fecha": "1997-12-01",
+            "precio_usd_por_tonelada": 1761.45
+          },
+          {
+            "fecha": "1998-01-01",
+            "precio_usd_por_tonelada": 1687.6
+          },
+          {
+            "fecha": "1998-02-01",
+            "precio_usd_por_tonelada": 1664.0
+          },
+          {
+            "fecha": "1998-03-01",
+            "precio_usd_por_tonelada": 1747.16
+          },
+          {
+            "fecha": "1998-04-01",
+            "precio_usd_por_tonelada": 1800.13
+          },
+          {
+            "fecha": "1998-05-01",
+            "precio_usd_por_tonelada": 1731.66
+          },
+          {
+            "fecha": "1998-06-01",
+            "precio_usd_por_tonelada": 1656.6
+          },
+          {
+            "fecha": "1998-07-01",
+            "precio_usd_por_tonelada": 1655.67
+          },
+          {
+            "fecha": "1998-08-01",
+            "precio_usd_por_tonelada": 1619.93
+          },
+          {
+            "fecha": "1998-09-01",
+            "precio_usd_por_tonelada": 1646.77
+          },
+          {
+            "fecha": "1998-10-01",
+            "precio_usd_por_tonelada": 1585.5
+          },
+          {
+            "fecha": "1998-11-01",
+            "precio_usd_por_tonelada": 1573.72
+          },
+          {
+            "fecha": "1998-12-01",
+            "precio_usd_por_tonelada": 1475.76
+          },
+          {
+            "fecha": "1999-01-01",
+            "precio_usd_por_tonelada": 1432.0
+          },
+          {
+            "fecha": "1999-02-01",
+            "precio_usd_por_tonelada": 1412.95
+          },
+          {
+            "fecha": "1999-03-01",
+            "precio_usd_por_tonelada": 1378.48
+          },
+          {
+            "fecha": "1999-04-01",
+            "precio_usd_por_tonelada": 1463.72
+          },
+          {
+            "fecha": "1999-05-01",
+            "precio_usd_por_tonelada": 1510.45
+          },
+          {
+            "fecha": "1999-06-01",
+            "precio_usd_por_tonelada": 1422.16
+          },
+          {
+            "fecha": "1999-07-01",
+            "precio_usd_por_tonelada": 1639.18
+          },
+          {
+            "fecha": "1999-08-01",
+            "precio_usd_por_tonelada": 1646.74
+          },
+          {
+            "fecha": "1999-09-01",
+            "precio_usd_por_tonelada": 1749.68
+          },
+          {
+            "fecha": "1999-10-01",
+            "precio_usd_por_tonelada": 1723.29
+          },
+          {
+            "fecha": "1999-11-01",
+            "precio_usd_por_tonelada": 1726.77
+          },
+          {
+            "fecha": "1999-12-01",
+            "precio_usd_por_tonelada": 1764.88
+          },
+          {
+            "fecha": "2000-01-01",
+            "precio_usd_por_tonelada": 1843.85
+          },
+          {
+            "fecha": "2000-02-01",
+            "precio_usd_por_tonelada": 1807.03
+          },
+          {
+            "fecha": "2000-03-01",
+            "precio_usd_por_tonelada": 1739.8
+          },
+          {
+            "fecha": "2000-04-01",
+            "precio_usd_por_tonelada": 1681.91
+          },
+          {
+            "fecha": "2000-05-01",
+            "precio_usd_por_tonelada": 1785.1
+          },
+          {
+            "fecha": "2000-06-01",
+            "precio_usd_por_tonelada": 1752.07
+          },
+          {
+            "fecha": "2000-07-01",
+            "precio_usd_por_tonelada": 1803.14
+          },
+          {
+            "fecha": "2000-08-01",
+            "precio_usd_por_tonelada": 1857.12
+          },
+          {
+            "fecha": "2000-09-01",
+            "precio_usd_por_tonelada": 1961.89
+          },
+          {
+            "fecha": "2000-10-01",
+            "precio_usd_por_tonelada": 1894.37
+          },
+          {
+            "fecha": "2000-11-01",
+            "precio_usd_por_tonelada": 1795.6
+          },
+          {
+            "fecha": "2000-12-01",
+            "precio_usd_por_tonelada": 1852.4
+          },
+          {
+            "fecha": "2001-01-01",
+            "precio_usd_por_tonelada": 1787.06
+          },
+          {
+            "fecha": "2001-02-01",
+            "precio_usd_por_tonelada": 1766.12
+          },
+          {
+            "fecha": "2001-03-01",
+            "precio_usd_por_tonelada": 1742.16
+          },
+          {
+            "fecha": "2001-04-01",
+            "precio_usd_por_tonelada": 1665.97
+          },
+          {
+            "fecha": "2001-05-01",
+            "precio_usd_por_tonelada": 1684.85
+          },
+          {
+            "fecha": "2001-06-01",
+            "precio_usd_por_tonelada": 1610.47
+          },
+          {
+            "fecha": "2001-07-01",
+            "precio_usd_por_tonelada": 1526.77
+          },
+          {
+            "fecha": "2001-08-01",
+            "precio_usd_por_tonelada": 1466.41
+          },
+          {
+            "fecha": "2001-09-01",
+            "precio_usd_por_tonelada": 1427.7
+          },
+          {
+            "fecha": "2001-10-01",
+            "precio_usd_por_tonelada": 1377.38
+          },
+          {
+            "fecha": "2001-11-01",
+            "precio_usd_por_tonelada": 1434.29
+          },
+          {
+            "fecha": "2001-12-01",
+            "precio_usd_por_tonelada": 1472.85
+          },
+          {
+            "fecha": "2002-01-01",
+            "precio_usd_por_tonelada": 1508.23
+          },
+          {
+            "fecha": "2002-02-01",
+            "precio_usd_por_tonelada": 1561.37
+          },
+          {
+            "fecha": "2002-03-01",
+            "precio_usd_por_tonelada": 1607.39
+          },
+          {
+            "fecha": "2002-04-01",
+            "precio_usd_por_tonelada": 1588.57
+          },
+          {
+            "fecha": "2002-05-01",
+            "precio_usd_por_tonelada": 1597.02
+          },
+          {
+            "fecha": "2002-06-01",
+            "precio_usd_por_tonelada": 1650.59
+          },
+          {
+            "fecha": "2002-07-01",
+            "precio_usd_por_tonelada": 1588.28
+          },
+          {
+            "fecha": "2002-08-01",
+            "precio_usd_por_tonelada": 1482.92
+          },
+          {
+            "fecha": "2002-09-01",
+            "precio_usd_por_tonelada": 1478.93
+          },
+          {
+            "fecha": "2002-10-01",
+            "precio_usd_por_tonelada": 1486.17
+          },
+          {
+            "fecha": "2002-11-01",
+            "precio_usd_por_tonelada": 1581.04
+          },
+          {
+            "fecha": "2002-12-01",
+            "precio_usd_por_tonelada": 1592.96
+          },
+          {
+            "fecha": "2003-01-01",
+            "precio_usd_por_tonelada": 1650.31
+          },
+          {
+            "fecha": "2003-02-01",
+            "precio_usd_por_tonelada": 1682.14
+          },
+          {
+            "fecha": "2003-03-01",
+            "precio_usd_por_tonelada": 1655.69
+          },
+          {
+            "fecha": "2003-04-01",
+            "precio_usd_por_tonelada": 1587.87
+          },
+          {
+            "fecha": "2003-05-01",
+            "precio_usd_por_tonelada": 1651.1
+          },
+          {
+            "fecha": "2003-06-01",
+            "precio_usd_por_tonelada": 1685.11
+          },
+          {
+            "fecha": "2003-07-01",
+            "precio_usd_por_tonelada": 1712.83
+          },
+          {
+            "fecha": "2003-08-01",
+            "precio_usd_por_tonelada": 1756.72
+          },
+          {
+            "fecha": "2003-09-01",
+            "precio_usd_por_tonelada": 1789.67
+          },
+          {
+            "fecha": "2003-10-01",
+            "precio_usd_por_tonelada": 1925.58
+          },
+          {
+            "fecha": "2003-11-01",
+            "precio_usd_por_tonelada": 2053.28
+          },
+          {
+            "fecha": "2003-12-01",
+            "precio_usd_por_tonelada": 2202.04
+          },
+          {
+            "fecha": "2004-01-01",
+            "precio_usd_por_tonelada": 2421.48
+          },
+          {
+            "fecha": "2004-02-01",
+            "precio_usd_por_tonelada": 2751.72
+          },
+          {
+            "fecha": "2004-03-01",
+            "precio_usd_por_tonelada": 3000.28
+          },
+          {
+            "fecha": "2004-04-01",
+            "precio_usd_por_tonelada": 2926.97
+          },
+          {
+            "fecha": "2004-05-01",
+            "precio_usd_por_tonelada": 2728.46
+          },
+          {
+            "fecha": "2004-06-01",
+            "precio_usd_por_tonelada": 2689.05
+          },
+          {
+            "fecha": "2004-07-01",
+            "precio_usd_por_tonelada": 2816.8
+          },
+          {
+            "fecha": "2004-08-01",
+            "precio_usd_por_tonelada": 2844.2
+          },
+          {
+            "fecha": "2004-09-01",
+            "precio_usd_por_tonelada": 2903.17
+          },
+          {
+            "fecha": "2004-10-01",
+            "precio_usd_por_tonelada": 3009.4
+          },
+          {
+            "fecha": "2004-11-01",
+            "precio_usd_por_tonelada": 3130.31
+          },
+          {
+            "fecha": "2004-12-01",
+            "precio_usd_por_tonelada": 3139.79
+          },
+          {
+            "fecha": "2005-01-01",
+            "precio_usd_por_tonelada": 3168.1
+          },
+          {
+            "fecha": "2005-02-01",
+            "precio_usd_por_tonelada": 3247.1
+          },
+          {
+            "fecha": "2005-03-01",
+            "precio_usd_por_tonelada": 3378.9
+          },
+          {
+            "fecha": "2005-04-01",
+            "precio_usd_por_tonelada": 3389.81
+          },
+          {
+            "fecha": "2005-05-01",
+            "precio_usd_por_tonelada": 3241.9
+          },
+          {
+            "fecha": "2005-06-01",
+            "precio_usd_por_tonelada": 3529.73
+          },
+          {
+            "fecha": "2005-07-01",
+            "precio_usd_por_tonelada": 3608.48
+          },
+          {
+            "fecha": "2005-08-01",
+            "precio_usd_por_tonelada": 3791.91
+          },
+          {
+            "fecha": "2005-09-01",
+            "precio_usd_por_tonelada": 3850.66
+          },
+          {
+            "fecha": "2005-10-01",
+            "precio_usd_por_tonelada": 4056.17
+          },
+          {
+            "fecha": "2005-11-01",
+            "precio_usd_por_tonelada": 4278.16
+          },
+          {
+            "fecha": "2005-12-01",
+            "precio_usd_por_tonelada": 4577.02
+          },
+          {
+            "fecha": "2006-01-01",
+            "precio_usd_por_tonelada": 4743.86
+          },
+          {
+            "fecha": "2006-02-01",
+            "precio_usd_por_tonelada": 4974.98
+          },
+          {
+            "fecha": "2006-03-01",
+            "precio_usd_por_tonelada": 5123.67
+          },
+          {
+            "fecha": "2006-04-01",
+            "precio_usd_por_tonelada": 6404.44
+          },
+          {
+            "fecha": "2006-05-01",
+            "precio_usd_por_tonelada": 8059.19
+          },
+          {
+            "fecha": "2006-06-01",
+            "precio_usd_por_tonelada": 7222.77
+          },
+          {
+            "fecha": "2006-07-01",
+            "precio_usd_por_tonelada": 7726.74
+          },
+          {
+            "fecha": "2006-08-01",
+            "precio_usd_por_tonelada": 7690.25
+          },
+          {
+            "fecha": "2006-09-01",
+            "precio_usd_por_tonelada": 7622.64
+          },
+          {
+            "fecha": "2006-10-01",
+            "precio_usd_por_tonelada": 7497.41
+          },
+          {
+            "fecha": "2006-11-01",
+            "precio_usd_por_tonelada": 7029.3
+          },
+          {
+            "fecha": "2006-12-01",
+            "precio_usd_por_tonelada": 6680.97
+          },
+          {
+            "fecha": "2007-01-01",
+            "precio_usd_por_tonelada": 5689.34
+          },
+          {
+            "fecha": "2007-02-01",
+            "precio_usd_por_tonelada": 5718.15
+          },
+          {
+            "fecha": "2007-03-01",
+            "precio_usd_por_tonelada": 6465.3
+          },
+          {
+            "fecha": "2007-04-01",
+            "precio_usd_por_tonelada": 7753.34
+          },
+          {
+            "fecha": "2007-05-01",
+            "precio_usd_por_tonelada": 7677.95
+          },
+          {
+            "fecha": "2007-06-01",
+            "precio_usd_por_tonelada": 7514.24
+          },
+          {
+            "fecha": "2007-07-01",
+            "precio_usd_por_tonelada": 7980.93
+          },
+          {
+            "fecha": "2007-08-01",
+            "precio_usd_por_tonelada": 7500.2
+          },
+          {
+            "fecha": "2007-09-01",
+            "precio_usd_por_tonelada": 7671.35
+          },
+          {
+            "fecha": "2007-10-01",
+            "precio_usd_por_tonelada": 8020.59
+          },
+          {
+            "fecha": "2007-11-01",
+            "precio_usd_por_tonelada": 6957.43
+          },
+          {
+            "fecha": "2007-12-01",
+            "precio_usd_por_tonelada": 6630.74
+          },
+          {
+            "fecha": "2008-01-01",
+            "precio_usd_por_tonelada": 7078.91
+          },
+          {
+            "fecha": "2008-02-01",
+            "precio_usd_por_tonelada": 7941.14
+          },
+          {
+            "fecha": "2008-03-01",
+            "precio_usd_por_tonelada": 8434.32
+          },
+          {
+            "fecha": "2008-04-01",
+            "precio_usd_por_tonelada": 8714.18
+          },
+          {
+            "fecha": "2008-05-01",
+            "precio_usd_por_tonelada": 8356.12
+          },
+          {
+            "fecha": "2008-06-01",
+            "precio_usd_por_tonelada": 8292.0
+          },
+          {
+            "fecha": "2008-07-01",
+            "precio_usd_por_tonelada": 8407.02
+          },
+          {
+            "fecha": "2008-08-01",
+            "precio_usd_por_tonelada": 7633.8
+          },
+          {
+            "fecha": "2008-09-01",
+            "precio_usd_por_tonelada": 6975.11
+          },
+          {
+            "fecha": "2008-10-01",
+            "precio_usd_por_tonelada": 4894.89
+          },
+          {
+            "fecha": "2008-11-01",
+            "precio_usd_por_tonelada": 3729.19
+          },
+          {
+            "fecha": "2008-12-01",
+            "precio_usd_por_tonelada": 3105.1
+          },
+          {
+            "fecha": "2009-01-01",
+            "precio_usd_por_tonelada": 3260.36
+          },
+          {
+            "fecha": "2009-02-01",
+            "precio_usd_por_tonelada": 3328.41
+          },
+          {
+            "fecha": "2009-03-01",
+            "precio_usd_por_tonelada": 3770.88
+          },
+          {
+            "fecha": "2009-04-01",
+            "precio_usd_por_tonelada": 4436.93
+          },
+          {
+            "fecha": "2009-05-01",
+            "precio_usd_por_tonelada": 4591.46
+          },
+          {
+            "fecha": "2009-06-01",
+            "precio_usd_por_tonelada": 5015.43
+          },
+          {
+            "fecha": "2009-07-01",
+            "precio_usd_por_tonelada": 5228.41
+          },
+          {
+            "fecha": "2009-08-01",
+            "precio_usd_por_tonelada": 6176.88
+          },
+          {
+            "fecha": "2009-09-01",
+            "precio_usd_por_tonelada": 6195.75
+          },
+          {
+            "fecha": "2009-10-01",
+            "precio_usd_por_tonelada": 6305.99
+          },
+          {
+            "fecha": "2009-11-01",
+            "precio_usd_por_tonelada": 6682.44
+          },
+          {
+            "fecha": "2009-12-01",
+            "precio_usd_por_tonelada": 6976.98
+          },
+          {
+            "fecha": "2010-01-01",
+            "precio_usd_por_tonelada": 7367.38
+          },
+          {
+            "fecha": "2010-02-01",
+            "precio_usd_por_tonelada": 6867.68
+          },
+          {
+            "fecha": "2010-03-01",
+            "precio_usd_por_tonelada": 7466.93
+          },
+          {
+            "fecha": "2010-04-01",
+            "precio_usd_por_tonelada": 7729.84
+          },
+          {
+            "fecha": "2010-05-01",
+            "precio_usd_por_tonelada": 6843.16
+          },
+          {
+            "fecha": "2010-06-01",
+            "precio_usd_por_tonelada": 6501.5
+          },
+          {
+            "fecha": "2010-07-01",
+            "precio_usd_por_tonelada": 6750.57
+          },
+          {
+            "fecha": "2010-08-01",
+            "precio_usd_por_tonelada": 7302.67
+          },
+          {
+            "fecha": "2010-09-01",
+            "precio_usd_por_tonelada": 7729.59
+          },
+          {
+            "fecha": "2010-10-01",
+            "precio_usd_por_tonelada": 8289.76
+          },
+          {
+            "fecha": "2010-11-01",
+            "precio_usd_por_tonelada": 8458.42
+          },
+          {
+            "fecha": "2010-12-01",
+            "precio_usd_por_tonelada": 9152.86
+          },
+          {
+            "fecha": "2011-01-01",
+            "precio_usd_por_tonelada": 9533.2
+          },
+          {
+            "fecha": "2011-02-01",
+            "precio_usd_por_tonelada": 9880.94
+          },
+          {
+            "fecha": "2011-03-01",
+            "precio_usd_por_tonelada": 9503.36
+          },
+          {
+            "fecha": "2011-04-01",
+            "precio_usd_por_tonelada": 9482.75
+          },
+          {
+            "fecha": "2011-05-01",
+            "precio_usd_por_tonelada": 8931.67
+          },
+          {
+            "fecha": "2011-06-01",
+            "precio_usd_por_tonelada": 9066.85
+          },
+          {
+            "fecha": "2011-07-01",
+            "precio_usd_por_tonelada": 9650.46
+          },
+          {
+            "fecha": "2011-08-01",
+            "precio_usd_por_tonelada": 8997.99
+          },
+          {
+            "fecha": "2011-09-01",
+            "precio_usd_por_tonelada": 8300.14
+          },
+          {
+            "fecha": "2011-10-01",
+            "precio_usd_por_tonelada": 7394.19
+          },
+          {
+            "fecha": "2011-11-01",
+            "precio_usd_por_tonelada": 7581.02
+          },
+          {
+            "fecha": "2011-12-01",
+            "precio_usd_por_tonelada": 7558.88
+          },
+          {
+            "fecha": "2012-01-01",
+            "precio_usd_por_tonelada": 8061.92
+          },
+          {
+            "fecha": "2012-02-01",
+            "precio_usd_por_tonelada": 8441.49
+          },
+          {
+            "fecha": "2012-03-01",
+            "precio_usd_por_tonelada": 8470.78
+          },
+          {
+            "fecha": "2012-04-01",
+            "precio_usd_por_tonelada": 8285.53
+          },
+          {
+            "fecha": "2012-05-01",
+            "precio_usd_por_tonelada": 7896.91
+          },
+          {
+            "fecha": "2012-06-01",
+            "precio_usd_por_tonelada": 7428.29
+          },
+          {
+            "fecha": "2012-07-01",
+            "precio_usd_por_tonelada": 7584.26
+          },
+          {
+            "fecha": "2012-08-01",
+            "precio_usd_por_tonelada": 7510.43
+          },
+          {
+            "fecha": "2012-09-01",
+            "precio_usd_por_tonelada": 8087.74
+          },
+          {
+            "fecha": "2012-10-01",
+            "precio_usd_por_tonelada": 8062.03
+          },
+          {
+            "fecha": "2012-11-01",
+            "precio_usd_por_tonelada": 7711.23
+          },
+          {
+            "fecha": "2012-12-01",
+            "precio_usd_por_tonelada": 7966.49
+          },
+          {
+            "fecha": "2013-01-01",
+            "precio_usd_por_tonelada": 8053.74
+          },
+          {
+            "fecha": "2013-02-01",
+            "precio_usd_por_tonelada": 8060.93
+          },
+          {
+            "fecha": "2013-03-01",
+            "precio_usd_por_tonelada": 7652.38
+          },
+          {
+            "fecha": "2013-04-01",
+            "precio_usd_por_tonelada": 7221.16
+          },
+          {
+            "fecha": "2013-05-01",
+            "precio_usd_por_tonelada": 7248.71
+          },
+          {
+            "fecha": "2013-06-01",
+            "precio_usd_por_tonelada": 7000.24
+          },
+          {
+            "fecha": "2013-07-01",
+            "precio_usd_por_tonelada": 6906.64
+          },
+          {
+            "fecha": "2013-08-01",
+            "precio_usd_por_tonelada": 7186.25
+          },
+          {
+            "fecha": "2013-09-01",
+            "precio_usd_por_tonelada": 7159.27
+          },
+          {
+            "fecha": "2013-10-01",
+            "precio_usd_por_tonelada": 7203.02
+          },
+          {
+            "fecha": "2013-11-01",
+            "precio_usd_por_tonelada": 7070.65
+          },
+          {
+            "fecha": "2013-12-01",
+            "precio_usd_por_tonelada": 7214.9
+          },
+          {
+            "fecha": "2014-01-01",
+            "precio_usd_por_tonelada": 7291.47
+          },
+          {
+            "fecha": "2014-02-01",
+            "precio_usd_por_tonelada": 7149.21
+          },
+          {
+            "fecha": "2014-03-01",
+            "precio_usd_por_tonelada": 6650.04
+          },
+          {
+            "fecha": "2014-04-01",
+            "precio_usd_por_tonelada": 6673.56
+          },
+          {
+            "fecha": "2014-05-01",
+            "precio_usd_por_tonelada": 6891.12
+          },
+          {
+            "fecha": "2014-06-01",
+            "precio_usd_por_tonelada": 6821.14
+          },
+          {
+            "fecha": "2014-07-01",
+            "precio_usd_por_tonelada": 7113.38
+          },
+          {
+            "fecha": "2014-08-01",
+            "precio_usd_por_tonelada": 7001.84
+          },
+          {
+            "fecha": "2014-09-01",
+            "precio_usd_por_tonelada": 6872.22
+          },
+          {
+            "fecha": "2014-10-01",
+            "precio_usd_por_tonelada": 6737.48
+          },
+          {
+            "fecha": "2014-11-01",
+            "precio_usd_por_tonelada": 6712.85
+          },
+          {
+            "fecha": "2014-12-01",
+            "precio_usd_por_tonelada": 6446.45
+          },
+          {
+            "fecha": "2015-01-01",
+            "precio_usd_por_tonelada": 5830.54
+          },
+          {
+            "fecha": "2015-02-01",
+            "precio_usd_por_tonelada": 5729.27
+          },
+          {
+            "fecha": "2015-03-01",
+            "precio_usd_por_tonelada": 5939.67
+          },
+          {
+            "fecha": "2015-04-01",
+            "precio_usd_por_tonelada": 6042.09
+          },
+          {
+            "fecha": "2015-05-01",
+            "precio_usd_por_tonelada": 6294.78
+          },
+          {
+            "fecha": "2015-06-01",
+            "precio_usd_por_tonelada": 5833.01
+          },
+          {
+            "fecha": "2015-07-01",
+            "precio_usd_por_tonelada": 5456.75
+          },
+          {
+            "fecha": "2015-08-01",
+            "precio_usd_por_tonelada": 5127.3
+          },
+          {
+            "fecha": "2015-09-01",
+            "precio_usd_por_tonelada": 5217.25
+          },
+          {
+            "fecha": "2015-10-01",
+            "precio_usd_por_tonelada": 5216.09
+          },
+          {
+            "fecha": "2015-11-01",
+            "precio_usd_por_tonelada": 4799.9
+          },
+          {
+            "fecha": "2015-12-01",
+            "precio_usd_por_tonelada": 4638.83
+          },
+          {
+            "fecha": "2016-01-01",
+            "precio_usd_por_tonelada": 4471.79
+          },
+          {
+            "fecha": "2016-02-01",
+            "precio_usd_por_tonelada": 4598.62
+          },
+          {
+            "fecha": "2016-03-01",
+            "precio_usd_por_tonelada": 4953.8
+          },
+          {
+            "fecha": "2016-04-01",
+            "precio_usd_por_tonelada": 4872.74
+          },
+          {
+            "fecha": "2016-05-01",
+            "precio_usd_por_tonelada": 4694.54
+          },
+          {
+            "fecha": "2016-06-01",
+            "precio_usd_por_tonelada": 4641.97
+          },
+          {
+            "fecha": "2016-07-01",
+            "precio_usd_por_tonelada": 4864.9
+          },
+          {
+            "fecha": "2016-08-01",
+            "precio_usd_por_tonelada": 4751.67
+          },
+          {
+            "fecha": "2016-09-01",
+            "precio_usd_por_tonelada": 4722.2
+          },
+          {
+            "fecha": "2016-10-01",
+            "precio_usd_por_tonelada": 4731.26
+          },
+          {
+            "fecha": "2016-11-01",
+            "precio_usd_por_tonelada": 5450.93
+          },
+          {
+            "fecha": "2016-12-01",
+            "precio_usd_por_tonelada": 5660.35
+          },
+          {
+            "fecha": "2017-01-01",
+            "precio_usd_por_tonelada": 5754.56
+          },
+          {
+            "fecha": "2017-02-01",
+            "precio_usd_por_tonelada": 5940.91
+          },
+          {
+            "fecha": "2017-03-01",
+            "precio_usd_por_tonelada": 5824.63
+          },
+          {
+            "fecha": "2017-04-01",
+            "precio_usd_por_tonelada": 5683.9
+          },
+          {
+            "fecha": "2017-05-01",
+            "precio_usd_por_tonelada": 5599.56
+          },
+          {
+            "fecha": "2017-06-01",
+            "precio_usd_por_tonelada": 5719.76
+          },
+          {
+            "fecha": "2017-07-01",
+            "precio_usd_por_tonelada": 5985.12
+          },
+          {
+            "fecha": "2017-08-01",
+            "precio_usd_por_tonelada": 6485.62
+          },
+          {
+            "fecha": "2017-09-01",
+            "precio_usd_por_tonelada": 6577.17
+          },
+          {
+            "fecha": "2017-10-01",
+            "precio_usd_por_tonelada": 6807.6
+          },
+          {
+            "fecha": "2017-11-01",
+            "precio_usd_por_tonelada": 6826.55
+          },
+          {
+            "fecha": "2017-12-01",
+            "precio_usd_por_tonelada": 6833.89
+          },
+          {
+            "fecha": "2018-01-01",
+            "precio_usd_por_tonelada": 7065.85
+          },
+          {
+            "fecha": "2018-02-01",
+            "precio_usd_por_tonelada": 7006.52
+          },
+          {
+            "fecha": "2018-03-01",
+            "precio_usd_por_tonelada": 6799.18
+          },
+          {
+            "fecha": "2018-04-01",
+            "precio_usd_por_tonelada": 6851.51
+          },
+          {
+            "fecha": "2018-05-01",
+            "precio_usd_por_tonelada": 6825.27
+          },
+          {
+            "fecha": "2018-06-01",
+            "precio_usd_por_tonelada": 6965.86
+          },
+          {
+            "fecha": "2018-07-01",
+            "precio_usd_por_tonelada": 6250.75
+          },
+          {
+            "fecha": "2018-08-01",
+            "precio_usd_por_tonelada": 6051.05
+          },
+          {
+            "fecha": "2018-09-01",
+            "precio_usd_por_tonelada": 6050.76
+          },
+          {
+            "fecha": "2018-10-01",
+            "precio_usd_por_tonelada": 6219.59
+          },
+          {
+            "fecha": "2018-11-01",
+            "precio_usd_por_tonelada": 6195.92
+          },
+          {
+            "fecha": "2018-12-01",
+            "precio_usd_por_tonelada": 6075.32
+          },
+          {
+            "fecha": "2019-01-01",
+            "precio_usd_por_tonelada": 5939.1
+          },
+          {
+            "fecha": "2019-02-01",
+            "precio_usd_por_tonelada": 6300.49
+          },
+          {
+            "fecha": "2019-03-01",
+            "precio_usd_por_tonelada": 6439.46
+          },
+          {
+            "fecha": "2019-04-01",
+            "precio_usd_por_tonelada": 6438.36
+          },
+          {
+            "fecha": "2019-05-01",
+            "precio_usd_por_tonelada": 6017.9
+          },
+          {
+            "fecha": "2019-06-01",
+            "precio_usd_por_tonelada": 5882.23
+          },
+          {
+            "fecha": "2019-07-01",
+            "precio_usd_por_tonelada": 5941.2
+          },
+          {
+            "fecha": "2019-08-01",
+            "precio_usd_por_tonelada": 5709.44
+          },
+          {
+            "fecha": "2019-09-01",
+            "precio_usd_por_tonelada": 5759.25
+          },
+          {
+            "fecha": "2019-10-01",
+            "precio_usd_por_tonelada": 5757.3
+          },
+          {
+            "fecha": "2019-11-01",
+            "precio_usd_por_tonelada": 5859.95
+          },
+          {
+            "fecha": "2019-12-01",
+            "precio_usd_por_tonelada": 6077.06
+          },
+          {
+            "fecha": "2020-01-01",
+            "precio_usd_por_tonelada": 6031.21
+          },
+          {
+            "fecha": "2020-02-01",
+            "precio_usd_por_tonelada": 5687.75
+          },
+          {
+            "fecha": "2020-03-01",
+            "precio_usd_por_tonelada": 5182.63
+          },
+          {
+            "fecha": "2020-04-01",
+            "precio_usd_por_tonelada": 5057.97
+          },
+          {
+            "fecha": "2020-05-01",
+            "precio_usd_por_tonelada": 5239.83
+          },
+          {
+            "fecha": "2020-06-01",
+            "precio_usd_por_tonelada": 5754.6
+          },
+          {
+            "fecha": "2020-07-01",
+            "precio_usd_por_tonelada": 6372.46
+          },
+          {
+            "fecha": "2020-08-01",
+            "precio_usd_por_tonelada": 6508.39
+          },
+          {
+            "fecha": "2020-09-01",
+            "precio_usd_por_tonelada": 6704.9
+          },
+          {
+            "fecha": "2020-10-01",
+            "precio_usd_por_tonelada": 6713.81
+          },
+          {
+            "fecha": "2020-11-01",
+            "precio_usd_por_tonelada": 7068.91
+          },
+          {
+            "fecha": "2020-12-01",
+            "precio_usd_por_tonelada": 7772.24
+          },
+          {
+            "fecha": "2021-01-01",
+            "precio_usd_por_tonelada": 7972.15
+          },
+          {
+            "fecha": "2021-02-01",
+            "precio_usd_por_tonelada": 8470.94
+          },
+          {
+            "fecha": "2021-03-01",
+            "precio_usd_por_tonelada": 8988.25
+          },
+          {
+            "fecha": "2021-04-01",
+            "precio_usd_por_tonelada": 9324.82
+          },
+          {
+            "fecha": "2021-05-01",
+            "precio_usd_por_tonelada": 10166.28
+          },
+          {
+            "fecha": "2021-06-01",
+            "precio_usd_por_tonelada": 9631.5
+          },
+          {
+            "fecha": "2021-07-01",
+            "precio_usd_por_tonelada": 9450.82
+          },
+          {
+            "fecha": "2021-08-01",
+            "precio_usd_por_tonelada": 9370.14
+          },
+          {
+            "fecha": "2021-09-01",
+            "precio_usd_por_tonelada": 9324.71
+          },
+          {
+            "fecha": "2021-10-01",
+            "precio_usd_por_tonelada": 9829.22
+          },
+          {
+            "fecha": "2021-11-01",
+            "precio_usd_por_tonelada": 9728.9
+          },
+          {
+            "fecha": "2021-12-01",
+            "precio_usd_por_tonelada": 9551.18
+          },
+          {
+            "fecha": "2022-01-01",
+            "precio_usd_por_tonelada": 9782.34
+          },
+          {
+            "fecha": "2022-02-01",
+            "precio_usd_por_tonelada": 9943.17
+          },
+          {
+            "fecha": "2022-03-01",
+            "precio_usd_por_tonelada": 10230.89
+          },
+          {
+            "fecha": "2022-04-01",
+            "precio_usd_por_tonelada": 10174.35
+          },
+          {
+            "fecha": "2022-05-01",
+            "precio_usd_por_tonelada": 9395.03
+          },
+          {
+            "fecha": "2022-06-01",
+            "precio_usd_por_tonelada": 9067.55
+          },
+          {
+            "fecha": "2022-07-01",
+            "precio_usd_por_tonelada": 7544.81
+          },
+          {
+            "fecha": "2022-08-01",
+            "precio_usd_por_tonelada": 7990.81
+          },
+          {
+            "fecha": "2022-09-01",
+            "precio_usd_por_tonelada": 7746.01
+          },
+          {
+            "fecha": "2022-10-01",
+            "precio_usd_por_tonelada": 7651.08
+          },
+          {
+            "fecha": "2022-11-01",
+            "precio_usd_por_tonelada": 8049.86
+          },
+          {
+            "fecha": "2022-12-01",
+            "precio_usd_por_tonelada": 8371.09
+          },
+          {
+            "fecha": "2023-01-01",
+            "precio_usd_por_tonelada": 9007.35
+          },
+          {
+            "fecha": "2023-02-01",
+            "precio_usd_por_tonelada": 8936.59
+          },
+          {
+            "fecha": "2023-03-01",
+            "precio_usd_por_tonelada": 8856.31
+          },
+          {
+            "fecha": "2023-04-01",
+            "precio_usd_por_tonelada": 8809.16
+          },
+          {
+            "fecha": "2023-05-01",
+            "precio_usd_por_tonelada": 8243.16
+          },
+          {
+            "fecha": "2023-06-01",
+            "precio_usd_por_tonelada": 8396.52
+          },
+          {
+            "fecha": "2023-07-01",
+            "precio_usd_por_tonelada": 8476.68
+          },
+          {
+            "fecha": "2023-08-01",
+            "precio_usd_por_tonelada": 8347.83
+          },
+          {
+            "fecha": "2023-09-01",
+            "precio_usd_por_tonelada": 8276.71
+          },
+          {
+            "fecha": "2023-10-01",
+            "precio_usd_por_tonelada": 7941.36
+          },
+          {
+            "fecha": "2023-11-01",
+            "precio_usd_por_tonelada": 8189.59
+          },
+          {
+            "fecha": "2023-12-01",
+            "precio_usd_por_tonelada": 8407.9
+          },
+          {
+            "fecha": "2024-01-01",
+            "precio_usd_por_tonelada": 8351.34
+          },
+          {
+            "fecha": "2024-02-01",
+            "precio_usd_por_tonelada": 8304.95
+          },
+          {
+            "fecha": "2024-03-01",
+            "precio_usd_por_tonelada": 8692.82
+          },
+          {
+            "fecha": "2024-04-01",
+            "precio_usd_por_tonelada": 9445.59
+          },
+          {
+            "fecha": "2024-05-01",
+            "precio_usd_por_tonelada": 10117.16
+          },
+          {
+            "fecha": "2024-06-01",
+            "precio_usd_por_tonelada": 9648.17
+          },
+          {
+            "fecha": "2024-07-01",
+            "precio_usd_por_tonelada": 9385.31
+          },
+          {
+            "fecha": "2024-08-01",
+            "precio_usd_por_tonelada": 8981.12
+          },
+          {
+            "fecha": "2024-09-01",
+            "precio_usd_por_tonelada": 9259.13
+          },
+          {
+            "fecha": "2024-10-01",
+            "precio_usd_por_tonelada": 9533.99
+          },
+          {
+            "fecha": "2024-11-01",
+            "precio_usd_por_tonelada": 9075.73
+          },
+          {
+            "fecha": "2024-12-01",
+            "precio_usd_por_tonelada": 8909.91
+          },
+          {
+            "fecha": "2025-01-01",
+            "precio_usd_por_tonelada": 8976.68
+          },
+          {
+            "fecha": "2025-02-01",
+            "precio_usd_por_tonelada": 9330.98
+          },
+          {
+            "fecha": "2025-03-01",
+            "precio_usd_por_tonelada": 9735.82
+          },
+          {
+            "fecha": "2025-04-01",
+            "precio_usd_por_tonelada": 9172.7
+          },
+          {
+            "fecha": "2025-05-01",
+            "precio_usd_por_tonelada": 9531.2
+          },
+          {
+            "fecha": "2025-06-01",
+            "precio_usd_por_tonelada": 9835.07
+          },
+          {
+            "fecha": "2025-07-01",
+            "precio_usd_por_tonelada": 9770.58
+          },
+          {
+            "fecha": "2025-08-01",
+            "precio_usd_por_tonelada": 9671.88
+          },
+          {
+            "fecha": "2025-09-01",
+            "precio_usd_por_tonelada": 9994.77
+          },
+          {
+            "fecha": "2025-10-01",
+            "precio_usd_por_tonelada": 10739.92
+          },
+          {
+            "fecha": "2025-11-01",
+            "precio_usd_por_tonelada": 10812.03
+          },
+          {
+            "fecha": "2025-12-01",
+            "precio_usd_por_tonelada": 11790.96
+          },
+          {
+            "fecha": "2026-01-01",
+            "precio_usd_por_tonelada": 12986.61
+          },
+          {
+            "fecha": "2026-02-01",
+            "precio_usd_por_tonelada": 12951.34
+          },
+          {
+            "fecha": "2026-03-01",
+            "precio_usd_por_tonelada": 12528.71
+          },
+          {
+            "fecha": "2026-04-01",
+            "precio_usd_por_tonelada": 12890.69
+          },
+          {
+            "fecha": "2026-05-01",
+            "precio_usd_por_tonelada": 13512.16
+          },
+          {
+            "fecha": "2026-06-01",
+            "precio_usd_por_tonelada": 13552.04
+          },
+          {
+            "fecha": "2026-07-01",
+            "precio_usd_por_tonelada": 13542.82
+          }
+        ]
+      }
+    },
+    "snapshots_fuentes_oficiales_colombia": {
+      "origen": "snapshot_html_sin_api",
+      "confiabilidad": "solo como sensor de cambios — no usar como fuente de cifras sin verificación humana",
+      "datos": {
+        "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
+        "ultima_corrida_utc": "2026-09-14T22:49:18.501218+00:00",
+        "fuentes": [
+          {
+            "id": "anm_ronda_cobre",
+            "institucion": "Agencia Nacional de Minería (ANM)",
+            "url": "https://www.anm.gov.co/ronda-minera-cobre",
+            "consultado_utc": "2026-09-14T22:49:16.260046+00:00",
+            "http_status": 200,
+            "longitud_texto_caracteres": 8186,
+            "hash_sha256": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
+            "cambio_detectado_desde_ultima_corrida": false,
+            "extracto_primeros_500_caracteres": "Ronda minera Cobre | Agencia Nacional de Minería ANM Skip to main content Ingreso intranet Formulario PQRS Línea de atención (601) 2201999 A- A+ Trámites y servicios Participación Entidades Trámites y servicios Participación Entidades Mapa del sitio Mapa del sitio Menú Mapa del sitio MIC_MN_Menu principal micrositios Inicio Sector minero colombiano Rondas mineras Cadenas productivas Minería en cifras Actualidad Buscador Ronda minera Cobre Inicio Inicio El 15 de diciembre de 2025, la Agencia Naci"
+          },
+          {
+            "id": "anm_mapa_sitio_mineria",
+            "institucion": "Agencia Nacional de Minería (ANM)",
+            "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
+            "consultado_utc": "2026-09-14T22:49:16.718404+00:00",
+            "http_status": 200,
+            "longitud_texto_caracteres": 2974,
+            "hash_sha256": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
+            "cambio_detectado_desde_ultima_corrida": false,
+            "extracto_primeros_500_caracteres": "Mapa de sitio de minería en Colombia | Agencia Nacional de Minería ANM Skip to main content Ingreso intranet Formulario PQRS Línea de atención (601) 2201999 A- A+ Trámites y servicios Participación Entidades Trámites y servicios Participación Entidades Mapa del sitio Mapa del sitio Menú Mapa del sitio MIC_MN_Menu principal micrositios Inicio Sector minero colombiano Rondas mineras Cadenas productivas Minería en cifras Actualidad Buscador Menú principal Minería en Colombia Potencial mineral Poten"
+          },
+          {
+            "id": "upme_home",
+            "institucion": "Unidad de Planeación Minero-Energética (UPME)",
+            "url": "https://www.upme.gov.co",
+            "consultado_utc": "2026-09-14T22:49:17.029412+00:00",
+            "http_status": 200,
+            "longitud_texto_caracteres": 17812,
+            "hash_sha256": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
+            "cambio_detectado_desde_ultima_corrida": false,
+            "extracto_primeros_500_caracteres": "Home UPME - UPME Argo Inicio Nosotros Nuestra entidad ¿Quiénes somos? Nuestra historia Funciones y deberes Información de contacto, sedes y horarios Planeación institucional Financiero y Contable Proyectos de Inversión CIO UPME Gestión de Información Estadística Talento humano Asignación salarial Estructura organizacional Directorio de Servidores Contratistas Manual de Funciones Trabaje con nosotros Sintraminerales Contratación Documentos asociados a la contratación Procesos de contratación Cont"
+          },
+          {
+            "id": "sgc_home",
+            "institucion": "Servicio Geológico Colombiano (SGC)",
+            "url": "https://www.sgc.gov.co",
+            "consultado_utc": "2026-09-14T22:49:17.344479+00:00",
+            "http_status": 200,
+            "longitud_texto_caracteres": 3,
+            "hash_sha256": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
+            "cambio_detectado_desde_ultima_corrida": false,
+            "extracto_primeros_500_caracteres": "SGC"
+          },
+          {
+            "id": "anla_home",
+            "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
+            "url": "https://www.anla.gov.co",
+            "consultado_utc": "2026-09-14T22:49:17.664560+00:00",
+            "http_status": 200,
+            "longitud_texto_caracteres": 11513,
+            "hash_sha256": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
+            "cambio_detectado_desde_ultima_corrida": false,
+            "extracto_primeros_500_caracteres": "ANLA Se abre en una nueva ventana. Accesibilidad Buscar Buscar Inicio Interprete de lengua de señas del título Inicio Volver al Inicio Enlaces directos a las secciones del inicio - Temás de Interés - Proyectos ANLA - Ingresa a - Noticias - Enlaces Directos - Redes Sociales Transparencia Interprete de lengua de señas del título Transparencia Transparencia y Acceso a la Información Pública En esta sección usted encontrará información de los siguientes temas: Información de Entidad Normativa Contra"
+          }
+        ],
+        "historial": {
+          "anm_ronda_cobre": {
+            "hash": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
+            "ultima_corrida_utc": "2026-09-14T22:49:16.260046+00:00"
+          },
+          "anm_mapa_sitio_mineria": {
+            "hash": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
+            "ultima_corrida_utc": "2026-09-14T22:49:16.718404+00:00"
+          },
+          "upme_home": {
+            "hash": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
+            "ultima_corrida_utc": "2026-09-14T22:49:17.029412+00:00"
+          },
+          "sgc_home": {
+            "hash": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
+            "ultima_corrida_utc": "2026-09-14T22:49:17.344479+00:00"
+          },
+          "anla_home": {
+            "hash": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
+            "ultima_corrida_utc": "2026-09-14T22:49:17.664560+00:00"
+          }
+        }
+      }
+    }
+  }
+}

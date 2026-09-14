@@ -1,0 +1,6 @@
+requests>=2.31
+pandas>=2.0
+beautifulsoup4>=4.12
+pdfplumber>=0.11
+lxml>=5.0
+jsonschema>=4.20

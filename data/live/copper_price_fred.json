@@ -1,0 +1,1688 @@
+{
+  "fuente": "FRED (Federal Reserve Bank of St. Louis) — serie PCOPPUSDM, origen FMI Primary Commodity Prices",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM",
+  "unidad": "USD por tonelada métrica",
+  "frecuencia": "mensual",
+  "extraido_utc": "2026-09-14T22:49:15.252421+00:00",
+  "num_observaciones": 415,
+  "rango_fechas": [
+    "1992-01-01",
+    "2026-07-01"
+  ],
+  "ultimo_dato": {
+    "fecha": "2026-07-01",
+    "precio_usd_por_tonelada": 13542.82
+  },
+  "estadisticas_ultimo_ano": {
+    "promedio": 11903.42,
+    "minimo": 9671.88,
+    "maximo": 13552.04
+  },
+  "estadisticas_5_anos": {
+    "promedio": 9608.58,
+    "minimo": 7544.81,
+    "maximo": 13552.04
+  },
+  "serie_completa": [
+    {
+      "fecha": "1992-01-01",
+      "precio_usd_por_tonelada": 2150.58
+    },
+    {
+      "fecha": "1992-02-01",
+      "precio_usd_por_tonelada": 2208.89
+    },
+    {
+      "fecha": "1992-03-01",
+      "precio_usd_por_tonelada": 2231.79
+    },
+    {
+      "fecha": "1992-04-01",
+      "precio_usd_por_tonelada": 2214.17
+    },
+    {
+      "fecha": "1992-05-01",
+      "precio_usd_por_tonelada": 2219.32
+    },
+    {
+      "fecha": "1992-06-01",
+      "precio_usd_por_tonelada": 2296.44
+    },
+    {
+      "fecha": "1992-07-01",
+      "precio_usd_por_tonelada": 2527.29
+    },
+    {
+      "fecha": "1992-08-01",
+      "precio_usd_por_tonelada": 2513.47
+    },
+    {
+      "fecha": "1992-09-01",
+      "precio_usd_por_tonelada": 2419.61
+    },
+    {
+      "fecha": "1992-10-01",
+      "precio_usd_por_tonelada": 2262.46
+    },
+    {
+      "fecha": "1992-11-01",
+      "precio_usd_por_tonelada": 2161.79
+    },
+    {
+      "fecha": "1992-12-01",
+      "precio_usd_por_tonelada": 2211.95
+    },
+    {
+      "fecha": "1993-01-01",
+      "precio_usd_por_tonelada": 2264.21
+    },
+    {
+      "fecha": "1993-02-01",
+      "precio_usd_por_tonelada": 2212.18
+    },
+    {
+      "fecha": "1993-03-01",
+      "precio_usd_por_tonelada": 2152.38
+    },
+    {
+      "fecha": "1993-04-01",
+      "precio_usd_por_tonelada": 1953.62
+    },
+    {
+      "fecha": "1993-05-01",
+      "precio_usd_por_tonelada": 1799.35
+    },
+    {
+      "fecha": "1993-06-01",
+      "precio_usd_por_tonelada": 1857.87
+    },
+    {
+      "fecha": "1993-07-01",
+      "precio_usd_por_tonelada": 1927.34
+    },
+    {
+      "fecha": "1993-08-01",
+      "precio_usd_por_tonelada": 1951.07
+    },
+    {
+      "fecha": "1993-09-01",
+      "precio_usd_por_tonelada": 1858.25
+    },
+    {
+      "fecha": "1993-10-01",
+      "precio_usd_por_tonelada": 1647.0
+    },
+    {
+      "fecha": "1993-11-01",
+      "precio_usd_por_tonelada": 1632.57
+    },
+    {
+      "fecha": "1993-12-01",
+      "precio_usd_por_tonelada": 1723.63
+    },
+    {
+      "fecha": "1994-01-01",
+      "precio_usd_por_tonelada": 1807.07
+    },
+    {
+      "fecha": "1994-02-01",
+      "precio_usd_por_tonelada": 1865.08
+    },
+    {
+      "fecha": "1994-03-01",
+      "precio_usd_por_tonelada": 1913.17
+    },
+    {
+      "fecha": "1994-04-01",
+      "precio_usd_por_tonelada": 1881.37
+    },
+    {
+      "fecha": "1994-05-01",
+      "precio_usd_por_tonelada": 2144.5
+    },
+    {
+      "fecha": "1994-06-01",
+      "precio_usd_por_tonelada": 2363.09
+    },
+    {
+      "fecha": "1994-07-01",
+      "precio_usd_por_tonelada": 2447.24
+    },
+    {
+      "fecha": "1994-08-01",
+      "precio_usd_por_tonelada": 2409.75
+    },
+    {
+      "fecha": "1994-09-01",
+      "precio_usd_por_tonelada": 2504.84
+    },
+    {
+      "fecha": "1994-10-01",
+      "precio_usd_por_tonelada": 2546.02
+    },
+    {
+      "fecha": "1994-11-01",
+      "precio_usd_por_tonelada": 2803.55
+    },
+    {
+      "fecha": "1994-12-01",
+      "precio_usd_por_tonelada": 2980.7
+    },
+    {
+      "fecha": "1995-01-01",
+      "precio_usd_por_tonelada": 3003.26
+    },
+    {
+      "fecha": "1995-02-01",
+      "precio_usd_por_tonelada": 2870.45
+    },
+    {
+      "fecha": "1995-03-01",
+      "precio_usd_por_tonelada": 2919.67
+    },
+    {
+      "fecha": "1995-04-01",
+      "precio_usd_por_tonelada": 2894.89
+    },
+    {
+      "fecha": "1995-05-01",
+      "precio_usd_por_tonelada": 2771.57
+    },
+    {
+      "fecha": "1995-06-01",
+      "precio_usd_por_tonelada": 2987.68
+    },
+    {
+      "fecha": "1995-07-01",
+      "precio_usd_por_tonelada": 3076.45
+    },
+    {
+      "fecha": "1995-08-01",
+      "precio_usd_por_tonelada": 3040.14
+    },
+    {
+      "fecha": "1995-09-01",
+      "precio_usd_por_tonelada": 2910.43
+    },
+    {
+      "fecha": "1995-10-01",
+      "precio_usd_por_tonelada": 2810.07
+    },
+    {
+      "fecha": "1995-11-01",
+      "precio_usd_por_tonelada": 2981.62
+    },
+    {
+      "fecha": "1995-12-01",
+      "precio_usd_por_tonelada": 2918.21
+    },
+    {
+      "fecha": "1996-01-01",
+      "precio_usd_por_tonelada": 2605.0
+    },
+    {
+      "fecha": "1996-02-01",
+      "precio_usd_por_tonelada": 2544.67
+    },
+    {
+      "fecha": "1996-03-01",
+      "precio_usd_por_tonelada": 2563.35
+    },
+    {
+      "fecha": "1996-04-01",
+      "precio_usd_por_tonelada": 2594.17
+    },
+    {
+      "fecha": "1996-05-01",
+      "precio_usd_por_tonelada": 2658.76
+    },
+    {
+      "fecha": "1996-06-01",
+      "precio_usd_por_tonelada": 2177.6
+    },
+    {
+      "fecha": "1996-07-01",
+      "precio_usd_por_tonelada": 1983.93
+    },
+    {
+      "fecha": "1996-08-01",
+      "precio_usd_por_tonelada": 2017.86
+    },
+    {
+      "fecha": "1996-09-01",
+      "precio_usd_por_tonelada": 1935.07
+    },
+    {
+      "fecha": "1996-10-01",
+      "precio_usd_por_tonelada": 1960.2
+    },
+    {
+      "fecha": "1996-11-01",
+      "precio_usd_por_tonelada": 2215.43
+    },
+    {
+      "fecha": "1996-12-01",
+      "precio_usd_por_tonelada": 2264.6
+    },
+    {
+      "fecha": "1997-01-01",
+      "precio_usd_por_tonelada": 2427.27
+    },
+    {
+      "fecha": "1997-02-01",
+      "precio_usd_por_tonelada": 2406.63
+    },
+    {
+      "fecha": "1997-03-01",
+      "precio_usd_por_tonelada": 2420.18
+    },
+    {
+      "fecha": "1997-04-01",
+      "precio_usd_por_tonelada": 2389.32
+    },
+    {
+      "fecha": "1997-05-01",
+      "precio_usd_por_tonelada": 2513.3
+    },
+    {
+      "fecha": "1997-06-01",
+      "precio_usd_por_tonelada": 2611.29
+    },
+    {
+      "fecha": "1997-07-01",
+      "precio_usd_por_tonelada": 2449.2
+    },
+    {
+      "fecha": "1997-08-01",
+      "precio_usd_por_tonelada": 2250.1
+    },
+    {
+      "fecha": "1997-09-01",
+      "precio_usd_por_tonelada": 2104.31
+    },
+    {
+      "fecha": "1997-10-01",
+      "precio_usd_por_tonelada": 2050.7
+    },
+    {
+      "fecha": "1997-11-01",
+      "precio_usd_por_tonelada": 1918.5
+    },
+    {
+      "fecha": "1997-12-01",
+      "precio_usd_por_tonelada": 1761.45
+    },
+    {
+      "fecha": "1998-01-01",
+      "precio_usd_por_tonelada": 1687.6
+    },
+    {
+      "fecha": "1998-02-01",
+      "precio_usd_por_tonelada": 1664.0
+    },
+    {
+      "fecha": "1998-03-01",
+      "precio_usd_por_tonelada": 1747.16
+    },
+    {
+      "fecha": "1998-04-01",
+      "precio_usd_por_tonelada": 1800.13
+    },
+    {
+      "fecha": "1998-05-01",
+      "precio_usd_por_tonelada": 1731.66
+    },
+    {
+      "fecha": "1998-06-01",
+      "precio_usd_por_tonelada": 1656.6
+    },
+    {
+      "fecha": "1998-07-01",
+      "precio_usd_por_tonelada": 1655.67
+    },
+    {
+      "fecha": "1998-08-01",
+      "precio_usd_por_tonelada": 1619.93
+    },
+    {
+      "fecha": "1998-09-01",
+      "precio_usd_por_tonelada": 1646.77
+    },
+    {
+      "fecha": "1998-10-01",
+      "precio_usd_por_tonelada": 1585.5
+    },
+    {
+      "fecha": "1998-11-01",
+      "precio_usd_por_tonelada": 1573.72
+    },
+    {
+      "fecha": "1998-12-01",
+      "precio_usd_por_tonelada": 1475.76
+    },
+    {
+      "fecha": "1999-01-01",
+      "precio_usd_por_tonelada": 1432.0
+    },
+    {
+      "fecha": "1999-02-01",
+      "precio_usd_por_tonelada": 1412.95
+    },
+    {
+      "fecha": "1999-03-01",
+      "precio_usd_por_tonelada": 1378.48
+    },
+    {
+      "fecha": "1999-04-01",
+      "precio_usd_por_tonelada": 1463.72
+    },
+    {
+      "fecha": "1999-05-01",
+      "precio_usd_por_tonelada": 1510.45
+    },
+    {
+      "fecha": "1999-06-01",
+      "precio_usd_por_tonelada": 1422.16
+    },
+    {
+      "fecha": "1999-07-01",
+      "precio_usd_por_tonelada": 1639.18
+    },
+    {
+      "fecha": "1999-08-01",
+      "precio_usd_por_tonelada": 1646.74
+    },
+    {
+      "fecha": "1999-09-01",
+      "precio_usd_por_tonelada": 1749.68
+    },
+    {
+      "fecha": "1999-10-01",
+      "precio_usd_por_tonelada": 1723.29
+    },
+    {
+      "fecha": "1999-11-01",
+      "precio_usd_por_tonelada": 1726.77
+    },
+    {
+      "fecha": "1999-12-01",
+      "precio_usd_por_tonelada": 1764.88
+    },
+    {
+      "fecha": "2000-01-01",
+      "precio_usd_por_tonelada": 1843.85
+    },
+    {
+      "fecha": "2000-02-01",
+      "precio_usd_por_tonelada": 1807.03
+    },
+    {
+      "fecha": "2000-03-01",
+      "precio_usd_por_tonelada": 1739.8
+    },
+    {
+      "fecha": "2000-04-01",
+      "precio_usd_por_tonelada": 1681.91
+    },
+    {
+      "fecha": "2000-05-01",
+      "precio_usd_por_tonelada": 1785.1
+    },
+    {
+      "fecha": "2000-06-01",
+      "precio_usd_por_tonelada": 1752.07
+    },
+    {
+      "fecha": "2000-07-01",
+      "precio_usd_por_tonelada": 1803.14
+    },
+    {
+      "fecha": "2000-08-01",
+      "precio_usd_por_tonelada": 1857.12
+    },
+    {
+      "fecha": "2000-09-01",
+      "precio_usd_por_tonelada": 1961.89
+    },
+    {
+      "fecha": "2000-10-01",
+      "precio_usd_por_tonelada": 1894.37
+    },
+    {
+      "fecha": "2000-11-01",
+      "precio_usd_por_tonelada": 1795.6
+    },
+    {
+      "fecha": "2000-12-01",
+      "precio_usd_por_tonelada": 1852.4
+    },
+    {
+      "fecha": "2001-01-01",
+      "precio_usd_por_tonelada": 1787.06
+    },
+    {
+      "fecha": "2001-02-01",
+      "precio_usd_por_tonelada": 1766.12
+    },
+    {
+      "fecha": "2001-03-01",
+      "precio_usd_por_tonelada": 1742.16
+    },
+    {
+      "fecha": "2001-04-01",
+      "precio_usd_por_tonelada": 1665.97
+    },
+    {
+      "fecha": "2001-05-01",
+      "precio_usd_por_tonelada": 1684.85
+    },
+    {
+      "fecha": "2001-06-01",
+      "precio_usd_por_tonelada": 1610.47
+    },
+    {
+      "fecha": "2001-07-01",
+      "precio_usd_por_tonelada": 1526.77
+    },
+    {
+      "fecha": "2001-08-01",
+      "precio_usd_por_tonelada": 1466.41
+    },
+    {
+      "fecha": "2001-09-01",
+      "precio_usd_por_tonelada": 1427.7
+    },
+    {
+      "fecha": "2001-10-01",
+      "precio_usd_por_tonelada": 1377.38
+    },
+    {
+      "fecha": "2001-11-01",
+      "precio_usd_por_tonelada": 1434.29
+    },
+    {
+      "fecha": "2001-12-01",
+      "precio_usd_por_tonelada": 1472.85
+    },
+    {
+      "fecha": "2002-01-01",
+      "precio_usd_por_tonelada": 1508.23
+    },
+    {
+      "fecha": "2002-02-01",
+      "precio_usd_por_tonelada": 1561.37
+    },
+    {
+      "fecha": "2002-03-01",
+      "precio_usd_por_tonelada": 1607.39
+    },
+    {
+      "fecha": "2002-04-01",
+      "precio_usd_por_tonelada": 1588.57
+    },
+    {
+      "fecha": "2002-05-01",
+      "precio_usd_por_tonelada": 1597.02
+    },
+    {
+      "fecha": "2002-06-01",
+      "precio_usd_por_tonelada": 1650.59
+    },
+    {
+      "fecha": "2002-07-01",
+      "precio_usd_por_tonelada": 1588.28
+    },
+    {
+      "fecha": "2002-08-01",
+      "precio_usd_por_tonelada": 1482.92
+    },
+    {
+      "fecha": "2002-09-01",
+      "precio_usd_por_tonelada": 1478.93
+    },
+    {
+      "fecha": "2002-10-01",
+      "precio_usd_por_tonelada": 1486.17
+    },
+    {
+      "fecha": "2002-11-01",
+      "precio_usd_por_tonelada": 1581.04
+    },
+    {
+      "fecha": "2002-12-01",
+      "precio_usd_por_tonelada": 1592.96
+    },
+    {
+      "fecha": "2003-01-01",
+      "precio_usd_por_tonelada": 1650.31
+    },
+    {
+      "fecha": "2003-02-01",
+      "precio_usd_por_tonelada": 1682.14
+    },
+    {
+      "fecha": "2003-03-01",
+      "precio_usd_por_tonelada": 1655.69
+    },
+    {
+      "fecha": "2003-04-01",
+      "precio_usd_por_tonelada": 1587.87
+    },
+    {
+      "fecha": "2003-05-01",
+      "precio_usd_por_tonelada": 1651.1
+    },
+    {
+      "fecha": "2003-06-01",
+      "precio_usd_por_tonelada": 1685.11
+    },
+    {
+      "fecha": "2003-07-01",
+      "precio_usd_por_tonelada": 1712.83
+    },
+    {
+      "fecha": "2003-08-01",
+      "precio_usd_por_tonelada": 1756.72
+    },
+    {
+      "fecha": "2003-09-01",
+      "precio_usd_por_tonelada": 1789.67
+    },
+    {
+      "fecha": "2003-10-01",
+      "precio_usd_por_tonelada": 1925.58
+    },
+    {
+      "fecha": "2003-11-01",
+      "precio_usd_por_tonelada": 2053.28
+    },
+    {
+      "fecha": "2003-12-01",
+      "precio_usd_por_tonelada": 2202.04
+    },
+    {
+      "fecha": "2004-01-01",
+      "precio_usd_por_tonelada": 2421.48
+    },
+    {
+      "fecha": "2004-02-01",
+      "precio_usd_por_tonelada": 2751.72
+    },
+    {
+      "fecha": "2004-03-01",
+      "precio_usd_por_tonelada": 3000.28
+    },
+    {
+      "fecha": "2004-04-01",
+      "precio_usd_por_tonelada": 2926.97
+    },
+    {
+      "fecha": "2004-05-01",
+      "precio_usd_por_tonelada": 2728.46
+    },
+    {
+      "fecha": "2004-06-01",
+      "precio_usd_por_tonelada": 2689.05
+    },
+    {
+      "fecha": "2004-07-01",
+      "precio_usd_por_tonelada": 2816.8
+    },
+    {
+      "fecha": "2004-08-01",
+      "precio_usd_por_tonelada": 2844.2
+    },
+    {
+      "fecha": "2004-09-01",
+      "precio_usd_por_tonelada": 2903.17
+    },
+    {
+      "fecha": "2004-10-01",
+      "precio_usd_por_tonelada": 3009.4
+    },
+    {
+      "fecha": "2004-11-01",
+      "precio_usd_por_tonelada": 3130.31
+    },
+    {
+      "fecha": "2004-12-01",
+      "precio_usd_por_tonelada": 3139.79
+    },
+    {
+      "fecha": "2005-01-01",
+      "precio_usd_por_tonelada": 3168.1
+    },
+    {
+      "fecha": "2005-02-01",
+      "precio_usd_por_tonelada": 3247.1
+    },
+    {
+      "fecha": "2005-03-01",
+      "precio_usd_por_tonelada": 3378.9
+    },
+    {
+      "fecha": "2005-04-01",
+      "precio_usd_por_tonelada": 3389.81
+    },
+    {
+      "fecha": "2005-05-01",
+      "precio_usd_por_tonelada": 3241.9
+    },
+    {
+      "fecha": "2005-06-01",
+      "precio_usd_por_tonelada": 3529.73
+    },
+    {
+      "fecha": "2005-07-01",
+      "precio_usd_por_tonelada": 3608.48
+    },
+    {
+      "fecha": "2005-08-01",
+      "precio_usd_por_tonelada": 3791.91
+    },
+    {
+      "fecha": "2005-09-01",
+      "precio_usd_por_tonelada": 3850.66
+    },
+    {
+      "fecha": "2005-10-01",
+      "precio_usd_por_tonelada": 4056.17
+    },
+    {
+      "fecha": "2005-11-01",
+      "precio_usd_por_tonelada": 4278.16
+    },
+    {
+      "fecha": "2005-12-01",
+      "precio_usd_por_tonelada": 4577.02
+    },
+    {
+      "fecha": "2006-01-01",
+      "precio_usd_por_tonelada": 4743.86
+    },
+    {
+      "fecha": "2006-02-01",
+      "precio_usd_por_tonelada": 4974.98
+    },
+    {
+      "fecha": "2006-03-01",
+      "precio_usd_por_tonelada": 5123.67
+    },
+    {
+      "fecha": "2006-04-01",
+      "precio_usd_por_tonelada": 6404.44
+    },
+    {
+      "fecha": "2006-05-01",
+      "precio_usd_por_tonelada": 8059.19
+    },
+    {
+      "fecha": "2006-06-01",
+      "precio_usd_por_tonelada": 7222.77
+    },
+    {
+      "fecha": "2006-07-01",
+      "precio_usd_por_tonelada": 7726.74
+    },
+    {
+      "fecha": "2006-08-01",
+      "precio_usd_por_tonelada": 7690.25
+    },
+    {
+      "fecha": "2006-09-01",
+      "precio_usd_por_tonelada": 7622.64
+    },
+    {
+      "fecha": "2006-10-01",
+      "precio_usd_por_tonelada": 7497.41
+    },
+    {
+      "fecha": "2006-11-01",
+      "precio_usd_por_tonelada": 7029.3
+    },
+    {
+      "fecha": "2006-12-01",
+      "precio_usd_por_tonelada": 6680.97
+    },
+    {
+      "fecha": "2007-01-01",
+      "precio_usd_por_tonelada": 5689.34
+    },
+    {
+      "fecha": "2007-02-01",
+      "precio_usd_por_tonelada": 5718.15
+    },
+    {
+      "fecha": "2007-03-01",
+      "precio_usd_por_tonelada": 6465.3
+    },
+    {
+      "fecha": "2007-04-01",
+      "precio_usd_por_tonelada": 7753.34
+    },
+    {
+      "fecha": "2007-05-01",
+      "precio_usd_por_tonelada": 7677.95
+    },
+    {
+      "fecha": "2007-06-01",
+      "precio_usd_por_tonelada": 7514.24
+    },
+    {
+      "fecha": "2007-07-01",
+      "precio_usd_por_tonelada": 7980.93
+    },
+    {
+      "fecha": "2007-08-01",
+      "precio_usd_por_tonelada": 7500.2
+    },
+    {
+      "fecha": "2007-09-01",
+      "precio_usd_por_tonelada": 7671.35
+    },
+    {
+      "fecha": "2007-10-01",
+      "precio_usd_por_tonelada": 8020.59
+    },
+    {
+      "fecha": "2007-11-01",
+      "precio_usd_por_tonelada": 6957.43
+    },
+    {
+      "fecha": "2007-12-01",
+      "precio_usd_por_tonelada": 6630.74
+    },
+    {
+      "fecha": "2008-01-01",
+      "precio_usd_por_tonelada": 7078.91
+    },
+    {
+      "fecha": "2008-02-01",
+      "precio_usd_por_tonelada": 7941.14
+    },
+    {
+      "fecha": "2008-03-01",
+      "precio_usd_por_tonelada": 8434.32
+    },
+    {
+      "fecha": "2008-04-01",
+      "precio_usd_por_tonelada": 8714.18
+    },
+    {
+      "fecha": "2008-05-01",
+      "precio_usd_por_tonelada": 8356.12
+    },
+    {
+      "fecha": "2008-06-01",
+      "precio_usd_por_tonelada": 8292.0
+    },
+    {
+      "fecha": "2008-07-01",
+      "precio_usd_por_tonelada": 8407.02
+    },
+    {
+      "fecha": "2008-08-01",
+      "precio_usd_por_tonelada": 7633.8
+    },
+    {
+      "fecha": "2008-09-01",
+      "precio_usd_por_tonelada": 6975.11
+    },
+    {
+      "fecha": "2008-10-01",
+      "precio_usd_por_tonelada": 4894.89
+    },
+    {
+      "fecha": "2008-11-01",
+      "precio_usd_por_tonelada": 3729.19
+    },
+    {
+      "fecha": "2008-12-01",
+      "precio_usd_por_tonelada": 3105.1
+    },
+    {
+      "fecha": "2009-01-01",
+      "precio_usd_por_tonelada": 3260.36
+    },
+    {
+      "fecha": "2009-02-01",
+      "precio_usd_por_tonelada": 3328.41
+    },
+    {
+      "fecha": "2009-03-01",
+      "precio_usd_por_tonelada": 3770.88
+    },
+    {
+      "fecha": "2009-04-01",
+      "precio_usd_por_tonelada": 4436.93
+    },
+    {
+      "fecha": "2009-05-01",
+      "precio_usd_por_tonelada": 4591.46
+    },
+    {
+      "fecha": "2009-06-01",
+      "precio_usd_por_tonelada": 5015.43
+    },
+    {
+      "fecha": "2009-07-01",
+      "precio_usd_por_tonelada": 5228.41
+    },
+    {
+      "fecha": "2009-08-01",
+      "precio_usd_por_tonelada": 6176.88
+    },
+    {
+      "fecha": "2009-09-01",
+      "precio_usd_por_tonelada": 6195.75
+    },
+    {
+      "fecha": "2009-10-01",
+      "precio_usd_por_tonelada": 6305.99
+    },
+    {
+      "fecha": "2009-11-01",
+      "precio_usd_por_tonelada": 6682.44
+    },
+    {
+      "fecha": "2009-12-01",
+      "precio_usd_por_tonelada": 6976.98
+    },
+    {
+      "fecha": "2010-01-01",
+      "precio_usd_por_tonelada": 7367.38
+    },
+    {
+      "fecha": "2010-02-01",
+      "precio_usd_por_tonelada": 6867.68
+    },
+    {
+      "fecha": "2010-03-01",
+      "precio_usd_por_tonelada": 7466.93
+    },
+    {
+      "fecha": "2010-04-01",
+      "precio_usd_por_tonelada": 7729.84
+    },
+    {
+      "fecha": "2010-05-01",
+      "precio_usd_por_tonelada": 6843.16
+    },
+    {
+      "fecha": "2010-06-01",
+      "precio_usd_por_tonelada": 6501.5
+    },
+    {
+      "fecha": "2010-07-01",
+      "precio_usd_por_tonelada": 6750.57
+    },
+    {
+      "fecha": "2010-08-01",
+      "precio_usd_por_tonelada": 7302.67
+    },
+    {
+      "fecha": "2010-09-01",
+      "precio_usd_por_tonelada": 7729.59
+    },
+    {
+      "fecha": "2010-10-01",
+      "precio_usd_por_tonelada": 8289.76
+    },
+    {
+      "fecha": "2010-11-01",
+      "precio_usd_por_tonelada": 8458.42
+    },
+    {
+      "fecha": "2010-12-01",
+      "precio_usd_por_tonelada": 9152.86
+    },
+    {
+      "fecha": "2011-01-01",
+      "precio_usd_por_tonelada": 9533.2
+    },
+    {
+      "fecha": "2011-02-01",
+      "precio_usd_por_tonelada": 9880.94
+    },
+    {
+      "fecha": "2011-03-01",
+      "precio_usd_por_tonelada": 9503.36
+    },
+    {
+      "fecha": "2011-04-01",
+      "precio_usd_por_tonelada": 9482.75
+    },
+    {
+      "fecha": "2011-05-01",
+      "precio_usd_por_tonelada": 8931.67
+    },
+    {
+      "fecha": "2011-06-01",
+      "precio_usd_por_tonelada": 9066.85
+    },
+    {
+      "fecha": "2011-07-01",
+      "precio_usd_por_tonelada": 9650.46
+    },
+    {
+      "fecha": "2011-08-01",
+      "precio_usd_por_tonelada": 8997.99
+    },
+    {
+      "fecha": "2011-09-01",
+      "precio_usd_por_tonelada": 8300.14
+    },
+    {
+      "fecha": "2011-10-01",
+      "precio_usd_por_tonelada": 7394.19
+    },
+    {
+      "fecha": "2011-11-01",
+      "precio_usd_por_tonelada": 7581.02
+    },
+    {
+      "fecha": "2011-12-01",
+      "precio_usd_por_tonelada": 7558.88
+    },
+    {
+      "fecha": "2012-01-01",
+      "precio_usd_por_tonelada": 8061.92
+    },
+    {
+      "fecha": "2012-02-01",
+      "precio_usd_por_tonelada": 8441.49
+    },
+    {
+      "fecha": "2012-03-01",
+      "precio_usd_por_tonelada": 8470.78
+    },
+    {
+      "fecha": "2012-04-01",
+      "precio_usd_por_tonelada": 8285.53
+    },
+    {
+      "fecha": "2012-05-01",
+      "precio_usd_por_tonelada": 7896.91
+    },
+    {
+      "fecha": "2012-06-01",
+      "precio_usd_por_tonelada": 7428.29
+    },
+    {
+      "fecha": "2012-07-01",
+      "precio_usd_por_tonelada": 7584.26
+    },
+    {
+      "fecha": "2012-08-01",
+      "precio_usd_por_tonelada": 7510.43
+    },
+    {
+      "fecha": "2012-09-01",
+      "precio_usd_por_tonelada": 8087.74
+    },
+    {
+      "fecha": "2012-10-01",
+      "precio_usd_por_tonelada": 8062.03
+    },
+    {
+      "fecha": "2012-11-01",
+      "precio_usd_por_tonelada": 7711.23
+    },
+    {
+      "fecha": "2012-12-01",
+      "precio_usd_por_tonelada": 7966.49
+    },
+    {
+      "fecha": "2013-01-01",
+      "precio_usd_por_tonelada": 8053.74
+    },
+    {
+      "fecha": "2013-02-01",
+      "precio_usd_por_tonelada": 8060.93
+    },
+    {
+      "fecha": "2013-03-01",
+      "precio_usd_por_tonelada": 7652.38
+    },
+    {
+      "fecha": "2013-04-01",
+      "precio_usd_por_tonelada": 7221.16
+    },
+    {
+      "fecha": "2013-05-01",
+      "precio_usd_por_tonelada": 7248.71
+    },
+    {
+      "fecha": "2013-06-01",
+      "precio_usd_por_tonelada": 7000.24
+    },
+    {
+      "fecha": "2013-07-01",
+      "precio_usd_por_tonelada": 6906.64
+    },
+    {
+      "fecha": "2013-08-01",
+      "precio_usd_por_tonelada": 7186.25
+    },
+    {
+      "fecha": "2013-09-01",
+      "precio_usd_por_tonelada": 7159.27
+    },
+    {
+      "fecha": "2013-10-01",
+      "precio_usd_por_tonelada": 7203.02
+    },
+    {
+      "fecha": "2013-11-01",
+      "precio_usd_por_tonelada": 7070.65
+    },
+    {
+      "fecha": "2013-12-01",
+      "precio_usd_por_tonelada": 7214.9
+    },
+    {
+      "fecha": "2014-01-01",
+      "precio_usd_por_tonelada": 7291.47
+    },
+    {
+      "fecha": "2014-02-01",
+      "precio_usd_por_tonelada": 7149.21
+    },
+    {
+      "fecha": "2014-03-01",
+      "precio_usd_por_tonelada": 6650.04
+    },
+    {
+      "fecha": "2014-04-01",
+      "precio_usd_por_tonelada": 6673.56
+    },
+    {
+      "fecha": "2014-05-01",
+      "precio_usd_por_tonelada": 6891.12
+    },
+    {
+      "fecha": "2014-06-01",
+      "precio_usd_por_tonelada": 6821.14
+    },
+    {
+      "fecha": "2014-07-01",
+      "precio_usd_por_tonelada": 7113.38
+    },
+    {
+      "fecha": "2014-08-01",
+      "precio_usd_por_tonelada": 7001.84
+    },
+    {
+      "fecha": "2014-09-01",
+      "precio_usd_por_tonelada": 6872.22
+    },
+    {
+      "fecha": "2014-10-01",
+      "precio_usd_por_tonelada": 6737.48
+    },
+    {
+      "fecha": "2014-11-01",
+      "precio_usd_por_tonelada": 6712.85
+    },
+    {
+      "fecha": "2014-12-01",
+      "precio_usd_por_tonelada": 6446.45
+    },
+    {
+      "fecha": "2015-01-01",
+      "precio_usd_por_tonelada": 5830.54
+    },
+    {
+      "fecha": "2015-02-01",
+      "precio_usd_por_tonelada": 5729.27
+    },
+    {
+      "fecha": "2015-03-01",
+      "precio_usd_por_tonelada": 5939.67
+    },
+    {
+      "fecha": "2015-04-01",
+      "precio_usd_por_tonelada": 6042.09
+    },
+    {
+      "fecha": "2015-05-01",
+      "precio_usd_por_tonelada": 6294.78
+    },
+    {
+      "fecha": "2015-06-01",
+      "precio_usd_por_tonelada": 5833.01
+    },
+    {
+      "fecha": "2015-07-01",
+      "precio_usd_por_tonelada": 5456.75
+    },
+    {
+      "fecha": "2015-08-01",
+      "precio_usd_por_tonelada": 5127.3
+    },
+    {
+      "fecha": "2015-09-01",
+      "precio_usd_por_tonelada": 5217.25
+    },
+    {
+      "fecha": "2015-10-01",
+      "precio_usd_por_tonelada": 5216.09
+    },
+    {
+      "fecha": "2015-11-01",
+      "precio_usd_por_tonelada": 4799.9
+    },
+    {
+      "fecha": "2015-12-01",
+      "precio_usd_por_tonelada": 4638.83
+    },
+    {
+      "fecha": "2016-01-01",
+      "precio_usd_por_tonelada": 4471.79
+    },
+    {
+      "fecha": "2016-02-01",
+      "precio_usd_por_tonelada": 4598.62
+    },
+    {
+      "fecha": "2016-03-01",
+      "precio_usd_por_tonelada": 4953.8
+    },
+    {
+      "fecha": "2016-04-01",
+      "precio_usd_por_tonelada": 4872.74
+    },
+    {
+      "fecha": "2016-05-01",
+      "precio_usd_por_tonelada": 4694.54
+    },
+    {
+      "fecha": "2016-06-01",
+      "precio_usd_por_tonelada": 4641.97
+    },
+    {
+      "fecha": "2016-07-01",
+      "precio_usd_por_tonelada": 4864.9
+    },
+    {
+      "fecha": "2016-08-01",
+      "precio_usd_por_tonelada": 4751.67
+    },
+    {
+      "fecha": "2016-09-01",
+      "precio_usd_por_tonelada": 4722.2
+    },
+    {
+      "fecha": "2016-10-01",
+      "precio_usd_por_tonelada": 4731.26
+    },
+    {
+      "fecha": "2016-11-01",
+      "precio_usd_por_tonelada": 5450.93
+    },
+    {
+      "fecha": "2016-12-01",
+      "precio_usd_por_tonelada": 5660.35
+    },
+    {
+      "fecha": "2017-01-01",
+      "precio_usd_por_tonelada": 5754.56
+    },
+    {
+      "fecha": "2017-02-01",
+      "precio_usd_por_tonelada": 5940.91
+    },
+    {
+      "fecha": "2017-03-01",
+      "precio_usd_por_tonelada": 5824.63
+    },
+    {
+      "fecha": "2017-04-01",
+      "precio_usd_por_tonelada": 5683.9
+    },
+    {
+      "fecha": "2017-05-01",
+      "precio_usd_por_tonelada": 5599.56
+    },
+    {
+      "fecha": "2017-06-01",
+      "precio_usd_por_tonelada": 5719.76
+    },
+    {
+      "fecha": "2017-07-01",
+      "precio_usd_por_tonelada": 5985.12
+    },
+    {
+      "fecha": "2017-08-01",
+      "precio_usd_por_tonelada": 6485.62
+    },
+    {
+      "fecha": "2017-09-01",
+      "precio_usd_por_tonelada": 6577.17
+    },
+    {
+      "fecha": "2017-10-01",
+      "precio_usd_por_tonelada": 6807.6
+    },
+    {
+      "fecha": "2017-11-01",
+      "precio_usd_por_tonelada": 6826.55
+    },
+    {
+      "fecha": "2017-12-01",
+      "precio_usd_por_tonelada": 6833.89
+    },
+    {
+      "fecha": "2018-01-01",
+      "precio_usd_por_tonelada": 7065.85
+    },
+    {
+      "fecha": "2018-02-01",
+      "precio_usd_por_tonelada": 7006.52
+    },
+    {
+      "fecha": "2018-03-01",
+      "precio_usd_por_tonelada": 6799.18
+    },
+    {
+      "fecha": "2018-04-01",
+      "precio_usd_por_tonelada": 6851.51
+    },
+    {
+      "fecha": "2018-05-01",
+      "precio_usd_por_tonelada": 6825.27
+    },
+    {
+      "fecha": "2018-06-01",
+      "precio_usd_por_tonelada": 6965.86
+    },
+    {
+      "fecha": "2018-07-01",
+      "precio_usd_por_tonelada": 6250.75
+    },
+    {
+      "fecha": "2018-08-01",
+      "precio_usd_por_tonelada": 6051.05
+    },
+    {
+      "fecha": "2018-09-01",
+      "precio_usd_por_tonelada": 6050.76
+    },
+    {
+      "fecha": "2018-10-01",
+      "precio_usd_por_tonelada": 6219.59
+    },
+    {
+      "fecha": "2018-11-01",
+      "precio_usd_por_tonelada": 6195.92
+    },
+    {
+      "fecha": "2018-12-01",
+      "precio_usd_por_tonelada": 6075.32
+    },
+    {
+      "fecha": "2019-01-01",
+      "precio_usd_por_tonelada": 5939.1
+    },
+    {
+      "fecha": "2019-02-01",
+      "precio_usd_por_tonelada": 6300.49
+    },
+    {
+      "fecha": "2019-03-01",
+      "precio_usd_por_tonelada": 6439.46
+    },
+    {
+      "fecha": "2019-04-01",
+      "precio_usd_por_tonelada": 6438.36
+    },
+    {
+      "fecha": "2019-05-01",
+      "precio_usd_por_tonelada": 6017.9
+    },
+    {
+      "fecha": "2019-06-01",
+      "precio_usd_por_tonelada": 5882.23
+    },
+    {
+      "fecha": "2019-07-01",
+      "precio_usd_por_tonelada": 5941.2
+    },
+    {
+      "fecha": "2019-08-01",
+      "precio_usd_por_tonelada": 5709.44
+    },
+    {
+      "fecha": "2019-09-01",
+      "precio_usd_por_tonelada": 5759.25
+    },
+    {
+      "fecha": "2019-10-01",
+      "precio_usd_por_tonelada": 5757.3
+    },
+    {
+      "fecha": "2019-11-01",
+      "precio_usd_por_tonelada": 5859.95
+    },
+    {
+      "fecha": "2019-12-01",
+      "precio_usd_por_tonelada": 6077.06
+    },
+    {
+      "fecha": "2020-01-01",
+      "precio_usd_por_tonelada": 6031.21
+    },
+    {
+      "fecha": "2020-02-01",
+      "precio_usd_por_tonelada": 5687.75
+    },
+    {
+      "fecha": "2020-03-01",
+      "precio_usd_por_tonelada": 5182.63
+    },
+    {
+      "fecha": "2020-04-01",
+      "precio_usd_por_tonelada": 5057.97
+    },
+    {
+      "fecha": "2020-05-01",
+      "precio_usd_por_tonelada": 5239.83
+    },
+    {
+      "fecha": "2020-06-01",
+      "precio_usd_por_tonelada": 5754.6
+    },
+    {
+      "fecha": "2020-07-01",
+      "precio_usd_por_tonelada": 6372.46
+    },
+    {
+      "fecha": "2020-08-01",
+      "precio_usd_por_tonelada": 6508.39
+    },
+    {
+      "fecha": "2020-09-01",
+      "precio_usd_por_tonelada": 6704.9
+    },
+    {
+      "fecha": "2020-10-01",
+      "precio_usd_por_tonelada": 6713.81
+    },
+    {
+      "fecha": "2020-11-01",
+      "precio_usd_por_tonelada": 7068.91
+    },
+    {
+      "fecha": "2020-12-01",
+      "precio_usd_por_tonelada": 7772.24
+    },
+    {
+      "fecha": "2021-01-01",
+      "precio_usd_por_tonelada": 7972.15
+    },
+    {
+      "fecha": "2021-02-01",
+      "precio_usd_por_tonelada": 8470.94
+    },
+    {
+      "fecha": "2021-03-01",
+      "precio_usd_por_tonelada": 8988.25
+    },
+    {
+      "fecha": "2021-04-01",
+      "precio_usd_por_tonelada": 9324.82
+    },
+    {
+      "fecha": "2021-05-01",
+      "precio_usd_por_tonelada": 10166.28
+    },
+    {
+      "fecha": "2021-06-01",
+      "precio_usd_por_tonelada": 9631.5
+    },
+    {
+      "fecha": "2021-07-01",
+      "precio_usd_por_tonelada": 9450.82
+    },
+    {
+      "fecha": "2021-08-01",
+      "precio_usd_por_tonelada": 9370.14
+    },
+    {
+      "fecha": "2021-09-01",
+      "precio_usd_por_tonelada": 9324.71
+    },
+    {
+      "fecha": "2021-10-01",
+      "precio_usd_por_tonelada": 9829.22
+    },
+    {
+      "fecha": "2021-11-01",
+      "precio_usd_por_tonelada": 9728.9
+    },
+    {
+      "fecha": "2021-12-01",
+      "precio_usd_por_tonelada": 9551.18
+    },
+    {
+      "fecha": "2022-01-01",
+      "precio_usd_por_tonelada": 9782.34
+    },
+    {
+      "fecha": "2022-02-01",
+      "precio_usd_por_tonelada": 9943.17
+    },
+    {
+      "fecha": "2022-03-01",
+      "precio_usd_por_tonelada": 10230.89
+    },
+    {
+      "fecha": "2022-04-01",
+      "precio_usd_por_tonelada": 10174.35
+    },
+    {
+      "fecha": "2022-05-01",
+      "precio_usd_por_tonelada": 9395.03
+    },
+    {
+      "fecha": "2022-06-01",
+      "precio_usd_por_tonelada": 9067.55
+    },
+    {
+      "fecha": "2022-07-01",
+      "precio_usd_por_tonelada": 7544.81
+    },
+    {
+      "fecha": "2022-08-01",
+      "precio_usd_por_tonelada": 7990.81
+    },
+    {
+      "fecha": "2022-09-01",
+      "precio_usd_por_tonelada": 7746.01
+    },
+    {
+      "fecha": "2022-10-01",
+      "precio_usd_por_tonelada": 7651.08
+    },
+    {
+      "fecha": "2022-11-01",
+      "precio_usd_por_tonelada": 8049.86
+    },
+    {
+      "fecha": "2022-12-01",
+      "precio_usd_por_tonelada": 8371.09
+    },
+    {
+      "fecha": "2023-01-01",
+      "precio_usd_por_tonelada": 9007.35
+    },
+    {
+      "fecha": "2023-02-01",
+      "precio_usd_por_tonelada": 8936.59
+    },
+    {
+      "fecha": "2023-03-01",
+      "precio_usd_por_tonelada": 8856.31
+    },
+    {
+      "fecha": "2023-04-01",
+      "precio_usd_por_tonelada": 8809.16
+    },
+    {
+      "fecha": "2023-05-01",
+      "precio_usd_por_tonelada": 8243.16
+    },
+    {
+      "fecha": "2023-06-01",
+      "precio_usd_por_tonelada": 8396.52
+    },
+    {
+      "fecha": "2023-07-01",
+      "precio_usd_por_tonelada": 8476.68
+    },
+    {
+      "fecha": "2023-08-01",
+      "precio_usd_por_tonelada": 8347.83
+    },
+    {
+      "fecha": "2023-09-01",
+      "precio_usd_por_tonelada": 8276.71
+    },
+    {
+      "fecha": "2023-10-01",
+      "precio_usd_por_tonelada": 7941.36
+    },
+    {
+      "fecha": "2023-11-01",
+      "precio_usd_por_tonelada": 8189.59
+    },
+    {
+      "fecha": "2023-12-01",
+      "precio_usd_por_tonelada": 8407.9
+    },
+    {
+      "fecha": "2024-01-01",
+      "precio_usd_por_tonelada": 8351.34
+    },
+    {
+      "fecha": "2024-02-01",
+      "precio_usd_por_tonelada": 8304.95
+    },
+    {
+      "fecha": "2024-03-01",
+      "precio_usd_por_tonelada": 8692.82
+    },
+    {
+      "fecha": "2024-04-01",
+      "precio_usd_por_tonelada": 9445.59
+    },
+    {
+      "fecha": "2024-05-01",
+      "precio_usd_por_tonelada": 10117.16
+    },
+    {
+      "fecha": "2024-06-01",
+      "precio_usd_por_tonelada": 9648.17
+    },
+    {
+      "fecha": "2024-07-01",
+      "precio_usd_por_tonelada": 9385.31
+    },
+    {
+      "fecha": "2024-08-01",
+      "precio_usd_por_tonelada": 8981.12
+    },
+    {
+      "fecha": "2024-09-01",
+      "precio_usd_por_tonelada": 9259.13
+    },
+    {
+      "fecha": "2024-10-01",
+      "precio_usd_por_tonelada": 9533.99
+    },
+    {
+      "fecha": "2024-11-01",
+      "precio_usd_por_tonelada": 9075.73
+    },
+    {
+      "fecha": "2024-12-01",
+      "precio_usd_por_tonelada": 8909.91
+    },
+    {
+      "fecha": "2025-01-01",
+      "precio_usd_por_tonelada": 8976.68
+    },
+    {
+      "fecha": "2025-02-01",
+      "precio_usd_por_tonelada": 9330.98
+    },
+    {
+      "fecha": "2025-03-01",
+      "precio_usd_por_tonelada": 9735.82
+    },
+    {
+      "fecha": "2025-04-01",
+      "precio_usd_por_tonelada": 9172.7
+    },
+    {
+      "fecha": "2025-05-01",
+      "precio_usd_por_tonelada": 9531.2
+    },
+    {
+      "fecha": "2025-06-01",
+      "precio_usd_por_tonelada": 9835.07
+    },
+    {
+      "fecha": "2025-07-01",
+      "precio_usd_por_tonelada": 9770.58
+    },
+    {
+      "fecha": "2025-08-01",
+      "precio_usd_por_tonelada": 9671.88
+    },
+    {
+      "fecha": "2025-09-01",
+      "precio_usd_por_tonelada": 9994.77
+    },
+    {
+      "fecha": "2025-10-01",
+      "precio_usd_por_tonelada": 10739.92
+    },
+    {
+      "fecha": "2025-11-01",
+      "precio_usd_por_tonelada": 10812.03
+    },
+    {
+      "fecha": "2025-12-01",
+      "precio_usd_por_tonelada": 11790.96
+    },
+    {
+      "fecha": "2026-01-01",
+      "precio_usd_por_tonelada": 12986.61
+    },
+    {
+      "fecha": "2026-02-01",
+      "precio_usd_por_tonelada": 12951.34
+    },
+    {
+      "fecha": "2026-03-01",
+      "precio_usd_por_tonelada": 12528.71
+    },
+    {
+      "fecha": "2026-04-01",
+      "precio_usd_por_tonelada": 12890.69
+    },
+    {
+      "fecha": "2026-05-01",
+      "precio_usd_por_tonelada": 13512.16
+    },
+    {
+      "fecha": "2026-06-01",
+      "precio_usd_por_tonelada": 13552.04
+    },
+    {
+      "fecha": "2026-07-01",
+      "precio_usd_por_tonelada": 13542.82
+    }
+  ]
+}

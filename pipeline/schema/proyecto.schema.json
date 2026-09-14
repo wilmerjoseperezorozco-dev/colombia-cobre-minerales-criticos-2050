@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Proyecto minero de cobre en Colombia",
+  "type": "object",
+  "required": ["nombre", "departamento", "operador", "estado"],
+  "properties": {
+    "nombre": { "type": "string" },
+    "departamento": { "type": "string" },
+    "operador": { "type": "string" },
+    "estado": { "type": "string" },
+    "capital_origen": { "type": "string" },
+    "licencia_ambiental": { "type": "string" },
+    "fuente_url": { "type": "string", "format": "uri" }
+  },
+  "additionalProperties": true
+}
