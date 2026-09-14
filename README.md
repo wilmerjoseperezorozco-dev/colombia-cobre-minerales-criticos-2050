@@ -39,6 +39,9 @@
 | [`docs/03-estudios-colombia-y-ejecucion.md`](docs/03-estudios-colombia-y-ejecucion.md) | Inventario de estudios científicos colombianos, qué hacer y cómo ejecutarlo |
 | [`docs/04-estrategia-barranquilla.md`](docs/04-estrategia-barranquilla.md) | Cómo capitalizar esta situación viviendo en Barranquilla — 3 niveles de esfuerzo/retorno |
 | [`docs/05-fuentes.md`](docs/05-fuentes.md) | Todas las fuentes consultadas, por categoría |
+| [`docs/06-soluciones-juridicas-e-institucionales.md`](docs/06-soluciones-juridicas-e-institucionales.md) | Fallos clave (SU-095/2018, Cajamarca/La Colosa), Decreto 0742/2026 de cierre de minas, pulso estatización vs. desregulación, y la vía más segura y barata |
+| [`docs/07-blindaje-social-barranquilla.md`](docs/07-blindaje-social-barranquilla.md) | Caso de alerta (polvo de concentrado en Antofagasta) y el paquete de blindaje social preventivo para el puerto de Barranquilla |
+| [`docs/08-oportunidades-inversion.md`](docs/08-oportunidades-inversion.md) | Mapa informativo de empresas públicas con exposición a cobre colombiano (no es asesoría financiera) |
 | [`Colombia_Cobre_Mineria_2026-2030.docx`](Colombia_Cobre_Mineria_2026-2030.docx) | Informe original en Word (portada, tablas, hoja de ruta 2026-2030) |
 
 ## 🗂️ Datos crudos (`/data`)
