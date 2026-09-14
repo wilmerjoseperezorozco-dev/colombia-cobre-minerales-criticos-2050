@@ -6,7 +6,7 @@
 
 ## Resumen
 
-Colombia posee un potencial geológico de cobre cuantificado por la Unidad de Planeación Minero-Energética (UPME) en 9,7 millones de toneladas (Mt) dentro de un cinturón metalogénico andino con recursos hipotéticos de 37,3 Mt, con un 97% del territorio nacional sin explorar. Simultáneamente, el mercado global de cobre presenta un régimen de precios alcista sostenido: la serie histórica oficial (FRED/FMI, 415 observaciones mensuales, 1992-2026) registra una tasa de crecimiento anual compuesta (CAGR) de 7,46% en los últimos 5 años, con un precio de cierre de la serie de USD 13.542,82 por tonelada (jul-2026). Este trabajo integra datos de mercado en vivo, literatura institucional colombiana e internacional, y un marco geopolítico recientemente formalizado (el marco Colombia–Estados Unidos de minerales críticos, sep-2026) para evaluar si Colombia está en posición de capturar esta ventana de precios altos, y qué variables institucionales —no geológicas— son las que determinan el resultado. Se encuentra que la variable dominante no es la disponibilidad de recurso ni el precio de mercado, sino la **estabilidad regulatoria y el origen de capital** de los proyectos ya en desarrollo, ejemplificado por el caso de El Alacrán (Córdoba), el proyecto más avanzado del país, hoy en manos de capital 100% chino.
+Colombia posee un potencial geológico de cobre cuantificado por la Unidad de Planeación Minero-Energética (UPME), citando al USGS, en 17,4 millones de toneladas (Mt) distribuidas en dos regiones geológicas propias (7,7 Mt y 9,7 Mt), con un 97% del territorio nacional sin explorar. Simultáneamente, el mercado global de cobre presenta un régimen de precios alcista sostenido: la serie histórica oficial (FRED/FMI, 415 observaciones mensuales, 1992-2026) registra una tasa de crecimiento anual compuesta (CAGR) de 7,46% en los últimos 5 años, con un precio de cierre de la serie de USD 13.542,82 por tonelada (jul-2026). Este trabajo integra datos de mercado en vivo, literatura institucional colombiana e internacional, y un marco geopolítico recientemente formalizado (el marco Colombia–Estados Unidos de minerales críticos, sep-2026) para evaluar si Colombia está en posición de capturar esta ventana de precios altos, y qué variables institucionales —no geológicas— son las que determinan el resultado. Se encuentra que la variable dominante no es la disponibilidad de recurso ni el precio de mercado, sino la **estabilidad regulatoria y el origen de capital** de los proyectos ya en desarrollo, ejemplificado por el caso de El Alacrán (Córdoba), el proyecto más avanzado del país, hoy en manos de capital 100% chino.
 
 ## 1. Introducción
 
@@ -64,7 +64,7 @@ Se incluyeron los proyectos de cobre identificados independientemente por al men
 
 ### 3.2 Estado de avance regulatorio vs. potencial geológico
 
-De los 7 proyectos/rondas identificados en `data/proyectos_cobre_colombia.json`, solo **1 de 7** (El Roble) está en producción comercial; **1 de 7** (El Alacrán) tiene licencia ambiental completa pero capital 100% extranjero de un único país (China); **2 de 7** (Quebradona, Soto Norte) están frenados por trámites o superposición normativa; el resto está en exploración temprana o en fase de ronda de licitación. Es decir, el **85,7%** de los proyectos identificados no ha resuelto su situación regulatoria, pese a que el recurso geológico (9,7 Mt según UPME) está documentado desde al menos 2020-2022.
+De los 7 proyectos/rondas identificados en `data/proyectos_cobre_colombia.json`, solo **1 de 7** (El Roble) está en producción comercial; **1 de 7** (El Alacrán) tiene licencia ambiental completa pero capital 100% extranjero de un único país (China); **2 de 7** (Quebradona, Soto Norte) están frenados por trámites o superposición normativa; el resto está en exploración temprana o en fase de ronda de licitación. Es decir, el **85,7%** de los proyectos identificados no ha resuelto su situación regulatoria, pese a que el recurso geológico (17,4 Mt según UPME/USGS, ver sección 3.5) está documentado desde al menos 2019-2021.
 
 ### 3.3 Designación de mineral crítico en EE. UU. y su cronología frente al marco con Colombia
 
@@ -83,11 +83,31 @@ La diferencia de ~5.500 kt entre la producción refinada reportada por USGS (29.
 
 ### 3.5 Escala del potencial colombiano frente a las reservas mundiales oficiales
 
-Usando la cifra de reservas mundiales del USGS (980.000 kt = 980 Mt) como denominador, el potencial de Colombia estimado por UPME (9,7 Mt) representa el **0,99% de las reservas mundiales conocidas**. Colombia no aparece como línea individual en la tabla de USGS — queda agregada dentro de "Other countries" (210.000 kt de reservas), bolsa sobre la cual el potencial colombiano representaría el 4,62%. Este dato contextualiza con precisión las afirmaciones de prensa sobre Colombia como "potencia mundial del cobre" (ver `docs/05-fuentes.md`): el potencial es real y documentado, pero su escala relativa frente a Chile (180.000 kt de reservas, 18,4% del total mundial) o Perú (85.000 kt, 8,7%) es modesta — Colombia compite por ser un proveedor relevante de nicho dentro de la diversificación de EE. UU., no por desplazar a los líderes regionales establecidos.
+**Nota de corrección metodológica (14-sep-2026):** la fuente primaria de UPME (Informe Cobre, Tabla 1, verificada directamente en la Fase 7 del pipeline, ver `docs/09-metodologia-pipeline.md`) establece que Colombia tiene **dos regiones geológicas propias** con recursos hipotéticos de 7,7 Mt y 9,7 Mt (total **17,4 Mt**); la cifra de 37,3 Mt citada en versiones previas de este análisis es, según el propio texto de UPME, el *promedio* de otras tres regiones **compartidas** con Ecuador, Perú y Panamá — no un total exclusivo de Colombia. Esta sección usa la cifra corregida (17,4 Mt).
+
+Usando la cifra de reservas mundiales del USGS (980.000 kt = 980 Mt) como denominador, el potencial de Colombia (17,4 Mt) representa el **1,78% de las reservas mundiales conocidas** (antes de la corrección se había calculado erróneamente 0,99%). Colombia no aparece como línea individual en la tabla de USGS — queda agregada dentro de "Other countries" (210.000 kt de reservas), bolsa sobre la cual el potencial colombiano representaría el **8,29%** (antes 4,62%). Este dato contextualiza con precisión las afirmaciones de prensa sobre Colombia como "potencia mundial del cobre" (ver `docs/05-fuentes.md`): el potencial es real y algo mayor de lo que se había calculado en la primera pasada de este análisis, pero su escala relativa frente a Chile (180.000 kt de reservas, 18,4% del total mundial) o Perú (85.000 kt, 8,7%) sigue siendo modesta — Colombia compite por ser un proveedor relevante de nicho dentro de la diversificación de EE. UU., no por desplazar a los líderes regionales establecidos.
+
+**Nota sobre integridad del proceso:** esta corrección es en sí misma un resultado relevante del método: la cifra errónea ("9,7 Mt de un total de 37,3 Mt") se había originado en una lectura apresurada de un resumen periodístico y se propagó sin cuestionarse por varias secciones de este mismo repositorio hasta que la Fase 7 del pipeline forzó la verificación directa contra el texto original de la fuente primaria. Se documenta el error y la corrección en vez de silenciarlos, consistente con el estándar de reproducibilidad declarado en la cabecera de este documento.
 
 ### 3.6 Concentración de origen de capital
 
 De los proyectos con operador identificado, la distribución de origen de capital es: Canadá (3 de 6: Atico Mining, Aris Mining, GoldMining/Cordoba histórico), China (1 de 6: JCHX vía El Alacrán), Sudáfrica (1 de 6: AngloGold Ashanti), y capital mixto Canadá/Medio Oriente (1 de 6: Soto Norte). **El proyecto con mayor avance regulatorio (licencia ambiental completa) es, específicamente, el de origen chino** — una correlación negativa entre "alineación geopolítica declarada por Colombia" (el marco con EE. UU.) y "avance regulatorio real observado", que soporta H2.
+
+### 3.7 Recursos, reservas e impacto económico por proyecto (fuente primaria UPME)
+
+La Fase 7 del pipeline extrajo y parseó automáticamente las tablas de recursos/reservas (estándares NI 43-101, JORC y SAMREC, según el proyecto) de los 5 proyectos cupríferos con estudios técnicos internacionales, directamente del informe técnico de UPME (ver `data/live/upme_recursos_reservas_proyectos.json`):
+
+| Proyecto | Recursos totales aprox. | Ley de Cu | Reservas (si existen) |
+|---|---|---|---|
+| El Roble | 1,17 Mt medidos+indicados | 4,30% Cu | — (mina en producción, sin reserva NI 43-101 reportada en la fuente) |
+| Quebradona | 599 Mt (indicados+inferidos) | 0,64% Cu promedio | 109,7 Mt probables @ 1,21% Cu |
+| Soto Norte | 68,8 Mt (indicados+inferidos) | 0,17-0,19% Cu (depósito de Au con Cu subproducto) | 28,5 Mt probables @ 0,14% Cu |
+| Mocoa Cu-Mo | 636 Mt inferidos | 0,33% Cu, 0,036% Mo | — |
+| San Matías (incl. El Alacrán) | 98,3 Mt (indicados+inferidos) | 0,51% Cu (indicados) | — |
+
+Dos hallazgos adicionales de esta tabla: (1) los depósitos colombianos con mayor ley de cobre (El Roble, Quebradona: 1,2%-4,3% Cu) están **por encima** del promedio de los grandes productores mundiales (mayoría ~0,8% Cu según UPME, citando USGS 2014) — una ventaja comparativa real; y (2) el propio análisis oficial de UPME concluye que ni siquiera Quebradona, el proyecto colombiano con más recursos, alcanza el 50% de las reservas de los principales proyectos en operación en el mundo — consistente con la sección 3.5.
+
+El informe de UPME (Tabla 28, transcrita a mano en `data/upme_informe_cobre_hallazgos_curados.json` por tener encabezados de columna rotados no auto-parseables) estima que la inversión combinada de **Quebradona + Soto Norte asciende a ~USD 8.500 millones**, con ~1.550 empleos directos anuales combinados, USD 61,5 millones/año en regalías y USD 284,1 millones/año en impuesto de renta — una cifra oficial que valida, en el orden de magnitud correcto, la estimación propia razonada de USD 5.000-8.000 millones que el informe original de este repositorio había calculado de forma independiente antes de acceder a esta fuente primaria.
 
 ## 4. Discusión
 
@@ -102,12 +122,16 @@ Respecto a H2, el hallazgo es más matizado de lo esperado: el mercado sí respo
 3. La clasificación de "origen de capital" en la sección 3.6 usa la nacionalidad de incorporación de la empresa operadora, que no siempre coincide con el origen último del capital accionario (ej. fondos de inversión con múltiples jurisdicciones).
 4. Los datos de UPME (potencial geológico) tienen como base metodológica el Mapa Metalogénico de 2020-2022; no se identificó una actualización posterior en las fuentes consultadas, lo cual es en sí mismo un hallazgo relevante (ver `docs/03-estudios-colombia-y-ejecucion.md`, sección de brechas).
 5. La Fase 3 del pipeline (snapshots de fuentes oficiales) es un sensor de cambios, no una fuente de datos cuantitativos — no se usó para ningún cálculo de esta sección.
+6. La cifra de inversión de El Roble en la Tabla 28 de UPME (USD 9.475 millones) es inconsistente con su escala real de producción (~40.000 t/año de concentrado) frente a Quebradona y Soto Norte — probablemente refleja inversión acumulada histórica y no capex comparable; se reporta tal cual aparece en la fuente y se marca como no verificada, sin corregirla unilateralmente (ver `data/upme_informe_cobre_hallazgos_curados.json`).
+7. Este documento fue corregido el 14-sep-2026 tras detectar un error propio de interpretación sobre el potencial geológico de Colombia (ver sección 3.5); no puede descartarse que existan otros errores de interpretación aún no detectados en secciones que dependen de fuentes secundarias de prensa en lugar de documentos primarios.
 
 ## 6. Conclusiones
 
 1. El recurso geológico no es la variable limitante del desarrollo cuprífero colombiano; la variable limitante es la estabilidad regulatoria.
 2. El régimen de precios (CAGR 7,46% a 5 años, precio actual cerca del máximo de la ventana) es favorable y está documentado con datos oficiales en vivo, no solo con proyecciones.
 3. Existe una desalineación observable entre la estrategia geopolítica declarada (diversificar lejos de China) y el resultado de mercado observado (el proyecto más avanzado es de capital chino) — esta desalineación es el hallazgo más citable de este análisis y debería ser el punto de partida de cualquier política pública que se diseñe a partir de este documento.
+4. El potencial geológico específico de Colombia es 17,4 Mt (no 9,7 Mt), y aun así representa apenas 1,78% de las reservas mundiales — el discurso de "potencia mundial del cobre" debe matizarse: Colombia tiene una ventaja real en ley de mineral (1,2%-4,3% Cu frente al ~0,8% mundial) pero una desventaja real en volumen frente a Chile y Perú.
+5. La cifra oficial de UPME de ~USD 8.500 millones de inversión combinada para solo 2 de los 5 proyectos analizados confirma que el orden de magnitud de inversión sectorial de la década (sección 9 del informe original) es razonable, y probablemente conservador si se cuentan los 3 proyectos restantes y la ronda de 14 áreas.
 
 ## Referencias
 

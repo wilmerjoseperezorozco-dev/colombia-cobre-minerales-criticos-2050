@@ -3,7 +3,7 @@
     "institucion": "UPME (Unidad de Planeación Minero-Energética)",
     "titulo": "Mapa Metalogénico de Colombia (versión 2022, base Sepúlveda Ospina et al., 2020)",
     "año": 2022,
-    "hallazgo_clave": "Identifica cinturones metalogénicos, ocurrencias, prospectos y depósitos de oro y cobre por región; recursos hipotéticos de 37,3 Mt de cobre en el cinturón andino, de los cuales Colombia tendría un potencial de 9,7 Mt.",
+    "hallazgo_clave": "Identifica cinturones metalogénicos, ocurrencias, prospectos y depósitos de oro y cobre por región. Nota de corrección (2026-09-14): el potencial específico de Colombia son 17,4 Mt (dos regiones propias de 7,7 y 9,7 Mt cada una, según USGS/UPME) — 37,3 Mt es el promedio de otras 3 regiones compartidas con Ecuador, Perú y Panamá, no un total atribuible solo a Colombia. Ver data/live/upme_recursos_reservas_proyectos.json.",
     "url": "https://www1.upme.gov.co/simco/PlaneacionSector/Documents/Fase_III_Plan_Nacional_de_Desarrollo_Minero_2024_2035.pdf"
   },
   {

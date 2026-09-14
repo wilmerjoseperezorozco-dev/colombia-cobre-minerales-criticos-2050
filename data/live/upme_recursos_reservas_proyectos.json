@@ -1,0 +1,210 @@
+{
+  "fuente": "UPME, Subdirección de Minería — Informe Cobre",
+  "url_efectivamente_usada": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Informe_Cobre_subdireccion_VD.pdf",
+  "url_citada_en_bibliografia_del_documento_pero_no_resuelve_dns": "http://www1.upme.gov.co/simco/Cifras-Sectoriales/Paginas/inter-cobre.aspx",
+  "extraido_utc": "2026-09-14T23:27:55.803295+00:00",
+  "num_paginas_documento": 95,
+  "potencial_nacional_cobre": {
+    "fuente_original": "USGS Assessment of Undiscovered Copper Resources of the World, 2015 (Scientific Investigations Report 2018-5160, v1.1, mayo 2019), citado por UPME",
+    "correccion_metodologica": "37.3 Mt es el PROMEDIO de recursos hipotéticos de 3 regiones geológicas COMPARTIDAS entre Colombia, Ecuador, Perú y/o Panamá (no exclusivas de Colombia). Colombia tiene además 2 regiones propias con 7.7 Mt y 9.7 Mt respectivamente. El potencial específico de Colombia (sumando sus 2 regiones propias) es de 17.4 Mt, no 9.7 Mt como se citó inicialmente en este mismo repositorio a partir de un resumen de prensa impreciso.",
+    "promedio_regiones_compartidas_mt": 37.3,
+    "potencial_colombia_propio_mt": [
+      7.7,
+      9.7
+    ],
+    "potencial_colombia_propio_total_mt": 17.4,
+    "area_recomendada_reserva_estrategica_hectareas": 2299150,
+    "detalle_por_region_usgs": [
+      {
+        "plate": 22,
+        "codigo_tracto_usgs": "005pCu1005",
+        "recursos_estimados_in_situ_mt": 39.0,
+        "probabilidad_recursos_in_situ_pct": 2,
+        "recursos_economicos_promedio_mt": 21.0,
+        "probabilidad_recursos_economicos_pct": 10
+      },
+      {
+        "plate": 23,
+        "codigo_tracto_usgs": "005pCu1003",
+        "recursos_estimados_in_situ_mt": 40.0,
+        "probabilidad_recursos_in_situ_pct": 2,
+        "recursos_economicos_promedio_mt": 20.0,
+        "probabilidad_recursos_economicos_pct": 15
+      },
+      {
+        "plate": 24,
+        "codigo_tracto_usgs": "005pCu1001",
+        "recursos_estimados_in_situ_mt": 33.0,
+        "probabilidad_recursos_in_situ_pct": 3,
+        "recursos_economicos_promedio_mt": 18.0,
+        "probabilidad_recursos_economicos_pct": 14
+      },
+      {
+        "plate": 25,
+        "codigo_tracto_usgs": "005pCu1004",
+        "recursos_estimados_in_situ_mt": 7.7,
+        "probabilidad_recursos_in_situ_pct": 6,
+        "recursos_economicos_promedio_mt": 4.4,
+        "probabilidad_recursos_economicos_pct": 58
+      },
+      {
+        "plate": 26,
+        "codigo_tracto_usgs": "005pCu1002",
+        "recursos_estimados_in_situ_mt": 9.7,
+        "probabilidad_recursos_in_situ_pct": 7,
+        "recursos_economicos_promedio_mt": 5.2,
+        "probabilidad_recursos_economicos_pct": 55
+      }
+    ]
+  },
+  "recursos_y_reservas_por_proyecto": {
+    "el_roble": {
+      "proyecto": "El Roble",
+      "operador": "Atico Mining Corporation",
+      "departamento": "Chocó",
+      "fecha_corte_estimacion": "2020-09-30",
+      "fuente": "Atico Mining, Technical Report 2021 (citado por UPME, Tabla 2)",
+      "recursos": {
+        "recursos_medidos": {
+          "mena_t": 1039200,
+          "cu_pct": 4.34,
+          "au_g_t": 2.29,
+          "cu_lb_contenido": 75745700,
+          "au_oz_contenido": 76500
+        },
+        "recursos_indicados": {
+          "mena_t": 135200,
+          "cu_pct": 4.06,
+          "au_g_t": 2.62,
+          "cu_lb_contenido": 8597700,
+          "au_oz_contenido": 11400
+        },
+        "medidos_mas_indicados": {
+          "mena_t": 1174400,
+          "cu_pct": 4.3,
+          "au_g_t": 2.33,
+          "cu_lb_contenido": 84343400,
+          "au_oz_contenido": 87900
+        },
+        "recursos_inferidos": {
+          "mena_t": 17100,
+          "cu_pct": 2.03,
+          "au_g_t": 3.41,
+          "cu_lb_contenido": 186400,
+          "au_oz_contenido": 1900
+        }
+      }
+    },
+    "quebradona": {
+      "proyecto": "Quebradona",
+      "operador": "AngloGold Ashanti",
+      "departamento": "Antioquia",
+      "fuente": "Minera de Cobre Quebradona, 2019 (citado por UPME, Tablas 3-4)",
+      "recursos": {
+        "indicados": {
+          "mena_mt": 256,
+          "cu_pct": 0.86,
+          "au_g_t": 0.45,
+          "ag_g_t": 5.4,
+          "mo_ppm": 145.44
+        },
+        "inferidos": {
+          "mena_mt": 343,
+          "cu_pct": 0.47,
+          "au_g_t": 0.22,
+          "ag_g_t": 3.46,
+          "mo_ppm": 130.14
+        }
+      },
+      "reservas": {
+        "categoria": "probables",
+        "mena_t": 109667606,
+        "cu_pct": 1.21,
+        "au_g_t": 0.66,
+        "cu_contenido_t": 1323609,
+        "au_contenido_oz": 2342215
+      }
+    },
+    "soto_norte": {
+      "proyecto": "Soto Norte",
+      "operador_al_momento_del_informe": "Sociedad Minera de Santander (MINESA / Mubadala Investment Company)",
+      "operador_2026_segun_prensa": "Aris Mining (adquirió participación mayoritaria posteriormente — ver docs/05-fuentes.md)",
+      "departamento": "Santander",
+      "fuente": "Sociedad Minera de Santander, 2016-2017 (citado por UPME, Tablas 5-6)",
+      "recursos": {
+        "indicados": {
+          "mena_kt": 36837,
+          "cu_pct": 0.19,
+          "au_g_t": 6.0,
+          "ag_g_t": 29.0,
+          "cu_contenido_klb": 151617,
+          "au_contenido_koz": 7052,
+          "ag_contenido_koz": 34339
+        },
+        "inferidos": {
+          "mena_kt": 31967,
+          "cu_pct": 0.17,
+          "au_g_t": 5.4,
+          "ag_g_t": 34.4,
+          "cu_contenido_klb": 119286,
+          "au_contenido_koz": 5531,
+          "ag_contenido_koz": 34403
+        }
+      },
+      "reservas": {
+        "categoria": "probables",
+        "mena_t": 28539000,
+        "cu_pct": 0.14,
+        "au_g_t": 5.4,
+        "ag_g_t": 28.2,
+        "cu_contenido_klb": 106055,
+        "au_contenido_koz": 5284,
+        "ag_contenido_koz": 25942
+      }
+    },
+    "mocoa": {
+      "proyecto": "Mocoa Cobre-Molibdeno",
+      "operador": "Libero Copper & Gold Corp.",
+      "departamento": "Putumayo",
+      "fuente": "Mocoa Copper-Molybdenum project technical report (citado por UPME, Tabla 7)",
+      "recursos": {
+        "categoria": "inferidos",
+        "mena_mt": 636,
+        "cueq_pct": 0.45,
+        "cu_pct": 0.33,
+        "mo_pct": 0.036,
+        "cueq_contenido_blbs": 6.31,
+        "cu_contenido_blbs": 4.6,
+        "mo_contenido_mlbs": 510.5
+      }
+    },
+    "san_matias": {
+      "proyecto": "San Matías (incluye el depósito El Alacrán, Montiel East, Montiel West y Costa Azul)",
+      "operador_en_el_informe_2019": "Córdoba Minerals Corp.",
+      "operador_2026_segun_prensa": "CMH Colombia / JCHX Mining Management (China) — Cordoba Minerals vendió su participación en may-2025, ver data/proyectos_cobre_colombia.json",
+      "departamento": "Córdoba (Puerto Libertador)",
+      "fuente": "NI 43-101 Technical Report and Resource Estimate, San Matías Copper-Gold-Silver Project, 2019 (citado por UPME, Tabla 8)",
+      "recursos": {
+        "indicados": {
+          "mena_mt": 94.9,
+          "cu_pct": 0.51,
+          "au_g_t": 0.29,
+          "ag_g_t": 2.7,
+          "cu_contenido_t": 488115,
+          "au_contenido_oz": 897881,
+          "ag_contenido_oz": 8245332
+        },
+        "inferidos": {
+          "mena_mt": 3.4,
+          "cu_pct": 0.3,
+          "au_g_t": 0.2,
+          "ag_g_t": 1.3,
+          "cu_contenido_t": 10350,
+          "au_contenido_oz": 22439,
+          "ag_contenido_oz": 142769
+        }
+      },
+      "nota": "El Alacrán es uno de los 4 depósitos del proyecto San Matías, no un proyecto independiente — aclara la aparente duplicidad de nombres entre fuentes de prensa (que usan 'El Alacrán') y UPME (que usa 'San Matías')."
+    }
+  }
+}

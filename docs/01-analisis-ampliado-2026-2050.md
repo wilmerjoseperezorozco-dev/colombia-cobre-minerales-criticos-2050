@@ -4,11 +4,12 @@
 
 ## 1. Lo que cambió con la investigación ampliada
 
-Tres hallazgos nuevos, no incluidos en la primera versión del informe, cambian la lectura estratégica:
+Cuatro hallazgos nuevos, no incluidos en la primera versión del informe, cambian la lectura estratégica:
 
 1. **El proyecto de cobre más avanzado de Colombia es de capital chino.** El Alacrán (Córdoba), el único proyecto de cobre a gran escala con licencia ambiental completa en el país, es operado por CMH Colombia, controlada por la china JCHX Mining Management Co., que en mayo de 2025 compró el 50% restante a la canadiense Cordoba Minerals por USD 128 millones. Esto es una tensión directa con el objetivo explícito del marco EE. UU.–Colombia firmado en Barranquilla: reducir la dependencia de China en minerales críticos.
 2. **El gobierno ya amplió el objetivo más allá del cobre.** El 4 de septiembre de 2026 Colombia anunció una apuesta explícita también por níquel y tungsteno, con presupuesto de exploración actual de USD 90 M/año y potencial de USD 500 M/año con respaldo estatal.
-3. **UPME cuantificó el potencial real:** el cinturón metalogénico andino tiene recursos hipotéticos de 37,3 Mt de cobre, de los cuales Colombia tendría un potencial de 9,7 Mt — y **97% del territorio nacional sigue sin explorar**.
+3. **UPME/USGS cuantificó el potencial real:** Colombia tiene dos regiones geológicas propias con recursos hipotéticos de cobre de 7,7 Mt y 9,7 Mt (total **17,4 Mt**) — 37,3 Mt es el promedio de otras tres regiones *compartidas* con Ecuador, Perú y Panamá, no un total exclusivo de Colombia (corrección verificada contra la fuente primaria el 14-sep-2026, ver `docs/09-metodologia-pipeline.md`) — y **97% del territorio nacional sigue sin explorar**.
+4. **UPME ya recomendó, desde 2023, rehabilitar la Red Férrea del Pacífico** (conexión centro del país–puerto de Buenaventura) como prioridad de infraestructura para el transporte de concentrado de cobre, y sugirió explícitamente buscar cooperación técnica con Chile para la reglamentación de relaves — recomendaciones oficiales que ya existían antes del marco con EE. UU. y que este documento no había recogido.
 
 ## 2. Horizonte a 2050: qué dicen las fuentes (y dónde discrepan)
 
@@ -25,7 +26,7 @@ Tres hallazgos nuevos, no incluidos en la primera versión del informe, cambian 
 
 1. Marco bilateral EE. UU.–Colombia con financiamiento comprometido y plazo definido (vence marzo de 2027).
 2. Déficit estructural global garantiza demanda y precios sostenidos — hasta 30% de brecha de oferta en 2035 según la IEA.
-3. Potencial geológico real y cuantificado (9,7 Mt de un cinturón de 37,3 Mt) con 97% del territorio sin explorar.
+3. Potencial geológico real y cuantificado (17,4 Mt en dos regiones propias de Colombia, según USGS/UPME) con 97% del territorio sin explorar.
 4. El Alacrán probó que obtener la primera licencia ambiental de cobre a gran escala del país es posible (aunque tomó 4+ años).
 5. Infraestructura portuaria del Caribe en crecimiento (Barranquilla: 6,7 Mt en el primer semestre de 2026; zonas francas del Atlántico pasaron de 11% a 17% de las exportaciones desde la prepandemia).
 6. Ecosistema de centros de datos e IA en expansión en Colombia (mercado de USD 450 M en 2025 a USD 1.440 M proyectados en 2031).

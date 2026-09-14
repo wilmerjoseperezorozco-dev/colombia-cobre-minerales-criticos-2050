@@ -1,0 +1,84 @@
+{
+  "origen": "curado_investigacion_humana",
+  "nota": "Transcrito a mano desde el PDF fuente porque las tablas correspondientes tienen encabezados de columna rotados 90° que pdfplumber extrae con el texto invertido carácter por carácter (ej. 'nóiccudorP' en vez de 'Producción') — un auto-parseo por regex sería frágil y podría fallar en silencio. Ver pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py para el detalle de esta decisión.",
+  "fuente": "UPME, Subdirección de Minería — Informe Cobre",
+  "url": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Informe_Cobre_subdireccion_VD.pdf",
+  "tabla_28_comparativo_impactos_economicos": {
+    "pagina": 87,
+    "nota_supuestos": "Costo C1 de producción de cobre: Quebradona y Soto Norte USD 2.832/t, El Roble USD 3.700/t. Costo producción oro USD 930/oz, plata USD 16/oz. Tasa de cambio: COP 3.400/USD. Renta estimada aplicando 33% a la diferencia entre ingresos y costos. Precios estimados a partir de proyecciones del Banco Mundial.",
+    "proyectos": {
+      "quebradona": {
+        "inversion_millones_usd": 1364,
+        "empleo_promedio_ponderado_anual": 768,
+        "produccion_anual": {"cobre_ton": 75020, "oro_oz_troy": 131561, "plata_oz_troy": 1405309},
+        "ingresos_estimados_usd": {"cobre": 667678000, "oro": 197341261, "plata": 28106180},
+        "regalias_estimadas_anuales_usd": {"cobre": 26707120, "oro": 6314920, "plata": 899398},
+        "renta_estimada_anual_usd": {"cobre": 150223049, "oro": 24746594, "plata": 1855008}
+      },
+      "soto_norte": {
+        "inversion_millones_usd": 7025,
+        "empleo_promedio_ponderado_anual": 780,
+        "produccion_anual": {"cobre_ton": 4680, "oro_oz_troy": 499780, "plata_oz_troy": 2950000},
+        "ingresos_estimados_usd": {"cobre": 41652000, "oro": 749669250, "plata": 59000000},
+        "regalias_estimadas_anuales_usd": {"cobre": 1666080, "oro": 23989416, "plata": 1888000},
+        "renta_estimada_anual_usd": {"cobre": 9371419, "oro": 94008524, "plata": 3894000}
+      },
+      "el_roble": {
+        "inversion_millones_usd": 9475,
+        "empleo_promedio_ponderado_anual": 350,
+        "produccion_anual": {"cobre_ton": 26843, "oro_oz_troy": 32611, "plata_oz_troy": null},
+        "ingresos_estimados_usd": {"cobre": 238902700, "oro": 290237900, "plata": null},
+        "regalias_estimadas_anuales_usd": {"cobre": 9556108, "oro": 9287613, "plata": null},
+        "renta_estimada_anual_usd": {"cobre": 46062588, "oro": 85770191, "plata": null},
+        "advertencia": "La cifra de inversión de USD 9.475 millones para El Roble —una mina pequeña ya en producción— es sorprendentemente alta frente a Quebradona y Soto Norte (proyectos de mucha mayor escala aún sin construir). Puede tratarse de una inversión acumulada histórica (décadas de operación) más que de un capex comparable; se transcribe tal cual aparece en la fuente, marcada aquí como una inconsistencia a verificar, no corregida unilateralmente."
+      }
+    }
+  },
+  "tabla_29_empleo_comparativo": {
+    "pagina": 87,
+    "total_empleos_pais_2019": 23068298,
+    "total_empleos_mineria": 163785,
+    "quebradona": 768,
+    "soto_norte": 780,
+    "el_roble": 350
+  },
+  "aspectos_favorables": {
+    "paginas": "88-90",
+    "puntos": [
+      "Ubicación geográfica privilegiada: amplias zonas costeras sobre los océanos Atlántico y Pacífico que facilitan la exportación de cobre concentrado o refinado.",
+      "Reconocimiento internacional del potencial en depósitos polimetálicos con contenido de cobre, por la presencia del cinturón metalogénico andino.",
+      "Los tenores (leyes) de cobre en los proyectos colombianos con estudios avanzados (El Roble, Quebradona) están entre 1,2% y 3,6% — superiores a los principales proyectos en operación en el mundo, que muestran tenores por debajo de 1% (la mayoría alrededor de 0,8%).",
+      "Colombia es vista como territorio prácticamente inexplorado frente a Chile y Perú, lo que atrae interés inversionista precisamente por ese potencial no descubierto.",
+      "Los estudios de factibilidad muestran beneficios importantes en infraestructura, vías, redes eléctricas y telecomunicaciones para las zonas de influencia directa."
+    ]
+  },
+  "aspectos_desfavorables": {
+    "paginas": "89-90",
+    "puntos": [
+      "Colombia no ha identificado hasta la fecha zonas de baja sulfuración u óxidos de cobre en cantidades aprovechables — estos depósitos permiten procesos industriales más sencillos (lixiviación). Los depósitos colombianos son de alta sulfuración, lo que exige procesos más complejos (flotación, fusión, conversión, refinación electrolítica) para obtener cobre refinado.",
+      "Los recursos y reservas estimados en Colombia están muy por debajo de los principales proyectos en operación en el mundo. El proyecto con mayores recursos y reservas del país (Quebradona) no alcanzaría a representar el 50% de los recursos y reservas de los principales proyectos mundiales.",
+      "Quebradona, diseñada para extraer 17.000 t/día, sería de producción media en el contexto mundial de minería subterránea de polimetálicos — muy inferior a los 140.000 t/día que producen individualmente El Teniente y Chuquicamata en Chile.",
+      "Los dos únicos proyectos de gran minería que han llegado a estudios de factibilidad técnica y ambiental completos (Quebradona y Soto Norte) tomaron alrededor de 15 años de investigación y trámites.",
+      "Barreras identificadas por la propia institucionalidad minera: seguridad jurídica, coordinación interinstitucional, relacionamiento Estado-inversionista-comunidades, infraestructura, y agilidad en trámites mineros y ambientales."
+    ]
+  },
+  "conclusiones_oficiales_upme": {
+    "pagina": "91-92",
+    "puntos": [
+      "Suramérica es la región con mayor cantidad de reservas y producción de cobre del mundo; Chile es el primer productor mundial y Perú el segundo.",
+      "El proyecto con mayores recursos y reservas de cobre en Colombia es Quebradona, que en contexto internacional no alcanzaría el 50% de las reservas de los proyectos con mayor producción mundial.",
+      "Si Quebradona entra en operación, la producción de concentrado de cobre del país se multiplicaría casi por 6 (hoy solo El Roble produce concentrado, ~40.000 t/año).",
+      "La inversión estimada durante la vida de los dos proyectos formulados (Quebradona + Soto Norte) es de aproximadamente USD 8.500 millones, con ~1.550 empleos directos promedio anuales combinados, USD 61,5 millones/año en regalías y USD 284,1 millones/año en impuesto de renta.",
+      "Quebradona aplicaría técnicas extractivas similares a Chuquicamata y El Teniente (Chile), lo que implicaría para Colombia un salto tecnológico representativo en minería subterránea de polimetálicos."
+    ]
+  },
+  "recomendaciones_oficiales_upme": {
+    "pagina": "92-93",
+    "puntos": [
+      "Aumentar la exploración: establecer procedimientos claros, mejorar la seguridad jurídica, agilizar trámites y permisos, mayor coordinación interinstitucional, y sensibilizar a las comunidades sobre la actividad exploratoria.",
+      "Mejorar infraestructura, en especial la Red Férrea del Pacífico (conexión del centro del país con el puerto de Buenaventura) — vía prioritaria para el transporte de concentrado de cobre, mediante alianzas público-privadas y obras por impuestos.",
+      "Capacitar el recurso humano en exploración de polimetálicos, minería subterránea de bloques, procesos de beneficio, y manejo de estériles y colas — facilitando la participación de Chile en la formación por su experiencia de más de 100 años en la industria del cobre.",
+      "Generar reglamentación específica para la gestión de relaves (colas), buscando alianzas y convenios con el gobierno chileno para asesoría en operación, seguridad, cierre y abandono de depósitos de colas."
+    ]
+  }
+}

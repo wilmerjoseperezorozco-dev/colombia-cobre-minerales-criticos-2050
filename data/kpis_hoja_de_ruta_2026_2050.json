@@ -1,6 +1,6 @@
 {
   "actualizado": "2026-09-14",
-  "advertencia": "Las metas 2028/2030 provienen del informe original (estimaciones razonadas propias, no oficiales). Las metas 2035/2040/2050 son proyecciones de escenario, aún más inciertas, construidas por extrapolación de la tendencia de demanda global y del potencial geológico de UPME (9.7 Mt). Deben tratarse como hipótesis de planificación, no como pronóstico.",
+  "advertencia": "Las metas 2028/2030 provienen del informe original (estimaciones razonadas propias, no oficiales). Las metas 2035/2040/2050 son proyecciones de escenario, aún más inciertas, construidas por extrapolación de la tendencia de demanda global y del potencial geológico específico de Colombia (17.4 Mt, corregido el 2026-09-14 tras verificar la fuente primaria UPME/USGS — ver data/potencial_colombia_y_retos.json). Deben tratarse como hipótesis de planificación, no como pronóstico.",
   "kpis": [
     {
       "indicador": "Producción nacional de cobre (t/año)",
@@ -8,7 +8,7 @@
       "2028": "35.000 - 50.000",
       "2030": "90.000 - 120.000",
       "2035": "180.000 - 250.000 (si El Alacrán y 2-3 proyectos adicionales alcanzan régimen)",
-      "2050": "El 100% del potencial identificado (9,7 Mt) implicaría ~25 años de vida útil agregada a un ritmo de ~380.000 t/año sostenido"
+      "2050": "El 100% del potencial identificado (17,4 Mt) implicaría ~46 años de vida útil agregada a un ritmo de ~380.000 t/año sostenido"
     },
     {
       "indicador": "Proyectos en producción comercial",

@@ -12,6 +12,7 @@
 | 2 — Precio en vivo (FRED) | [`pipeline/phase2_live_fetch/fetch_copper_price_fred.py`](pipeline/phase2_live_fetch/fetch_copper_price_fred.py) | ✅ OK | 415 observaciones (1992→2026); último dato **USD 13.542,82/t** (jul-2026) |
 | 3 — Snapshot fuentes oficiales | [`pipeline/phase3_scrape_oficiales/fetch_fuentes_colombianas.py`](pipeline/phase3_scrape_oficiales/fetch_fuentes_colombianas.py) | ✅ OK | ANM, UPME, SGC, ANLA — 5/5 fuentes con HTTP 200 |
 | 5 — USGS Mineral Commodity Summaries | [`pipeline/phase5_usgs/fetch_usgs_copper_mcs.py`](pipeline/phase5_usgs/fetch_usgs_copper_mcs.py) | ✅ OK | 18/18 países parseados · reservas mundiales 980.000 kt · **el cobre es mineral crítico de EE. UU. desde el 7-nov-2025** (90 FR 50494) |
+| 7 — UPME Informe Cobre | [`pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py`](pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py) | ✅ OK | 5/5 filas de potencial nacional + recursos/reservas de los 5 proyectos parseados · **corrigió el potencial de Colombia de 9,7 a 17,4 Mt** |
 | 4 — Consolidación | [`pipeline/phase4_consolidacion/build_dataset_maestro.py`](pipeline/phase4_consolidacion/build_dataset_maestro.py) | ✅ OK | `data/consolidado/dataset_maestro.json` — CAGR cobre 5a: **7,46% anual** |
 
 **Ejecutarlo tú mismo:** `pip install -r pipeline/requirements.txt && python pipeline/run_pipeline.py` — corre en ~8 segundos. Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
@@ -26,12 +27,14 @@
 | 🟢 El cobre es mineral crítico de EE. UU. desde el 7-nov-2025 | Federal Register 90 FR 50494 — explica con fecha exacta el porqué del marco firmado 10 meses después | [`data/live/usgs_copper_mcs.json`](data/live/usgs_copper_mcs.json) |
 | 🟡 Proyecto de cobre más avanzado del país (El Alacrán) | Licencia ambiental completa, pero **100% capital chino** desde may-2025 | [`data/proyectos_cobre_colombia.json`](data/proyectos_cobre_colombia.json) |
 | 🔴 Quebradona (AngloGold Ashanti, USD 1.400 M) | Frenado por Resolución 855/2025 | [`data/proyectos_cobre_colombia.json`](data/proyectos_cobre_colombia.json) |
-| 🟢 Potencial geológico | 9,7 Mt de Cu en un cinturón andino de 37,3 Mt · **97% del territorio sin explorar** | [`data/potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) |
+| 🟢 Potencial geológico | **17,4 Mt de Cu** en 2 regiones propias (corregido 14-sep-2026, ver nota) · **97% del territorio sin explorar** | [`data/potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) |
 | 🔴 Déficit de gobernanza minera | -88% IED minera, -18% PIB minero, 800+ bloqueos, minería ilegal en 29/32 departamentos | [`data/potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) |
 | 🟢 Mercado global | Déficit estructural de cobre; hasta 30% de brecha de oferta en 2035 (IEA) | [`data/metricas_demanda_global_cobre.json`](data/metricas_demanda_global_cobre.json) |
 | 🟡 Puerto de Barranquilla | Récord mensual: 1,32 Mt en jul-2026; zonas francas del Atlántico +178% desde prepandemia | [`docs/04-estrategia-barranquilla.md`](docs/04-estrategia-barranquilla.md) |
 
 **El hallazgo que más importa de esta investigación:** el único proyecto de cobre a gran escala de Colombia con licencia ambiental completa es, hoy, propiedad 100% de un consorcio chino — exactamente lo contrario del objetivo declarado por el marco firmado con Estados Unidos en Barranquilla apenas unos días antes de esta actualización. Ver detalle en [`docs/01-analisis-ampliado-2026-2050.md`](docs/01-analisis-ampliado-2026-2050.md#1-lo-que-cambió-con-la-investigación-ampliada).
+
+**Corrección de integridad del propio análisis (14-sep-2026):** la Fase 7 del pipeline verificó contra la fuente primaria de UPME una cifra que este repositorio había repetido en varios documentos ("Colombia tiene 9,7 Mt de cobre dentro de un cinturón de 37,3 Mt") y encontró que era una interpretación incorrecta. El potencial real de Colombia es **17,4 Mt** (dos regiones geológicas propias); 37,3 Mt es el promedio de otras tres regiones *compartidas* con Ecuador, Perú y Panamá. El error y su corrección quedan documentados, no ocultados — ver [`docs/10-articulo-analisis-cientifico.md`](docs/10-articulo-analisis-cientifico.md#35-escala-del-potencial-colombiano-frente-a-las-reservas-mundiales-oficiales).
 
 ---
 
@@ -67,8 +70,9 @@ pipeline/
 ├── phase2_live_fetch/         Precio de cobre EN VIVO desde FRED, API pública real (bloqueante)
 ├── phase3_scrape_oficiales/   Snapshot + detección de cambios en ANM/UPME/SGC/ANLA (best-effort)
 ├── phase5_usgs/                PDF oficial del USGS parseado: producción/reservas mundiales (best-effort)
+├── phase7_upme_sgc/            PDF oficial de UPME parseado: potencial nacional + recursos/reservas por proyecto (best-effort)
 ├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante, corre último)
-└── run_pipeline.py            Orquestador — corre las fases en orden 1→2→3→5→4
+└── run_pipeline.py            Orquestador — corre las fases en orden 1→2→3→5→7→4
 ```
 
 Cada bloque de [`data/consolidado/dataset_maestro.json`](data/consolidado/dataset_maestro.json) queda etiquetado con su **origen** (`curado_investigacion_humana` / `api_publica_en_vivo` / `snapshot_html_sin_api` / `estimacion_propia_razonada`) para que nunca se confunda una estimación con un dato verificado.

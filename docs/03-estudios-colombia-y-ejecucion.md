@@ -6,7 +6,7 @@ Ver el detalle estructurado en [`/data/estudios_cientificos_colombia.json`](../d
 
 | Institución | Aporte | Se puede usar hoy para... |
 |---|---|---|
-| UPME | Mapa Metalogénico de Colombia (2022) + Informe Cobre + Caracterización socioambiental de proyectos cupríferos (2025) + Plan Nacional de Desarrollo Minero 2024-2035 | Insumo geológico base para IA de prospectividad; marco normativo de referencia |
+| UPME | Mapa Metalogénico de Colombia (2022) + **Informe Cobre** (Subdirección de Minería, ~95 págs., con tablas de recursos/reservas NI 43-101/JORC/SAMREC de los 5 proyectos + Tabla 1 de potencial nacional) + Caracterización socioambiental de proyectos cupríferos (2023 y 2025) + Plan Nacional de Desarrollo Minero 2024-2035 | Insumo geológico base para IA de prospectividad; datos de recursos/reservas ya extraídos en `data/live/upme_recursos_reservas_proyectos.json` (Fase 7 del pipeline); marco normativo de referencia |
 | Servicio Geológico Colombiano (SGC) | Investigación geocientífica básica y aplicada, administración de la información del subsuelo | Fuente primaria de datos geológicos/geoquímicos/geofísicos |
 | Universidad Nacional (Facultad de Minas, Medellín) | Diagnóstico minero de Antioquia; primeros mapas geoquímicos departamentales; Congreso Cobre Colombia 2025 | Socio académico natural para pilotear un programa de IA de prospectividad |
 | Universidad de Antioquia | Investigación en gestión hídrica de minería informal | Metodología adaptable a gestión hídrica de proyectos formales de cobre |
@@ -22,6 +22,7 @@ Ver el detalle estructurado en [`/data/estudios_cientificos_colombia.json`](../d
 4. **Elevar el presupuesto de exploración** de USD 90 M a USD 500 M/año, cofinanciado con el marco EE. UU.–Colombia. *(Costo alto, impacto alto y directo en la velocidad de desarrollo del sector.)*
 5. **Introducir un filtro de diversificación de origen de capital** en la adjudicación de nuevas áreas estratégicas (similar a un CFIUS colombiano), para evitar que la totalidad del liderazgo del sector quede, como con El Alacrán, en manos de un solo país que no es el socio del marco firmado. *(Costo político, impacto estratégico central.)*
 6. **Estandarizar plantillas de Estudio de Impacto Ambiental (EIA)** específicas para cobre pórfido, para reducir el promedio de 15 años de maduración sin bajar el estándar. *(Costo bajo-medio, impacto en velocidad regulatoria.)*
+7. **Rehabilitar la Red Férrea del Pacífico** (centro del país–puerto de Buenaventura) — recomendación oficial de la propia UPME desde 2023, no nueva, pero sin ejecutar; es la vía natural de salida del concentrado de cobre del cinturón andino centro-occidental. *(Costo alto, pero con vía de financiamiento ya sugerida por UPME: alianzas público-privadas y obras por impuestos.)*
 
 ## 3. Cómo ejecutarlo — secuencia realista
 
@@ -31,7 +32,7 @@ Ver el detalle estructurado en [`/data/estudios_cientificos_colombia.json`](../d
 - Piloto de InSAR en al menos un proyecto en construcción (candidato natural: El Alacrán, por ser el más avanzado).
 
 **Meses 6–18:**
-- Piloto de mapeo de prospectividad con IA en un cinturón metalogénico prioritario (candidato: cinturón andino donde ya se estima el potencial de 9,7 Mt).
+- Piloto de mapeo de prospectividad con IA en un cinturón metalogénico prioritario (candidato: las dos regiones geológicas propias de Colombia con 7,7 Mt y 9,7 Mt de potencial cada una, según USGS/UPME).
 - Primeros desembolsos DFC/EXIM condicionados a que el proyecto cumpla el estándar de monitoreo de relaves.
 
 **Meses 18–36:**

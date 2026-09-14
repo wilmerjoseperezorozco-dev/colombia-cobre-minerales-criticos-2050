@@ -81,6 +81,8 @@ def main():
     precio_fred = cargar_json(LIVE_DIR / "copper_price_fred.json")
     snapshots = cargar_json(LIVE_DIR / "snapshots_fuentes_oficiales.json")
     usgs = cargar_json(LIVE_DIR / "usgs_copper_mcs.json")
+    upme_recursos = cargar_json(LIVE_DIR / "upme_recursos_reservas_proyectos.json")
+    upme_curado = cargar_json(DATA_DIR / "upme_informe_cobre_hallazgos_curados.json")
 
     metricas_precio = metricas_precio_cobre(precio_fred)
 
@@ -128,6 +130,16 @@ def main():
                 "origen": "api_publica_en_vivo",
                 "confiabilidad": "alta — fuente oficial del Gobierno de EE. UU. (USGS), parseada de un PDF con formato tabular estable; ver advertencias internas de parseo por país",
                 "datos": usgs,
+            },
+            "upme_recursos_reservas_por_proyecto": {
+                "origen": "api_publica_en_vivo",
+                "confiabilidad": "alta — parseado automáticamente del informe técnico oficial de UPME; corrige un error de interpretación propio (9.7 Mt → 17.4 Mt) detectado por verificación contra la fuente primaria",
+                "datos": upme_recursos,
+            },
+            "upme_hallazgos_curados_manualmente": {
+                "origen": "curado_investigacion_humana",
+                "confiabilidad": "alta — transcrito a mano por imposibilidad de auto-parsear tablas con encabezados rotados; ver nota metodológica interna del archivo",
+                "datos": upme_curado,
             },
         },
     }

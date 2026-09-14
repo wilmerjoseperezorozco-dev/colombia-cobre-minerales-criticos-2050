@@ -1,10 +1,14 @@
 {
   "actualizado": "2026-09-14",
   "potencial_geologico": {
-    "cinturon_metalogenico_andino_recursos_hipoteticos_mt_cu": 37.3,
-    "potencial_colombia_mt_cu": 9.7,
+    "correccion_2026-09-14": "Este bloque contenía un error de interpretación (9.7 Mt como 'el potencial de Colombia dentro de un cinturón de 37.3 Mt') detectado y corregido tras verificar la fuente primaria (UPME, Informe Cobre, Tabla 1, pág. 11-13) con pipeline/phase7_upme_sgc/. Ver el detalle correcto en data/live/upme_recursos_reservas_proyectos.json -> potencial_nacional_cobre.",
+    "promedio_regiones_compartidas_con_ecuador_peru_panama_mt_cu": 37.3,
+    "potencial_colombia_propio_region_1_mt_cu": 7.7,
+    "potencial_colombia_propio_region_2_mt_cu": 9.7,
+    "potencial_colombia_propio_total_mt_cu": 17.4,
     "territorio_nacional_sin_explorar_pct": 97,
-    "fuente": "UPME - Mapa Metalogénico de Colombia (Sepúlveda Ospina et al., 2020) + Informe Cobre UPME"
+    "area_recomendada_reserva_estrategica_hectareas": 2299150,
+    "fuente": "UPME, Informe Cobre (Subdirección de Minería), citando USGS Assessment of Undiscovered Copper Resources of the World, 2015 (v1.2, dic-2021)"
   },
   "inversion_exploracion": {
     "actual_usd_anual": 90000000,
@@ -31,7 +35,7 @@
   "puntos_a_favor": [
     "Marco bilateral EE.UU.-Colombia con financiamiento comprometido y plazo definido (6 meses desde sep-2026).",
     "Déficit estructural global de cobre garantiza demanda y precios sostenidos a largo plazo (hasta 30% de brecha de oferta en 2035 según IEA).",
-    "Potencial geológico real y cuantificado: 9,7 Mt de cobre dentro de un cinturón andino de 37,3 Mt, con 97% del territorio nacional aún sin explorar.",
+    "Potencial geológico real y cuantificado: 17,4 Mt de cobre en dos regiones geológicas propias de Colombia (USGS/UPME), con 97% del territorio nacional aún sin explorar.",
     "El Alacrán ya demostró que obtener la primera licencia ambiental de cobre a gran escala del país es posible, aunque lento (~4 años).",
     "Infraestructura portuaria y logística del Caribe en crecimiento (Barranquilla, Santa Marta, Cartagena), con zonas francas ganando participación (11%→17% de exportaciones del Atlántico desde prepandemia).",
     "Ecosistema de centros de datos e IA en expansión en Colombia (mercado de USD 450M en 2025 a USD 1.440M en 2031), generando demanda doméstica adicional de cobre para infraestructura eléctrica.",

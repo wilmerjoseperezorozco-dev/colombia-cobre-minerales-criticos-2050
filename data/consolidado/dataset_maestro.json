@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-14T22:57:40.999250+00:00",
+  "generado_utc": "2026-09-14T23:27:58.281867+00:00",
   "esquema_version": "1.0",
   "bloques": {
     "proyectos_cobre_colombia": {
@@ -192,10 +192,14 @@
       "datos": {
         "actualizado": "2026-09-14",
         "potencial_geologico": {
-          "cinturon_metalogenico_andino_recursos_hipoteticos_mt_cu": 37.3,
-          "potencial_colombia_mt_cu": 9.7,
+          "correccion_2026-09-14": "Este bloque contenía un error de interpretación (9.7 Mt como 'el potencial de Colombia dentro de un cinturón de 37.3 Mt') detectado y corregido tras verificar la fuente primaria (UPME, Informe Cobre, Tabla 1, pág. 11-13) con pipeline/phase7_upme_sgc/. Ver el detalle correcto en data/live/upme_recursos_reservas_proyectos.json -> potencial_nacional_cobre.",
+          "promedio_regiones_compartidas_con_ecuador_peru_panama_mt_cu": 37.3,
+          "potencial_colombia_propio_region_1_mt_cu": 7.7,
+          "potencial_colombia_propio_region_2_mt_cu": 9.7,
+          "potencial_colombia_propio_total_mt_cu": 17.4,
           "territorio_nacional_sin_explorar_pct": 97,
-          "fuente": "UPME - Mapa Metalogénico de Colombia (Sepúlveda Ospina et al., 2020) + Informe Cobre UPME"
+          "area_recomendada_reserva_estrategica_hectareas": 2299150,
+          "fuente": "UPME, Informe Cobre (Subdirección de Minería), citando USGS Assessment of Undiscovered Copper Resources of the World, 2015 (v1.2, dic-2021)"
         },
         "inversion_exploracion": {
           "actual_usd_anual": 90000000,
@@ -222,7 +226,7 @@
         "puntos_a_favor": [
           "Marco bilateral EE.UU.-Colombia con financiamiento comprometido y plazo definido (6 meses desde sep-2026).",
           "Déficit estructural global de cobre garantiza demanda y precios sostenidos a largo plazo (hasta 30% de brecha de oferta en 2035 según IEA).",
-          "Potencial geológico real y cuantificado: 9,7 Mt de cobre dentro de un cinturón andino de 37,3 Mt, con 97% del territorio nacional aún sin explorar.",
+          "Potencial geológico real y cuantificado: 17,4 Mt de cobre en dos regiones geológicas propias de Colombia (USGS/UPME), con 97% del territorio nacional aún sin explorar.",
           "El Alacrán ya demostró que obtener la primera licencia ambiental de cobre a gran escala del país es posible, aunque lento (~4 años).",
           "Infraestructura portuaria y logística del Caribe en crecimiento (Barranquilla, Santa Marta, Cartagena), con zonas francas ganando participación (11%→17% de exportaciones del Atlántico desde prepandemia).",
           "Ecosistema de centros de datos e IA en expansión en Colombia (mercado de USD 450M en 2025 a USD 1.440M en 2031), generando demanda doméstica adicional de cobre para infraestructura eléctrica.",
@@ -249,7 +253,7 @@
           "institucion": "UPME (Unidad de Planeación Minero-Energética)",
           "titulo": "Mapa Metalogénico de Colombia (versión 2022, base Sepúlveda Ospina et al., 2020)",
           "año": 2022,
-          "hallazgo_clave": "Identifica cinturones metalogénicos, ocurrencias, prospectos y depósitos de oro y cobre por región; recursos hipotéticos de 37,3 Mt de cobre en el cinturón andino, de los cuales Colombia tendría un potencial de 9,7 Mt.",
+          "hallazgo_clave": "Identifica cinturones metalogénicos, ocurrencias, prospectos y depósitos de oro y cobre por región. Nota de corrección (2026-09-14): el potencial específico de Colombia son 17,4 Mt (dos regiones propias de 7,7 y 9,7 Mt cada una, según USGS/UPME) — 37,3 Mt es el promedio de otras 3 regiones compartidas con Ecuador, Perú y Panamá, no un total atribuible solo a Colombia. Ver data/live/upme_recursos_reservas_proyectos.json.",
           "url": "https://www1.upme.gov.co/simco/PlaneacionSector/Documents/Fase_III_Plan_Nacional_de_Desarrollo_Minero_2024_2035.pdf"
         },
         {
@@ -322,7 +326,7 @@
       "confiabilidad": "baja-media — hipótesis de planificación explícitamente marcada como no oficial",
       "datos": {
         "actualizado": "2026-09-14",
-        "advertencia": "Las metas 2028/2030 provienen del informe original (estimaciones razonadas propias, no oficiales). Las metas 2035/2040/2050 son proyecciones de escenario, aún más inciertas, construidas por extrapolación de la tendencia de demanda global y del potencial geológico de UPME (9.7 Mt). Deben tratarse como hipótesis de planificación, no como pronóstico.",
+        "advertencia": "Las metas 2028/2030 provienen del informe original (estimaciones razonadas propias, no oficiales). Las metas 2035/2040/2050 son proyecciones de escenario, aún más inciertas, construidas por extrapolación de la tendencia de demanda global y del potencial geológico específico de Colombia (17.4 Mt, corregido el 2026-09-14 tras verificar la fuente primaria UPME/USGS — ver data/potencial_colombia_y_retos.json). Deben tratarse como hipótesis de planificación, no como pronóstico.",
         "kpis": [
           {
             "indicador": "Producción nacional de cobre (t/año)",
@@ -330,7 +334,7 @@
             "2028": "35.000 - 50.000",
             "2030": "90.000 - 120.000",
             "2035": "180.000 - 250.000 (si El Alacrán y 2-3 proyectos adicionales alcanzan régimen)",
-            "2050": "El 100% del potencial identificado (9,7 Mt) implicaría ~25 años de vida útil agregada a un ritmo de ~380.000 t/año sostenido"
+            "2050": "El 100% del potencial identificado (17,4 Mt) implicaría ~46 años de vida útil agregada a un ritmo de ~380.000 t/año sostenido"
           },
           {
             "indicador": "Proyectos en producción comercial",
@@ -397,7 +401,7 @@
         "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM",
         "unidad": "USD por tonelada métrica",
         "frecuencia": "mensual",
-        "extraido_utc": "2026-09-14T22:57:33.831804+00:00",
+        "extraido_utc": "2026-09-14T23:27:29.232480+00:00",
         "num_observaciones": 415,
         "rango_fechas": [
           "1992-01-01",
@@ -2086,13 +2090,13 @@
       "confiabilidad": "solo como sensor de cambios — no usar como fuente de cifras sin verificación humana",
       "datos": {
         "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
-        "ultima_corrida_utc": "2026-09-14T22:57:37.201532+00:00",
+        "ultima_corrida_utc": "2026-09-14T23:27:32.268112+00:00",
         "fuentes": [
           {
             "id": "anm_ronda_cobre",
             "institucion": "Agencia Nacional de Minería (ANM)",
             "url": "https://www.anm.gov.co/ronda-minera-cobre",
-            "consultado_utc": "2026-09-14T22:57:34.804015+00:00",
+            "consultado_utc": "2026-09-14T23:27:30.027812+00:00",
             "http_status": 200,
             "longitud_texto_caracteres": 8186,
             "hash_sha256": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
@@ -2103,7 +2107,7 @@
             "id": "anm_mapa_sitio_mineria",
             "institucion": "Agencia Nacional de Minería (ANM)",
             "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
-            "consultado_utc": "2026-09-14T22:57:35.246663+00:00",
+            "consultado_utc": "2026-09-14T23:27:30.451952+00:00",
             "http_status": 200,
             "longitud_texto_caracteres": 2974,
             "hash_sha256": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
@@ -2114,7 +2118,7 @@
             "id": "upme_home",
             "institucion": "Unidad de Planeación Minero-Energética (UPME)",
             "url": "https://www.upme.gov.co",
-            "consultado_utc": "2026-09-14T22:57:35.578633+00:00",
+            "consultado_utc": "2026-09-14T23:27:30.776607+00:00",
             "http_status": 200,
             "longitud_texto_caracteres": 17812,
             "hash_sha256": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
@@ -2125,7 +2129,7 @@
             "id": "sgc_home",
             "institucion": "Servicio Geológico Colombiano (SGC)",
             "url": "https://www.sgc.gov.co",
-            "consultado_utc": "2026-09-14T22:57:36.038129+00:00",
+            "consultado_utc": "2026-09-14T23:27:31.198235+00:00",
             "http_status": 200,
             "longitud_texto_caracteres": 3,
             "hash_sha256": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
@@ -2136,7 +2140,7 @@
             "id": "anla_home",
             "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
             "url": "https://www.anla.gov.co",
-            "consultado_utc": "2026-09-14T22:57:36.323996+00:00",
+            "consultado_utc": "2026-09-14T23:27:31.420662+00:00",
             "http_status": 200,
             "longitud_texto_caracteres": 11513,
             "hash_sha256": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
@@ -2147,23 +2151,23 @@
         "historial": {
           "anm_ronda_cobre": {
             "hash": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
-            "ultima_corrida_utc": "2026-09-14T22:57:34.804015+00:00"
+            "ultima_corrida_utc": "2026-09-14T23:27:30.027812+00:00"
           },
           "anm_mapa_sitio_mineria": {
             "hash": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
-            "ultima_corrida_utc": "2026-09-14T22:57:35.246663+00:00"
+            "ultima_corrida_utc": "2026-09-14T23:27:30.451952+00:00"
           },
           "upme_home": {
             "hash": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
-            "ultima_corrida_utc": "2026-09-14T22:57:35.578633+00:00"
+            "ultima_corrida_utc": "2026-09-14T23:27:30.776607+00:00"
           },
           "sgc_home": {
             "hash": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
-            "ultima_corrida_utc": "2026-09-14T22:57:36.038129+00:00"
+            "ultima_corrida_utc": "2026-09-14T23:27:31.198235+00:00"
           },
           "anla_home": {
             "hash": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
-            "ultima_corrida_utc": "2026-09-14T22:57:36.323996+00:00"
+            "ultima_corrida_utc": "2026-09-14T23:27:31.420662+00:00"
           }
         }
       }
@@ -2175,7 +2179,7 @@
         "fuente": "U.S. Geological Survey — Mineral Commodity Summaries (ficha de Copper)",
         "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf",
         "edicion_reportada_por_el_pdf": "February 2026",
-        "extraido_utc": "2026-09-14T22:57:39.785336+00:00",
+        "extraido_utc": "2026-09-14T23:27:35.000451+00:00",
         "designacion_mineral_critico_eeuu": {
           "encontrado": true,
           "fecha_texto_original": "November 7, 2025",
@@ -2377,6 +2381,356 @@
           "potencial_upme_mt_cu": 9.7,
           "pct_potencial_colombia_sobre_reservas_mundiales": 0.99,
           "pct_potencial_colombia_sobre_bolsa_otros_paises": 4.619
+        }
+      }
+    },
+    "upme_recursos_reservas_por_proyecto": {
+      "origen": "api_publica_en_vivo",
+      "confiabilidad": "alta — parseado automáticamente del informe técnico oficial de UPME; corrige un error de interpretación propio (9.7 Mt → 17.4 Mt) detectado por verificación contra la fuente primaria",
+      "datos": {
+        "fuente": "UPME, Subdirección de Minería — Informe Cobre",
+        "url_efectivamente_usada": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Informe_Cobre_subdireccion_VD.pdf",
+        "url_citada_en_bibliografia_del_documento_pero_no_resuelve_dns": "http://www1.upme.gov.co/simco/Cifras-Sectoriales/Paginas/inter-cobre.aspx",
+        "extraido_utc": "2026-09-14T23:27:55.803295+00:00",
+        "num_paginas_documento": 95,
+        "potencial_nacional_cobre": {
+          "fuente_original": "USGS Assessment of Undiscovered Copper Resources of the World, 2015 (Scientific Investigations Report 2018-5160, v1.1, mayo 2019), citado por UPME",
+          "correccion_metodologica": "37.3 Mt es el PROMEDIO de recursos hipotéticos de 3 regiones geológicas COMPARTIDAS entre Colombia, Ecuador, Perú y/o Panamá (no exclusivas de Colombia). Colombia tiene además 2 regiones propias con 7.7 Mt y 9.7 Mt respectivamente. El potencial específico de Colombia (sumando sus 2 regiones propias) es de 17.4 Mt, no 9.7 Mt como se citó inicialmente en este mismo repositorio a partir de un resumen de prensa impreciso.",
+          "promedio_regiones_compartidas_mt": 37.3,
+          "potencial_colombia_propio_mt": [
+            7.7,
+            9.7
+          ],
+          "potencial_colombia_propio_total_mt": 17.4,
+          "area_recomendada_reserva_estrategica_hectareas": 2299150,
+          "detalle_por_region_usgs": [
+            {
+              "plate": 22,
+              "codigo_tracto_usgs": "005pCu1005",
+              "recursos_estimados_in_situ_mt": 39.0,
+              "probabilidad_recursos_in_situ_pct": 2,
+              "recursos_economicos_promedio_mt": 21.0,
+              "probabilidad_recursos_economicos_pct": 10
+            },
+            {
+              "plate": 23,
+              "codigo_tracto_usgs": "005pCu1003",
+              "recursos_estimados_in_situ_mt": 40.0,
+              "probabilidad_recursos_in_situ_pct": 2,
+              "recursos_economicos_promedio_mt": 20.0,
+              "probabilidad_recursos_economicos_pct": 15
+            },
+            {
+              "plate": 24,
+              "codigo_tracto_usgs": "005pCu1001",
+              "recursos_estimados_in_situ_mt": 33.0,
+              "probabilidad_recursos_in_situ_pct": 3,
+              "recursos_economicos_promedio_mt": 18.0,
+              "probabilidad_recursos_economicos_pct": 14
+            },
+            {
+              "plate": 25,
+              "codigo_tracto_usgs": "005pCu1004",
+              "recursos_estimados_in_situ_mt": 7.7,
+              "probabilidad_recursos_in_situ_pct": 6,
+              "recursos_economicos_promedio_mt": 4.4,
+              "probabilidad_recursos_economicos_pct": 58
+            },
+            {
+              "plate": 26,
+              "codigo_tracto_usgs": "005pCu1002",
+              "recursos_estimados_in_situ_mt": 9.7,
+              "probabilidad_recursos_in_situ_pct": 7,
+              "recursos_economicos_promedio_mt": 5.2,
+              "probabilidad_recursos_economicos_pct": 55
+            }
+          ]
+        },
+        "recursos_y_reservas_por_proyecto": {
+          "el_roble": {
+            "proyecto": "El Roble",
+            "operador": "Atico Mining Corporation",
+            "departamento": "Chocó",
+            "fecha_corte_estimacion": "2020-09-30",
+            "fuente": "Atico Mining, Technical Report 2021 (citado por UPME, Tabla 2)",
+            "recursos": {
+              "recursos_medidos": {
+                "mena_t": 1039200,
+                "cu_pct": 4.34,
+                "au_g_t": 2.29,
+                "cu_lb_contenido": 75745700,
+                "au_oz_contenido": 76500
+              },
+              "recursos_indicados": {
+                "mena_t": 135200,
+                "cu_pct": 4.06,
+                "au_g_t": 2.62,
+                "cu_lb_contenido": 8597700,
+                "au_oz_contenido": 11400
+              },
+              "medidos_mas_indicados": {
+                "mena_t": 1174400,
+                "cu_pct": 4.3,
+                "au_g_t": 2.33,
+                "cu_lb_contenido": 84343400,
+                "au_oz_contenido": 87900
+              },
+              "recursos_inferidos": {
+                "mena_t": 17100,
+                "cu_pct": 2.03,
+                "au_g_t": 3.41,
+                "cu_lb_contenido": 186400,
+                "au_oz_contenido": 1900
+              }
+            }
+          },
+          "quebradona": {
+            "proyecto": "Quebradona",
+            "operador": "AngloGold Ashanti",
+            "departamento": "Antioquia",
+            "fuente": "Minera de Cobre Quebradona, 2019 (citado por UPME, Tablas 3-4)",
+            "recursos": {
+              "indicados": {
+                "mena_mt": 256,
+                "cu_pct": 0.86,
+                "au_g_t": 0.45,
+                "ag_g_t": 5.4,
+                "mo_ppm": 145.44
+              },
+              "inferidos": {
+                "mena_mt": 343,
+                "cu_pct": 0.47,
+                "au_g_t": 0.22,
+                "ag_g_t": 3.46,
+                "mo_ppm": 130.14
+              }
+            },
+            "reservas": {
+              "categoria": "probables",
+              "mena_t": 109667606,
+              "cu_pct": 1.21,
+              "au_g_t": 0.66,
+              "cu_contenido_t": 1323609,
+              "au_contenido_oz": 2342215
+            }
+          },
+          "soto_norte": {
+            "proyecto": "Soto Norte",
+            "operador_al_momento_del_informe": "Sociedad Minera de Santander (MINESA / Mubadala Investment Company)",
+            "operador_2026_segun_prensa": "Aris Mining (adquirió participación mayoritaria posteriormente — ver docs/05-fuentes.md)",
+            "departamento": "Santander",
+            "fuente": "Sociedad Minera de Santander, 2016-2017 (citado por UPME, Tablas 5-6)",
+            "recursos": {
+              "indicados": {
+                "mena_kt": 36837,
+                "cu_pct": 0.19,
+                "au_g_t": 6.0,
+                "ag_g_t": 29.0,
+                "cu_contenido_klb": 151617,
+                "au_contenido_koz": 7052,
+                "ag_contenido_koz": 34339
+              },
+              "inferidos": {
+                "mena_kt": 31967,
+                "cu_pct": 0.17,
+                "au_g_t": 5.4,
+                "ag_g_t": 34.4,
+                "cu_contenido_klb": 119286,
+                "au_contenido_koz": 5531,
+                "ag_contenido_koz": 34403
+              }
+            },
+            "reservas": {
+              "categoria": "probables",
+              "mena_t": 28539000,
+              "cu_pct": 0.14,
+              "au_g_t": 5.4,
+              "ag_g_t": 28.2,
+              "cu_contenido_klb": 106055,
+              "au_contenido_koz": 5284,
+              "ag_contenido_koz": 25942
+            }
+          },
+          "mocoa": {
+            "proyecto": "Mocoa Cobre-Molibdeno",
+            "operador": "Libero Copper & Gold Corp.",
+            "departamento": "Putumayo",
+            "fuente": "Mocoa Copper-Molybdenum project technical report (citado por UPME, Tabla 7)",
+            "recursos": {
+              "categoria": "inferidos",
+              "mena_mt": 636,
+              "cueq_pct": 0.45,
+              "cu_pct": 0.33,
+              "mo_pct": 0.036,
+              "cueq_contenido_blbs": 6.31,
+              "cu_contenido_blbs": 4.6,
+              "mo_contenido_mlbs": 510.5
+            }
+          },
+          "san_matias": {
+            "proyecto": "San Matías (incluye el depósito El Alacrán, Montiel East, Montiel West y Costa Azul)",
+            "operador_en_el_informe_2019": "Córdoba Minerals Corp.",
+            "operador_2026_segun_prensa": "CMH Colombia / JCHX Mining Management (China) — Cordoba Minerals vendió su participación en may-2025, ver data/proyectos_cobre_colombia.json",
+            "departamento": "Córdoba (Puerto Libertador)",
+            "fuente": "NI 43-101 Technical Report and Resource Estimate, San Matías Copper-Gold-Silver Project, 2019 (citado por UPME, Tabla 8)",
+            "recursos": {
+              "indicados": {
+                "mena_mt": 94.9,
+                "cu_pct": 0.51,
+                "au_g_t": 0.29,
+                "ag_g_t": 2.7,
+                "cu_contenido_t": 488115,
+                "au_contenido_oz": 897881,
+                "ag_contenido_oz": 8245332
+              },
+              "inferidos": {
+                "mena_mt": 3.4,
+                "cu_pct": 0.3,
+                "au_g_t": 0.2,
+                "ag_g_t": 1.3,
+                "cu_contenido_t": 10350,
+                "au_contenido_oz": 22439,
+                "ag_contenido_oz": 142769
+              }
+            },
+            "nota": "El Alacrán es uno de los 4 depósitos del proyecto San Matías, no un proyecto independiente — aclara la aparente duplicidad de nombres entre fuentes de prensa (que usan 'El Alacrán') y UPME (que usa 'San Matías')."
+          }
+        }
+      }
+    },
+    "upme_hallazgos_curados_manualmente": {
+      "origen": "curado_investigacion_humana",
+      "confiabilidad": "alta — transcrito a mano por imposibilidad de auto-parsear tablas con encabezados rotados; ver nota metodológica interna del archivo",
+      "datos": {
+        "origen": "curado_investigacion_humana",
+        "nota": "Transcrito a mano desde el PDF fuente porque las tablas correspondientes tienen encabezados de columna rotados 90° que pdfplumber extrae con el texto invertido carácter por carácter (ej. 'nóiccudorP' en vez de 'Producción') — un auto-parseo por regex sería frágil y podría fallar en silencio. Ver pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py para el detalle de esta decisión.",
+        "fuente": "UPME, Subdirección de Minería — Informe Cobre",
+        "url": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Informe_Cobre_subdireccion_VD.pdf",
+        "tabla_28_comparativo_impactos_economicos": {
+          "pagina": 87,
+          "nota_supuestos": "Costo C1 de producción de cobre: Quebradona y Soto Norte USD 2.832/t, El Roble USD 3.700/t. Costo producción oro USD 930/oz, plata USD 16/oz. Tasa de cambio: COP 3.400/USD. Renta estimada aplicando 33% a la diferencia entre ingresos y costos. Precios estimados a partir de proyecciones del Banco Mundial.",
+          "proyectos": {
+            "quebradona": {
+              "inversion_millones_usd": 1364,
+              "empleo_promedio_ponderado_anual": 768,
+              "produccion_anual": {
+                "cobre_ton": 75020,
+                "oro_oz_troy": 131561,
+                "plata_oz_troy": 1405309
+              },
+              "ingresos_estimados_usd": {
+                "cobre": 667678000,
+                "oro": 197341261,
+                "plata": 28106180
+              },
+              "regalias_estimadas_anuales_usd": {
+                "cobre": 26707120,
+                "oro": 6314920,
+                "plata": 899398
+              },
+              "renta_estimada_anual_usd": {
+                "cobre": 150223049,
+                "oro": 24746594,
+                "plata": 1855008
+              }
+            },
+            "soto_norte": {
+              "inversion_millones_usd": 7025,
+              "empleo_promedio_ponderado_anual": 780,
+              "produccion_anual": {
+                "cobre_ton": 4680,
+                "oro_oz_troy": 499780,
+                "plata_oz_troy": 2950000
+              },
+              "ingresos_estimados_usd": {
+                "cobre": 41652000,
+                "oro": 749669250,
+                "plata": 59000000
+              },
+              "regalias_estimadas_anuales_usd": {
+                "cobre": 1666080,
+                "oro": 23989416,
+                "plata": 1888000
+              },
+              "renta_estimada_anual_usd": {
+                "cobre": 9371419,
+                "oro": 94008524,
+                "plata": 3894000
+              }
+            },
+            "el_roble": {
+              "inversion_millones_usd": 9475,
+              "empleo_promedio_ponderado_anual": 350,
+              "produccion_anual": {
+                "cobre_ton": 26843,
+                "oro_oz_troy": 32611,
+                "plata_oz_troy": null
+              },
+              "ingresos_estimados_usd": {
+                "cobre": 238902700,
+                "oro": 290237900,
+                "plata": null
+              },
+              "regalias_estimadas_anuales_usd": {
+                "cobre": 9556108,
+                "oro": 9287613,
+                "plata": null
+              },
+              "renta_estimada_anual_usd": {
+                "cobre": 46062588,
+                "oro": 85770191,
+                "plata": null
+              },
+              "advertencia": "La cifra de inversión de USD 9.475 millones para El Roble —una mina pequeña ya en producción— es sorprendentemente alta frente a Quebradona y Soto Norte (proyectos de mucha mayor escala aún sin construir). Puede tratarse de una inversión acumulada histórica (décadas de operación) más que de un capex comparable; se transcribe tal cual aparece en la fuente, marcada aquí como una inconsistencia a verificar, no corregida unilateralmente."
+            }
+          }
+        },
+        "tabla_29_empleo_comparativo": {
+          "pagina": 87,
+          "total_empleos_pais_2019": 23068298,
+          "total_empleos_mineria": 163785,
+          "quebradona": 768,
+          "soto_norte": 780,
+          "el_roble": 350
+        },
+        "aspectos_favorables": {
+          "paginas": "88-90",
+          "puntos": [
+            "Ubicación geográfica privilegiada: amplias zonas costeras sobre los océanos Atlántico y Pacífico que facilitan la exportación de cobre concentrado o refinado.",
+            "Reconocimiento internacional del potencial en depósitos polimetálicos con contenido de cobre, por la presencia del cinturón metalogénico andino.",
+            "Los tenores (leyes) de cobre en los proyectos colombianos con estudios avanzados (El Roble, Quebradona) están entre 1,2% y 3,6% — superiores a los principales proyectos en operación en el mundo, que muestran tenores por debajo de 1% (la mayoría alrededor de 0,8%).",
+            "Colombia es vista como territorio prácticamente inexplorado frente a Chile y Perú, lo que atrae interés inversionista precisamente por ese potencial no descubierto.",
+            "Los estudios de factibilidad muestran beneficios importantes en infraestructura, vías, redes eléctricas y telecomunicaciones para las zonas de influencia directa."
+          ]
+        },
+        "aspectos_desfavorables": {
+          "paginas": "89-90",
+          "puntos": [
+            "Colombia no ha identificado hasta la fecha zonas de baja sulfuración u óxidos de cobre en cantidades aprovechables — estos depósitos permiten procesos industriales más sencillos (lixiviación). Los depósitos colombianos son de alta sulfuración, lo que exige procesos más complejos (flotación, fusión, conversión, refinación electrolítica) para obtener cobre refinado.",
+            "Los recursos y reservas estimados en Colombia están muy por debajo de los principales proyectos en operación en el mundo. El proyecto con mayores recursos y reservas del país (Quebradona) no alcanzaría a representar el 50% de los recursos y reservas de los principales proyectos mundiales.",
+            "Quebradona, diseñada para extraer 17.000 t/día, sería de producción media en el contexto mundial de minería subterránea de polimetálicos — muy inferior a los 140.000 t/día que producen individualmente El Teniente y Chuquicamata en Chile.",
+            "Los dos únicos proyectos de gran minería que han llegado a estudios de factibilidad técnica y ambiental completos (Quebradona y Soto Norte) tomaron alrededor de 15 años de investigación y trámites.",
+            "Barreras identificadas por la propia institucionalidad minera: seguridad jurídica, coordinación interinstitucional, relacionamiento Estado-inversionista-comunidades, infraestructura, y agilidad en trámites mineros y ambientales."
+          ]
+        },
+        "conclusiones_oficiales_upme": {
+          "pagina": "91-92",
+          "puntos": [
+            "Suramérica es la región con mayor cantidad de reservas y producción de cobre del mundo; Chile es el primer productor mundial y Perú el segundo.",
+            "El proyecto con mayores recursos y reservas de cobre en Colombia es Quebradona, que en contexto internacional no alcanzaría el 50% de las reservas de los proyectos con mayor producción mundial.",
+            "Si Quebradona entra en operación, la producción de concentrado de cobre del país se multiplicaría casi por 6 (hoy solo El Roble produce concentrado, ~40.000 t/año).",
+            "La inversión estimada durante la vida de los dos proyectos formulados (Quebradona + Soto Norte) es de aproximadamente USD 8.500 millones, con ~1.550 empleos directos promedio anuales combinados, USD 61,5 millones/año en regalías y USD 284,1 millones/año en impuesto de renta.",
+            "Quebradona aplicaría técnicas extractivas similares a Chuquicamata y El Teniente (Chile), lo que implicaría para Colombia un salto tecnológico representativo en minería subterránea de polimetálicos."
+          ]
+        },
+        "recomendaciones_oficiales_upme": {
+          "pagina": "92-93",
+          "puntos": [
+            "Aumentar la exploración: establecer procedimientos claros, mejorar la seguridad jurídica, agilizar trámites y permisos, mayor coordinación interinstitucional, y sensibilizar a las comunidades sobre la actividad exploratoria.",
+            "Mejorar infraestructura, en especial la Red Férrea del Pacífico (conexión del centro del país con el puerto de Buenaventura) — vía prioritaria para el transporte de concentrado de cobre, mediante alianzas público-privadas y obras por impuestos.",
+            "Capacitar el recurso humano en exploración de polimetálicos, minería subterránea de bloques, procesos de beneficio, y manejo de estériles y colas — facilitando la participación de Chile en la formación por su experiencia de más de 100 años en la industria del cobre.",
+            "Generar reglamentación específica para la gestión de relaves (colas), buscando alianzas y convenios con el gobierno chileno para asesoría en operación, seguridad, cierre y abandono de depósitos de colas."
+          ]
         }
       }
     }
