@@ -11,9 +11,10 @@ pipeline/
 ├── phase1_seed/               Valida el dataset curado a mano (bloqueante)
 ├── phase2_live_fetch/         Extrae datos en vivo de APIs públicas reales (bloqueante)
 ├── phase3_scrape_oficiales/   Snapshot de páginas oficiales colombianas sin API (no bloqueante)
-├── phase4_consolidacion/      Une todo en un dataset maestro con procedencia (bloqueante)
+├── phase5_usgs/                Extrae y parsea el PDF oficial del USGS (Copper) (no bloqueante)
+├── phase4_consolidacion/      Une todo en un dataset maestro con procedencia (bloqueante, corre último)
 ├── schema/                    Esquemas JSON de validación
-└── run_pipeline.py            Orquestador — corre las 4 fases en orden
+└── run_pipeline.py            Orquestador — corre las fases en orden (1→2→3→5→4)
 ```
 
 | Fase | Qué hace | Tipo de fuente | Bloqueante |
@@ -21,7 +22,17 @@ pipeline/
 | 1 — Semilla | Valida `data/*.json` curados por investigación humana contra un esquema | Investigación manual verificada | Sí |
 | 2 — Extracción en vivo | Descarga la serie histórica de precio del cobre desde FRED (API pública, sin key) | API pública real | Sí |
 | 3 — Snapshot oficial | Descarga el HTML de ANM/UPME/SGC/ANLA y detecta cambios por hash | Páginas oficiales sin API | No (best-effort) |
-| 4 — Consolidación | Une fases 1-3 en `data/consolidado/dataset_maestro.json`, marcando el origen y confiabilidad de cada bloque, y calcula métricas derivadas (CAGR, volatilidad) | — | Sí |
+| 5 — USGS MCS (Copper) | Descarga y parsea con `pdfplumber` la ficha oficial de cobre del USGS: estadísticas de EE. UU., producción/reservas mundiales por país, designación de mineral crítico | PDF oficial con formato tabular estable | No (best-effort — depende de que el USGS no cambie el diseño del PDF) |
+| 4 — Consolidación | Une todo lo anterior en `data/consolidado/dataset_maestro.json`, marcando el origen y confiabilidad de cada bloque, y calcula métricas derivadas (CAGR, volatilidad) | — | Sí |
+
+### 3.1 Fase 5 en detalle — por qué un PDF sí se puede parsear de forma confiable aquí
+
+A diferencia de las páginas HTML de la Fase 3 (sin estructura consistente), el Mineral Commodity Summaries del USGS es una publicación anual con un **formato tabular que se ha mantenido estable durante años** y un patrón de URL predecible (`mcs{año}-copper.pdf`). Eso lo hace parseable con reglas, con dos salvaguardas explícitas en el código:
+
+- Cada país esperado en la tabla mundial se busca por nombre exacto; si no aparece (porque el USGS cambió el formato), se reporta como advertencia explícita en vez de fallar en silencio o inventar un valor.
+- Los párrafos de texto libre (como la designación de mineral crítico) se parsean sobre una versión del texto con saltos de línea normalizados, porque pdfplumber conserva los cortes de línea del PDF a mitad de oración — un error real que apareció durante la construcción de este script y quedó corregido (ver commit correspondiente).
+
+**Hallazgo más importante que produjo esta fase:** el cobre fue añadido a la Lista Final 2025 de Minerales Críticos de EE. UU. el **7 de noviembre de 2025** (Federal Register 90 FR 50494) — un dato que no estaba en ninguna otra fuente ya integrada al pipeline y que explica, con fecha exacta, por qué el marco de cooperación con Colombia se firmó apenas 10 meses después.
 
 ## 3. Por qué la Fase 3 es "no bloqueante" (honestidad técnica, no limitación oculta)
 
@@ -55,9 +66,10 @@ El workflow [`​.github/workflows/actualizar_datos.yml`](../.github/workflows/a
 
 ## 7. Próximas fases (roadmap del propio pipeline, no solo del sector)
 
-- **Fase 5 (pendiente):** Fetcher de USGS Mineral Commodity Summaries (dataset público, requiere manejo de PDF/CSV según año de publicación).
+- ~~**Fase 5:** Fetcher de USGS Mineral Commodity Summaries~~ — **hecho.** Ver `pipeline/phase5_usgs/`.
 - **Fase 6 (pendiente):** Integración de un fetcher para el IEA Critical Minerals Data Explorer si se obtiene una clave de API institucional.
 - **Fase 7 (pendiente):** Extracción estructurada de tablas de los PDFs de UPME/SGC ya identificados en `docs/05-fuentes.md`, usando `pdfplumber` (ya incluido en `requirements.txt`), evaluando cada tabla manualmente antes de incorporarla al dataset maestro.
+- **Fase 8 (pendiente):** Serie histórica del USGS Data Series 140 ("Historical Statistics for Mineral and Material Commodities") para tener producción/consumo de cobre desde 1900, no solo 2021-2025e.
 
 ---
 *Ver también: [Análisis a nivel de artículo científico](10-articulo-analisis-cientifico.md) · [README / dashboard](../README.md)*

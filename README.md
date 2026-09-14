@@ -11,6 +11,7 @@
 | 1 — Semilla | [`pipeline/phase1_seed/validate_seed.py`](pipeline/phase1_seed/validate_seed.py) | ✅ OK | 7 proyectos validados, 0 errores de esquema |
 | 2 — Precio en vivo (FRED) | [`pipeline/phase2_live_fetch/fetch_copper_price_fred.py`](pipeline/phase2_live_fetch/fetch_copper_price_fred.py) | ✅ OK | 415 observaciones (1992→2026); último dato **USD 13.542,82/t** (jul-2026) |
 | 3 — Snapshot fuentes oficiales | [`pipeline/phase3_scrape_oficiales/fetch_fuentes_colombianas.py`](pipeline/phase3_scrape_oficiales/fetch_fuentes_colombianas.py) | ✅ OK | ANM, UPME, SGC, ANLA — 5/5 fuentes con HTTP 200 |
+| 5 — USGS Mineral Commodity Summaries | [`pipeline/phase5_usgs/fetch_usgs_copper_mcs.py`](pipeline/phase5_usgs/fetch_usgs_copper_mcs.py) | ✅ OK | 18/18 países parseados · reservas mundiales 980.000 kt · **el cobre es mineral crítico de EE. UU. desde el 7-nov-2025** (90 FR 50494) |
 | 4 — Consolidación | [`pipeline/phase4_consolidacion/build_dataset_maestro.py`](pipeline/phase4_consolidacion/build_dataset_maestro.py) | ✅ OK | `data/consolidado/dataset_maestro.json` — CAGR cobre 5a: **7,46% anual** |
 
 **Ejecutarlo tú mismo:** `pip install -r pipeline/requirements.txt && python pipeline/run_pipeline.py` — corre en ~8 segundos. Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
@@ -22,6 +23,7 @@
 | Señal | Estado | Fuente |
 |---|---|---|
 | 🟢 Marco EE. UU.–Colombia de minerales críticos | Firmado 8-sep-2026 en Barranquilla · financiamiento conjunto en 6 meses (vence mar-2027) | [`docs/05-fuentes.md`](docs/05-fuentes.md) |
+| 🟢 El cobre es mineral crítico de EE. UU. desde el 7-nov-2025 | Federal Register 90 FR 50494 — explica con fecha exacta el porqué del marco firmado 10 meses después | [`data/live/usgs_copper_mcs.json`](data/live/usgs_copper_mcs.json) |
 | 🟡 Proyecto de cobre más avanzado del país (El Alacrán) | Licencia ambiental completa, pero **100% capital chino** desde may-2025 | [`data/proyectos_cobre_colombia.json`](data/proyectos_cobre_colombia.json) |
 | 🔴 Quebradona (AngloGold Ashanti, USD 1.400 M) | Frenado por Resolución 855/2025 | [`data/proyectos_cobre_colombia.json`](data/proyectos_cobre_colombia.json) |
 | 🟢 Potencial geológico | 9,7 Mt de Cu en un cinturón andino de 37,3 Mt · **97% del territorio sin explorar** | [`data/potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) |
@@ -64,8 +66,9 @@ pipeline/
 ├── phase1_seed/               Valida data/*.json curados contra esquema (bloqueante)
 ├── phase2_live_fetch/         Precio de cobre EN VIVO desde FRED, API pública real (bloqueante)
 ├── phase3_scrape_oficiales/   Snapshot + detección de cambios en ANM/UPME/SGC/ANLA (best-effort)
-├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante)
-└── run_pipeline.py            Orquestador de las 4 fases
+├── phase5_usgs/                PDF oficial del USGS parseado: producción/reservas mundiales (best-effort)
+├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante, corre último)
+└── run_pipeline.py            Orquestador — corre las fases en orden 1→2→3→5→4
 ```
 
 Cada bloque de [`data/consolidado/dataset_maestro.json`](data/consolidado/dataset_maestro.json) queda etiquetado con su **origen** (`curado_investigacion_humana` / `api_publica_en_vivo` / `snapshot_html_sin_api` / `estimacion_propia_razonada`) para que nunca se confunda una estimación con un dato verificado.

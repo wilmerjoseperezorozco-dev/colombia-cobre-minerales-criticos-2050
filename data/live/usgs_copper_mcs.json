@@ -1,0 +1,208 @@
+{
+  "fuente": "U.S. Geological Survey — Mineral Commodity Summaries (ficha de Copper)",
+  "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf",
+  "edicion_reportada_por_el_pdf": "February 2026",
+  "extraido_utc": "2026-09-14T22:57:39.785336+00:00",
+  "designacion_mineral_critico_eeuu": {
+    "encontrado": true,
+    "fecha_texto_original": "November 7, 2025",
+    "referencia_federal_register": "90 FR 50494",
+    "minerales_agregados_en_esta_lista": "copper, lead, potash, rhenium, silicon, and silver"
+  },
+  "estadisticas_eeuu_serie_2021_2025e": {
+    "produccion_mina_recuperable_kt": {
+      "2021": 1230,
+      "2022": 1230,
+      "2023": 1130,
+      "2024": 1050,
+      "2025e": 1000
+    },
+    "refinacion_primaria_kt": {
+      "2021": 931,
+      "2022": 917,
+      "2023": 843,
+      "2024": 882,
+      "2025e": 790
+    },
+    "refinacion_secundaria_kt": {
+      "2021": 49,
+      "2022": 40,
+      "2023": 39,
+      "2024": 39,
+      "2025e": 60
+    },
+    "consumo_reportado_refinado_kt": {
+      "2021": 1750,
+      "2022": 1720,
+      "2023": 1580,
+      "2024": 1580,
+      "2025e": 1700
+    },
+    "precio_productor_eeuu_catodo_centavos_lb": {
+      "2021": 432.3,
+      "2022": 410.8,
+      "2023": 395.3,
+      "2024": 431.8,
+      "2025e": 490
+    },
+    "precio_comex_centavos_lb": {
+      "2021": 424.3,
+      "2022": 400.7,
+      "2023": 385.7,
+      "2024": 421.6,
+      "2025e": 480
+    }
+  },
+  "produccion_y_reservas_mundiales": {
+    "por_pais": {
+      "United States": {
+        "produccion_mina_kt_2024": 1050,
+        "produccion_mina_kt_2025e": 1000,
+        "produccion_refineria_kt_2024": 921,
+        "produccion_refineria_kt_2025e": 850,
+        "reservas_kt": 47000
+      },
+      "Australia": {
+        "produccion_mina_kt_2024": 765,
+        "produccion_mina_kt_2025e": 730,
+        "produccion_refineria_kt_2024": 434,
+        "produccion_refineria_kt_2025e": 460,
+        "reservas_kt": 7100000
+      },
+      "Canada": {
+        "produccion_mina_kt_2024": 515,
+        "produccion_mina_kt_2025e": 500,
+        "produccion_refineria_kt_2024": 324,
+        "produccion_refineria_kt_2025e": 320,
+        "reservas_kt": 7000
+      },
+      "Chile": {
+        "produccion_mina_kt_2024": 5510,
+        "produccion_mina_kt_2025e": 5300,
+        "produccion_refineria_kt_2024": 1940,
+        "produccion_refineria_kt_2025e": 1700,
+        "reservas_kt": 180000
+      },
+      "China": {
+        "produccion_mina_kt_2024": 1840,
+        "produccion_mina_kt_2025e": 1800,
+        "produccion_refineria_kt_2024": 12400,
+        "produccion_refineria_kt_2025e": 14000,
+        "reservas_kt": 41000
+      },
+      "Congo (Kinshasa)": {
+        "produccion_mina_kt_2024": 2990,
+        "produccion_mina_kt_2025e": 3200,
+        "produccion_refineria_kt_2024": 2560,
+        "produccion_refineria_kt_2025e": 2800,
+        "reservas_kt": 80000
+      },
+      "Germany": {
+        "produccion_mina_kt_2024": null,
+        "produccion_mina_kt_2025e": null,
+        "produccion_refineria_kt_2024": 597,
+        "produccion_refineria_kt_2025e": 610,
+        "reservas_kt": null
+      },
+      "India": {
+        "produccion_mina_kt_2024": 27,
+        "produccion_mina_kt_2025e": 23,
+        "produccion_refineria_kt_2024": 545,
+        "produccion_refineria_kt_2025e": 620,
+        "reservas_kt": 2200
+      },
+      "Indonesia": {
+        "produccion_mina_kt_2024": 1010,
+        "produccion_mina_kt_2025e": 710,
+        "produccion_refineria_kt_2024": 349,
+        "produccion_refineria_kt_2025e": 400,
+        "reservas_kt": 21000
+      },
+      "Japan": {
+        "produccion_mina_kt_2024": null,
+        "produccion_mina_kt_2025e": null,
+        "produccion_refineria_kt_2024": 1570,
+        "produccion_refineria_kt_2025e": 1400,
+        "reservas_kt": null
+      },
+      "Kazakhstan": {
+        "produccion_mina_kt_2024": 724,
+        "produccion_mina_kt_2025e": 710,
+        "produccion_refineria_kt_2024": 498,
+        "produccion_refineria_kt_2025e": 500,
+        "reservas_kt": 20000
+      },
+      "Korea, Republic of": {
+        "produccion_mina_kt_2024": null,
+        "produccion_mina_kt_2025e": null,
+        "produccion_refineria_kt_2024": 604,
+        "produccion_refineria_kt_2025e": 610,
+        "reservas_kt": null
+      },
+      "Mexico": {
+        "produccion_mina_kt_2024": 717,
+        "produccion_mina_kt_2025e": 690,
+        "produccion_refineria_kt_2024": 489,
+        "produccion_refineria_kt_2025e": 480,
+        "reservas_kt": 53000
+      },
+      "Peru": {
+        "produccion_mina_kt_2024": 2740,
+        "produccion_mina_kt_2025e": 2700,
+        "produccion_refineria_kt_2024": 385,
+        "produccion_refineria_kt_2025e": 340,
+        "reservas_kt": 85000
+      },
+      "Poland": {
+        "produccion_mina_kt_2024": 400,
+        "produccion_mina_kt_2025e": 410,
+        "produccion_refineria_kt_2024": 589,
+        "produccion_refineria_kt_2025e": 560,
+        "reservas_kt": 33000
+      },
+      "Russia": {
+        "produccion_mina_kt_2024": 1020,
+        "produccion_mina_kt_2025e": 1300,
+        "produccion_refineria_kt_2024": 896,
+        "produccion_refineria_kt_2025e": 950,
+        "reservas_kt": 80000
+      },
+      "Zambia": {
+        "produccion_mina_kt_2024": 823,
+        "produccion_mina_kt_2025e": 940,
+        "produccion_refineria_kt_2024": 189,
+        "produccion_refineria_kt_2025e": 270,
+        "reservas_kt": 21000
+      },
+      "Other countries": {
+        "produccion_mina_kt_2024": 2850,
+        "produccion_mina_kt_2025e": 3000,
+        "produccion_refineria_kt_2024": 2310,
+        "produccion_refineria_kt_2025e": 2100,
+        "reservas_kt": 210000
+      }
+    },
+    "mundo_total": {
+      "produccion_mina_kt_2024": 23000,
+      "produccion_mina_kt_2025e": 23000,
+      "produccion_refineria_kt_2024": 27600,
+      "produccion_refineria_kt_2025e": 29000,
+      "reservas_kt": 980000
+    },
+    "advertencias": []
+  },
+  "recursos_mundiales_usgs_2015": {
+    "encontrado": true,
+    "recursos_identificados_sin_extraer_billones_toneladas_cortas": 1.5,
+    "recursos_identificados_incluyendo_produccion_pasada_billones_toneladas_cortas": 2.1,
+    "produccion_pasada_millones_toneladas_cortas": 600.0,
+    "recursos_no_descubiertos_estimados_billones_toneladas_cortas": 3.5,
+    "nota_unidad": "Toneladas cortas (short tons) de EE. UU., tal como reporta el USGS textualmente — no confundir con toneladas métricas usadas en el resto del pipeline."
+  },
+  "contexto_colombia_vs_usgs": {
+    "nota": "El USGS no reporta a Colombia como línea individual en esta tabla; queda agregada dentro de 'Other countries'. Las proporciones siguientes son un cálculo propio, no una cifra publicada por USGS.",
+    "potencial_upme_mt_cu": 9.7,
+    "pct_potencial_colombia_sobre_reservas_mundiales": 0.99,
+    "pct_potencial_colombia_sobre_bolsa_otros_paises": 4.619
+  }
+}

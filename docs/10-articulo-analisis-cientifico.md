@@ -66,7 +66,26 @@ Se incluyeron los proyectos de cobre identificados independientemente por al men
 
 De los 7 proyectos/rondas identificados en `data/proyectos_cobre_colombia.json`, solo **1 de 7** (El Roble) está en producción comercial; **1 de 7** (El Alacrán) tiene licencia ambiental completa pero capital 100% extranjero de un único país (China); **2 de 7** (Quebradona, Soto Norte) están frenados por trámites o superposición normativa; el resto está en exploración temprana o en fase de ronda de licitación. Es decir, el **85,7%** de los proyectos identificados no ha resuelto su situación regulatoria, pese a que el recurso geológico (9,7 Mt según UPME) está documentado desde al menos 2020-2022.
 
-### 3.3 Concentración de origen de capital
+### 3.3 Designación de mineral crítico en EE. UU. y su cronología frente al marco con Colombia
+
+El USGS confirma (Mineral Commodity Summaries, edición de febrero de 2026, extraído directamente del PDF oficial) que el cobre fue incorporado a la Lista Final 2025 de Minerales Críticos de Estados Unidos el **7 de noviembre de 2025** (Federal Register 90 FR 50494), junto con plomo, potasa, renio, silicio y plata, tras un proceso de comentario público sobre una lista preliminar (90 FR 41591). Esta fecha es anterior en 10 meses al marco de cooperación firmado con Colombia en Barranquilla (8-sep-2026), lo que sitúa la secuencia causal en orden correcto: primero la designación doméstica de EE. UU. (nov-2025), después la búsqueda de socios de suministro externo (sep-2026) — un patrón consistente con la lógica declarada de "cadenas de suministro resilientes y diversificadas" del propio marco bilateral.
+
+### 3.4 Reconciliación de cifras de oferta y demanda global (hallazgo metodológico)
+
+Se identificó una discrepancia real entre dos fuentes ya integradas al pipeline que merece explicitarse en vez de promediarse silenciosamente:
+
+| Fuente | Cifra 2024-2025 | Qué mide exactamente |
+|---|---|---|
+| USGS MCS 2026 (oficial, gobierno de EE. UU.) | Producción de mina: 23.000 kt (2025e) · Producción de refinería: 29.000 kt (2025e) | Oferta física realizada, medida en el punto de producción |
+| S&P Global / Wood Mackenzie (consenso de mercado, citado en `data/metricas_demanda_global_cobre.json`) | Demanda: 34.500 kt (2025) | Proyección de consumo total esperado, con métodos de estimación no idénticos a los del USGS |
+
+La diferencia de ~5.500 kt entre la producción refinada reportada por USGS (29.000 kt) y la demanda estimada por el consenso de mercado (34.500 kt) es consistente con la existencia de un **déficit ya observable en 2025**, no solo proyectado a 2030-2035 como sugiere la lectura superficial de la literatura de mercado — esto **refuerza H2** con una fuente independiente y oficial, en lugar de depender únicamente de proyecciones de bancos de inversión y consultoras.
+
+### 3.5 Escala del potencial colombiano frente a las reservas mundiales oficiales
+
+Usando la cifra de reservas mundiales del USGS (980.000 kt = 980 Mt) como denominador, el potencial de Colombia estimado por UPME (9,7 Mt) representa el **0,99% de las reservas mundiales conocidas**. Colombia no aparece como línea individual en la tabla de USGS — queda agregada dentro de "Other countries" (210.000 kt de reservas), bolsa sobre la cual el potencial colombiano representaría el 4,62%. Este dato contextualiza con precisión las afirmaciones de prensa sobre Colombia como "potencia mundial del cobre" (ver `docs/05-fuentes.md`): el potencial es real y documentado, pero su escala relativa frente a Chile (180.000 kt de reservas, 18,4% del total mundial) o Perú (85.000 kt, 8,7%) es modesta — Colombia compite por ser un proveedor relevante de nicho dentro de la diversificación de EE. UU., no por desplazar a los líderes regionales establecidos.
+
+### 3.6 Concentración de origen de capital
 
 De los proyectos con operador identificado, la distribución de origen de capital es: Canadá (3 de 6: Atico Mining, Aris Mining, GoldMining/Cordoba histórico), China (1 de 6: JCHX vía El Alacrán), Sudáfrica (1 de 6: AngloGold Ashanti), y capital mixto Canadá/Medio Oriente (1 de 6: Soto Norte). **El proyecto con mayor avance regulatorio (licencia ambiental completa) es, específicamente, el de origen chino** — una correlación negativa entre "alineación geopolítica declarada por Colombia" (el marco con EE. UU.) y "avance regulatorio real observado", que soporta H2.
 
@@ -80,7 +99,7 @@ Respecto a H2, el hallazgo es más matizado de lo esperado: el mercado sí respo
 
 1. La serie de precios (FRED/FMI) es un promedio de mercado global, no un precio de referencia específico para el cobre colombiano (que no cotiza de forma diferenciada por no tener producción a escala relevante todavía).
 2. El cálculo de CAGR usa un punto inicial y un punto final de la ventana; es sensible a la elección exacta de esos dos puntos y no captura la trayectoria completa (una limitación reconocida de esta métrica, no específica de este análisis).
-3. La clasificación de "origen de capital" en la sección 3.3 usa la nacionalidad de incorporación de la empresa operadora, que no siempre coincide con el origen último del capital accionario (ej. fondos de inversión con múltiples jurisdicciones).
+3. La clasificación de "origen de capital" en la sección 3.6 usa la nacionalidad de incorporación de la empresa operadora, que no siempre coincide con el origen último del capital accionario (ej. fondos de inversión con múltiples jurisdicciones).
 4. Los datos de UPME (potencial geológico) tienen como base metodológica el Mapa Metalogénico de 2020-2022; no se identificó una actualización posterior en las fuentes consultadas, lo cual es en sí mismo un hallazgo relevante (ver `docs/03-estudios-colombia-y-ejecucion.md`, sección de brechas).
 5. La Fase 3 del pipeline (snapshots de fuentes oficiales) es un sensor de cambios, no una fuente de datos cuantitativos — no se usó para ningún cálculo de esta sección.
 

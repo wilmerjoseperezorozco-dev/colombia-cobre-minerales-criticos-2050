@@ -80,6 +80,7 @@ def main():
     kpis = cargar_json(DATA_DIR / "kpis_hoja_de_ruta_2026_2050.json")
     precio_fred = cargar_json(LIVE_DIR / "copper_price_fred.json")
     snapshots = cargar_json(LIVE_DIR / "snapshots_fuentes_oficiales.json")
+    usgs = cargar_json(LIVE_DIR / "usgs_copper_mcs.json")
 
     metricas_precio = metricas_precio_cobre(precio_fred)
 
@@ -122,6 +123,11 @@ def main():
                 "origen": "snapshot_html_sin_api",
                 "confiabilidad": "solo como sensor de cambios — no usar como fuente de cifras sin verificación humana",
                 "datos": snapshots,
+            },
+            "usgs_mineral_commodity_summaries_copper": {
+                "origen": "api_publica_en_vivo",
+                "confiabilidad": "alta — fuente oficial del Gobierno de EE. UU. (USGS), parseada de un PDF con formato tabular estable; ver advertencias internas de parseo por país",
+                "datos": usgs,
             },
         },
     }

@@ -6,11 +6,14 @@ best-effort por naturaleza (depende de páginas HTML de terceros sin API).
 Uso:
     python pipeline/run_pipeline.py
 
-Fases:
+Fases (el número de carpeta indica el orden en que se agregaron al pipeline,
+no el orden de ejecución — la consolidación (4) siempre corre al final para
+poder incluir todo lo que las demás fases produjeron, incluida la 5):
     1. phase1_seed              — valida el dataset curado a mano (bloqueante)
     2. phase2_live_fetch        — precio de cobre en vivo desde FRED (bloqueante)
     3. phase3_scrape_oficiales  — snapshot de fuentes oficiales colombianas (no bloqueante)
-    4. phase4_consolidacion     — arma el dataset_maestro.json final (bloqueante)
+    5. phase5_usgs              — USGS Mineral Commodity Summaries, ficha de Copper (no bloqueante)
+    4. phase4_consolidacion     — arma el dataset_maestro.json final (bloqueante, corre último)
 """
 import os
 import subprocess
@@ -28,6 +31,7 @@ FASES = [
     ("Fase 1 — Validación del dataset semilla", "phase1_seed/validate_seed.py", True),
     ("Fase 2 — Precio de cobre en vivo (FRED)", "phase2_live_fetch/fetch_copper_price_fred.py", True),
     ("Fase 3 — Snapshot de fuentes oficiales colombianas", "phase3_scrape_oficiales/fetch_fuentes_colombianas.py", False),
+    ("Fase 5 — USGS Mineral Commodity Summaries (Copper)", "phase5_usgs/fetch_usgs_copper_mcs.py", False),
     ("Fase 4 — Consolidación del dataset maestro", "phase4_consolidacion/build_dataset_maestro.py", True),
 ]
 
