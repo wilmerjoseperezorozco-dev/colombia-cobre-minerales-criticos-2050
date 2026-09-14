@@ -70,16 +70,18 @@ De los 7 proyectos/rondas identificados en `data/proyectos_cobre_colombia.json`,
 
 El USGS confirma (Mineral Commodity Summaries, edición de febrero de 2026, extraído directamente del PDF oficial) que el cobre fue incorporado a la Lista Final 2025 de Minerales Críticos de Estados Unidos el **7 de noviembre de 2025** (Federal Register 90 FR 50494), junto con plomo, potasa, renio, silicio y plata, tras un proceso de comentario público sobre una lista preliminar (90 FR 41591). Esta fecha es anterior en 10 meses al marco de cooperación firmado con Colombia en Barranquilla (8-sep-2026), lo que sitúa la secuencia causal en orden correcto: primero la designación doméstica de EE. UU. (nov-2025), después la búsqueda de socios de suministro externo (sep-2026) — un patrón consistente con la lógica declarada de "cadenas de suministro resilientes y diversificadas" del propio marco bilateral.
 
-### 3.4 Reconciliación de cifras de oferta y demanda global (hallazgo metodológico)
+### 3.4 Reconciliación de cifras de oferta y demanda global (hallazgo metodológico, actualizado con fuente primaria IEA)
 
-Se identificó una discrepancia real entre dos fuentes ya integradas al pipeline que merece explicitarse en vez de promediarse silenciosamente:
+**Esta sección se revisó el 14-sep-2026** al incorporar el dataset oficial del IEA Critical Minerals Data Explorer 2026 (Fase 6 del pipeline, obtenido con cuenta gratuita del usuario — ver `pipeline/phase6_iea/`), que reemplaza una comparación anterior basada en una cifra de mercado no verificada contra fuente primaria.
 
-| Fuente | Cifra 2024-2025 | Qué mide exactamente |
+| Fuente | Cifra 2025 | Qué mide exactamente |
 |---|---|---|
-| USGS MCS 2026 (oficial, gobierno de EE. UU.) | Producción de mina: 23.000 kt (2025e) · Producción de refinería: 29.000 kt (2025e) | Oferta física realizada, medida en el punto de producción |
-| S&P Global / Wood Mackenzie (consenso de mercado, citado en `data/metricas_demanda_global_cobre.json`) | Demanda: 34.500 kt (2025) | Proyección de consumo total esperado, con métodos de estimación no idénticos a los del USGS |
+| USGS MCS 2026 (oficial, gobierno de EE. UU.) | Producción de mina: 23.000 kt (2025e) · Producción de refinería: 27.955-29.000 kt (2025e) | Oferta física realizada, medida en el punto de producción |
+| **IEA Critical Minerals Data Explorer 2026** (oficial, fuente primaria, Fase 6) | **Demanda total: 27.775 kt (2025, línea base)** | Consumo total modelado (energía + otros usos), metodología documentada y trazable |
 
-La diferencia de ~5.500 kt entre la producción refinada reportada por USGS (29.000 kt) y la demanda estimada por el consenso de mercado (34.500 kt) es consistente con la existencia de un **déficit ya observable en 2025**, no solo proyectado a 2030-2035 como sugiere la lectura superficial de la literatura de mercado — esto **refuerza H2** con una fuente independiente y oficial, en lugar de depender únicamente de proyecciones de bancos de inversión y consultoras.
+**Corrección del hallazgo anterior:** con la fuente primaria de demanda (IEA, 27.775 kt) en vez de la cifra de mercado sin verificar que se usaba antes (34.500 kt, atribuida de forma imprecisa a "S&P Global/Wood Mackenzie" vía prensa), la oferta y la demanda de 2025 están **casi balanceadas** (27.775 kt de demanda vs. 27.955-29.000 kt de producción refinada) — **no hay evidencia de un déficit ya observable en 2025** como se afirmaba en una versión previa de este documento. Esa afirmación se retracta explícitamente.
+
+**Dónde sí aparece un déficit real y bien fundamentado:** el propio dataset de IEA, comparando su demanda (escenario Stated Policies) contra su oferta "base case" (solo minas existentes y en construcción, sin proyectos nuevos) en los **mismos años y con la misma metodología**, muestra una brecha que crece de 6.799 kt (2030) a 17.801 kt (2040) — casi se triplica en una década (cálculo propio reproducible, ver `data/metricas_demanda_global_cobre.json` → `brecha_oferta_demanda_calculada_kt`). Esta es la evidencia que **sí sostiene H2** de forma robusta: el déficit es real, pero es una proyección de mediano plazo bien fundamentada, no un fenómeno ya presente en 2025.
 
 ### 3.5 Escala del potencial colombiano frente a las reservas mundiales oficiales
 
@@ -124,6 +126,7 @@ Respecto a H2, el hallazgo es más matizado de lo esperado: el mercado sí respo
 5. La Fase 3 del pipeline (snapshots de fuentes oficiales) es un sensor de cambios, no una fuente de datos cuantitativos — no se usó para ningún cálculo de esta sección.
 6. La cifra de inversión de El Roble en la Tabla 28 de UPME (USD 9.475 millones) es inconsistente con su escala real de producción (~40.000 t/año de concentrado) frente a Quebradona y Soto Norte — probablemente refleja inversión acumulada histórica y no capex comparable; se reporta tal cual aparece en la fuente y se marca como no verificada, sin corregirla unilateralmente (ver `data/upme_informe_cobre_hallazgos_curados.json`).
 7. Este documento fue corregido el 14-sep-2026 tras detectar un error propio de interpretación sobre el potencial geológico de Colombia (ver sección 3.5); no puede descartarse que existan otros errores de interpretación aún no detectados en secciones que dependen de fuentes secundarias de prensa en lugar de documentos primarios.
+8. La sección 3.4 fue corregida el mismo día tras incorporar el dataset oficial de IEA (Fase 6): la afirmación anterior de un "déficit ya observable en 2025" se basaba en una cifra de demanda de prensa no verificada y se retracta explícitamente — el patrón se repite con el hallazgo de la sección 3.5, lo que sugiere una regla general de trabajo hacia adelante: **toda cifra citada solo de un resumen periodístico debe tratarse como provisional hasta verificarse contra la fuente primaria**.
 
 ## 6. Conclusiones
 

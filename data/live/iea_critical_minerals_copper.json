@@ -1,0 +1,115 @@
+{
+  "fuente": "IEA, Critical Minerals Data Explorer, edición 2026 (archivo Excel oficial)",
+  "metodo_de_obtencion": "aportado_manualmente_por_usuario — descargado desde su cuenta gratuita de IEA; no existe API pública equivalente (ver docstring de este script)",
+  "archivo_origen": "pipeline\\_manual_uploads\\IEA_Critical_Minerals_Dataset_2026.xlsx",
+  "archivo_sha256": "43bd9338a08ac8399c65471115f30ffc10dca7117e62f03cca86d49224717935",
+  "procesado_utc": "2026-09-14T23:48:06.925929+00:00",
+  "aviso_licencia": "Dataset con cuenta gratuita de IEA. Uso personal/no comercial. No redistribuir el archivo crudo fuera de este repositorio privado.",
+  "demanda_cobre": {
+    "unidad": "kt (miles de toneladas)",
+    "notas": "'Total energy technologies' = demanda ligada a tecnologías de transición energética (solar, eólica, VE, almacenamiento, redes, hidrógeno). 'Other uses' = el resto de la demanda global de cobre (construcción, electrónica general, etc.). 'Total demand' = suma de ambas.",
+    "2025_linea_base": {
+      "total_demanda": 27775.0,
+      "energia_transicion": 8003.0,
+      "otros_usos": 19772.0,
+      "participacion_energia_transicion_pct": 28.8
+    },
+    "total_demanda_por_escenario_kt": {
+      "anos": [
+        2030,
+        2035,
+        2040,
+        2045,
+        2050
+      ],
+      "current_policies_scenario": [
+        30792.0,
+        32359.0,
+        33580.0,
+        35080.0,
+        35888.0
+      ],
+      "stated_policies_scenario": [
+        31370.0,
+        33522.0,
+        34984.0,
+        36579.0,
+        37572.0
+      ],
+      "high_demand_scenario": [
+        31967.0,
+        34294.0,
+        35719.0,
+        36773.0,
+        38066.0
+      ]
+    }
+  },
+  "oferta_minera_cobre_base_case": {
+    "unidad": "kt (miles de toneladas), producción minera",
+    "escenario": "base case (proyectos existentes + en construcción, sin nueva inversión) — NO es un escenario de demanda equivalente; representa el techo de oferta si no se aprueban proyectos nuevos",
+    "anos": [
+      2025,
+      2030,
+      2035,
+      2040
+    ],
+    "por_pais": {
+      "Chile": {
+        "2025": 5485.0,
+        "2030": 5369.0,
+        "2035": 4841.0,
+        "2040": 4165.0
+      },
+      "Democratic Republic of Congo": {
+        "2025": 3338.0,
+        "2030": 4212.0,
+        "2035": 3041.0,
+        "2040": 2696.0
+      },
+      "Peru": {
+        "2025": 2726.0,
+        "2030": 2712.0,
+        "2035": 2384.0,
+        "2040": 1859.0
+      },
+      "China": {
+        "2025": 1838.0,
+        "2030": 2040.0,
+        "2035": 1965.0,
+        "2040": 1852.0
+      },
+      "Russia": {
+        "2025": 1145.0,
+        "2030": 1244.0,
+        "2035": 1424.0,
+        "2040": 1343.0
+      },
+      "United States": {
+        "2025": 1101.0,
+        "2030": 1196.0,
+        "2035": 823.0,
+        "2040": 632.0
+      },
+      "Rest of world": {
+        "2025": 7594.0,
+        "2030": 7798.0,
+        "2035": 6255.0,
+        "2040": 4636.0
+      }
+    },
+    "total_mundial": {
+      "2025": 23227.0,
+      "2030": 24571.0,
+      "2035": 20733.0,
+      "2040": 17183.0
+    },
+    "participacion_top3_paises_pct": [
+      49.7,
+      50.0,
+      49.5,
+      50.7
+    ],
+    "nota_colombia": "Colombia no aparece como país individual — queda dentro de 'Rest of world', igual que en la tabla del USGS (ver data/live/usgs_copper_mcs.json)."
+  }
+}

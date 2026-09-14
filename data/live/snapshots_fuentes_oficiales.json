@@ -1,12 +1,12 @@
 {
   "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
-  "ultima_corrida_utc": "2026-09-14T23:27:32.268112+00:00",
+  "ultima_corrida_utc": "2026-09-14T23:48:00.823576+00:00",
   "fuentes": [
     {
       "id": "anm_ronda_cobre",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/ronda-minera-cobre",
-      "consultado_utc": "2026-09-14T23:27:30.027812+00:00",
+      "consultado_utc": "2026-09-14T23:47:58.350133+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 8186,
       "hash_sha256": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
@@ -17,7 +17,7 @@
       "id": "anm_mapa_sitio_mineria",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
-      "consultado_utc": "2026-09-14T23:27:30.451952+00:00",
+      "consultado_utc": "2026-09-14T23:47:58.805520+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 2974,
       "hash_sha256": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
@@ -28,7 +28,7 @@
       "id": "upme_home",
       "institucion": "Unidad de Planeación Minero-Energética (UPME)",
       "url": "https://www.upme.gov.co",
-      "consultado_utc": "2026-09-14T23:27:30.776607+00:00",
+      "consultado_utc": "2026-09-14T23:47:59.134459+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 17812,
       "hash_sha256": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
@@ -39,7 +39,7 @@
       "id": "sgc_home",
       "institucion": "Servicio Geológico Colombiano (SGC)",
       "url": "https://www.sgc.gov.co",
-      "consultado_utc": "2026-09-14T23:27:31.198235+00:00",
+      "consultado_utc": "2026-09-14T23:47:59.581298+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 3,
       "hash_sha256": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
@@ -50,7 +50,7 @@
       "id": "anla_home",
       "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
       "url": "https://www.anla.gov.co",
-      "consultado_utc": "2026-09-14T23:27:31.420662+00:00",
+      "consultado_utc": "2026-09-14T23:47:59.843269+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 11513,
       "hash_sha256": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
@@ -61,23 +61,23 @@
   "historial": {
     "anm_ronda_cobre": {
       "hash": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
-      "ultima_corrida_utc": "2026-09-14T23:27:30.027812+00:00"
+      "ultima_corrida_utc": "2026-09-14T23:47:58.350133+00:00"
     },
     "anm_mapa_sitio_mineria": {
       "hash": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
-      "ultima_corrida_utc": "2026-09-14T23:27:30.451952+00:00"
+      "ultima_corrida_utc": "2026-09-14T23:47:58.805520+00:00"
     },
     "upme_home": {
       "hash": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
-      "ultima_corrida_utc": "2026-09-14T23:27:30.776607+00:00"
+      "ultima_corrida_utc": "2026-09-14T23:47:59.134459+00:00"
     },
     "sgc_home": {
       "hash": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
-      "ultima_corrida_utc": "2026-09-14T23:27:31.198235+00:00"
+      "ultima_corrida_utc": "2026-09-14T23:47:59.581298+00:00"
     },
     "anla_home": {
       "hash": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
-      "ultima_corrida_utc": "2026-09-14T23:27:31.420662+00:00"
+      "ultima_corrida_utc": "2026-09-14T23:47:59.843269+00:00"
     }
   }
 }

@@ -1,24 +1,36 @@
 {
   "actualizado": "2026-09-14",
-  "nota_metodologica": "Existen divergencias entre fuentes porque parten de escenarios distintos (IEA modela política climática explícita en 3 escenarios; S&P/Wood Mackenzie/ICSG modelan mercado observado + intensidad tecnológica). Usar rangos, no un único número, para decisiones de infraestructura.",
-  "demanda_historica_y_proyectada_mtpa": {
-    "2024": { "valor": 27, "fuente": "IEA Global Critical Minerals Outlook 2025" },
-    "2025": { "valor": 34.5, "fuente": "S&P Global / Wood Mackenzie (consenso de mercado)" },
-    "2030": { "valor": 42, "fuente": "S&P Global / Wood Mackenzie" },
-    "2035_steps": { "valor": 35, "fuente": "IEA - escenario de políticas actuales (STEPS)" },
-    "2050_nze": { "valor": [37, 40], "fuente": "IEA - escenario net-zero 2050 (NZE)" },
-    "2050_mercado": { "valor": 70, "fuente": "S&P Global / Wood Mackenzie (proyección de intensidad tecnológica alta)" }
+  "actualizado_2026-09-14_fase6": "Bloque reemplazado por datos oficiales del IEA Critical Minerals Data Explorer 2026 (archivo Excel descargado por el usuario con su cuenta gratuita — ver pipeline/phase6_iea/). Los valores de 'S&P Global/Wood Mackenzie' citados en la versión anterior de este archivo (34,5/42/70+ Mtpa) eran de una fuente secundaria de prensa y NO coinciden con la fuente primaria oficial del IEA; se conservan abajo, en la sección 'consenso_mercado_secundario', solo como referencia de divergencia, no como base de cálculo.",
+  "nota_metodologica": "La IEA modela 'demanda total de cobre' (todos los usos) bajo 3 escenarios propios del Critical Minerals Data Explorer 2026: Current Policies, Stated Policies y High Demand — nombres distintos a los de STEPS/APS/NZE del World Energy Outlook general. La oferta 'base case' del mismo dataset representa solo minas existentes y en construcción, SIN nueva inversión — es intencionalmente pesimista para ilustrar la brecha que debe cerrarse con proyectos nuevos, no un pronóstico de oferta real.",
+  "demanda_total_cobre_iea_2026_kt": {
+    "fuente": "IEA, Critical Minerals Data Explorer 2026 (dataset oficial, hoja '1 Total demand for key minerals')",
+    "2025_linea_base": 27775,
+    "2025_desglose": { "energia_transicion": 8003, "otros_usos": 19772, "participacion_energia_transicion_pct": 28.8 },
+    "escenarios_2030_2050": {
+      "anos": [2030, 2035, 2040, 2045, 2050],
+      "current_policies_scenario": [30792, 32359, 33580, 35080, 35888],
+      "stated_policies_scenario": [31370, 33522, 34984, 36579, 37572],
+      "high_demand_scenario": [31967, 34294, 35719, 36773, 38066]
+    }
   },
-  "escenarios_iea": {
-    "STEPS": "Solo políticas climáticas y energéticas ya implementadas o anunciadas oficialmente — trayectoria más conservadora.",
-    "APS": "Los países cumplen totalmente sus metas climáticas anunciadas, incluyendo objetivos 2030 y net-zero de largo plazo.",
-    "NZE": "El sector energético global alcanza cero emisiones netas de CO2 para 2050."
+  "oferta_minera_base_case_iea_2026_kt": {
+    "fuente": "IEA, Critical Minerals Data Explorer 2026 (dataset oficial, hoja '2 Total supply for key minerals'), 'base case' = solo proyectos existentes y en construcción",
+    "anos": [2025, 2030, 2035, 2040],
+    "total_mundial": [23227, 24571, 20733, 17183],
+    "nota": "La oferta base case DECLINA después de 2030 por agotamiento de minas sin reposición — no es un pronóstico, es la ilustración de cuánto debe crecer la inversión en proyectos nuevos."
   },
-  "deficit_estructural_oferta": {
-    "2030_mt": 4,
-    "2035_pct_brecha_oferta": 30,
-    "crecimiento_anual_oferta_minera_pct": 2,
-    "fuente": "IEA Global Critical Minerals Outlook 2025 / Wood Mackenzie"
+  "brecha_oferta_demanda_calculada_kt": {
+    "metodologia": "Demanda (Stated Policies Scenario) menos oferta base case, mismo año, ambos del dataset oficial IEA 2026 — cálculo propio, reproducible, no una cifra publicada directamente por IEA en una sola tabla.",
+    "2030": 6799,
+    "2035": 12789,
+    "2040": 17801,
+    "lectura": "La brecha casi se triplica entre 2030 y 2040 bajo el escenario de política declarada — el argumento cuantitativo más fuerte de todo este repositorio a favor de que el déficit de cobre es estructural, no cíclico."
+  },
+  "consenso_mercado_secundario_no_verificado_contra_fuente_primaria": {
+    "advertencia": "Estas cifras provienen de un resumen de prensa (S&P Global/Wood Mackenzie citado en medios) y NO se verificaron contra un informe primario de esas firmas — se conservan solo para mostrar la divergencia con el dato oficial de IEA de arriba.",
+    "2025_mtpa": 34.5,
+    "2030_mtpa": 42,
+    "2050_mtpa": 70
   },
   "intensidad_de_cobre_por_uso": {
     "vehiculo_electrico_kg": 83,

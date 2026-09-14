@@ -13,19 +13,26 @@ Cuatro hallazgos nuevos, no incluidos en la primera versión del informe, cambia
 
 ## 2. Horizonte a 2050: qué dicen las fuentes (y dónde discrepan)
 
-| Fuente | Escenario | 2030 | 2035 | 2050 |
-|---|---|---|---|---|
-| IEA (Global Critical Minerals Outlook 2025) | STEPS (políticas actuales) | — | 35 Mtpa | — |
-| IEA | NZE (net-zero) | — | — | 37–40 Mtpa |
-| S&P Global / Wood Mackenzie / consenso de mercado | Intensidad tecnológica alta (IA, VE, redes) | 42 Mtpa | — | 70+ Mtpa |
-| IEA | Brecha de oferta | — | 30% de déficit | — |
+**Actualización 2026-09-14 (Fase 6):** esta sección se reconstruyó con el dataset oficial del IEA Critical Minerals Data Explorer 2026 (Excel descargado con cuenta gratuita — ver `pipeline/phase6_iea/`), que reemplaza las cifras de mercado de segunda mano usadas antes.
 
-**Por qué discrepan:** la IEA modela políticas climáticas explícitas y es conservadora por diseño; las proyecciones de mercado (S&P, Wood Mackenzie) incorporan la aceleración reciente de centros de datos de IA, que la IEA aún no captura completamente en sus escenarios de 2025. **Consecuencia práctica para Colombia:** cualquier plan de infraestructura (puertos, fundición, energía) debe dimensionarse para el escenario conservador (IEA STEPS) y dejar capacidad de expansión modular para el escenario alto, no apostar a un solo número.
+| Fuente (oficial IEA 2026) | Escenario | 2025 | 2030 | 2035 | 2040 | 2050 |
+|---|---|---|---|---|---|---|
+| Demanda total de cobre | Current Policies | 27.775 kt | 30.792 kt | 32.359 kt | 33.580 kt | 35.888 kt |
+| Demanda total de cobre | Stated Policies | 27.775 kt | 31.370 kt | 33.522 kt | 34.984 kt | 37.572 kt |
+| Demanda total de cobre | High Demand | 27.775 kt | 31.967 kt | 34.294 kt | 35.719 kt | 38.066 kt |
+| Oferta minera | "Base case" (minas existentes + en construcción, sin proyectos nuevos) | 23.227 kt | 24.571 kt | 20.733 kt | 17.183 kt | — |
+| **Brecha calculada** (Stated Policies − base case) | — | — | **6.799 kt** | **12.789 kt** | **17.801 kt** | — |
+
+**La brecha casi se triplica entre 2030 y 2040** bajo el escenario de política ya declarada por los gobiernos — el argumento cuantitativo más fuerte de todo este repositorio a favor de que el déficit de cobre es estructural. La oferta "base case" del propio IEA **decrece** después de 2030 porque no incluye proyectos aún no aprobados — es, literalmente, la ilustración oficial de cuánta inversión nueva hace falta.
+
+**Sobre la cifra de "70+ Mtpa a 2050" citada en versiones anteriores:** esa cifra provenía de un resumen de prensa sobre S&P Global/Wood Mackenzie que nunca se verificó contra el informe primario de esas firmas. Se conserva en `data/metricas_demanda_global_cobre.json` únicamente como referencia de la divergencia con la fuente oficial (que llega a ~38 Mtpa en el escenario más agresivo del propio IEA, no 70), marcada explícitamente como no verificada.
+
+**Consecuencia práctica para Colombia:** cualquier plan de infraestructura (puertos, fundición, energía) debe dimensionarse contra el escenario Stated Policies del IEA (el punto medio, ya con compromisos climáticos declarados), no contra el escenario de mercado más optimista sin verificar.
 
 ## 3. Puntos a favor
 
 1. Marco bilateral EE. UU.–Colombia con financiamiento comprometido y plazo definido (vence marzo de 2027).
-2. Déficit estructural global garantiza demanda y precios sostenidos — hasta 30% de brecha de oferta en 2035 según la IEA.
+2. Déficit estructural global garantiza demanda y precios sostenidos — la brecha entre demanda (Stated Policies) y oferta base case del IEA pasa de 6.799 kt en 2030 a 17.801 kt en 2040 (dataset oficial IEA 2026, ver sección 2).
 3. Potencial geológico real y cuantificado (17,4 Mt en dos regiones propias de Colombia, según USGS/UPME) con 97% del territorio sin explorar.
 4. El Alacrán probó que obtener la primera licencia ambiental de cobre a gran escala del país es posible (aunque tomó 4+ años).
 5. Infraestructura portuaria del Caribe en crecimiento (Barranquilla: 6,7 Mt en el primer semestre de 2026; zonas francas del Atlántico pasaron de 11% a 17% de las exportaciones desde la prepandemia).

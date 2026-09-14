@@ -48,7 +48,8 @@
 - [InvestorNews — Follow the Money: U.S. Government Funding for Critical Minerals (2023-2026)](https://investornews.com/market-opinion/follow-the-money-u-s-government-funding-for-critical-minerals-companies-2023-2026/)
 
 ## Mercado global del cobre
-- [S&P Global — Copper in the Age of AI (enero 2026)](https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_Full%20Report_January%202026.pdf)
+- **[IEA — Critical Minerals Data Explorer, edición 2026](https://www.iea.org/data-and-statistics/data-tools/critical-minerals-data-explorer)** — dataset oficial descargado con cuenta gratuita del usuario (Excel, no API pública disponible — verificado navegando la página); fuente primaria de demanda/oferta de cobre usada en la Fase 6 del pipeline, reemplaza cifras de prensa citadas en versiones anteriores de este análisis
+- [S&P Global — Copper in the Age of AI (enero 2026)](https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_Full%20Report_January%202026.pdf) — cifras de demanda de esta fuente no se pudieron verificar contra el informe primario; ver nota de discrepancia en `docs/10-articulo-analisis-cientifico.md` sección 3.4
 - [IEA — Global Critical Minerals Outlook 2025 / Copper analysis](https://www.iea.org/reports/copper)
 - [Wood Mackenzie — Soaring copper demand an obstacle to future growth](https://www.woodmac.com/horizons/soaring-copper-demand-obstacle-to-future-growth/)
 - [Carbon Credits — Data Centers' Copper Hunger](https://carboncredits.com/data-centers-copper-hunger-how-ai-is-driving-a-looming-supply-crunch/)

@@ -81,6 +81,7 @@ def main():
     precio_fred = cargar_json(LIVE_DIR / "copper_price_fred.json")
     snapshots = cargar_json(LIVE_DIR / "snapshots_fuentes_oficiales.json")
     usgs = cargar_json(LIVE_DIR / "usgs_copper_mcs.json")
+    iea = cargar_json(LIVE_DIR / "iea_critical_minerals_copper.json")
     upme_recursos = cargar_json(LIVE_DIR / "upme_recursos_reservas_proyectos.json")
     upme_curado = cargar_json(DATA_DIR / "upme_informe_cobre_hallazgos_curados.json")
 
@@ -130,6 +131,11 @@ def main():
                 "origen": "api_publica_en_vivo",
                 "confiabilidad": "alta — fuente oficial del Gobierno de EE. UU. (USGS), parseada de un PDF con formato tabular estable; ver advertencias internas de parseo por país",
                 "datos": usgs,
+            },
+            "iea_critical_minerals_demanda_oferta_cobre": {
+                "origen": "aportado_manualmente_por_usuario",
+                "confiabilidad": "alta — dataset oficial de IEA (Critical Minerals Data Explorer 2026), pero obtenido vía cuenta gratuita del usuario, no vía API pública; ver aviso de licencia interno del archivo",
+                "datos": iea,
             },
             "upme_recursos_reservas_por_proyecto": {
                 "origen": "api_publica_en_vivo",
