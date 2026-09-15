@@ -16,6 +16,7 @@ poder incluir todo lo que las demás fases produjeron, incluida la 5):
     6. phase6_iea               — ingesta manual del IEA Critical Minerals Data Explorer (no bloqueante)
     7. phase7_upme_sgc          — informe técnico UPME: recursos/reservas por proyecto (no bloqueante)
     8. phase8_usgs_historia     — serie histórica de cobre en EE.UU. desde 1900 (no bloqueante)
+    9. phase9_upme_auditoria    — catálogo de tablas de los 2 PDFs de UPME restantes + PIB minero regional (no bloqueante)
     4. phase4_consolidacion     — arma el dataset_maestro.json final (bloqueante, corre último)
 """
 import os
@@ -38,6 +39,7 @@ FASES = [
     ("Fase 6 — IEA Critical Minerals Data Explorer (ingesta manual)", "phase6_iea/ingest_iea_manual.py", False),
     ("Fase 7 — Informe técnico UPME (recursos/reservas por proyecto)", "phase7_upme_sgc/fetch_upme_informe_cobre.py", False),
     ("Fase 8 — Serie histórica de cobre en EE.UU. desde 1900 (USGS DS140)", "phase8_usgs_historia/fetch_usgs_ds140_copper.py", False),
+    ("Fase 9 — Auditoría de los 2 PDFs de UPME restantes", "phase9_upme_auditoria/audit_upme_docs_adicionales.py", False),
     ("Fase 4 — Consolidación del dataset maestro", "phase4_consolidacion/build_dataset_maestro.py", True),
 ]
 

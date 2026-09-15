@@ -83,6 +83,7 @@ def main():
     usgs = cargar_json(LIVE_DIR / "usgs_copper_mcs.json")
     iea = cargar_json(LIVE_DIR / "iea_critical_minerals_copper.json")
     usgs_historia = cargar_json(LIVE_DIR / "usgs_ds140_copper_historia.json")
+    upme_auditoria = cargar_json(LIVE_DIR / "upme_auditoria_documentos_adicionales.json")
     upme_recursos = cargar_json(LIVE_DIR / "upme_recursos_reservas_proyectos.json")
     upme_curado = cargar_json(DATA_DIR / "upme_informe_cobre_hallazgos_curados.json")
 
@@ -142,6 +143,11 @@ def main():
                 "origen": "api_publica_en_vivo",
                 "confiabilidad": "alta — USGS Data Series 140, descarga automática con resolución dinámica de la URL vigente",
                 "datos": usgs_historia,
+            },
+            "upme_auditoria_documentos_adicionales": {
+                "origen": "api_publica_en_vivo",
+                "confiabilidad": "alta para el catálogo de tablas y el PIB minero regional (regex directo sobre texto limpio); auditoría, no extracción profunda de las 402 páginas combinadas",
+                "datos": upme_auditoria,
             },
             "upme_recursos_reservas_por_proyecto": {
                 "origen": "api_publica_en_vivo",

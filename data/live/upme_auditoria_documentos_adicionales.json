@@ -1,0 +1,2230 @@
+{
+  "nota_metodologica": "Auditoría por catálogo, no extracción profunda — ver docstring de pipeline/phase9_upme_auditoria/audit_upme_docs_adicionales.py. Las tablas en 'tablas_prioritarias_para_revision_manual' son candidatas a contener cifras no capturadas todavía; el resto son mayormente análisis social/demográfico por municipio, ya cubierto cualitativamente en el repositorio.",
+  "procesado_utc": "2026-09-15T00:19:38.645921+00:00",
+  "documentos": [
+    {
+      "id": "documento_cobre_2023",
+      "titulo": "Análisis social, ambiental y económico de los principales proyectos de minería de cobre en Colombia (2023)",
+      "url": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Documento_Cobre_29-12-2023.pdf",
+      "num_paginas": 240,
+      "num_tablas_encontradas": 165,
+      "tablas_prioritarias_para_revision_manual": [
+        {
+          "numero": 27,
+          "pagina": 48,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Chocó",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 50,
+          "pagina": 88,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Antioquia.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 72,
+          "pagina": 123,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Putumayo.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 96,
+          "pagina": 168,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Córdoba.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 118,
+          "pagina": 200,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas departamento Santander.",
+          "categoria": "economico_financiero"
+        }
+      ],
+      "conteo_por_categoria": {
+        "otro_sin_clasificar": 35,
+        "ambiental": 11,
+        "economico_financiero": 5,
+        "ya_cubierta_por_fase_7": 1,
+        "demografico_social": 113
+      },
+      "pib_explotacion_minas_y_canteras_por_departamento": {
+        "nota_interpretacion": "Porcentaje tal como aparece en la tabla fuente de UPME/DANE; el documento no aclara explícitamente si es participación en el PIB departamental o en el PIB nacional de esa actividad — no inferido, transcrito literal.",
+        "datos": [
+          {
+            "departamento": "Chocó",
+            "proyecto_asociado": "El Roble",
+            "tabla_fuente": 27,
+            "pagina": 48,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 1.0,
+              "2020": 2.1,
+              "2021": 1.5,
+              "2022": 0.9
+            }
+          },
+          {
+            "departamento": "Antioquia",
+            "proyecto_asociado": "Quebradona",
+            "tabla_fuente": 50,
+            "pagina": 88,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 5.4,
+              "2020": 11.2,
+              "2021": 9.2,
+              "2022": 7.2
+            }
+          },
+          {
+            "departamento": "Putumayo",
+            "proyecto_asociado": "Mocoa Cobre-Molibdeno",
+            "tabla_fuente": 72,
+            "pagina": 123,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 2.2,
+              "2020": 1.5,
+              "2021": 1.7,
+              "2022": 1.8
+            }
+          },
+          {
+            "departamento": "Córdoba",
+            "proyecto_asociado": "San Matías (El Alacrán)",
+            "tabla_fuente": 96,
+            "pagina": 168,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 0.8,
+              "2020": 1.7,
+              "2021": 1.1,
+              "2022": 1.0
+            }
+          },
+          {
+            "departamento": "Santander",
+            "proyecto_asociado": "Soto Norte",
+            "tabla_fuente": 118,
+            "pagina": 200,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 5.0,
+              "2020": 4.5,
+              "2021": 4.4,
+              "2022": 3.6
+            }
+          }
+        ]
+      },
+      "catalogo_completo": [
+        {
+          "numero": 1,
+          "pagina": 10,
+          "titulo": "Principales proyectos con informes de recursos y reservas bajo estándares internacionales",
+          "categoria": "ya_cubierta_por_fase_7"
+        },
+        {
+          "numero": 2,
+          "pagina": 12,
+          "titulo": "En esta, se",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 2,
+          "pagina": 15,
+          "titulo": "Ocurrencias, prospectos y depósitos de cobre identificados en Colombia",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 3,
+          "pagina": 19,
+          "titulo": "Descripción técnica de los depósitos de interés para el presente estudio",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 4,
+          "pagina": 22,
+          "titulo": "Solicitudes vigentes de Cobre en Colombia",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 5,
+          "pagina": 22,
+          "titulo": "Títulos vigentes de Cobre en Colombia",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 6,
+          "pagina": 23,
+          "titulo": "Principales Proyectos Mineros de Cobre",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 7,
+          "pagina": 32,
+          "titulo": "Información General de Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 8,
+          "pagina": 36,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 9,
+          "pagina": 36,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 10,
+          "pagina": 37,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 11,
+          "pagina": 38,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 12,
+          "pagina": 38,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 13,
+          "pagina": 38,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 14,
+          "pagina": 39,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 15,
+          "pagina": 40,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 16,
+          "pagina": 41,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto El",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 17,
+          "pagina": 41,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto El Roble.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 18,
+          "pagina": 42,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 19,
+          "pagina": 42,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 20,
+          "pagina": 43,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 21,
+          "pagina": 44,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 22,
+          "pagina": 45,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 23,
+          "pagina": 45,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 24,
+          "pagina": 45,
+          "titulo": "Programas de Educación Superior ofertados en los territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 25,
+          "pagina": 46,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia y Chocó relacionados con la Industria",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 26,
+          "pagina": 48,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 27,
+          "pagina": 48,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Chocó",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 28,
+          "pagina": 49,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 29,
+          "pagina": 57,
+          "titulo": "Identificación del recurso hídrico del área intervenida por el Proyecto El Roble.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 30,
+          "pagina": 60,
+          "titulo": "Análisis RUNAP – Proyecto el Roble",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 31,
+          "pagina": 70,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 32,
+          "pagina": 71,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 33,
+          "pagina": 73,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 34,
+          "pagina": 74,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 35,
+          "pagina": 74,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 36,
+          "pagina": 75,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 37,
+          "pagina": 76,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 38,
+          "pagina": 77,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 39,
+          "pagina": 78,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 40,
+          "pagina": 78,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 41,
+          "pagina": 79,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 42,
+          "pagina": 81,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 43,
+          "pagina": 81,
+          "titulo": "Servicios prestados por las IPS Públicas - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 44,
+          "pagina": 82,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 45,
+          "pagina": 83,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 46,
+          "pagina": 84,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 47,
+          "pagina": 84,
+          "titulo": "Programas de Educación Superior ofertados en los territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 48,
+          "pagina": 85,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia relacionados con la Industria Minera y",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 49,
+          "pagina": 88,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Quebradona",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 50,
+          "pagina": 88,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Antioquia.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 51,
+          "pagina": 89,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 52,
+          "pagina": 95,
+          "titulo": "Identificación del recurso hídrico del área intervenida por el Proyecto Quebradona.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 53,
+          "pagina": 97,
+          "titulo": "Diagnóstico del Saneamiento Básico en el Municipio de Jericó",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 54,
+          "pagina": 99,
+          "titulo": "Análisis RUNAP – Proyecto Quebradona.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 55,
+          "pagina": 113,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 56,
+          "pagina": 114,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 57,
+          "pagina": 114,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 58,
+          "pagina": 115,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 59,
+          "pagina": 115,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 60,
+          "pagina": 116,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 61,
+          "pagina": 116,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 62,
+          "pagina": 116,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 63,
+          "pagina": 117,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto Mocoa",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 64,
+          "pagina": 117,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 65,
+          "pagina": 117,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 66,
+          "pagina": 118,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 67,
+          "pagina": 119,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 68,
+          "pagina": 120,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 69,
+          "pagina": 121,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 70,
+          "pagina": 121,
+          "titulo": "Programas de Educación Superior ofertados por área de desempeño en los territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 71,
+          "pagina": 123,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 72,
+          "pagina": 123,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Putumayo.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 73,
+          "pagina": 124,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 74,
+          "pagina": 125,
+          "titulo": "Identificación de pueblos indígenas, cabildos y resguardos de Mocoa.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 75,
+          "pagina": 127,
+          "titulo": "Identificación de Mocoa organizaciones y consejos de comunidades negras.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 76,
+          "pagina": 137,
+          "titulo": "Identificación del recurso hídrico del área intervenida por el Proyecto Mocoa-Molibdeno.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 77,
+          "pagina": 140,
+          "titulo": "Análisis RUNAP – Proyecto Mocoa.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 78,
+          "pagina": 150,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 79,
+          "pagina": 150,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 80,
+          "pagina": 152,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 81,
+          "pagina": 152,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 82,
+          "pagina": 153,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 83,
+          "pagina": 154,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 84,
+          "pagina": 155,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 85,
+          "pagina": 156,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 86,
+          "pagina": 156,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto San",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 87,
+          "pagina": 157,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 88,
+          "pagina": 158,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 89,
+          "pagina": 159,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 90,
+          "pagina": 160,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 91,
+          "pagina": 162,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 92,
+          "pagina": 163,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 93,
+          "pagina": 164,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 94,
+          "pagina": 165,
+          "titulo": "Programas de Educación Superior ofertados por área de desempeño en los territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 95,
+          "pagina": 167,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto San Matías.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 96,
+          "pagina": 168,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Córdoba.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 97,
+          "pagina": 169,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto San Matías.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 98,
+          "pagina": 175,
+          "titulo": "Identificación del recurso hídrico del área intervenida por el Proyecto San Matías.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 99,
+          "pagina": 178,
+          "titulo": "Análisis RUNAP – Proyecto San Matías",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 100,
+          "pagina": 183,
+          "titulo": "Permisos de concesión de aguas y recursos naturales.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 101,
+          "pagina": 187,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 102,
+          "pagina": 188,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 103,
+          "pagina": 189,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 104,
+          "pagina": 189,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 105,
+          "pagina": 190,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 106,
+          "pagina": 191,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 107,
+          "pagina": 191,
+          "titulo": "Cobertura Bruta por nivel educativo. Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 108,
+          "pagina": 192,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 109,
+          "pagina": 193,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto Soto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 110,
+          "pagina": 193,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 111,
+          "pagina": 194,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 112,
+          "pagina": 195,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 113,
+          "pagina": 196,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 114,
+          "pagina": 196,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 115,
+          "pagina": 197,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 116,
+          "pagina": 198,
+          "titulo": "Programas Activos de Educación Superior ofertados en Santander y Norte de Santander relacionados",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 117,
+          "pagina": 200,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 118,
+          "pagina": 200,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas departamento Santander.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 119,
+          "pagina": 201,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 120,
+          "pagina": 203,
+          "titulo": "Escenario Sin Proyecto Impactos Positivos",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 121,
+          "pagina": 203,
+          "titulo": "Jerarquización de Impactos Negativos",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 122,
+          "pagina": 205,
+          "titulo": "Escenario Con Proyecto Impactos Negativos",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 123,
+          "pagina": 206,
+          "titulo": "Escenario Con Proyecto Impactos Positivos",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 124,
+          "pagina": 210,
+          "titulo": "Identificación del recurso hídrico del área intervenida por el Proyecto Soto Norte.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 125,
+          "pagina": 212,
+          "titulo": "Análisis RUNAP – Proyecto Soto NORTE.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 15,
+          "pagina": 233,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 16,
+          "pagina": 233,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 19,
+          "pagina": 233,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto El Roble 41",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 21,
+          "pagina": 233,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas -",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 22,
+          "pagina": 233,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 25,
+          "pagina": 233,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia y Chocó relacionados con la",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 28,
+          "pagina": 233,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto El",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 38,
+          "pagina": 234,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 40,
+          "pagina": 234,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 42,
+          "pagina": 234,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 44,
+          "pagina": 234,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas -",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 45,
+          "pagina": 234,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 48,
+          "pagina": 234,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia relacionados con la Industria",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 51,
+          "pagina": 234,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 56,
+          "pagina": 234,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Mocoa Cobre",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 57,
+          "pagina": 234,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno. 113",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 59,
+          "pagina": 234,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno. .. 114",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 62,
+          "pagina": 234,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 63,
+          "pagina": 234,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 64,
+          "pagina": 234,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Mocoa",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 65,
+          "pagina": 234,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno. 116",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 66,
+          "pagina": 234,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno. 117",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 67,
+          "pagina": 234,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 68,
+          "pagina": 235,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 69,
+          "pagina": 235,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto Mocoa Cobre",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 71,
+          "pagina": 235,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 73,
+          "pagina": 235,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 85,
+          "pagina": 235,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 86,
+          "pagina": 235,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 89,
+          "pagina": 235,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 91,
+          "pagina": 235,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas -",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 92,
+          "pagina": 235,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 97,
+          "pagina": 235,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto San",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 108,
+          "pagina": 236,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 109,
+          "pagina": 236,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 114,
+          "pagina": 236,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas -",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 115,
+          "pagina": 236,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 116,
+          "pagina": 236,
+          "titulo": "Programas Activos de Educación Superior ofertados en Santander y Norte de Santander",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 119,
+          "pagina": 236,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Soto",
+          "categoria": "demografico_social"
+        }
+      ]
+    },
+    {
+      "id": "caracterizacion_2025",
+      "titulo": "Caracterización de aspectos sociales y ambientales en proyectos mineros de cobre en Colombia (2025)",
+      "url": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Definitivo_Caracterizacion_de_aspectos_sociales_y_ambientales_pry_min_cobre_Colombia_2025.pdf",
+      "num_paginas": 162,
+      "num_tablas_encontradas": 168,
+      "tablas_prioritarias_para_revision_manual": [
+        {
+          "numero": 27,
+          "pagina": 38,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas en el departamento de Chocó",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 50,
+          "pagina": 66,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas en Antioquia",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 71,
+          "pagina": 87,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Putumayo.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 95,
+          "pagina": 117,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Córdoba.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 116,
+          "pagina": 137,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas departamento Santander",
+          "categoria": "economico_financiero"
+        }
+      ],
+      "conteo_por_categoria": {
+        "otro_sin_clasificar": 32,
+        "ambiental": 13,
+        "economico_financiero": 5,
+        "ya_cubierta_por_fase_7": 2,
+        "demografico_social": 116
+      },
+      "pib_explotacion_minas_y_canteras_por_departamento": {
+        "nota_interpretacion": "Porcentaje tal como aparece en la tabla fuente de UPME/DANE; el documento no aclara explícitamente si es participación en el PIB departamental o en el PIB nacional de esa actividad — no inferido, transcrito literal.",
+        "datos": [
+          {
+            "departamento": "Chocó",
+            "proyecto_asociado": "El Roble",
+            "tabla_fuente": 27,
+            "pagina": 38,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 1.0,
+              "2020": 2.1,
+              "2021": 1.5,
+              "2022": 0.9
+            }
+          },
+          {
+            "departamento": "Antioquia",
+            "proyecto_asociado": "Quebradona",
+            "tabla_fuente": 50,
+            "pagina": 66,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 5.4,
+              "2020": 11.2,
+              "2021": 9.2,
+              "2022": 7.2
+            }
+          },
+          {
+            "departamento": "Putumayo",
+            "proyecto_asociado": "Mocoa Cobre-Molibdeno",
+            "tabla_fuente": 71,
+            "pagina": 87,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 2.2,
+              "2020": 1.5,
+              "2021": 1.7,
+              "2022": 1.8
+            }
+          },
+          {
+            "departamento": "Córdoba",
+            "proyecto_asociado": "San Matías (El Alacrán)",
+            "tabla_fuente": 95,
+            "pagina": 117,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 0.8,
+              "2020": 1.7,
+              "2021": 1.1,
+              "2022": 1.0
+            }
+          },
+          {
+            "departamento": "Santander",
+            "proyecto_asociado": "Soto Norte",
+            "tabla_fuente": 116,
+            "pagina": 137,
+            "explotacion_minas_y_canteras_pct_2019_2022": {
+              "2019": 5.0,
+              "2020": 4.5,
+              "2021": 4.4,
+              "2022": 3.6
+            }
+          }
+        ]
+      },
+      "catalogo_completo": [
+        {
+          "numero": 1,
+          "pagina": 6,
+          "titulo": "Proyectos mineros de cobre en Colombia con informes de recursos y reservas bajo estándares internacionales",
+          "categoria": "ya_cubierta_por_fase_7"
+        },
+        {
+          "numero": 2,
+          "pagina": 8,
+          "titulo": "En esta, se aprecia la variabilidad de depósitos, así como sus diferentes edades, sus característi-",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 2,
+          "pagina": 10,
+          "titulo": "Ocurrencias, prospectos y depósitos de cobre identificados en Colombia",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 3,
+          "pagina": 13,
+          "titulo": "Descripción técnica de los depósitos de interés para el presente estudio",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 4,
+          "pagina": 15,
+          "titulo": "Solicitudes vigentes para minerales de cobre y sus concentrados en Colombia",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 5,
+          "pagina": 16,
+          "titulo": "Títulos vigentes para minerales de cobre y sus concentrados en Colombia",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 6,
+          "pagina": 16,
+          "titulo": "Proyectos mineros de cobre",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 7,
+          "pagina": 25,
+          "titulo": "Información de los títulos mineros de Minera El Roble S.A.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 8,
+          "pagina": 28,
+          "titulo": "Población Total 2023 - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 9,
+          "pagina": 28,
+          "titulo": "Población por Momento de Curso de Vida 2023 - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 10,
+          "pagina": 29,
+          "titulo": "Población por área geográfica - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 11,
+          "pagina": 29,
+          "titulo": "Nacimientos por sexo 2022 - territorio de análisis proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 12,
+          "pagina": 29,
+          "titulo": "Tasa Ajustada de Mortalidad - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 13,
+          "pagina": 30,
+          "titulo": "Causas de Morbilidad - territorio de análisis proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 14,
+          "pagina": 30,
+          "titulo": "Cobertura Bruta por nivel educativo - territorio de análisis proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 15,
+          "pagina": 31,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - territorio de análisis proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 16,
+          "pagina": 31,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 17,
+          "pagina": 32,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 18,
+          "pagina": 32,
+          "titulo": "Víctimas del conflicto armado - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 19,
+          "pagina": 33,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 20,
+          "pagina": 33,
+          "titulo": "Servicios prestados por las IPS - territorio de análisis proyecto El Roble",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 21,
+          "pagina": 35,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - territorio de aná-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 22,
+          "pagina": 35,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 23,
+          "pagina": 36,
+          "titulo": "Establecimientos Educativos Educación Superior - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 24,
+          "pagina": 36,
+          "titulo": "Programas de Educación Superior ofertados en el territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 25,
+          "pagina": 36,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia y Chocó relacionados con la industria",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 26,
+          "pagina": 38,
+          "titulo": "Índice de pobreza multidimensional 2018 - territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 27,
+          "pagina": 38,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas en el departamento de Chocó",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 28,
+          "pagina": 39,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- territorio de análisis proyecto El Roble",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 29,
+          "pagina": 41,
+          "titulo": "UPME.GOV.CO 41",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 29,
+          "pagina": 42,
+          "titulo": "Identificación del recurso hídrico en el área de los títulos mineros del Proyecto El Roble",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 30,
+          "pagina": 43,
+          "titulo": "Análisis de la información disponible en RUNAP con respecto al título 9319",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 31,
+          "pagina": 52,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 32,
+          "pagina": 52,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 33,
+          "pagina": 54,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 34,
+          "pagina": 54,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 35,
+          "pagina": 55,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 36,
+          "pagina": 55,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 37,
+          "pagina": 56,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 38,
+          "pagina": 57,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 39,
+          "pagina": 57,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto Quebra-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 40,
+          "pagina": 57,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 41,
+          "pagina": 58,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 42,
+          "pagina": 60,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 43,
+          "pagina": 60,
+          "titulo": "Servicios prestados por las IPS Públicas - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 44,
+          "pagina": 61,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 45,
+          "pagina": 62,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 46,
+          "pagina": 62,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 47,
+          "pagina": 63,
+          "titulo": "Programas de Educación Superior ofertados en los territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 48,
+          "pagina": 63,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia relacionados con la Industria Minera y",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 49,
+          "pagina": 65,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Quebradona",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 50,
+          "pagina": 66,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas en Antioquia",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 51,
+          "pagina": 66,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Quebradona.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 52,
+          "pagina": 69,
+          "titulo": "Identificación del recurso hídrico del área",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 53,
+          "pagina": 70,
+          "titulo": "Análisis RUNAP – Proyecto Quebradona.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 54,
+          "pagina": 79,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 55,
+          "pagina": 79,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Mocoa Cobre – Molibde-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 56,
+          "pagina": 79,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 57,
+          "pagina": 80,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 58,
+          "pagina": 80,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 59,
+          "pagina": 80,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 60,
+          "pagina": 81,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 61,
+          "pagina": 81,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 62,
+          "pagina": 81,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto Mocoa",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 63,
+          "pagina": 82,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 64,
+          "pagina": 82,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 65,
+          "pagina": 83,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 66,
+          "pagina": 83,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 67,
+          "pagina": 84,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 68,
+          "pagina": 85,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 69,
+          "pagina": 85,
+          "titulo": "Programas de Educación Superior ofertados por área de desempeño en los territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 70,
+          "pagina": 86,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Mocoa Cobre – Molibdeno",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 71,
+          "pagina": 87,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Putumayo.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 72,
+          "pagina": 87,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 73,
+          "pagina": 88,
+          "titulo": "Identificación de pueblos indígenas, cabildos y resguardos de Mocoa.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 74,
+          "pagina": 90,
+          "titulo": "Identificación de Mocoa organizaciones y consejos de comunidades negras.",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 75,
+          "pagina": 92,
+          "titulo": "Identificación del recurso hídrico del área de los títulos mineros del Proyecto Mocoa Cobre-Molibdeno",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 76,
+          "pagina": 94,
+          "titulo": "Análisis RUNAP – Proyecto Mocoa.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 77,
+          "pagina": 103,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 78,
+          "pagina": 103,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 79,
+          "pagina": 104,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 80,
+          "pagina": 105,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 81,
+          "pagina": 105,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 82,
+          "pagina": 106,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 83,
+          "pagina": 107,
+          "titulo": "Cobertura Bruta por nivel educativo - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 84,
+          "pagina": 108,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 85,
+          "pagina": 108,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 86,
+          "pagina": 108,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 87,
+          "pagina": 109,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 88,
+          "pagina": 110,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 89,
+          "pagina": 111,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto San Matías",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 90,
+          "pagina": 113,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 91,
+          "pagina": 114,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 92,
+          "pagina": 114,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto San Matías",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 93,
+          "pagina": 115,
+          "titulo": "Programas de Educación Superior ofertados por área de desempeño en los territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 94,
+          "pagina": 117,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto San Matías.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 95,
+          "pagina": 117,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas Córdoba.",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 96,
+          "pagina": 118,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto San Matías.",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 97,
+          "pagina": 121,
+          "titulo": "Identificación del recurso hídrico en el título minero III-08021 del Proyecto San Matías.",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 98,
+          "pagina": 122,
+          "titulo": "Análisis RUNAP – Proyecto San Matías",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 99,
+          "pagina": 128,
+          "titulo": "Población Total 2023 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 100,
+          "pagina": 129,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 101,
+          "pagina": 130,
+          "titulo": "Población por área geográfica - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 102,
+          "pagina": 130,
+          "titulo": "Nacimientos por sexo 2022 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 103,
+          "pagina": 130,
+          "titulo": "Tasa Ajustada de Mortalidad - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 104,
+          "pagina": 131,
+          "titulo": "Causas de Morbilidad - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 105,
+          "pagina": 132,
+          "titulo": "Cobertura Bruta por nivel educativo. Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 106,
+          "pagina": 132,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 107,
+          "pagina": 133,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto Soto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 108,
+          "pagina": 133,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 109,
+          "pagina": 134,
+          "titulo": "Víctimas del conflicto armado - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 110,
+          "pagina": 134,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 111,
+          "pagina": 135,
+          "titulo": "Servicios prestados por las IPS - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 112,
+          "pagina": 135,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 113,
+          "pagina": 136,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Análisis Pro-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 114,
+          "pagina": 136,
+          "titulo": "Programas Activos de Educación Superior ofertados en Santander y Norte de Santander relacionados con",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 115,
+          "pagina": 137,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 116,
+          "pagina": 137,
+          "titulo": "Producto Interno Bruto PIB por actividades económicas departamento Santander",
+          "categoria": "economico_financiero"
+        },
+        {
+          "numero": 117,
+          "pagina": 138,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Soto Norte",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 118,
+          "pagina": 140,
+          "titulo": "Identificación del recurso hídrico del área intervenida por el Proyecto Soto Norte",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 119,
+          "pagina": 142,
+          "titulo": "Análisis RUNAP – Proyecto Soto Norte",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 120,
+          "pagina": 144,
+          "titulo": "Permisos y resoluciones asociadas para el proyecto minero Soto Norte",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 1,
+          "pagina": 157,
+          "titulo": "Proyectos mineros de cobre en Colombia con informes de recursos y reservas bajo están-",
+          "categoria": "ya_cubierta_por_fase_7"
+        },
+        {
+          "numero": 6,
+          "pagina": 157,
+          "titulo": "Proyectos mineros de cobre .................................................................................................................",
+          "categoria": "otro_sin_clasificar"
+        },
+        {
+          "numero": 15,
+          "pagina": 157,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - territorio de análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 16,
+          "pagina": 157,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - territorio de análisis proyecto El",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 21,
+          "pagina": 157,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - territorio",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 22,
+          "pagina": 157,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - territorio de análi-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 25,
+          "pagina": 157,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia y Chocó relacionados con la",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 28,
+          "pagina": 157,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- territorio de análisis proyecto El Roble ..39",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 38,
+          "pagina": 157,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Aná-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 39,
+          "pagina": 157,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 40,
+          "pagina": 157,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Quebradona. 57",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 42,
+          "pagina": 157,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto Quebradona. 60",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 44,
+          "pagina": 157,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territo-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 45,
+          "pagina": 157,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Aná-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 47,
+          "pagina": 158,
+          "titulo": "Programas de Educación Superior ofertados en los territorios de Análisis Proyecto Quebradona. ..63",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 48,
+          "pagina": 158,
+          "titulo": "Programas Activos de Educación Superior ofertados en Antioquia relacionados con la Industria",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 51,
+          "pagina": 158,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Que-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 52,
+          "pagina": 158,
+          "titulo": "Identificación del recurso hídrico del área.................................................................................................",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 55,
+          "pagina": 158,
+          "titulo": "Población por Momento de Curso de Vida 2023 - Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 61,
+          "pagina": 158,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análi-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 62,
+          "pagina": 158,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 63,
+          "pagina": 158,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto Mocoa Cobre",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 66,
+          "pagina": 158,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 67,
+          "pagina": 158,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Aná-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 68,
+          "pagina": 158,
+          "titulo": "Establecimientos Educativos Educación Superior - Territorios de Análisis Proyecto Mocoa Cobre –",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 69,
+          "pagina": 158,
+          "titulo": "Programas de Educación Superior ofertados por área de desempeño en los territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 70,
+          "pagina": 158,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto Mocoa Cobre",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 72,
+          "pagina": 158,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Mocoa",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 75,
+          "pagina": 158,
+          "titulo": "Identificación del recurso hídrico del área de los títulos mineros del Proyecto Mocoa Cobre-Molibdeno .92",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 76,
+          "pagina": 158,
+          "titulo": "Análisis RUNAP – Proyecto Mocoa. ...........................................................................................................",
+          "categoria": "ambiental"
+        },
+        {
+          "numero": 84,
+          "pagina": 158,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Análi-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 85,
+          "pagina": 158,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 86,
+          "pagina": 158,
+          "titulo": "Tasa de tránsito inmediato a la educación superior - Territorios de Análisis Proyecto San Matías ..108",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 88,
+          "pagina": 158,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 90,
+          "pagina": 159,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Territo-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 91,
+          "pagina": 159,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de Aná-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 93,
+          "pagina": 159,
+          "titulo": "Programas de Educación Superior ofertados por área de desempeño en los territorios de Análisis",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 94,
+          "pagina": 159,
+          "titulo": "Índice de pobreza multidimensional 2018 - Territorios de Análisis Proyecto San Matías. .117",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 96,
+          "pagina": 159,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto San",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 106,
+          "pagina": 159,
+          "titulo": "Tasa de deserción intra-anual del sector oficial en educación básica y media - Territorios de Aná-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 107,
+          "pagina": 159,
+          "titulo": "Tasa de repitencia del sector oficial en educación básica y media - Territorios de Análisis Proyecto",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 110,
+          "pagina": 159,
+          "titulo": "Instituciones Prestadoras de Servicios de Salud IPS - Territorios de Análisis Proyecto Soto Norte .134",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 112,
+          "pagina": 159,
+          "titulo": "Capacidad Instalada de las Instituciones Prestadoras de Servicios de Salud IPS Públicas - Terri-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 113,
+          "pagina": 159,
+          "titulo": "Establecimientos Educativos Educación Primaria, Secundaria, Básica y Media. - Territorios de",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 114,
+          "pagina": 159,
+          "titulo": "Programas Activos de Educación Superior ofertados en Santander y Norte de Santander relacio-",
+          "categoria": "demografico_social"
+        },
+        {
+          "numero": 117,
+          "pagina": 159,
+          "titulo": "Población por área geográfica y pertenencia étnico-racial- Territorios de Análisis Proyecto Soto",
+          "categoria": "demografico_social"
+        }
+      ]
+    }
+  ]
+}
