@@ -1,0 +1,26 @@
+{
+  "actualizado": "2026-09-14",
+  "origen": "curado_investigacion_humana",
+  "nota_precision": "Coordenadas de la cabecera municipal de referencia (no del yacimiento exacto ni de un sitio industrial específico). Uso: ubicar la región en un mapa, no georreferenciar una planta o mina.",
+  "municipios": [
+    {"municipio": "Ciudad Bolívar", "departamento": "Antioquia", "lat": 5.85, "lon": -76.02, "proyecto_o_zona": "El Roble (cinturón Occidental, Eoceno)"},
+    {"municipio": "El Carmen de Atrato", "departamento": "Chocó", "lat": 5.91, "lon": -76.15, "proyecto_o_zona": "El Roble (cinturón Occidental, Eoceno)"},
+    {"municipio": "Jericó", "departamento": "Antioquia", "lat": 5.79, "lon": -75.78, "proyecto_o_zona": "Quebradona"},
+    {"municipio": "Támesis", "departamento": "Antioquia", "lat": 5.67, "lon": -75.72, "proyecto_o_zona": "Quebradona"},
+    {"municipio": "Fredonia", "departamento": "Antioquia", "lat": 5.92, "lon": -75.68, "proyecto_o_zona": "Quebradona"},
+    {"municipio": "Tarso", "departamento": "Antioquia", "lat": 5.82, "lon": -75.82, "proyecto_o_zona": "Quebradona"},
+    {"municipio": "Pueblorrico", "departamento": "Antioquia", "lat": 5.78, "lon": -75.84, "proyecto_o_zona": "Quebradona"},
+    {"municipio": "California", "departamento": "Santander", "lat": 7.35, "lon": -72.94, "proyecto_o_zona": "Soto Norte (cinturón Oriental, Jurásico) — también Plate 26 USGS, 9.7 Mt propios de Colombia"},
+    {"municipio": "Mocoa", "departamento": "Putumayo", "lat": 1.15, "lon": -76.65, "proyecto_o_zona": "Mocoa Cobre-Molibdeno (cinturón Oriental, Jurásico)"},
+    {"municipio": "Puerto Libertador", "departamento": "Córdoba", "lat": 7.88, "lon": -75.67, "proyecto_o_zona": "San Matías / El Alacrán"},
+    {"municipio": "San Diego", "departamento": "Cesar", "lat": 10.33, "lon": -73.18, "proyecto_o_zona": "Ronda ANM cobre — Bloques 1, 2 ampliado, 3, 15 (Serranía del Perijá)"},
+    {"municipio": "La Paz", "departamento": "Cesar", "lat": 10.35, "lon": -73.17, "proyecto_o_zona": "Ronda ANM cobre — Bloques 3, 15 (Serranía del Perijá)"},
+    {"municipio": "Uribia (Puerto Bolívar)", "departamento": "La Guajira", "lat": 12.23, "lon": -71.98, "proyecto_o_zona": "Infraestructura pesada ya construida (puerto de aguas profundas + ferrocarril de Cerrejón) — no es zona de recurso de cobre conocido, es candidata de infraestructura conectable a Cesar"},
+    {"municipio": "El Tambo", "departamento": "Cauca", "lat": 2.45, "lon": -76.81, "proyecto_o_zona": "Cinturón Central (Mioceno) — región general, sin proyecto formal identificado"}
+  ],
+  "ubicacion_no_verificada": {
+    "prospecto": "El Infierno-Chili (Plate 25 USGS, 7.7 Mt propios de Colombia)",
+    "problema": "Fuente primaria de UPME lo asocia al cinturón Oriental (Jurásico) sin precisar municipio; una síntesis secundaria lo ubica en Huila, en la zona de confluencia geológica Huila-Cauca-Putumayo-Nariño (Sistema de Fallas de Algeciras). No se fija una coordenada para evitar falsa precisión.",
+    "accion_pendiente": "Verificar directamente con el Servicio Geológico Colombiano (SGC) — ver issue de GitHub correspondiente."
+  }
+}

@@ -63,6 +63,7 @@
 | [`docs/08-oportunidades-inversion.md`](docs/08-oportunidades-inversion.md) | Mapa informativo de empresas públicas con exposición a cobre colombiano (no es asesoría financiera) |
 | [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md) | Arquitectura del pipeline por fases, procedencia de datos, cómo ejecutarlo y roadmap de fases futuras |
 | [`docs/10-articulo-analisis-cientifico.md`](docs/10-articulo-analisis-cientifico.md) | Análisis con estructura IMRaD (hipótesis, métodos, resultados reproducibles, discusión, limitaciones) |
+| [`docs/11-geografia-sitios-candidatos.md`](docs/11-geografia-sitios-candidatos.md) | Dónde está el 97% sin explorar, coordenadas de municipios de referencia, sitios candidatos y no candidatos para fundición-refinería, energía de doble uso |
 | [`Colombia_Cobre_Mineria_2026-2030.docx`](Colombia_Cobre_Mineria_2026-2030.docx) | Informe original en Word (portada, tablas, hoja de ruta 2026-2030) |
 
 ## ⚙️ Pipeline de datos (`/pipeline`)
@@ -92,6 +93,7 @@ Estructurados en JSON para reutilizar en cualquier análisis posterior con IA:
 - [`potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) — potencial geológico, inversión en exploración, impacto de la crisis reciente, minería ilegal, y listas explícitas de puntos a favor/en contra.
 - [`estudios_cientificos_colombia.json`](data/estudios_cientificos_colombia.json) — inventario de estudios de UPME, SGC, Universidad Nacional, Universidad de Antioquia y literatura internacional de IA aplicada.
 - [`kpis_hoja_de_ruta_2026_2050.json`](data/kpis_hoja_de_ruta_2026_2050.json) — KPIs extendidos con hitos 2035/2040/2050.
+- [`coordenadas_municipios_cobre.json`](data/coordenadas_municipios_cobre.json) — coordenadas de referencia de los municipios de los 3 cinturones cupríferos, con la ubicación no verificada marcada explícitamente.
 
 ---
 
