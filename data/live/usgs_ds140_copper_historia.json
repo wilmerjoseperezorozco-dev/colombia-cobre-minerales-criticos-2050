@@ -3,7 +3,7 @@
   "url_pagina": "https://www.usgs.gov/media/files/copper-historical-statistics-data-series-140",
   "url_archivo_descargado": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/files/ds140-copper-2020.xlsx",
   "ultima_modificacion_reportada_por_usgs": "June 27, 2023",
-  "extraido_utc": "2026-09-15T00:16:45.061820+00:00",
+  "extraido_utc": "2026-09-15T01:37:45.535827+00:00",
   "unidad": "toneladas métricas (t) de contenido de cobre, salvo el valor unitario en USD/t",
   "cobertura_geografica": "Estados Unidos (excepto la columna 'produccion_mundial_t', que es global)",
   "rango_anos": [

@@ -35,33 +35,42 @@ URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM"
 SERIE_ID = "PCOPPUSDM"
 
 
-def main() -> int:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    resp = requests.get(URL, timeout=20)
-    resp.raise_for_status()
-    csv_texto = resp.text
-
-    with open(OUT_DIR / "copper_price_fred.csv", "w", encoding="utf-8") as f:
-        f.write(csv_texto)
-
+def parsear_csv_fred(csv_texto: str, extraido_utc: str | None = None) -> dict:
+    """Función pura (sin red ni disco): recibe el CSV crudo de FRED como texto
+    y devuelve el diccionario de resultado completo. Aislada del I/O
+    deliberadamente para que sea testeable con un CSV de referencia
+    (`tests/fixtures/fred_pcoppusdm_muestra.csv`) sin depender de la red —
+    ver `tests/test_phase2_fred.py`. Si FRED cambia el nombre de columnas o
+    el formato de fecha, el test con el fixture fijo NO detecta el cambio
+    real de la API (para eso está la Fase 2 corriendo de verdad en CI
+    semanal); lo que sí detecta es una regresión introducida en esta misma
+    función.
+    """
     df = pd.read_csv(io.StringIO(csv_texto))
+    if len(df.columns) != 2:
+        raise ValueError(
+            f"Se esperaban 2 columnas en el CSV de FRED, se encontraron {len(df.columns)}: "
+            f"{list(df.columns)} — el formato de la fuente pudo haber cambiado."
+        )
     df.columns = ["fecha", "precio_usd_por_tonelada"]
     df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
     df["precio_usd_por_tonelada"] = pd.to_numeric(df["precio_usd_por_tonelada"], errors="coerce")
     df = df.dropna().sort_values("fecha").reset_index(drop=True)
+
+    if df.empty:
+        raise ValueError("El CSV de FRED no produjo ninguna fila numérica válida tras el parseo.")
 
     ultimo = df.iloc[-1]
     fecha_final = pd.Timestamp(ultimo["fecha"])
     hace_5_anos = df[df["fecha"] >= (fecha_final - pd.DateOffset(years=5))]
     hace_1_ano = df[df["fecha"] >= (fecha_final - pd.DateOffset(years=1))]
 
-    resultado = {
+    return {
         "fuente": "FRED (Federal Reserve Bank of St. Louis) — serie PCOPPUSDM, origen FMI Primary Commodity Prices",
         "url": URL,
         "unidad": "USD por tonelada métrica",
         "frecuencia": "mensual",
-        "extraido_utc": datetime.now(timezone.utc).isoformat(),
+        "extraido_utc": extraido_utc or datetime.now(timezone.utc).isoformat(),
         "num_observaciones": int(len(df)),
         "rango_fechas": [df["fecha"].iloc[0].strftime("%Y-%m-%d"), df["fecha"].iloc[-1].strftime("%Y-%m-%d")],
         "ultimo_dato": {
@@ -83,6 +92,19 @@ def main() -> int:
             for f, p in zip(df["fecha"], df["precio_usd_por_tonelada"])
         ],
     }
+
+
+def main() -> int:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    resp = requests.get(URL, timeout=20)
+    resp.raise_for_status()
+    csv_texto = resp.text
+
+    with open(OUT_DIR / "copper_price_fred.csv", "w", encoding="utf-8") as f:
+        f.write(csv_texto)
+
+    resultado = parsear_csv_fred(csv_texto)
 
     with open(OUT_DIR / "copper_price_fred.json", "w", encoding="utf-8") as f:
         json.dump(resultado, f, ensure_ascii=False, indent=2)

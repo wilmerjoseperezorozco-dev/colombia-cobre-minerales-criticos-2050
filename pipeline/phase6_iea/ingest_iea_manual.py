@@ -57,15 +57,20 @@ def hash_archivo(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def extraer_demanda_cobre(path: Path) -> dict:
-    """Filas 6-17 de la hoja de demanda: bloque de Copper.
+def extraer_demanda_cobre(df: pd.DataFrame) -> dict:
+    """Función pura (sin I/O): recibe la hoja de demanda ya leída como
+    DataFrame y devuelve el bloque de Copper (filas 6-17).
 
     Estructura de columnas (fila 4 = años, fila 3 = nombre de escenario):
     col 1 = 2025 (línea base); cols 3-7 = Current Policies 2030-2050;
     cols 9-13 = Stated Policies 2030-2050; cols 15-19 = High Demand 2030-2050.
-    """
-    df = pd.read_excel(path, sheet_name=HOJA_DEMANDA, header=None)
 
+    Separada del `pd.read_excel` deliberadamente para poder testear con un
+    DataFrame pequeño construido a mano — ver `tests/test_phase6_iea.py`.
+    Si IEA reordena las filas/columnas del Excel, esta función lo detectaría
+    con un IndexError o un valor sin sentido, pero no hay una validación de
+    forma explícita todavía (ver limitación documentada en el test).
+    """
     fila_base_2025 = float(df.iloc[16, 1])  # fila 16 = "Total demand", col 1 = 2025
     escenarios = {
         "current_policies_scenario": list(df.iloc[16, 3:8].astype(float)),
@@ -92,10 +97,10 @@ def extraer_demanda_cobre(path: Path) -> dict:
     }
 
 
-def extraer_oferta_cobre(path: Path) -> dict:
-    """Filas 5-14 de la hoja de oferta: bloque 'Copper - Mining', base case."""
-    df = pd.read_excel(path, sheet_name=HOJA_OFERTA, header=None)
-
+def extraer_oferta_cobre(df: pd.DataFrame) -> dict:
+    """Función pura (sin I/O): recibe la hoja de oferta ya leída como
+    DataFrame y devuelve el bloque 'Copper - Mining', base case (filas 5-14).
+    """
     paises = {}
     for fila in range(6, 13):
         nombre_pais = df.iloc[fila, 0]
@@ -126,8 +131,10 @@ def main() -> int:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    demanda = extraer_demanda_cobre(ARCHIVO_MANUAL)
-    oferta = extraer_oferta_cobre(ARCHIVO_MANUAL)
+    df_demanda = pd.read_excel(ARCHIVO_MANUAL, sheet_name=HOJA_DEMANDA, header=None)
+    df_oferta = pd.read_excel(ARCHIVO_MANUAL, sheet_name=HOJA_OFERTA, header=None)
+    demanda = extraer_demanda_cobre(df_demanda)
+    oferta = extraer_oferta_cobre(df_oferta)
 
     salida = {
         "fuente": "IEA, Critical Minerals Data Explorer, edición 2026 (archivo Excel oficial)",

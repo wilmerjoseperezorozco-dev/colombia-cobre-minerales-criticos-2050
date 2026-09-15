@@ -47,6 +47,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = REPO_ROOT / "data" / "live"
 PDF_CACHE_DIR = REPO_ROOT / "pipeline" / "_out"
+POTENCIAL_COLOMBIA_PATH = REPO_ROOT / "data" / "potencial_colombia_y_retos.json"
 
 ANO_EDICION = 2026
 URL = f"https://pubs.usgs.gov/periodicals/mcs{ANO_EDICION}/mcs{ANO_EDICION}-copper.pdf"
@@ -65,6 +66,15 @@ def descargar_pdf() -> bytes:
     resp = requests.get(URL, timeout=30)
     resp.raise_for_status()
     return resp.content
+
+
+def cargar_potencial_colombia_mt() -> float:
+    """Única fuente de verdad para el potencial de Colombia: lee el valor
+    directamente de data/potencial_colombia_y_retos.json en vez de
+    hardcodearlo en este script (ver nota en `contexto_colombia`)."""
+    with open(POTENCIAL_COLOMBIA_PATH, encoding="utf-8") as f:
+        datos = json.load(f)
+    return datos["potencial_geologico"]["potencial_colombia_propio_total_mt_cu"]
 
 
 def num(token: str):
@@ -171,7 +181,45 @@ def parsear_tabla_mundial(texto: str) -> dict:
     else:
         advertencias.append("No se pudo parsear la fila 'World total (rounded)'")
 
+    _corregir_marcadores_de_nota_al_pie(filas, total, advertencias)
+
     return {"por_pais": filas, "mundo_total": total, "advertencias": advertencias}
+
+
+def _corregir_marcadores_de_nota_al_pie(filas: dict, total: dict | None, advertencias: list) -> None:
+    """Guardrail de sanidad: ningún país puede tener, en cualquier columna,
+    un valor mayor al total mundial de esa misma columna — es una
+    imposibilidad lógica, no una cifra rara. Si ocurre, es casi siempre
+    porque pdfplumber pegó un marcador de nota al pie (un dígito suelto,
+    ej. '7') justo antes del número real (ej. '7100,000' en vez de
+    '100,000' para Australia, MCS 2026 — bug real encontrado el 14-sep-2026
+    al construir los tests de este módulo).
+
+    Se intenta la corrección automática (quitar el primer dígito) SOLO si
+    el resultado corregido es plausible (<= total); si no, se deja el valor
+    tal cual y se reporta como advertencia explícita — nunca se inventa un
+    número sin evidencia de que la corrección es la correcta.
+    """
+    if not total:
+        return
+    for pais, valores in filas.items():
+        for campo, valor in list(valores.items()):
+            tope = total.get(campo)
+            if valor is None or tope is None or valor <= tope:
+                continue
+            valor_str = str(int(valor))
+            corregido = int(valor_str[1:]) if len(valor_str) > 1 else None
+            if corregido is not None and corregido <= tope:
+                valores[campo] = corregido
+                advertencias.append(
+                    f"Corrección automática: '{pais}'.{campo} venía como {valor} (> total mundial {tope}), "
+                    f"probable marcador de nota al pie pegado al número — corregido a {corregido}. Verificar contra el PDF original."
+                )
+            else:
+                advertencias.append(
+                    f"Valor sospechoso sin corregir: '{pais}'.{campo} = {valor} excede el total mundial ({tope}) "
+                    f"y no se pudo corregir automáticamente con confianza — revisar manualmente."
+                )
 
 
 def parsear_recursos_mundiales(texto: str) -> dict:
@@ -194,10 +242,19 @@ def parsear_recursos_mundiales(texto: str) -> dict:
     }
 
 
-def contexto_colombia(tabla_mundial: dict) -> dict:
+def contexto_colombia(tabla_mundial: dict, potencial_upme_mt: float = 17.4) -> dict:
+    """El valor por defecto (17.4 Mt) es la cifra CORREGIDA del potencial
+    específico de Colombia (dos regiones geológicas propias, 7.7+9.7 Mt),
+    verificada contra la fuente primaria en la Fase 7 — ver
+    data/potencial_colombia_y_retos.json y docs/10, sección 3.5. Este
+    parámetro existía antes hardcodeado en 9.7 Mt (la cifra incorrecta que
+    se corrigió) y quedó desactualizado tras esa corrección hasta que un
+    test de este archivo (`tests/test_phase5_usgs_mcs.py`) lo detectó — un
+    ejemplo real de por qué un valor de este tipo no debería vivir
+    hardcodeado en dos lugares sin una única fuente de verdad.
+    """
     reservas_mundiales_kt = (tabla_mundial.get("mundo_total") or {}).get("reservas_kt")
     reservas_otros_paises_kt = (tabla_mundial.get("por_pais") or {}).get("Other countries", {}).get("reservas_kt")
-    potencial_upme_mt = 9.7  # UPME, ver data/potencial_colombia_y_retos.json
     potencial_upme_kt = potencial_upme_mt * 1000
 
     resultado = {
@@ -234,7 +291,7 @@ def main() -> int:
     salient_stats = parsear_salient_statistics_eeuu(texto_completo)
     tabla_mundial = parsear_tabla_mundial(texto_completo)
     recursos = parsear_recursos_mundiales(texto_completo)
-    colombia = contexto_colombia(tabla_mundial)
+    colombia = contexto_colombia(tabla_mundial, cargar_potencial_colombia_mt())
 
     m_edicion = re.search(r"Mineral Commodity Summaries, (\w+ \d{4})", texto_completo)
 

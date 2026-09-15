@@ -1,0 +1,4 @@
+# Dependencias adicionales solo para desarrollo/pruebas (no necesarias para
+# correr el pipeline en producción/CI de actualización de datos).
+-r requirements.txt
+pytest>=8.0

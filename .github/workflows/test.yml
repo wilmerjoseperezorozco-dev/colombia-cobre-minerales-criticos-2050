@@ -1,0 +1,31 @@
+name: Tests del pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias (incluye pytest)
+        run: pip install -r pipeline/requirements-dev.txt
+
+      - name: Correr la batería de tests
+        # No requiere red: todos los tests usan fixtures fijos (texto real
+        # capturado de las fuentes, no llamadas en vivo) — ver tests/fixtures/.
+        run: python -m pytest tests/ -v
+
+      - name: Guardrail de consistencia sobre el dataset ya versionado
+        # Valida el dataset_maestro.json que ya está en el repo (el de la
+        # última corrida de actualizar_datos.yml), no genera uno nuevo —
+        # así este workflow corre rápido y sin red en cada push/PR.
+        run: python pipeline/validaciones/validar_dataset_maestro.py

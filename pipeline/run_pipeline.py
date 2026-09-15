@@ -17,7 +17,8 @@ poder incluir todo lo que las demás fases produjeron, incluida la 5):
     7. phase7_upme_sgc          — informe técnico UPME: recursos/reservas por proyecto (no bloqueante)
     8. phase8_usgs_historia     — serie histórica de cobre en EE.UU. desde 1900 (no bloqueante)
     9. phase9_upme_auditoria    — catálogo de tablas de los 2 PDFs de UPME restantes + PIB minero regional (no bloqueante)
-    4. phase4_consolidacion     — arma el dataset_maestro.json final (bloqueante, corre último)
+    4. phase4_consolidacion     — arma el dataset_maestro.json final (bloqueante)
+    G. validaciones             — guardrail de consistencia lógica sobre el dataset final (bloqueante, corre último)
 """
 import os
 import subprocess
@@ -41,6 +42,7 @@ FASES = [
     ("Fase 8 — Serie histórica de cobre en EE.UU. desde 1900 (USGS DS140)", "phase8_usgs_historia/fetch_usgs_ds140_copper.py", False),
     ("Fase 9 — Auditoría de los 2 PDFs de UPME restantes", "phase9_upme_auditoria/audit_upme_docs_adicionales.py", False),
     ("Fase 4 — Consolidación del dataset maestro", "phase4_consolidacion/build_dataset_maestro.py", True),
+    ("Guardrail — Validación de consistencia lógica", "validaciones/validar_dataset_maestro.py", True),
 ]
 
 

@@ -51,6 +51,23 @@ A diferencia de las páginas HTML de la Fase 3 (sin estructura consistente), el 
 
 **Aviso de licencia:** el archivo se conserva en el repositorio (privado) para reproducibilidad, con un aviso explícito en el JSON de salida de que es para uso personal/no comercial de la cuenta gratuita del usuario — no debe redistribuirse el Excel crudo si este repositorio deja de ser privado.
 
+**Flujo manual exacto (para quien retome este proyecto en 6 meses, incluyéndome a mí):**
+
+1. Crear una cuenta gratuita en [iea.org](https://www.iea.org/) si no se tiene una (Join for free).
+2. Ir a [Critical Minerals Data Explorer](https://www.iea.org/data-and-statistics/data-tools/critical-minerals-data-explorer).
+3. Iniciar sesión (el botón de descarga redirige a un formulario de login — confirmado, no es un token).
+4. Buscar el enlace/botón **"Download supply & demand data behind the Critical Minerals Data Explorer 2026 edition"** y descargarlo (Excel, ~1,1 MB).
+5. Guardar el archivo como `pipeline/_manual_uploads/IEA_Critical_Minerals_Dataset_2026.xlsx` (ese nombre exacto — es lo que `ingest_iea_manual.py` busca).
+6. Correr `python pipeline/phase6_iea/ingest_iea_manual.py` (o el pipeline completo).
+
+**Cómo saber si es el archivo correcto (verificación de hash):** el archivo usado para todos los análisis de este repositorio tiene el siguiente hash SHA-256:
+
+```
+43bd9338a08ac8399c65471115f30ffc10dca7117e62f03cca86d49224717935
+```
+
+Verificar con `python -c "import hashlib; print(hashlib.sha256(open('pipeline/_manual_uploads/IEA_Critical_Minerals_Dataset_2026.xlsx','rb').read()).hexdigest())"`. Si el hash difiere, **no es necesariamente un error** — puede ser simplemente que IEA actualizó el dataset con datos más recientes; en ese caso, correr la Fase 6 y revisar si los números de `docs/01`/`docs/10` cambiaron significativamente antes de dar por buena la actualización.
+
 ### 2.3 Fase 7 en detalle — el informe técnico UPME y una lección de infraestructura de datos
 
 `pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py` descarga y parsea el informe técnico "Informe Cobre" de la Subdirección de Minería de UPME (~95 páginas), la fuente con más tablas de recursos/reservas (NI 43-101/JORC/SAMREC) de todo el corpus consultado.
@@ -99,18 +116,40 @@ Esta distinción existe para que nadie —ni una entidad de gobierno, ni un inve
 
 ## 5. Cómo ejecutarlo
 
+Requiere **Python ≥3.10** (declarado en `pyproject.toml` — el código usa sintaxis de tipos `list[dict]`/`str | None` que exige esa versión mínima). No requiere `.env` ni claves de API para ninguna fase (ver tabla de la sección 2 — todas son APIs públicas sin autenticación, o ingesta manual en el caso de IEA).
+
 ```bash
-pip install -r pipeline/requirements.txt
-python pipeline/run_pipeline.py
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+make install                                          # o: pip install -r pipeline/requirements.txt
+make run                                               # o: python pipeline/run_pipeline.py
 ```
 
 Salida: `data/live/*.json`, `data/consolidado/dataset_maestro.json`, `pipeline/_out/fase1_reporte_validacion.json`.
 
-## 6. Automatización continua (Fase de optimización)
+## 6. Tests y guardrails (agregado 14-sep-2026, tras una revisión externa)
+
+Hasta esta fecha, el pipeline no tenía ningún test automatizado — cada parser se validaba corriéndolo contra la fuente real y leyendo el resultado a ojo. Una revisión externa preguntó explícitamente "¿cómo sabes que extrae lo correcto?" y la respuesta honesta obligó a construir infraestructura nueva, no solo a explicarla mejor.
+
+**Qué se agregó:**
+- `tests/` — 51 tests con `pytest`, uno por función de parseo pura de cada fase (`tests/test_phase{1,2,5,6,7,8,9}_*.py`), contra fixtures de **texto/datos reales** capturados de las fuentes el 14-sep-2026 (`tests/fixtures/`) — no datos sintéticos inventados.
+- `pipeline/validaciones/validar_dataset_maestro.py` — un **guardrail de consistencia lógica** que corre al final de `run_pipeline.py`: verifica invariantes que nunca deberían violarse (ningún país con más reservas que el total mundial, el potencial de Colombia no puede exceder las reservas mundiales, el precio del cobre debe estar en un rango físicamente plausible, todo bloque debe tener su etiqueta de procedencia).
+- `.github/workflows/test.yml` — corre la batería de tests y el guardrail en cada push/PR, sin red (los tests usan fixtures fijos).
+
+**Lo que este esfuerzo encontró de inmediato (la mejor prueba de que hacía falta):** al construir el fixture de la Fase 5 con el texto real del PDF, se encontró un **segundo bug real y silencioso** que llevaba corriendo sin detectarse desde que se construyó esa fase: Australia mostraba 7.100.000 kt de reservas en vez de 100.000 — un marcador de nota al pie del PDF ("7") pegado al número por la extracción de texto de pdfplumber. Se corrigió con el guardrail genérico (no un parche puntual para Australia), documentado en el propio código de `parsear_tabla_mundial` con la función `_corregir_marcadores_de_nota_al_pie`.
+
+**Límite honesto de estos tests (no resuelto, y no se pretende que lo esté):** los fixtures son una foto fija de las fuentes en sep-2026. Si USGS, UPME o IEA cambian de formato en una edición futura, estos tests **no lo detectan** — seguirán pasando contra el fixture congelado. Lo que sí detectan es una regresión en el código de parseo mismo. La única forma de detectar un cambio de formato real es que la Fase correspondiente falle (o produzca advertencias) al correr contra la fuente en vivo — que es exactamente lo que hace el workflow semanal `actualizar_datos.yml`.
+
+```bash
+make install-dev   # o: pip install -r pipeline/requirements-dev.txt
+make test            # o: python -m pytest tests/ -v
+make validate        # o: python pipeline/validaciones/validar_dataset_maestro.py
+```
+
+## 7. Automatización continua (Fase de optimización)
 
 El workflow [`​.github/workflows/actualizar_datos.yml`](../.github/workflows/actualizar_datos.yml) ejecuta el pipeline completo **todos los lunes** vía GitHub Actions y hace commit automático si hay cambios — así el repositorio se mantiene actualizado sin intervención manual, cumpliendo el criterio de optimización pedido: la investigación no se congela en la fecha de esta sesión, sigue viva.
 
-## 7. Próximas fases (roadmap del propio pipeline, no solo del sector)
+## 8. Próximas fases (roadmap del propio pipeline, no solo del sector)
 
 - ~~**Fase 5:** Fetcher de USGS Mineral Commodity Summaries~~ — **hecho.** Ver `pipeline/phase5_usgs/`.
 - ~~**Fase 6:** Integración del IEA Critical Minerals Data Explorer~~ — **hecho, como ingesta manual** (se confirmó que IEA no ofrece API pública ni con cuenta gratuita — ver sección 2.2). Ver `pipeline/phase6_iea/`.

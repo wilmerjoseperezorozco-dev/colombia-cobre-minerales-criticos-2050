@@ -61,6 +61,52 @@ def resolver_url_xlsx_vigente() -> str:
     return m.group(1)
 
 
+def procesar_dataframe(df: pd.DataFrame, url_xlsx: str, extraido_utc: str | None = None) -> dict:
+    """Función pura (sin red ni disco): recibe el DataFrame ya leído de la
+    hoja 'Copper' y devuelve el diccionario de resultado. Aislada del I/O
+    para poder testear con un DataFrame pequeño construido a mano en
+    `tests/test_phase8_usgs_historia.py`, sin depender de un .xlsx real.
+    """
+    if "Year" not in df[0].values:
+        raise ValueError(
+            "No se encontró la fila de encabezado 'Year' en la columna 0 — "
+            "el formato de la hoja 'Copper' pudo haber cambiado."
+        )
+    fila_encabezado = df[df[0] == "Year"].index[0]
+    fecha_modificacion_m = re.search(r"Last modification: (.+)", str(df.iloc[3, 0]))
+
+    datos = df.iloc[fila_encabezado + 1:].copy()
+    datos = datos[pd.to_numeric(datos[0], errors="coerce").notna()]  # descarta filas de notas al pie
+    if datos.empty:
+        raise ValueError("No se encontraron filas de datos numéricos después del encabezado 'Year'.")
+    datos[0] = datos[0].astype(int)
+
+    serie = []
+    for _, fila in datos.iterrows():
+        registro = {"ano": int(fila[0])}
+        for i, clave in enumerate(COLUMNAS, start=1):
+            valor = fila[i]
+            registro[clave] = None if pd.isna(valor) else (int(valor) if float(valor).is_integer() else float(valor))
+        serie.append(registro)
+
+    primero, ultimo = serie[0], serie[-1]
+
+    return {
+        "fuente": "USGS Data Series 140 — Historical Statistics for Mineral and Material Commodities in the United States, ficha de Copper",
+        "url_pagina": URL_LANDING,
+        "url_archivo_descargado": url_xlsx,
+        "ultima_modificacion_reportada_por_usgs": fecha_modificacion_m.group(1) if fecha_modificacion_m else None,
+        "extraido_utc": extraido_utc or datetime.now(timezone.utc).isoformat(),
+        "unidad": "toneladas métricas (t) de contenido de cobre, salvo el valor unitario en USD/t",
+        "cobertura_geografica": "Estados Unidos (excepto la columna 'produccion_mundial_t', que es global)",
+        "rango_anos": [primero["ano"], ultimo["ano"]],
+        "num_anos": len(serie),
+        "primer_registro": primero,
+        "ultimo_registro": ultimo,
+        "serie_completa": serie,
+    }
+
+
 def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     PDF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -74,44 +120,14 @@ def main() -> int:
     ruta_local.write_bytes(resp.content)
 
     df = pd.read_excel(ruta_local, sheet_name="Copper", header=None)
-
-    fila_encabezado = df[df[0] == "Year"].index[0]
-    fecha_modificacion_m = re.search(r"Last modification: (.+)", str(df.iloc[3, 0]))
-
-    datos = df.iloc[fila_encabezado + 1:].copy()
-    datos = datos[pd.to_numeric(datos[0], errors="coerce").notna()]  # descarta filas de notas al pie
-    datos[0] = datos[0].astype(int)
-
-    serie = []
-    for _, fila in datos.iterrows():
-        registro = {"ano": int(fila[0])}
-        for i, clave in enumerate(COLUMNAS, start=1):
-            valor = fila[i]
-            registro[clave] = None if pd.isna(valor) else (int(valor) if float(valor).is_integer() else float(valor))
-        serie.append(registro)
-
-    primero, ultimo = serie[0], serie[-1]
-
-    salida = {
-        "fuente": "USGS Data Series 140 — Historical Statistics for Mineral and Material Commodities in the United States, ficha de Copper",
-        "url_pagina": URL_LANDING,
-        "url_archivo_descargado": url_xlsx,
-        "ultima_modificacion_reportada_por_usgs": fecha_modificacion_m.group(1) if fecha_modificacion_m else None,
-        "extraido_utc": datetime.now(timezone.utc).isoformat(),
-        "unidad": "toneladas métricas (t) de contenido de cobre, salvo el valor unitario en USD/t",
-        "cobertura_geografica": "Estados Unidos (excepto la columna 'produccion_mundial_t', que es global)",
-        "rango_anos": [primero["ano"], ultimo["ano"]],
-        "num_anos": len(serie),
-        "primer_registro": primero,
-        "ultimo_registro": ultimo,
-        "serie_completa": serie,
-    }
+    salida = procesar_dataframe(df, url_xlsx)
 
     with open(OUT_DIR / "usgs_ds140_copper_historia.json", "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)
 
+    primero, ultimo = salida["primer_registro"], salida["ultimo_registro"]
     print(f"[Fase 8] Archivo: {nombre_archivo}")
-    print(f"[Fase 8] Cobertura: {primero['ano']}-{ultimo['ano']} ({len(serie)} años)")
+    print(f"[Fase 8] Cobertura: {primero['ano']}-{ultimo['ano']} ({salida['num_anos']} años)")
     print(f"[Fase 8] Producción de EE. UU. {primero['ano']}: {primero['produccion_primaria_t']:,} t "
           f"→ {ultimo['ano']}: {ultimo['produccion_primaria_t']:,} t")
     print(f"[Fase 8] Producción mundial {primero['ano']}: {primero['produccion_mundial_t']:,} t "

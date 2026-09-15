@@ -1,0 +1,11 @@
+[project]
+name = "colombia-cobre-minerales-criticos-2050"
+version = "0.3.0"
+description = "Pipeline de datos e investigación sobre cobre y minerales críticos en Colombia (2026-2050)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+# Permite `import pipeline.phaseN_xxx.script` desde tests/ sin instalar el
+# proyecto como paquete ni depender de dónde se invoque pytest.
+pythonpath = ["."]
+testpaths = ["tests"]

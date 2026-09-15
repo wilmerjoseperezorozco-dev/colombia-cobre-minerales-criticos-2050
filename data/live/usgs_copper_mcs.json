@@ -2,7 +2,7 @@
   "fuente": "U.S. Geological Survey — Mineral Commodity Summaries (ficha de Copper)",
   "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf",
   "edicion_reportada_por_el_pdf": "February 2026",
-  "extraido_utc": "2026-09-15T00:16:05.039470+00:00",
+  "extraido_utc": "2026-09-15T01:37:09.823901+00:00",
   "designacion_mineral_critico_eeuu": {
     "encontrado": true,
     "fecha_texto_original": "November 7, 2025",
@@ -67,7 +67,7 @@
         "produccion_mina_kt_2025e": 730,
         "produccion_refineria_kt_2024": 434,
         "produccion_refineria_kt_2025e": 460,
-        "reservas_kt": 7100000
+        "reservas_kt": 100000
       },
       "Canada": {
         "produccion_mina_kt_2024": 515,
@@ -189,7 +189,9 @@
       "produccion_refineria_kt_2025e": 29000,
       "reservas_kt": 980000
     },
-    "advertencias": []
+    "advertencias": [
+      "Corrección automática: 'Australia'.reservas_kt venía como 7100000 (> total mundial 980000), probable marcador de nota al pie pegado al número — corregido a 100000. Verificar contra el PDF original."
+    ]
   },
   "recursos_mundiales_usgs_2015": {
     "encontrado": true,
@@ -201,8 +203,8 @@
   },
   "contexto_colombia_vs_usgs": {
     "nota": "El USGS no reporta a Colombia como línea individual en esta tabla; queda agregada dentro de 'Other countries'. Las proporciones siguientes son un cálculo propio, no una cifra publicada por USGS.",
-    "potencial_upme_mt_cu": 9.7,
-    "pct_potencial_colombia_sobre_reservas_mundiales": 0.99,
-    "pct_potencial_colombia_sobre_bolsa_otros_paises": 4.619
+    "potencial_upme_mt_cu": 17.4,
+    "pct_potencial_colombia_sobre_reservas_mundiales": 1.776,
+    "pct_potencial_colombia_sobre_bolsa_otros_paises": 8.286
   }
 }

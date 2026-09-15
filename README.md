@@ -18,7 +18,38 @@
 | 9 — Auditoría UPME (402 pág.) | [`pipeline/phase9_upme_auditoria/audit_upme_docs_adicionales.py`](pipeline/phase9_upme_auditoria/audit_upme_docs_adicionales.py) | ✅ OK | 165-168 tablas catalogadas por documento · 0 recursos/reservas sin capturar · **PIB minero: Antioquia 7,2%-11,2%** vs. 0,8%-2,2% en los otros 4 departamentos |
 | 4 — Consolidación | [`pipeline/phase4_consolidacion/build_dataset_maestro.py`](pipeline/phase4_consolidacion/build_dataset_maestro.py) | ✅ OK | `data/consolidado/dataset_maestro.json` — CAGR cobre 5a: **7,46% anual** |
 
-**Ejecutarlo tú mismo:** `pip install -r pipeline/requirements.txt && python pipeline/run_pipeline.py` — corre en ~8 segundos. Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
+**Ejecutarlo tú mismo:**
+
+```bash
+python -m venv .venv && source .venv/bin/activate   # o .venv\Scripts\activate en Windows
+make install        # o: pip install -r pipeline/requirements.txt
+make run             # o: python pipeline/run_pipeline.py
+```
+
+Requiere **Python ≥3.10** (declarado en `pyproject.toml`). No necesita `.env` ni claves de API — ninguna fuente de este pipeline requiere credenciales (ver tabla de fases más abajo). La única excepción es la **Fase 6 (IEA)**, que depende de un archivo que tú mismo descargas manualmente — instrucciones exactas, con hash de verificación, en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md#22-fase-6-en-detalle--cuando-la-fuente-oficial-no-tiene-api-y-el-usuario-aporta-el-archivo). Corre en ~8-40 segundos según si las Fases 8/9 necesitan re-descargar sus PDFs/Excel.
+
+**Tests y guardrails (nuevo, ver sección de garantías de calidad más abajo):**
+```bash
+make install-dev     # o: pip install -r pipeline/requirements-dev.txt
+make test             # o: python -m pytest tests/ -v
+make validate         # o: python pipeline/validaciones/validar_dataset_maestro.py
+```
+
+Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml) (corre el pipeline real) y en cada push/PR vía [`.github/workflows/test.yml`](.github/workflows/test.yml) (corre los tests con fixtures, sin red). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
+
+## 🛡️ Garantías de calidad: qué se verifica automáticamente y qué no (léase antes de confiar en una cifra)
+
+Esta pregunta se hizo explícitamente durante una revisión externa del repositorio (14-sep-2026) y la respuesta honesta requirió construir infraestructura nueva, no solo explicarla:
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Hay tests unitarios por parser? | **Sí, agregados el 14-sep-2026** — 51 tests en [`tests/`](tests/), uno por función de parseo, contra fixtures de texto/datos **reales** capturados de las fuentes (no sintéticos inventados) |
+| ¿Hay fixtures para detectar cambios de formato de fuente? | Sí, pero con una limitación honesta: los fixtures son una foto fija de la fuente en sep-2026 — **no detectan** que USGS/UPME/IEA cambien de formato en el futuro (para eso está el workflow semanal corriendo la extracción real); **sí detectan** una regresión en el código de parseo |
+| ¿La corrección de la Fase 7 (9.7→17.4 Mt) fue manual o hubo guardrails? | **100% manual** en su momento. Al construir los tests de esta sección se encontró un **segundo bug real, silencioso, nunca antes reportado**: Australia mostraba 7.100.000 kt de reservas en vez de 100.000 (un marcador de nota al pie del PDF pegado al número) — corregido con un guardrail genérico (`pipeline/validaciones/validar_dataset_maestro.py`) que ahora corre al final de cada ejecución del pipeline |
+| ¿Qué SÍ detecta el guardrail? | Que ningún país tenga más reservas que el total mundial, que el potencial de Colombia no exceda las reservas mundiales, que el precio del cobre esté en un rango físicamente plausible, y que todo bloque tenga su etiqueta de procedencia |
+| ¿Qué NO detecta? | Un valor incorrecto pero *consistente* con el resto (ej. un error que afecte igual a dos fuentes relacionadas) — ver limitaciones documentadas en el docstring de `validar_dataset_maestro.py` |
+
+
 
 ---
 
