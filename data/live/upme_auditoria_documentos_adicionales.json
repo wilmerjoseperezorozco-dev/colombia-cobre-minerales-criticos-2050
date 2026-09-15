@@ -1,6 +1,6 @@
 {
   "nota_metodologica": "Auditoría por catálogo, no extracción profunda — ver docstring de pipeline/phase9_upme_auditoria/audit_upme_docs_adicionales.py. Las tablas en 'tablas_prioritarias_para_revision_manual' son candidatas a contener cifras no capturadas todavía; el resto son mayormente análisis social/demográfico por municipio, ya cubierto cualitativamente en el repositorio.",
-  "procesado_utc": "2026-09-15T01:36:06.171518+00:00",
+  "procesado_utc": "2026-09-15T02:02:29.895730+00:00",
   "documentos": [
     {
       "id": "documento_cobre_2023",
@@ -43,9 +43,9 @@
       "conteo_por_categoria": {
         "ambiental": 11,
         "ya_cubierta_por_fase_7": 1,
-        "otro_sin_clasificar": 35,
         "economico_financiero": 5,
-        "demografico_social": 113
+        "demografico_social": 113,
+        "otro_sin_clasificar": 35
       },
       "pib_explotacion_minas_y_canteras_por_departamento": {
         "nota_interpretacion": "Porcentaje tal como aparece en la tabla fuente de UPME/DANE; el documento no aclara explícitamente si es participación en el PIB departamental o en el PIB nacional de esa actividad — no inferido, transcrito literal.",
@@ -1146,9 +1146,9 @@
       "conteo_por_categoria": {
         "ambiental": 13,
         "ya_cubierta_por_fase_7": 2,
-        "otro_sin_clasificar": 32,
         "economico_financiero": 5,
-        "demografico_social": 116
+        "demografico_social": 116,
+        "otro_sin_clasificar": 32
       },
       "pib_explotacion_minas_y_canteras_por_departamento": {
         "nota_interpretacion": "Porcentaje tal como aparece en la tabla fuente de UPME/DANE; el documento no aclara explícitamente si es participación en el PIB departamental o en el PIB nacional de esa actividad — no inferido, transcrito literal.",

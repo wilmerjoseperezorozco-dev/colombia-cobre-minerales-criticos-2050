@@ -26,28 +26,32 @@ make install        # o: pip install -r pipeline/requirements.txt
 make run             # o: python pipeline/run_pipeline.py
 ```
 
-Requiere **Python ≥3.10** (declarado en `pyproject.toml`). No necesita `.env` ni claves de API — ninguna fuente de este pipeline requiere credenciales (ver tabla de fases más abajo). La única excepción es la **Fase 6 (IEA)**, que depende de un archivo que tú mismo descargas manualmente — instrucciones exactas, con hash de verificación, en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md#22-fase-6-en-detalle--cuando-la-fuente-oficial-no-tiene-api-y-el-usuario-aporta-el-archivo). Corre en ~8-40 segundos según si las Fases 8/9 necesitan re-descargar sus PDFs/Excel.
+Requiere **Python ≥3.10** (declarado en `pyproject.toml`). No necesita `.env` ni claves de API — ninguna fuente de este pipeline requiere credenciales (ver tabla de fases más abajo). La única excepción es la **Fase 6 (IEA)**, que depende de un archivo que tú mismo descargas manualmente — instrucciones exactas, con hash de verificación, en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md#22-fase-6-en-detalle--cuando-la-fuente-oficial-no-tiene-api-y-el-usuario-aporta-el-archivo). Las fases 3/5/6/7/8/9 corren en paralelo (máx. 3 hilos a la vez); una corrida completa con re-descarga de todos los PDFs/Excel toma ~2-3 minutos (la Fase 9, que audita 402 páginas combinadas, es el cuello de botella real — medido, no estimado, en `pipeline/_out/ejecucion_log.json`).
 
-**Tests y guardrails (nuevo, ver sección de garantías de calidad más abajo):**
+**Tests y guardrails (ver sección de garantías de calidad más abajo):**
 ```bash
 make install-dev     # o: pip install -r pipeline/requirements-dev.txt
 make test             # o: python -m pytest tests/ -v
 make validate         # o: python pipeline/validaciones/validar_dataset_maestro.py
+make audit             # o: python pipeline/auditoria_semanal/comparar_dataset_maestro.py
 ```
 
 Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml) (corre el pipeline real) y en cada push/PR vía [`.github/workflows/test.yml`](.github/workflows/test.yml) (corre los tests con fixtures, sin red). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
 
 ## 🛡️ Garantías de calidad: qué se verifica automáticamente y qué no (léase antes de confiar en una cifra)
 
-Esta pregunta se hizo explícitamente durante una revisión externa del repositorio (14-sep-2026) y la respuesta honesta requirió construir infraestructura nueva, no solo explicarla:
+Esta pregunta se hizo explícitamente durante dos revisiones externas del repositorio (14 y 15-sep-2026) y la respuesta honesta requirió construir infraestructura nueva, no solo explicarla:
 
 | Pregunta | Respuesta |
 |---|---|
-| ¿Hay tests unitarios por parser? | **Sí, agregados el 14-sep-2026** — 51 tests en [`tests/`](tests/), uno por función de parseo, contra fixtures de texto/datos **reales** capturados de las fuentes (no sintéticos inventados) |
+| ¿Hay tests unitarios por parser? | **Sí** — 59 tests en [`tests/`](tests/), uno por función de parseo, contra fixtures de texto/datos **reales** capturados de las fuentes (no sintéticos inventados) |
 | ¿Hay fixtures para detectar cambios de formato de fuente? | Sí, pero con una limitación honesta: los fixtures son una foto fija de la fuente en sep-2026 — **no detectan** que USGS/UPME/IEA cambien de formato en el futuro (para eso está el workflow semanal corriendo la extracción real); **sí detectan** una regresión en el código de parseo |
 | ¿La corrección de la Fase 7 (9.7→17.4 Mt) fue manual o hubo guardrails? | **100% manual** en su momento. Al construir los tests de esta sección se encontró un **segundo bug real, silencioso, nunca antes reportado**: Australia mostraba 7.100.000 kt de reservas en vez de 100.000 (un marcador de nota al pie del PDF pegado al número) — corregido con un guardrail genérico (`pipeline/validaciones/validar_dataset_maestro.py`) que ahora corre al final de cada ejecución del pipeline |
 | ¿Qué SÍ detecta el guardrail? | Que ningún país tenga más reservas que el total mundial, que el potencial de Colombia no exceda las reservas mundiales, que el precio del cobre esté en un rango físicamente plausible, y que todo bloque tenga su etiqueta de procedencia |
 | ¿Qué NO detecta? | Un valor incorrecto pero *consistente* con el resto (ej. un error que afecte igual a dos fuentes relacionadas) — ver limitaciones documentadas en el docstring de `validar_dataset_maestro.py` |
+| ¿Si FRED está caído o USGS cambia el PDF mañana, qué pasa? | **Antes (14-sep-2026): la fase fallaba en el primer intento, sin reintento.** Ahora [`pipeline/http_utils.py`](pipeline/http_utils.py) reintenta 3 veces con backoff exponencial ante errores transitorios (timeout/conexión/5xx/429) — no ante 404/403, que son errores de la fuente, no del momento. Verificado con `tests/test_http_utils.py` simulando ambos escenarios sin red real. Si el PDF cambia de formato, la fase falla o emite advertencias explícitas (no bloqueante — ver `docs/ADR_001_arquitectura_fases.md`) y queda registrado en `pipeline/_out/ejecucion_log.json`, publicado como artefacto de CI |
+| ¿Cómo se comparan los cambios semanales del dataset? ¿hay historial? | **Antes: se sobrescribía, sin historial.** Ahora [`pipeline/auditoria_semanal/comparar_dataset_maestro.py`](pipeline/auditoria_semanal/comparar_dataset_maestro.py) archiva cada corrida en `data/consolidado/historico/dataset_maestro_<AAAA>_W<SS>.json` y compara 5 campos numéricos clave contra la semana anterior — una variación >50% (ej. una caída fuerte de precio) genera una alerta en `data/consolidado/_audit_semana_<AAAA>_W<SS>.json`. Probado con casos sintéticos y verificado en vivo contra el dataset real con una anomalía inyectada deliberadamente |
+| ¿Por qué estas decisiones de arquitectura (fases, FRED, PDFs)? | Documentado formalmente en 3 ADR: [`ADR_001`](docs/ADR_001_arquitectura_fases.md) (arquitectura por fases), [`ADR_002`](docs/ADR_002_fred_price_source.md) (FRED vs. Bloomberg/Refinitiv/LME), [`ADR_003`](docs/ADR_003_parseo_pdf_vs_api_upme.md) (parseo de PDF vs. esperar una API de UPME) |
 
 
 
@@ -98,25 +102,32 @@ Esta pregunta se hizo explícitamente durante una revisión externa del reposito
 | [`docs/10-articulo-analisis-cientifico.md`](docs/10-articulo-analisis-cientifico.md) | Análisis con estructura IMRaD (hipótesis, métodos, resultados reproducibles, discusión, limitaciones) |
 | [`docs/11-geografia-sitios-candidatos.md`](docs/11-geografia-sitios-candidatos.md) | Dónde está el 97% sin explorar, coordenadas de municipios de referencia, sitios candidatos y no candidatos para fundición-refinería, energía de doble uso |
 | [`docs/12-sismicidad-inducida-y-gemelo-digital.md`](docs/12-sismicidad-inducida-y-gemelo-digital.md) | Sismicidad inducida vs. tectónica, el colapso de El Teniente (jul-2025, 6 muertos, misma técnica que Quebradona), comparación regulatoria internacional y propuesta de gemelo digital para Colombia |
+| [`docs/ADR_001_arquitectura_fases.md`](docs/ADR_001_arquitectura_fases.md) | Por qué el pipeline es por fases independientes con bloqueo selectivo, y qué cambiaría si ANM/UPME/SGC/ANLA publicaran una API mañana |
+| [`docs/ADR_002_fred_price_source.md`](docs/ADR_002_fred_price_source.md) | Por qué FRED (no Bloomberg/Refinitiv/LME) como fuente del precio histórico del cobre |
+| [`docs/ADR_003_parseo_pdf_vs_api_upme.md`](docs/ADR_003_parseo_pdf_vs_api_upme.md) | Por qué parsear los PDFs de UPME en vez de esperar una API que no existe ni está anunciada |
 | [`Colombia_Cobre_Mineria_2026-2030.docx`](Colombia_Cobre_Mineria_2026-2030.docx) | Informe original en Word (portada, tablas, hoja de ruta 2026-2030) |
 
 ## ⚙️ Pipeline de datos (`/pipeline`)
 
 ```
 pipeline/
-├── phase1_seed/               Valida data/*.json curados contra esquema (bloqueante)
-├── phase2_live_fetch/         Precio de cobre EN VIVO desde FRED, API pública real (bloqueante)
-├── phase3_scrape_oficiales/   Snapshot + detección de cambios en ANM/UPME/SGC/ANLA (best-effort)
-├── phase5_usgs/                PDF oficial del USGS parseado: producción/reservas mundiales (best-effort)
-├── phase6_iea/                 Ingesta manual del Excel oficial de IEA: demanda/oferta de cobre (IEA no ofrece API pública)
-├── phase7_upme_sgc/            PDF oficial de UPME parseado: potencial nacional + recursos/reservas por proyecto (best-effort)
-├── phase8_usgs_historia/       Serie de EE.UU. 1900-2020, URL resuelta en tiempo de ejecución (best-effort)
-├── phase9_upme_auditoria/      Catálogo de tablas de los 2 PDFs UPME restantes + PIB minero regional (best-effort)
-├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante, corre último)
-└── run_pipeline.py            Orquestador — corre las fases en orden 1→2→3→5→6→7→8→9→4
+├── phase1_seed/               Valida data/*.json curados contra esquema (bloqueante, secuencial)
+├── phase2_live_fetch/         Precio de cobre EN VIVO desde FRED, API pública real (bloqueante, secuencial)
+├── phase3_scrape_oficiales/   Snapshot + detección de cambios en ANM/UPME/SGC/ANLA (no bloqueante, paralelo)
+├── phase5_usgs/                PDF oficial del USGS parseado: producción/reservas mundiales (no bloqueante, paralelo)
+├── phase6_iea/                 Ingesta manual del Excel oficial de IEA: demanda/oferta de cobre (no bloqueante, paralelo)
+├── phase7_upme_sgc/            PDF oficial de UPME parseado: potencial nacional + recursos/reservas por proyecto (no bloqueante, paralelo)
+├── phase8_usgs_historia/       Serie de EE.UU. 1900-2020, URL resuelta en tiempo de ejecución (no bloqueante, paralelo)
+├── phase9_upme_auditoria/      Catálogo de tablas de los 2 PDFs UPME restantes + PIB minero regional (no bloqueante, paralelo)
+├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante, corre al final)
+├── auditoria_semanal/          Archiva + compara dataset_maestro.json semana a semana, detecta anomalías (no bloqueante)
+├── validaciones/                Guardrail de consistencia lógica sobre el dataset final (bloqueante, corre último)
+├── http_utils.py                Reintentos con backoff exponencial para toda descarga HTTP del pipeline
+├── logging_utils.py             Logging estructurado + pipeline/_out/ejecucion_log.json (timestamp/fase/estado/duración)
+└── run_pipeline.py             Orquestador — 1→2 secuencial, luego 3/5/6/7/8/9 en paralelo (ThreadPoolExecutor), luego 4→auditoría→guardrail
 ```
 
-Cada bloque de [`data/consolidado/dataset_maestro.json`](data/consolidado/dataset_maestro.json) queda etiquetado con su **origen** (`curado_investigacion_humana` / `api_publica_en_vivo` / `snapshot_html_sin_api` / `estimacion_propia_razonada`) para que nunca se confunda una estimación con un dato verificado.
+Cada bloque de [`data/consolidado/dataset_maestro.json`](data/consolidado/dataset_maestro.json) queda etiquetado con su **origen** (`curado_investigacion_humana` / `api_publica_en_vivo` / `snapshot_html_sin_api` / `estimacion_propia_razonada`) para que nunca se confunda una estimación con un dato verificado. Cada corrida semanal se archiva en `data/consolidado/historico/dataset_maestro_<AAAA>_W<SS>.json`, comparada contra la anterior — ver `data/consolidado/_audit_semana_<AAAA>_W<SS>.json` para el reporte de anomalías, si las hubo.
 
 ## 🗂️ Datos crudos (`/data`)
 

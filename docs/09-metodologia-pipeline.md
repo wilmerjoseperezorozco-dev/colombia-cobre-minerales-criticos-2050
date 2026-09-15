@@ -149,13 +149,94 @@ make validate        # o: python pipeline/validaciones/validar_dataset_maestro.p
 
 El workflow [`​.github/workflows/actualizar_datos.yml`](../.github/workflows/actualizar_datos.yml) ejecuta el pipeline completo **todos los lunes** vía GitHub Actions y hace commit automático si hay cambios — así el repositorio se mantiene actualizado sin intervención manual, cumpliendo el criterio de optimización pedido: la investigación no se congela en la fecha de esta sesión, sigue viva.
 
-## 8. Próximas fases (roadmap del propio pipeline, no solo del sector)
+## 9. Resiliencia, observabilidad y paralelización (agregado 15-sep-2026, tras una revisión externa)
+
+Una segunda revisión externa preguntó, en esencia: "¿qué pasa si FRED está
+caído o USGS cambia el PDF mañana?", "¿cómo se comparan los cambios
+semanales del dataset?", "¿por qué estas decisiones de arquitectura?", y
+"¿qué pasa si se agregan las fases 10-15?". Cuatro preguntas, cuatro piezas
+de infraestructura nueva:
+
+**1. Reintentos con backoff exponencial** — `pipeline/http_utils.py`
+reemplaza las llamadas `requests.get()` directas de las Fases 2, 3, 5, 7, 8
+y 9 con `get_con_reintentos()`: 3 intentos con espera exponencial (2s, 4s,
+techo 10s) **solo** ante errores transitorios (timeout, error de conexión,
+o HTTP 429/5xx) — un 404/403 falla de inmediato porque no es un problema
+que un reintento resuelva. Antes de esto, la respuesta honesta a "¿qué pasa
+si FRED está caído?" era "la fase falla en el primer intento, sin
+reintento, y punto". Verificado con `tests/test_http_utils.py` simulando
+ambos escenarios (recuperación al 3er intento, y agotamiento de reintentos)
+sin pegarle a la red real.
+
+**2. Logging estructurado y log de ejecución** —
+`pipeline/logging_utils.py` reemplaza los `print()` del orquestador
+(los `print()` internos de cada fase se mantienen, son para lectura humana
+en consola) por el módulo `logging`, y acumula un `RegistroEjecucion` que se
+vuelca a `pipeline/_out/ejecucion_log.json` al final de cada corrida —
+timestamp, fase, estado (`ok`/`fallo`), duración, y traceback resumido si
+falló. Se publica como artefacto de GitHub Actions en cada corrida de
+`actualizar_datos.yml` (incluso si el pipeline falla a mitad de camino —
+antes, una corrida fallida en CI solo dejaba "Process completed with exit
+code 1", sin evidencia de en qué fase ni cuánto tardó cada una hasta ese
+punto).
+
+**3. Comparación histórica y detección de anomalías** —
+`pipeline/auditoria_semanal/comparar_dataset_maestro.py` archiva cada
+corrida en `data/consolidado/historico/dataset_maestro_<AAAA>_W<SS>.json`
+(numeración de semana ISO) y compara un conjunto curado de campos numéricos
+clave (precio del cobre, CAGR, potencial de Colombia, demanda IEA, % de
+Colombia sobre reservas mundiales USGS) contra el snapshot archivado más
+reciente. Una variación mayor a 50% en cualquiera de esos campos genera una
+alerta en `data/consolidado/_audit_semana_<AAAA>_W<SS>.json` — por ejemplo,
+una caída de precio de esa magnitud probablemente sea un error de la fuente,
+no un movimiento real de mercado. Es un guardrail de **observabilidad**, no
+de validación dura: reporta, no bloquea (a diferencia de
+`pipeline/validaciones/validar_dataset_maestro.py`). En la primera corrida
+(sin historial todavía) simplemente archiva, sin comparar — probado en
+vivo contra el dataset real, incluyendo un caso con una anomalía inyectada
+deliberadamente para confirmar que la alerta se dispara (ver
+`tests/test_auditoria_semanal.py` para la lógica pura, con fixtures
+sintéticos).
+
+**4. Paralelización de fases no bloqueantes** — `run_pipeline.py` corre las
+Fases 3, 5, 6, 7, 8 y 9 (independientes entre sí — cada una lee sus propias
+fuentes y escribe su propio archivo, sin leer lo que las demás producen)
+con `concurrent.futures.ThreadPoolExecutor`, tope de 3 hilos simultáneos
+(no ilimitado, para no disparar límites de tasa de las fuentes externas de
+golpe). Las Fases 1, 2, 4 y el guardrail final siguen secuenciales por
+diseño — ver ADR 001 para el porqué de cada clasificación
+bloqueante/no bloqueante. El log de ejecución ahora incluye duración por
+fase, verificado en una corrida real completa (ver
+`pipeline/_out/ejecucion_log.json` tras `make run`).
+
+**Documentado formalmente en 3 Architecture Decision Records**, para que
+decisiones ya tomadas (algunas desde el inicio del proyecto) queden
+explícitas y su razonamiento no se pierda con el tiempo:
+- [`docs/ADR_001_arquitectura_fases.md`](ADR_001_arquitectura_fases.md) — por qué el pipeline es por fases, y qué cambiaría si ANM/UPME/SGC/ANLA publicaran una API mañana.
+- [`docs/ADR_002_fred_price_source.md`](ADR_002_fred_price_source.md) — por qué FRED y no Bloomberg/Refinitiv/LME para el precio del cobre.
+- [`docs/ADR_003_parseo_pdf_vs_api_upme.md`](ADR_003_parseo_pdf_vs_api_upme.md) — por qué parsear PDFs de UPME en vez de esperar una API que no existe ni está anunciada.
+
+**Cuándo esto deja de alcanzar (nota de roadmap, no una tarea pendiente
+hoy):** un `ThreadPoolExecutor` plano no da reintentos por fase completa,
+backfill histórico automático, ni un grafo de dependencias más fino que
+"bloqueante antes de la 4, no bloqueante en paralelo". Si el pipeline
+creciera a 15+ fases con dependencias reales *entre* fases no bloqueantes
+(no solo "todas antes de la 4"), o necesitara reprocesar una ventana
+histórica completa, ese es el punto de migrar a **Airflow o Prefect** — no
+antes. Introducir un orquestador de ese peso hoy, con 10 fases y una sola
+dependencia real (todo antes de la 4), sería complejidad sin necesidad —
+exactamente el tipo de sobre-ingeniería que este proyecto ha evitado
+deliberadamente en cada fase (ver sección 1: "investigar primero,
+automatizar después").
+
+## 10. Próximas fases (roadmap del propio pipeline, no solo del sector)
 
 - ~~**Fase 5:** Fetcher de USGS Mineral Commodity Summaries~~ — **hecho.** Ver `pipeline/phase5_usgs/`.
 - ~~**Fase 6:** Integración del IEA Critical Minerals Data Explorer~~ — **hecho, como ingesta manual** (se confirmó que IEA no ofrece API pública ni con cuenta gratuita — ver sección 2.2). Ver `pipeline/phase6_iea/`.
 - ~~**Fase 7:** Extracción estructurada de tablas de los PDFs de UPME~~ — **hecho.** Ver `pipeline/phase7_upme_sgc/`.
 - ~~**Fase 8:** Serie histórica del USGS Data Series 140~~ — **hecho.** Ver `pipeline/phase8_usgs_historia/` (cobertura 1900-2020).
 - ~~**Fase 9:** Auditoría de los 2 documentos de UPME restantes~~ — **hecho, como catálogo (no extracción total).** Ver `pipeline/phase9_upme_auditoria/`. Confirmó que no hay cifras de recursos/reservas sin capturar; sí aportó el PIB minero de los 5 departamentos con proyectos de cobre (hallazgo: Antioquia depende de minería en 7,2%-11,2% de su PIB, muy por encima de los otros 4).
+- ~~**Resiliencia/observabilidad:** reintentos, logging estructurado, comparación histórica, paralelización~~ — **hecho.** Ver sección 9.
 - **Fase 10 (pendiente):** Extraer las tablas de "Análisis RUNAP" (superposición con áreas protegidas) catalogadas por la Fase 9 en la categoría `ambiental` — relevante para `docs/07-blindaje-social-barranquilla.md` y para evaluar riesgo de licenciamiento de cada proyecto.
 
 ---
