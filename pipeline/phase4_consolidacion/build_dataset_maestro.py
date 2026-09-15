@@ -82,6 +82,7 @@ def main():
     snapshots = cargar_json(LIVE_DIR / "snapshots_fuentes_oficiales.json")
     usgs = cargar_json(LIVE_DIR / "usgs_copper_mcs.json")
     iea = cargar_json(LIVE_DIR / "iea_critical_minerals_copper.json")
+    usgs_historia = cargar_json(LIVE_DIR / "usgs_ds140_copper_historia.json")
     upme_recursos = cargar_json(LIVE_DIR / "upme_recursos_reservas_proyectos.json")
     upme_curado = cargar_json(DATA_DIR / "upme_informe_cobre_hallazgos_curados.json")
 
@@ -136,6 +137,11 @@ def main():
                 "origen": "aportado_manualmente_por_usuario",
                 "confiabilidad": "alta — dataset oficial de IEA (Critical Minerals Data Explorer 2026), pero obtenido vía cuenta gratuita del usuario, no vía API pública; ver aviso de licencia interno del archivo",
                 "datos": iea,
+            },
+            "usgs_historia_cobre_eeuu_1900_2020": {
+                "origen": "api_publica_en_vivo",
+                "confiabilidad": "alta — USGS Data Series 140, descarga automática con resolución dinámica de la URL vigente",
+                "datos": usgs_historia,
             },
             "upme_recursos_reservas_por_proyecto": {
                 "origen": "api_publica_en_vivo",

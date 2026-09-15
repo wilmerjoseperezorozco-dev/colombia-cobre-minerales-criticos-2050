@@ -14,6 +14,7 @@
 | 5 — USGS Mineral Commodity Summaries | [`pipeline/phase5_usgs/fetch_usgs_copper_mcs.py`](pipeline/phase5_usgs/fetch_usgs_copper_mcs.py) | ✅ OK | 18/18 países parseados · reservas mundiales 980.000 kt · **el cobre es mineral crítico de EE. UU. desde el 7-nov-2025** (90 FR 50494) |
 | 6 — IEA Critical Minerals (ingesta manual) | [`pipeline/phase6_iea/ingest_iea_manual.py`](pipeline/phase6_iea/ingest_iea_manual.py) | ✅ OK | Demanda oficial 2025: 27.775 kt · brecha oferta-demanda calculada: 6.799 kt (2030) → 17.801 kt (2040) · **reemplazó cifras de prensa no verificadas** |
 | 7 — UPME Informe Cobre | [`pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py`](pipeline/phase7_upme_sgc/fetch_upme_informe_cobre.py) | ✅ OK | 5/5 filas de potencial nacional + recursos/reservas de los 5 proyectos parseados · **corrigió el potencial de Colombia de 9,7 a 17,4 Mt** |
+| 8 — USGS histórico (DS140) | [`pipeline/phase8_usgs_historia/fetch_usgs_ds140_copper.py`](pipeline/phase8_usgs_historia/fetch_usgs_ds140_copper.py) | ✅ OK | Serie de EE. UU. **1900-2020** (121 años) resolviendo la URL vigente en tiempo de ejecución |
 | 4 — Consolidación | [`pipeline/phase4_consolidacion/build_dataset_maestro.py`](pipeline/phase4_consolidacion/build_dataset_maestro.py) | ✅ OK | `data/consolidado/dataset_maestro.json` — CAGR cobre 5a: **7,46% anual** |
 
 **Ejecutarlo tú mismo:** `pip install -r pipeline/requirements.txt && python pipeline/run_pipeline.py` — corre en ~8 segundos. Automatizado semanalmente vía [GitHub Actions](.github/workflows/actualizar_datos.yml). Metodología completa en [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md).
@@ -73,8 +74,9 @@ pipeline/
 ├── phase5_usgs/                PDF oficial del USGS parseado: producción/reservas mundiales (best-effort)
 ├── phase6_iea/                 Ingesta manual del Excel oficial de IEA: demanda/oferta de cobre (IEA no ofrece API pública)
 ├── phase7_upme_sgc/            PDF oficial de UPME parseado: potencial nacional + recursos/reservas por proyecto (best-effort)
+├── phase8_usgs_historia/       Serie de EE.UU. 1900-2020, URL resuelta en tiempo de ejecución (best-effort)
 ├── phase4_consolidacion/      Dataset maestro con procedencia + métricas calculadas (bloqueante, corre último)
-└── run_pipeline.py            Orquestador — corre las fases en orden 1→2→3→5→6→7→4
+└── run_pipeline.py            Orquestador — corre las fases en orden 1→2→3→5→6→7→8→4
 ```
 
 Cada bloque de [`data/consolidado/dataset_maestro.json`](data/consolidado/dataset_maestro.json) queda etiquetado con su **origen** (`curado_investigacion_humana` / `api_publica_en_vivo` / `snapshot_html_sin_api` / `estimacion_propia_razonada`) para que nunca se confunda una estimación con un dato verificado.

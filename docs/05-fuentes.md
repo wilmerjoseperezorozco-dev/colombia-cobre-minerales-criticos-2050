@@ -56,6 +56,7 @@
 - [US Funds — AI Data Centers Could Consume Half a Million Tons of Copper by 2030](https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/)
 - [Just2Trade — Copper Price Forecast 2026-2030](https://j2t.com/solutions/blogview/copper-price-forecast/)
 - [Discovery Alert — Global Copper Demand Growth: Electrification Drives 70% Surge by 2050](https://discoveryalert.com.au/copper-demand-surge-electrification-energy-2025/)
+- [USGS — Data Series 140, Historical Statistics for Mineral and Material Commodities (Copper)](https://www.usgs.gov/media/files/copper-historical-statistics-data-series-140) — serie de EE. UU. 1900-2020, usada en la Fase 8 del pipeline
 
 ## Malas prácticas / casos de desastre
 - [The Conversation — Brumadinho dam collapse](https://theconversation.com/brumadinho-dam-collapse-mining-industry-needs-radical-change-to-avoid-future-disasters-112808)

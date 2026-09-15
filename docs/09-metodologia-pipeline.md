@@ -14,10 +14,11 @@ pipeline/
 ├── phase5_usgs/                Extrae y parsea el PDF oficial del USGS (Copper) (no bloqueante)
 ├── phase6_iea/                 Ingesta manual del Excel oficial de IEA (no bloqueante)
 ├── phase7_upme_sgc/            Extrae y parsea el informe técnico UPME de cobre (no bloqueante)
+├── phase8_usgs_historia/       Serie histórica de EE.UU. desde 1900, USGS DS140 (no bloqueante)
 ├── phase4_consolidacion/      Une todo en un dataset maestro con procedencia (bloqueante, corre último)
 ├── schema/                    Esquemas JSON de validación
 ├── _manual_uploads/            Archivos aportados por el usuario (ej. el Excel de IEA) que la Fase 6 consume
-└── run_pipeline.py            Orquestador — corre las fases en orden (1→2→3→5→6→7→4)
+└── run_pipeline.py            Orquestador — corre las fases en orden (1→2→3→5→6→7→8→4)
 ```
 
 | Fase | Qué hace | Tipo de fuente | Bloqueante |
@@ -28,6 +29,7 @@ pipeline/
 | 5 — USGS MCS (Copper) | Descarga y parsea con `pdfplumber` la ficha oficial de cobre del USGS: estadísticas de EE. UU., producción/reservas mundiales por país, designación de mineral crítico | PDF oficial con formato tabular estable | No (best-effort — depende de que el USGS no cambie el diseño del PDF) |
 | 6 — IEA Critical Minerals | Ingesta el Excel oficial de IEA (demanda por escenario + oferta minera "base case") aportado por el usuario desde su cuenta gratuita — IEA no ofrece API pública para esto | Excel oficial, sin API disponible (confirmado) | No (se omite si el archivo no está presente) |
 | 7 — UPME Informe Cobre | Descarga y parsea con `pdfplumber` el informe técnico de UPME: potencial nacional (Tabla 1) y recursos/reservas de los 5 proyectos (Tablas 2-8) | PDF oficial, formato tabular con particularidades de extracción (ver 2.3) | No (best-effort) |
+| 8 — USGS DS140 (histórico) | Resuelve dinámicamente la URL del Excel vigente en la página de USGS y descarga la serie de EE. UU. 1900-2020 (producción, consumo, precio nominal y real, producción mundial) | Excel oficial, URL resuelta en tiempo de ejecución (no hardcodeada) | No (best-effort) |
 | 4 — Consolidación | Une todo lo anterior en `data/consolidado/dataset_maestro.json`, marcando el origen y confiabilidad de cada bloque, y calcula métricas derivadas (CAGR, volatilidad) | — | Sí |
 
 ### 2.1 Fase 5 en detalle — por qué un PDF sí se puede parsear de forma confiable aquí
@@ -58,6 +60,12 @@ A diferencia de las páginas HTML de la Fase 3 (sin estructura consistente), el 
 **Corrección metodológica que produjo esta fase:** al verificar contra el texto original la cifra "9,7 Mt de un cinturón de 37,3 Mt" que este repositorio había repetido desde la sesión anterior, se encontró que la interpretación era incorrecta — ver el detalle completo en `docs/10-articulo-analisis-cientifico.md`, sección 3.5. El potencial correcto de Colombia es **17,4 Mt** (dos regiones geológicas propias). Esto se corrigió en `data/potencial_colombia_y_retos.json`, `data/estudios_cientificos_colombia.json`, `data/kpis_hoja_de_ruta_2026_2050.json` y en los documentos `01`, `03` y `10`.
 
 **Qué se automatizó vs. qué se transcribió a mano:** las tablas de recursos/reservas por proyecto (Tablas 1-8 del documento) tienen texto lineal parseable con expresiones regulares, aunque con un reto real — pdfplumber extrae las etiquetas de categoría (ej. "Recursos Medidos") partidas alrededor de la fila numérica en vez de antes de ella, por el ajuste de línea de la celda PDF original; el script maneja esto explícitamente. La Tabla 28 (comparativo económico) tiene encabezados rotados 90° que pdfplumber invierte carácter por carácter — ahí se optó por transcripción manual con cita de página exacta, en `data/upme_informe_cobre_hallazgos_curados.json`, en vez de forzar un parseo frágil.
+
+### 2.4 Fase 8 en detalle — resolver la URL en tiempo de ejecución, no hardcodearla
+
+`pipeline/phase8_usgs_historia/fetch_usgs_ds140_copper.py` descarga la serie histórica de cobre de EE. UU. desde 1900 (USGS Data Series 140). A diferencia de la Fase 5 (URL con patrón predecible `mcs{año}-copper.pdf`), el archivo real de esta fase vive en un bucket S3 con nombre versionado (`ds140-copper-2020.xlsx`) enlazado desde una página HTML de aterrizaje — si USGS publica una actualización, el nombre del archivo cambiará (ej. a `ds140-copper-2023.xlsx`). Por eso el script **no hardcodea el nombre del archivo**: descarga primero la página HTML y extrae con una expresión regular el enlace `.xlsx` vigente, luego descarga ese archivo. Esto es más robusto que la Fase 5 frente a actualizaciones de la fuente, al costo de una dependencia adicional (que la página HTML mantenga el mismo patrón de enlace).
+
+**Qué complementa:** la Fase 2 (FRED) cubre precio mensual 1992-2026; esta fase aporta 92 años adicionales (1900-2020) de producción primaria/secundaria de EE. UU., comercio exterior, consumo, valor unitario nominal y ajustado por inflación (dólares de 1998), y producción mundial — con esto, cualquier afirmación sobre "precios históricamente altos" en `docs/10-articulo-analisis-cientifico.md` puede contrastarse contra más de un siglo de datos, no solo contra los últimos 33 años.
 
 ## 3. Por qué la Fase 3 es "no bloqueante" (honestidad técnica, no limitación oculta)
 
@@ -97,7 +105,7 @@ El workflow [`​.github/workflows/actualizar_datos.yml`](../.github/workflows/a
 - ~~**Fase 5:** Fetcher de USGS Mineral Commodity Summaries~~ — **hecho.** Ver `pipeline/phase5_usgs/`.
 - ~~**Fase 6:** Integración del IEA Critical Minerals Data Explorer~~ — **hecho, como ingesta manual** (se confirmó que IEA no ofrece API pública ni con cuenta gratuita — ver sección 2.2). Ver `pipeline/phase6_iea/`.
 - ~~**Fase 7:** Extracción estructurada de tablas de los PDFs de UPME~~ — **hecho.** Ver `pipeline/phase7_upme_sgc/`.
-- **Fase 8 (pendiente):** Serie histórica del USGS Data Series 140 ("Historical Statistics for Mineral and Material Commodities") para tener producción/consumo de cobre desde 1900, no solo 2021-2025e.
+- ~~**Fase 8:** Serie histórica del USGS Data Series 140~~ — **hecho.** Ver `pipeline/phase8_usgs_historia/` (cobertura 1900-2020).
 - **Fase 9 (pendiente):** Repetir el ejercicio de verificación de la Fase 7 sobre los otros dos documentos de UPME identificados y ya localizados con URL funcional en `docs/05-fuentes.md` (`Documento_Cobre_29-12-2023.pdf`, 240 págs., y `Definitivo_Caracterizacion...2025.pdf`, 162 págs.) — se inspeccionaron manualmente durante la construcción de esta fase pero no se dejaron cacheados en el repositorio por su peso (15 MB y 5,7 MB) sin que un script los gestione todavía; ambos son mayormente análisis social/demográfico por municipio, de menor densidad numérica que el Informe Cobre.
 
 ---
