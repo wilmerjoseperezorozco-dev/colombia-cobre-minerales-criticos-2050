@@ -34,11 +34,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import pdfplumber
-import requests
 
 sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+from pipeline.http_utils import get_con_reintentos  # noqa: E402
+
 OUT_DIR = REPO_ROOT / "data" / "live"
 PDF_CACHE_DIR = REPO_ROOT / "pipeline" / "_out"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
@@ -99,8 +101,7 @@ def clasificar_tabla(titulo: str) -> str:
 def asegurar_pdf_local(doc: dict) -> Path:
     ruta = PDF_CACHE_DIR / doc["archivo_local"]
     if not ruta.exists():
-        resp = requests.get(doc["url"], headers=HEADERS, timeout=60)
-        resp.raise_for_status()
+        resp = get_con_reintentos(doc["url"], headers=HEADERS, timeout=60)
         PDF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
         ruta.write_bytes(resp.content)
     return ruta

@@ -33,6 +33,9 @@ from bs4 import BeautifulSoup
 sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+from pipeline.http_utils import get_con_reintentos  # noqa: E402
+
 OUT_DIR = REPO_ROOT / "data" / "live"
 OUT_PATH = OUT_DIR / "snapshots_fuentes_oficiales.json"
 
@@ -81,8 +84,7 @@ def main():
             "consultado_utc": datetime.now(timezone.utc).isoformat(),
         }
         try:
-            resp = requests.get(fuente["url"], headers=HEADERS, timeout=15)
-            resp.raise_for_status()
+            resp = get_con_reintentos(fuente["url"], headers=HEADERS, timeout=15)
             texto = extraer_texto_visible(resp.text)
             hash_actual = hashlib.sha256(texto.encode("utf-8")).hexdigest()
 

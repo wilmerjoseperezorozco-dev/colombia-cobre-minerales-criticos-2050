@@ -46,11 +46,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import pdfplumber
-import requests
 
 sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+from pipeline.http_utils import get_con_reintentos  # noqa: E402
+
 OUT_DIR = REPO_ROOT / "data" / "live"
 PDF_CACHE_DIR = REPO_ROOT / "pipeline" / "_out"
 
@@ -59,8 +61,7 @@ URL_BIBLIOGRAFICA_CITADA_PERO_ROTA = "http://www1.upme.gov.co/simco/Cifras-Secto
 
 
 def descargar_pdf() -> bytes:
-    resp = requests.get(URL, timeout=40)
-    resp.raise_for_status()
+    resp = get_con_reintentos(URL, timeout=40)
     return resp.content
 
 

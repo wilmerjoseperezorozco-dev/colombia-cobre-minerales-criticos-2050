@@ -30,11 +30,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
-import requests
 
 sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+from pipeline.http_utils import get_con_reintentos  # noqa: E402
+
 OUT_DIR = REPO_ROOT / "data" / "live"
 PDF_CACHE_DIR = REPO_ROOT / "pipeline" / "_out"
 
@@ -50,8 +52,7 @@ COLUMNAS = [
 
 
 def resolver_url_xlsx_vigente() -> str:
-    resp = requests.get(URL_LANDING, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
+    resp = get_con_reintentos(URL_LANDING, headers=HEADERS, timeout=20)
     m = re.search(r'href="(https://[^"]+ds140-copper-\d{4}\.xlsx)"', resp.text)
     if not m:
         raise RuntimeError(
@@ -114,8 +115,7 @@ def main() -> int:
     url_xlsx = resolver_url_xlsx_vigente()
     nombre_archivo = url_xlsx.rsplit("/", 1)[-1]
 
-    resp = requests.get(url_xlsx, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
+    resp = get_con_reintentos(url_xlsx, headers=HEADERS, timeout=30)
     ruta_local = PDF_CACHE_DIR / nombre_archivo
     ruta_local.write_bytes(resp.content)
 

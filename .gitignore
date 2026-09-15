@@ -3,3 +3,8 @@ node_modules/
 __pycache__/
 *.pyc
 .venv/
+
+# Log de ejecución del pipeline: específico de cada corrida/máquina (timestamps,
+# duración real). Se publica como artefacto de GitHub Actions en cada corrida
+# de CI (ver .github/workflows/actualizar_datos.yml), no se versiona en el repo.
+pipeline/_out/ejecucion_log.json

@@ -24,10 +24,27 @@ jobs:
       - name: Instalar dependencias del pipeline
         run: pip install -r pipeline/requirements.txt
 
-      - name: Ejecutar pipeline completo (fases 1-4)
+      - name: Ejecutar pipeline completo
+        id: pipeline
         run: python pipeline/run_pipeline.py
+        continue-on-error: true
+
+      # Se publica SIEMPRE, incluso si el pipeline falló a mitad de camino
+      # (agregado 15-sep-2026, respuesta a "si FRED está caído... ¿qué pasa?"):
+      # antes de esto, una corrida fallida en CI solo dejaba el mensaje
+      # genérico "Process completed with exit code 1", sin evidencia de en
+      # qué fase falló ni cuánto tardó cada una hasta ese punto.
+      - name: Publicar log de ejecución como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ejecucion-log-${{ github.run_id }}
+          path: pipeline/_out/ejecucion_log.json
+          if-no-files-found: warn
+          retention-days: 90
 
       - name: Commit y push si hay cambios en los datos
+        if: steps.pipeline.outcome == 'success'
         run: |
           git config user.name "pipeline-cobre-colombia[bot]"
           git config user.email "actions@users.noreply.github.com"
@@ -38,3 +55,9 @@ jobs:
             git commit -m "chore(datos): actualización automática del pipeline [skip ci]"
             git push
           fi
+
+      - name: Marcar el job como fallido si el pipeline falló
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo "El pipeline falló -- ver el artefacto 'ejecucion-log-${{ github.run_id }}' para el detalle por fase."
+          exit 1

@@ -25,11 +25,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
-import requests
 
 sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+from pipeline.http_utils import get_con_reintentos  # noqa: E402
+
 OUT_DIR = REPO_ROOT / "data" / "live"
 URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM"
 SERIE_ID = "PCOPPUSDM"
@@ -97,8 +99,7 @@ def parsear_csv_fred(csv_texto: str, extraido_utc: str | None = None) -> dict:
 def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    resp = requests.get(URL, timeout=20)
-    resp.raise_for_status()
+    resp = get_con_reintentos(URL, timeout=20)
     csv_texto = resp.text
 
     with open(OUT_DIR / "copper_price_fred.csv", "w", encoding="utf-8") as f:
