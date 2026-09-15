@@ -77,6 +77,11 @@
 - [SOMO / Drilled — Shell y ExxonMobil demandan a Países Bajos por el cierre de Groningen](https://www.somo.nl/aftershock-in-groningen/)
 - [Select Water Solutions — Produced Water Recycling in the Permian](https://www.selectwater.com/produced-water-recycling-in-the-permian/)
 - [Texas Tribune — Texas moves toward allowing reuse of treated oilfield waste (ago-2026)](https://www.texastribune.org/2026/08/21/texas-oil-gas-wastewater-produced-water-disposal/)
+- [Colectivo de Abogados José Alvear Restrepo (CAJAR) — Por sismos en Puerto Gaitán piden suspender reinyecciones](https://www.colectivodeabogados.org/por-sismos-en-puerto-gaitan-piden-suspender-reinyecciones-de-agua-para-produccion-petrolera/)
+- [ResearchGate — Seismicity induced by massive wastewater injection near Puerto Gaitán, Colombia](https://www.researchgate.net/publication/343793890_Seismicity_induced_by_massive_wastewater_injection_near_Puerto_Gaitan_Colombia)
+- [Las2orillas — Explotación de carbón: la causa de los sismos en La Guajira (hipótesis ciudadana, no confirmación oficial del SGC)](https://www.las2orillas.co/explotacion-carbon-la-causa-los-sismos-la-guajira/)
+- [MinEnergía — MinEnergía y el SGC socializaron Estudio de Amenazas Sísmicas en el Sector Minero-Energético (nov-2024)](https://www.minenergia.gov.co/es/sala-de-prensa/noticias-index/minenerg%C3%ADa-y-el-servicio-geol%C3%B3gico-socializaron-estudio-de-amenazas-s%C3%ADsmicas-en-el-sector-minero-energ%C3%A9tico/)
+- [FDSN — CM: Red Sismológica Nacional de Colombia (registro internacional, DOI 10.7914/SN/CM)](https://www.fdsn.org/networks/detail/CM/)
 
 ## IA aplicada a exploración y monitoreo minero
 - [MDPI — Machine Learning (ML)-Based Copper Mineralization Prospectivity Mapping](https://www.mdpi.com/2072-4292/15/15/3708)

@@ -23,6 +23,44 @@
     ],
     "fuente": "World Socialist Web Site (ago-2026), citando el informe de investigación; Wikipedia '2025 El Teniente mining accident'; Bloomberg/Mining.com (ago-2025)"
   },
+  "caso_puerto_gaitan_colombia": {
+    "ubicacion": "Puerto Gaitán, Meta, Colombia",
+    "campos": ["Rubiales", "Quifa"],
+    "operador_2013_2016": "Pacific Rubiales (Canadá) — el campo pasó posteriormente a otros operadores tras la quiebra de Pacific Rubiales en 2016; estado operativo actual no verificado en esta investigación",
+    "inicio_crisis_sismica": "2013-04",
+    "sismos_1993_2013": 11,
+    "sismos_desde_abril_2013": ">900",
+    "causa": "Reinyección de agua de producción petrolera (~95% de lo extraído en los pozos es agua, reinyectada en formaciones geológicas)",
+    "volumen_reinyeccion_reportado_barriles_dia": 4000000,
+    "monitoreo_existente": "El SGC opera una red sísmica local en tiempo real instalada alrededor de los pozos -- prototipo funcional de lo que la sección 6 propone generalizar",
+    "vacio_regulatorio_documentado": "El Ministerio de Minas y Energía alegó en 2016 que su regulación sobre sismicidad inducida no aplicaba a campos convencionales, negándose a monitorear o regular a Pacific Rubiales sobre esta base",
+    "accion_comunitaria": "El Comité Ambiental de Puerto Gaitán, con apoyo de CAJAR, solicitó ante el Tribunal de Cundinamarca la suspensión cautelar de las reinyecciones en Rubiales (jun-2016); no se verificó el desenlace judicial en esta investigación",
+    "respaldo_academico": "Existe un estudio revisado por pares específico sobre este caso: 'Seismicity induced by massive wastewater injection near Puerto Gaitán, Colombia'",
+    "fuente": "Colectivo de Abogados José Alvear Restrepo (CAJAR), jun-2016; búsquedas complementarias sep-2026"
+  },
+  "caso_la_guajira_reportado_sin_confirmacion_oficial": {
+    "periodo_analizado": "1993-2017",
+    "sismos_totales_periodo": 873,
+    "sismos_2011_2017": 419,
+    "porcentaje_del_total": 49.7,
+    "municipio_dibulla_primer_sismo_reportado": "2013-07-01, magnitud 2.9, profundidad 7km",
+    "actividades_asociadas_por_la_fuente": ["minería de carbón a cielo abierto (desde los 1980s)", "prospección sísmica para gas/petróleo (2011-presente)", "exploración sísmica offshore (desde jul-2013 en Dibulla)"],
+    "advertencia_metodologica": "La fuente consultada presenta una hipótesis ciudadana, no una confirmación oficial del SGC sobre causalidad -- se reporta la asociación temporal, no se afirma la causa como probada",
+    "fuente": "Las2orillas, sin fecha exacta de publicación verificada"
+  },
+  "validacion_tecnica_fdsn_2026-09-14": {
+    "red_colombiana": "CM -- Red Sismológica Nacional de Colombia (RSNC)",
+    "operador": "Servicio Geológico Colombiano (SGC)",
+    "doi": "10.7914/SN/CM",
+    "registrada_en_fdsn": true,
+    "verificado_con_consulta_real": true,
+    "endpoint_probado": "https://service.earthscope.org/fdsnws/station/1/query?network=CM (federado desde IRIS/EarthScope)",
+    "estaciones_relevantes_encontradas": [
+      {"codigo": "CRJC", "nombre": "Cerrejón, Guajira, Colombia", "lat": 11.020012, "lon": -72.8816, "activa_desde": "2014-11-26", "activa_hasta": null, "relevancia": "Zona de infraestructura pesada candidata identificada en docs/11"},
+      {"codigo": "COD", "nombre": "Agustín Codazzi, Cesar, Colombia", "lat": 9.935, "lon": -73.444, "activa_desde": "2011-04-11", "activa_hasta": "2014-06-17", "relevancia": "Cerca de San Diego/La Paz, zona de recurso de cobre identificada en docs/11 -- no se verificó si sigue operativa"}
+    ],
+    "limitacion_encontrada": "El servicio de catálogo de eventos (fdsnws/event) no respondió vía la federación EarthScope para Colombia en la prueba realizada (respuesta 'Gone') -- la interoperabilidad confirmada es de metadatos de estaciones, no necesariamente del catálogo completo de eventos en tiempo real vía esa vía específica"
+  },
   "comparativo_regulatorio_internacional": [
     {
       "pais_region": "Oklahoma, EE. UU.",
