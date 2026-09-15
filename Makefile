@@ -4,7 +4,7 @@
 # los comandos de cada target — están listados también en README.md y en
 # docs/09-metodologia-pipeline.md, sección "Cómo ejecutarlo".
 
-.PHONY: install install-dev run test validate lint clean
+.PHONY: install install-dev run test validate audit lint clean
 
 install:
 	pip install -r pipeline/requirements.txt
@@ -20,6 +20,9 @@ test:
 
 validate:
 	python pipeline/validaciones/validar_dataset_maestro.py
+
+audit:
+	python pipeline/auditoria_semanal/comparar_dataset_maestro.py
 
 clean:
 	find . -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
