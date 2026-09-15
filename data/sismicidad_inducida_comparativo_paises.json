@@ -1,0 +1,101 @@
+{
+  "actualizado": "2026-09-14",
+  "origen": "curado_investigacion_humana",
+  "caso_el_teniente_2025": {
+    "fecha": "2025-07-31",
+    "hora": "17:34",
+    "ubicacion": "Sector Andesita, Mina El Teniente, Codelco, Chile (37 km noreste de Rancagua)",
+    "magnitud_mw": 4.3,
+    "energia_liberada_julios": 6.9e9,
+    "cuna_roca_desprendida_m3": 24,
+    "cuna_roca_desprendida_toneladas": 60,
+    "muertos": 6,
+    "heridos": 9,
+    "tecnica_minera": "Hundimiento de bloques (block caving) — la misma técnica que Quebradona (Colombia) declara replicar, según UPME",
+    "hallazgos_investigacion_ago_2026": [
+      "Sistema de monitoreo (indicador CFE/CFT) registró alertas los días 26-28 y 30 de julio de 2025",
+      "Reportes operacionales del 31 de julio documentaban 'alta sismicidad' en sectores Dacita Sur, Recursos Norte y Reno",
+      "A las 14:00 hrs trabajadores reportaron explosiones más fuertes que lo habitual, 3.5 horas antes del colapso",
+      "La cadena de mando decidió deliberadamente ignorar los umbrales de peligro",
+      "En 2021 Codelco retiró un pilar de desacoplamiento de 120 metros exigido por el diseño aprobado en 2018",
+      "Reparaciones tras un colapso previo en 2023 en la misma intersección fueron locales/estáticas, sin reingeniería",
+      "El procedimiento interno P-03 permitía autorizar operación sin restricción pese a sismicidad declarada 'fuera de rango'"
+    ],
+    "fuente": "World Socialist Web Site (ago-2026), citando el informe de investigación; Wikipedia '2025 El Teniente mining accident'; Bloomberg/Mining.com (ago-2025)"
+  },
+  "comparativo_regulatorio_internacional": [
+    {
+      "pais_region": "Oklahoma, EE. UU.",
+      "mecanismo": "Inyección de agua residual de petróleo/gas",
+      "instrumento": "Traffic Light Protocol",
+      "umbral_amarillo": "M>=2.5 — reduce volumen de inyección",
+      "umbral_rojo": "M>=4.0 — cierre inmediato del pozo",
+      "resultado": "De 24 sismos M>=3/año (1973-2008) a 688 en 2014 (pico); mayor sismo M5.8 en 2016; restricciones post-2016 redujeron la sismicidad medible"
+    },
+    {
+      "pais_region": "Alberta, Canadá",
+      "mecanismo": "Fracturamiento hidráulico",
+      "instrumento": "Traffic Light Protocol",
+      "umbral_amarillo": "ML>=1.5 — reevaluación obligatoria + informe al regulador",
+      "umbral_rojo": null,
+      "resultado": "Aplicado tras el clúster sísmico de Fox Creek"
+    },
+    {
+      "pais_region": "Reino Unido",
+      "mecanismo": "Fracturamiento hidráulico",
+      "instrumento": "Traffic Light Protocol (el más estricto documentado)",
+      "umbral_amarillo": "Calibrado contra los sismos de Preston New Road",
+      "umbral_rojo": null,
+      "resultado": "Contribuyó a la moratoria de fracking en Inglaterra (2019)"
+    },
+    {
+      "pais_region": "Finlandia",
+      "mecanismo": "Estimulación de pozos geotérmicos profundos",
+      "instrumento": "Monitoreo sísmico casi en tiempo real",
+      "umbral_amarillo": null,
+      "umbral_rojo": null,
+      "resultado": "Control activo durante la estimulación de un pozo de 6.1 km cerca de Helsinki"
+    },
+    {
+      "pais_region": "Países Bajos (Groningen)",
+      "mecanismo": "Extracción de gas (subsidencia, no inyección)",
+      "instrumento": "Reducción forzada de producción, luego cierre total por ley",
+      "umbral_amarillo": null,
+      "umbral_rojo": "Ley de cierre total firmada abril de 2024, cierre pleno planeado para 2030",
+      "resultado": "Miles de reclamos de compensación por daños a viviendas; Shell y ExxonMobil demandan al Estado holandés en tribunales ISDS por miles de millones"
+    },
+    {
+      "pais_region": "Chile (El Teniente)",
+      "mecanismo": "Minería subterránea de hundimiento de bloques",
+      "instrumento": "Monitoreo sísmico en mina + fracturamiento hidráulico usado proactivamente para preacondicionar la roca",
+      "umbral_amarillo": null,
+      "umbral_rojo": null,
+      "resultado": "Técnica reconocida como efectiva, pero el caso de jul-2025 muestra que la tecnología sin gobernanza real no basta"
+    },
+    {
+      "pais_region": "Texas, Cuenca Pérmica, EE. UU.",
+      "mecanismo": "Volumen de agua residual de fracking",
+      "instrumento": "Reciclaje y reúso de agua de producción (reduce la causa raíz)",
+      "umbral_amarillo": null,
+      "umbral_rojo": null,
+      "resultado": "50-60% del agua de producción ya se recicla (dato 2025), proyección 80% para 2030; Select Water Solutions opera 3.4 millones de barriles/día de capacidad"
+    }
+  ],
+  "propuesta_gemelo_digital_colombia": {
+    "infraestructura_existente": [
+      "SGC opera la Red Sismológica Nacional de Colombia (RSNC), monitoreo en tiempo real de sismos tectónicos",
+      "ANM y ANH ya exigen reportes operacionales de proyectos mineros y de hidrocarburos"
+    ],
+    "componentes_a_construir": [
+      "Capa de datos unificada: telemetría operacional + datos sísmicos RSNC en tiempo real (hoy sistemas separados)",
+      "Modelo de pronóstico ML de magnitud máxima esperable, replicando metodología ya validada internacionalmente",
+      "Protocolo de semáforo con autoridad de cierre en el SGC (no en el operador) y acatamiento legal obligatorio por ANM/ANH",
+      "Panel público de transparencia del nivel de alerta sísmica vigente por proyecto"
+    ],
+    "fases": [
+      {"periodo": "Meses 0-6", "hito": "Convenio SGC-ANM-ANH para compartir datos operacionales en tiempo real"},
+      {"periodo": "Meses 6-18", "hito": "Piloto del modelo de pronóstico sobre un proyecto minero subterráneo ya en operación"},
+      {"periodo": "Meses 18-36", "hito": "Protocolo de semáforo con autoridad legal real, exigible para Quebradona y futuros proyectos de fracking"}
+    ]
+  }
+}

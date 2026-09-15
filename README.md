@@ -28,6 +28,7 @@
 |---|---|---|
 | 🟢 Marco EE. UU.–Colombia de minerales críticos | Firmado 8-sep-2026 en Barranquilla · financiamiento conjunto en 6 meses (vence mar-2027) | [`docs/05-fuentes.md`](docs/05-fuentes.md) |
 | 🟢 El cobre es mineral crítico de EE. UU. desde el 7-nov-2025 | Federal Register 90 FR 50494 — explica con fecha exacta el porqué del marco firmado 10 meses después | [`data/live/usgs_copper_mcs.json`](data/live/usgs_copper_mcs.json) |
+| 🔴 El Teniente (Chile), jul-2025: 6 muertos por sismicidad inducida | Misma técnica de hundimiento de bloques que Quebradona declara replicar; alertas sísmicas ignoradas deliberadamente | [`docs/12-sismicidad-inducida-y-gemelo-digital.md`](docs/12-sismicidad-inducida-y-gemelo-digital.md) |
 | 🟡 Proyecto de cobre más avanzado del país (El Alacrán) | Licencia ambiental completa, pero **100% capital chino** desde may-2025 | [`data/proyectos_cobre_colombia.json`](data/proyectos_cobre_colombia.json) |
 | 🔴 Quebradona (AngloGold Ashanti, USD 1.400 M) | Frenado por Resolución 855/2025 | [`data/proyectos_cobre_colombia.json`](data/proyectos_cobre_colombia.json) |
 | 🟢 Potencial geológico | **17,4 Mt de Cu** en 2 regiones propias (corregido 14-sep-2026, ver nota) · **97% del territorio sin explorar** | [`data/potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) |
@@ -64,6 +65,7 @@
 | [`docs/09-metodologia-pipeline.md`](docs/09-metodologia-pipeline.md) | Arquitectura del pipeline por fases, procedencia de datos, cómo ejecutarlo y roadmap de fases futuras |
 | [`docs/10-articulo-analisis-cientifico.md`](docs/10-articulo-analisis-cientifico.md) | Análisis con estructura IMRaD (hipótesis, métodos, resultados reproducibles, discusión, limitaciones) |
 | [`docs/11-geografia-sitios-candidatos.md`](docs/11-geografia-sitios-candidatos.md) | Dónde está el 97% sin explorar, coordenadas de municipios de referencia, sitios candidatos y no candidatos para fundición-refinería, energía de doble uso |
+| [`docs/12-sismicidad-inducida-y-gemelo-digital.md`](docs/12-sismicidad-inducida-y-gemelo-digital.md) | Sismicidad inducida vs. tectónica, el colapso de El Teniente (jul-2025, 6 muertos, misma técnica que Quebradona), comparación regulatoria internacional y propuesta de gemelo digital para Colombia |
 | [`Colombia_Cobre_Mineria_2026-2030.docx`](Colombia_Cobre_Mineria_2026-2030.docx) | Informe original en Word (portada, tablas, hoja de ruta 2026-2030) |
 
 ## ⚙️ Pipeline de datos (`/pipeline`)
@@ -94,6 +96,7 @@ Estructurados en JSON para reutilizar en cualquier análisis posterior con IA:
 - [`estudios_cientificos_colombia.json`](data/estudios_cientificos_colombia.json) — inventario de estudios de UPME, SGC, Universidad Nacional, Universidad de Antioquia y literatura internacional de IA aplicada.
 - [`kpis_hoja_de_ruta_2026_2050.json`](data/kpis_hoja_de_ruta_2026_2050.json) — KPIs extendidos con hitos 2035/2040/2050.
 - [`coordenadas_municipios_cobre.json`](data/coordenadas_municipios_cobre.json) — coordenadas de referencia de los municipios de los 3 cinturones cupríferos, con la ubicación no verificada marcada explícitamente.
+- [`sismicidad_inducida_comparativo_paises.json`](data/sismicidad_inducida_comparativo_paises.json) — caso El Teniente 2025, comparativo regulatorio de 7 países/regiones, y la propuesta de gemelo digital para Colombia.
 
 ---
 

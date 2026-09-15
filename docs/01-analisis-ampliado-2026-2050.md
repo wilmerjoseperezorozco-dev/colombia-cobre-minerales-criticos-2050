@@ -50,6 +50,7 @@ Cuatro hallazgos nuevos, no incluidos en la primera versión del informe, cambia
 6. Sin fundición-refinería nacional: se exporta materia prima de bajo valor agregado.
 7. Estrés energético ya existente: la reducción del 50% en operaciones de ferroníquel por restricciones de gas anticipa el reto de energizar una futura fundición de cobre.
 8. Divergencia de escenarios de demanda (ver sección 2): la planificación no puede apostar a un solo número.
+9. **Sismicidad inducida por minería subterránea profunda (nuevo, 14-sep-2026):** Quebradona está diseñada con técnicas de hundimiento de bloques "muy similares" a las de El Teniente (Chile), según el propio informe técnico de UPME. El 31 de julio de 2025, un evento sísmico inducido de magnitud 4,3 Mw en El Teniente causó un colapso que mató a 6 trabajadores — y una investigación de agosto de 2026 confirmó que la cadena de mando **ignoró deliberadamente** las alertas del sistema de monitoreo sísmico y había retirado en 2021 un pilar de seguridad exigido por el diseño aprobado en 2018. No es un riesgo geológico abstracto: es el mismo patrón de Brumadinho (advertencias ignoradas por presión de producción) aplicado a minería subterránea en vez de relaves. Análisis completo, comparación internacional de regulación y propuesta de gemelo digital para Colombia en [`docs/12-sismicidad-inducida-y-gemelo-digital.md`](12-sismicidad-inducida-y-gemelo-digital.md).
 
 ## 5. Infraestructura señalada: estado y brechas
 

@@ -66,6 +66,18 @@
 - [Peru Support Group — IACHR finds Peru guilty over La Oroya (2024)](https://perusupportgroup.org.uk/2024/03/iachr-finds-peru-guilty-of-failing-to-control-pollution-at-la-oroya/)
 - [AIDA — Protecting the health of La Oroya's residents](https://aida-americas.org/en/protecting-health-la-oroyas-residents-toxic-pollution)
 
+## Sismicidad inducida
+- [Wikipedia — 2025 El Teniente mining accident](https://en.wikipedia.org/wiki/2025_El_Teniente_mining_accident)
+- [World Socialist Web Site — Informe de investigación sobre El Teniente (ago-2026)](https://www.wsws.org/en/articles/2026/08/15/uobr-a15.html)
+- [Bloomberg / Mining.com — Codelco collapse likely caused by mining rather than nature](https://www.mining.com/web/codelco-collapse-was-likely-caused-by-mining-rather-than-nature/)
+- [USGS — Myths and facts on wastewater injection, hydraulic fracturing, and induced seismicity](https://www.usgs.gov/publications/myths-and-facts-wastewater-injection-hydraulic-fracturing-enhanced-oil-recovery-and)
+- [ColombiaCheck — ¿El fracking puede producir actividad sísmica de gran magnitud?](https://colombiacheck.com/investigaciones/el-fracking-puede-producir-actividad-sismica-de-gran-magnitud)
+- [La Silla Vacía — Detector: terremoto en Colombia no fue causado por el fracking](https://www.lasillavacia.com/detector-de-mentiras/falso/detector-terremoto-en-colombia-no-fue-causado-por-el-fracking/)
+- [Nature Communications / Springer — Groningen gas field induced seismicity](https://link.springer.com/article/10.1007/s12665-019-8051-4)
+- [SOMO / Drilled — Shell y ExxonMobil demandan a Países Bajos por el cierre de Groningen](https://www.somo.nl/aftershock-in-groningen/)
+- [Select Water Solutions — Produced Water Recycling in the Permian](https://www.selectwater.com/produced-water-recycling-in-the-permian/)
+- [Texas Tribune — Texas moves toward allowing reuse of treated oilfield waste (ago-2026)](https://www.texastribune.org/2026/08/21/texas-oil-gas-wastewater-produced-water-disposal/)
+
 ## IA aplicada a exploración y monitoreo minero
 - [MDPI — Machine Learning (ML)-Based Copper Mineralization Prospectivity Mapping](https://www.mdpi.com/2072-4292/15/15/3708)
 - [MDPI — Recent Advances and Future Perspectives of AI-Based Mineral Exploration](https://doi.org/10.3390/min16060584)
