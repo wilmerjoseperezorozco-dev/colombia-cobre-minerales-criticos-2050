@@ -1,6 +1,6 @@
 # Oportunidades de inversión: mapa informativo (no es asesoría financiera)
 
-> **Aviso importante:** no soy un asesor financiero licenciado y esto no es una recomendación de compra ni de venta de ninguna acción o activo. Es un mapa informativo de los actores públicos con exposición directa al cobre colombiano, para que tú (o un asesor financiero licenciado que consultes) hagan su propia debida diligencia. Los precios y condiciones de mercado cambian a diario; verifica cotización, liquidez y riesgo país/divisa antes de cualquier decisión.
+> **Aviso importante:** este documento no constituye asesoría financiera ni recomendación de compra o venta de ninguna acción o activo. Es un mapa informativo de los actores públicos con exposición directa al cobre colombiano, para que el lector —o el asesor financiero licenciado que consulte— haga su propia debida diligencia. Los precios y condiciones de mercado cambian a diario; conviene verificar cotización, liquidez y riesgo país/divisa antes de cualquier decisión.
 
 ## 1. Empresas que cotizan en bolsa con exposición directa a proyectos de cobre colombianos
 
@@ -18,12 +18,12 @@
 - **El proyecto más atractivo por avance regulatorio (El Alacrán) está en manos de la contraparte cuya presencia el marco EE.UU.-Colombia busca precisamente diversificar** — esto es una paradoja real del mercado, no un error de este análisis: comprar exposición al proyecto más maduro significa, hoy, comprar exposición a capital chino.
 - **Los proyectos con capital norteamericano/canadiense (Aris Mining, GoldMining, AngloGold) son, en su mayoría, los que están frenados o detenidos** por trámites regulatorios — la variable que más mueve el valor de estas acciones en el corto plazo no es el precio del cobre, sino **decisiones administrativas colombianas** (Resolución 855/2025, licencias ANLA, criterios de la ronda de 14 áreas).
 
-## 3. Otra vía de "compra de activos": no acciones, sino datos y contratos
+## 3. Una vía alternativa a la exposición accionaria directa: datos y contratos de servicios
 
-Dado el perfil de riesgo más bajo que ya se recomienda en `04-estrategia-barranquilla.md`, la vía de "activo" más coherente contigo no es comprar equity minero (alto riesgo, baja influencia, mercado dominado por actores mucho más grandes), sino:
+Comprar equity minero implica alto riesgo, baja capacidad de influencia y un mercado dominado por actores mucho más grandes que cualquier inversionista individual. Existe una categoría de exposición indirecta al crecimiento del sector que no depende de que un proyecto minero específico tenga éxito:
 
-- **Contratos de datos/software** con operadores o con el propio Estado (tablero de transparencia, monitoreo ambiental — ver `03-estudios-colombia-y-ejecucion.md`).
-- **Participación indirecta vía proveeduría local** al crecimiento portuario de Barranquilla (logística, tecnología de monitoreo ambiental descrita en `07-blindaje-social-barranquilla.md`), que no depende de que un proyecto minero específico tenga éxito.
+- **Contratos de datos y software** con operadores privados o con el propio Estado (tablero de transparencia, monitoreo ambiental — ver `03-estudios-colombia-y-ejecucion.md`).
+- **Proveeduría local al crecimiento portuario y logístico de Barranquilla** (tecnología de monitoreo ambiental descrita en `07-blindaje-social-barranquilla.md`), vinculada al crecimiento del corredor logístico más que al desempeño de un proyecto minero puntual.
 
 ## 4. Qué monitorear antes de cualquier decisión de inversión (señales, no consejos)
 
@@ -33,4 +33,4 @@ Dado el perfil de riesgo más bajo que ya se recomienda en `04-estrategia-barran
 - Precio del cobre frente al umbral de alerta de USD 8.000/t señalado en el informe original.
 
 ---
-*Ver también: [Estrategia personal Barranquilla](04-estrategia-barranquilla.md) · [Soluciones jurídicas e institucionales](06-soluciones-juridicas-e-institucionales.md)*
+*Ver también: [Barranquilla en el marco de minerales críticos](04-estrategia-barranquilla.md) · [Soluciones jurídicas e institucionales](06-soluciones-juridicas-e-institucionales.md)*

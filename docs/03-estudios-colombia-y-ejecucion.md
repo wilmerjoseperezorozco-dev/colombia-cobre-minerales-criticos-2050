@@ -50,4 +50,4 @@ Ver el detalle estructurado en [`/data/estudios_cientificos_colombia.json`](../d
 | Fundición-refinería | Gobierno nacional + banca multilateral (BID/IFC) | Operadores privados como socios de construcción |
 
 ---
-*Ver también: [Análisis ampliado 2026-2050](01-analisis-ampliado-2026-2050.md) · [IA, medición y fórmulas](02-ia-medicion-y-formulas.md) · [Estrategia para Barranquilla](04-estrategia-barranquilla.md)*
+*Ver también: [Análisis ampliado 2026-2050](01-analisis-ampliado-2026-2050.md) · [IA, medición y fórmulas](02-ia-medicion-y-formulas.md) · [Barranquilla en el marco de minerales críticos](04-estrategia-barranquilla.md)*

@@ -71,6 +71,7 @@ Esta pregunta se hizo explícitamente durante dos revisiones externas del reposi
 | 🔴 Déficit de gobernanza minera | -88% IED minera, -18% PIB minero, 800+ bloqueos, minería ilegal en 29/32 departamentos | [`data/potencial_colombia_y_retos.json`](data/potencial_colombia_y_retos.json) |
 | 🟢 Mercado global | Déficit estructural de cobre; hasta 30% de brecha de oferta en 2035 (IEA) | [`data/metricas_demanda_global_cobre.json`](data/metricas_demanda_global_cobre.json) |
 | 🟡 Puerto de Barranquilla | Récord mensual: 1,32 Mt en jul-2026; zonas francas del Atlántico +178% desde prepandemia | [`docs/04-estrategia-barranquilla.md`](docs/04-estrategia-barranquilla.md) |
+| 🔵 Ventana geopolítica 2027-2032 | Punto de mayor tensión EE. UU.-China (Taiwán/semiconductores) coincide con la maduración de proyectos mineros colombianos | [`docs/13-contexto-geopolitico-2026-2050.md`](docs/13-contexto-geopolitico-2026-2050.md) |
 
 **El hallazgo que más importa de esta investigación:** el único proyecto de cobre a gran escala de Colombia con licencia ambiental completa es, hoy, propiedad 100% de un consorcio chino — exactamente lo contrario del objetivo declarado por el marco firmado con Estados Unidos en Barranquilla apenas unos días antes de esta actualización. Ver detalle en [`docs/01-analisis-ampliado-2026-2050.md`](docs/01-analisis-ampliado-2026-2050.md#1-lo-que-cambió-con-la-investigación-ampliada).
 
@@ -93,7 +94,7 @@ Esta pregunta se hizo explícitamente durante dos revisiones externas del reposi
 | [`docs/01-analisis-ampliado-2026-2050.md`](docs/01-analisis-ampliado-2026-2050.md) | Horizonte extendido a 2050, puntos a favor/en contra, brechas de infraestructura |
 | [`docs/02-ia-medicion-y-formulas.md`](docs/02-ia-medicion-y-formulas.md) | IA para prospectividad y monitoreo de relaves, fórmulas técnicas (ley de corte, VPN, intensidad de cobre) |
 | [`docs/03-estudios-colombia-y-ejecucion.md`](docs/03-estudios-colombia-y-ejecucion.md) | Inventario de estudios científicos colombianos, qué hacer y cómo ejecutarlo |
-| [`docs/04-estrategia-barranquilla.md`](docs/04-estrategia-barranquilla.md) | Cómo capitalizar esta situación viviendo en Barranquilla — 3 niveles de esfuerzo/retorno |
+| [`docs/04-estrategia-barranquilla.md`](docs/04-estrategia-barranquilla.md) | Por qué Barranquilla concentra la visibilidad institucional del marco bilateral, y qué vacíos de mercado deja abiertos |
 | [`docs/05-fuentes.md`](docs/05-fuentes.md) | Todas las fuentes consultadas, por categoría |
 | [`docs/06-soluciones-juridicas-e-institucionales.md`](docs/06-soluciones-juridicas-e-institucionales.md) | Fallos clave (SU-095/2018, Cajamarca/La Colosa), Decreto 0742/2026 de cierre de minas, pulso estatización vs. desregulación, y la vía más segura y barata |
 | [`docs/07-blindaje-social-barranquilla.md`](docs/07-blindaje-social-barranquilla.md) | Caso de alerta (polvo de concentrado en Antofagasta) y el paquete de blindaje social preventivo para el puerto de Barranquilla |
@@ -102,6 +103,7 @@ Esta pregunta se hizo explícitamente durante dos revisiones externas del reposi
 | [`docs/10-articulo-analisis-cientifico.md`](docs/10-articulo-analisis-cientifico.md) | Análisis con estructura IMRaD (hipótesis, métodos, resultados reproducibles, discusión, limitaciones) |
 | [`docs/11-geografia-sitios-candidatos.md`](docs/11-geografia-sitios-candidatos.md) | Dónde está el 97% sin explorar, coordenadas de municipios de referencia, sitios candidatos y no candidatos para fundición-refinería, energía de doble uso |
 | [`docs/12-sismicidad-inducida-y-gemelo-digital.md`](docs/12-sismicidad-inducida-y-gemelo-digital.md) | Sismicidad inducida vs. tectónica, el colapso de El Teniente (jul-2025, 6 muertos, misma técnica que Quebradona), comparación regulatoria internacional y propuesta de gemelo digital para Colombia |
+| [`docs/13-contexto-geopolitico-2026-2050.md`](docs/13-contexto-geopolitico-2026-2050.md) | Rivalidad entre potencias hasta 2050 (EE. UU.-China, Rusia-OTAN, Irán-Israel), tres escenarios prospectivos, y la posición de Colombia hacia 2030 |
 | [`docs/ADR_001_arquitectura_fases.md`](docs/ADR_001_arquitectura_fases.md) | Por qué el pipeline es por fases independientes con bloqueo selectivo, y qué cambiaría si ANM/UPME/SGC/ANLA publicaran una API mañana |
 | [`docs/ADR_002_fred_price_source.md`](docs/ADR_002_fred_price_source.md) | Por qué FRED (no Bloomberg/Refinitiv/LME) como fuente del precio histórico del cobre |
 | [`docs/ADR_003_parseo_pdf_vs_api_upme.md`](docs/ADR_003_parseo_pdf_vs_api_upme.md) | Por qué parsear los PDFs de UPME en vez de esperar una API que no existe ni está anunciada |

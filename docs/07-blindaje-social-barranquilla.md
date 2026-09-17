@@ -36,4 +36,4 @@ Como se documenta en `06-soluciones-juridicas-e-institucionales.md`, la Sentenci
 Antofagasta actuó de forma reactiva: la organización social nació después de que el daño ya era medible en la sangre de los niños. Barranquilla tiene, hoy, la ventana de tiempo que Antofagasta no tuvo: **el marco de minerales críticos apenas se firmó (sep-2026) y ningún concentrado colombiano ha salido todavía por el Caribe**. El diferenciador real y comunicable —tanto para la comunidad como para atraer inversión seria (a los financiadores tipo DFC/EXIM les interesa evitar litigios ESG, no solo maximizar tonelaje)— es que Barranquilla puede ser **el primer puerto cuprífero de la región que se blindó antes de operar, no después de una crisis de salud pública**.
 
 ---
-*Ver también: [Soluciones jurídicas e institucionales](06-soluciones-juridicas-e-institucionales.md) · [Estrategia personal Barranquilla](04-estrategia-barranquilla.md)*
+*Ver también: [Soluciones jurídicas e institucionales](06-soluciones-juridicas-e-institucionales.md) · [Barranquilla en el marco de minerales críticos](04-estrategia-barranquilla.md)*

@@ -1,0 +1,53 @@
+# Contexto geopolítico 2026-2050: rivalidad entre potencias y la posición de Colombia
+
+> **Sobre la naturaleza de este análisis:** lo que sigue es análisis de escenarios, no una predicción puntual. Ningún ejercicio serio de prospectiva geopolítica —ni el de RAND, ni el de CSIS, ni el del IISS en su *Military Balance* anual— se presenta como certeza; se presenta como trayectorias probables con drivers identificables, y así se presenta aquí. Donde hay consenso amplio entre analistas se dice; donde es una lectura propia a partir de los datos ya reunidos en este repositorio, también se dice.
+
+## 1. Los ejes de tensión que definen el tablero actual
+
+No hay un único "conflicto que viene" — hay varios focos con dinámicas distintas, y conviene no tratarlos como si fueran la misma clase de riesgo.
+
+| Eje | Naturaleza del conflicto | Trayectoria observable |
+|---|---|---|
+| **EE. UU.–China** | Competencia sistémica: semiconductores (Taiwán/TSMC), minerales críticos, IA militar, mar de la China Meridional | El eje central. China controla entre el 60% y el 70% del refinado mundial de tierras raras y una parte significativa de la cadena downstream de cobre, litio y cobalto — la dependencia occidental de esa cadena es, hoy, el principal punto de apalancamiento chino frente a Washington |
+| **Rusia–OTAN** | Guerra híbrida de desgaste (sabotaje, ciberataques, migración instrumentalizada) más que enfrentamiento directo | Erosión gradual y acumulativa de los flancos de la OTAN por episodios que, tomados uno a uno, no cruzan el umbral de una respuesta militar directa |
+| **Irán–Israel (con EE. UU. y el Golfo como actores de fondo)** | Guerra por delegación crónica, con picos de escalada directa | Estructuralmente inestable desde hace décadas; la variable que puede reordenar todo el tablero es si Irán cruza el umbral nuclear |
+| **India–Pakistán / península de Corea** | Disputas territoriales activas entre potencias nucleares, de menor visibilidad mediática en Occidente | Misma letalidad potencial que los ejes anteriores, con mecanismos de escalada propios |
+
+De estos cuatro, el que concentra el mayor riesgo de choque **directo** entre dos potencias nucleares de primer orden es Taiwán. La razón no es una inminencia confirmada de invasión, sino la combinación de dos hechos: la ambigüedad estratégica que EE. UU. ha mantenido históricamente sobre su respuesta se está erosionando en ambos sentidos (más señales de compromiso explícito de un lado, más preparación militar visible del otro), y China opera bajo un reloj demográfico y de crecimiento que reduce su margen de paciencia con el paso de los años. La ventana que la mayoría de análisis de defensa —incluida la Comisión de Revisión Económica y de Seguridad EE. UU.-China ante el Congreso— viene señalando como de mayor riesgo cae aproximadamente entre **2027 y 2032**.
+
+## 2. Tres escenarios a 2050, no uno
+
+Cualquier proyección a treinta años que ofrezca un único desenlace debería leerse con sospecha. Lo razonable es sostener varios escenarios en paralelo, con pesos relativos distintos:
+
+**Escenario A — Fragmentación en bloques económicos rivales, sin guerra directa entre potencias nucleares.** Es el escenario al que la mayoría de centros de análisis (CSIS, RAND, Chatham House) asignan el mayor peso relativo, del orden de la mitad o más de la probabilidad conjunta. El mundo se reorganiza en cadenas de suministro paralelas — un bloque encabezado por EE. UU. y sus aliados, otro por China, Rusia y sus socios —, con guerras por delegación continuas en zonas periféricas (Sahel, sudeste asiático, corredores del crimen organizado transnacional en América Latina), pero sin enfrentamiento directo entre las potencias centrales porque la disuasión nuclear sigue cumpliendo su función. El movimiento de *friend-shoring* de minerales críticos que están impulsando EE. UU. y sus socios —del que el marco firmado con Colombia en septiembre de 2026 es un ejemplo concreto— pertenece exactamente a este escenario.
+
+**Escenario B — Escalada militar directa en un punto caliente, contenida regionalmente.** Taiwán es el candidato con mayor probabilidad relativa dentro de este escenario. Rompería cadenas de suministro globales de forma abrupta —empezando por semiconductores, y de ahí prácticamente todo lo demás— durante un período de años, sin necesariamente escalar a intercambio nuclear generalizado porque ambas partes retienen un incentivo de supervivencia mutuo.
+
+**Escenario C — Escalada nuclear generalizada.** Ningún analista serio le asigna a este escenario una probabilidad numérica con la que valga la pena operar, y con razón: si ocurriera, el marco de análisis geopolítico deja de ser la herramienta relevante. Pero omitirlo por completo tampoco sería honesto — la doctrina nuclear rusa ha bajado su umbral declarado de uso táctico en los últimos años, y esa es la razón última por la que la disuasión sigue siendo una variable activa y no un supuesto de fondo que se pueda dar por descontado.
+
+## 3. Los minerales críticos como mecanismo concreto del Escenario A
+
+Esto no es un añadido temático — es el punto donde este documento se conecta directamente con el resto de la investigación reunida en este repositorio. La carrera por asegurar cadenas de suministro de minerales críticos no es un fenómeno paralelo a la rivalidad entre potencias: es uno de sus instrumentos operativos más concretos.
+
+Cuando EE. UU. firma un marco bilateral de minerales críticos con Colombia, no es, en primer término, un acuerdo comercial — es un movimiento de diversificación de cadena de suministro que pertenece a la misma familia de decisiones que la Ley CHIPS o los acuerdos de minerales críticos con Australia, Canadá o la República Democrática del Congo. Colombia se está posicionando, lo declare explícitamente o no, dentro de la infraestructura de resiliencia de suministro del bloque occidental descrito en el Escenario A.
+
+## 4. Colombia en ese tablero: proyección a 2030
+
+**Una ventana de oportunidad real, pero estrecha.** El interés de EE. UU. en el cobre colombiano existe precisamente porque hay urgencia geopolítica de diversificar lejos de las cadenas dominadas por China — eso le da a Colombia una palanca de negociación que no tendría en un contexto sin esta tensión. Esa ventana, sin embargo, se cierra si el país no logra convertir potencial geológico en producción real dentro de un plazo razonable: los 15 años promedio de maduración de un proyecto minero documentados en `docs/01-analisis-ampliado-2026-2050.md` chocan directamente contra la ventana de mayor tensión EE. UU.-China señalada en la sección 1 (2027-2032).
+
+**El crimen organizado transnacional como vector de riesgo, no solo un problema interno.** La minería ilegal —29 de 32 departamentos afectados, según el inventario de este mismo repositorio— es exactamente el tipo de economía ilícita que las redes criminales transnacionales explotan dentro del Escenario A: no es un problema aislado de gobernanza doméstica, es parte del mismo ecosistema que financia actores no estatales en conflictos por delegación en otras regiones del mundo.
+
+**Venezuela como variable de frontera que condiciona la capacidad de ejecución.** Cualquier deterioro adicional en la relación bilateral —migración, seguridad fronteriza, disputas territoriales latentes— consume capacidad institucional que Colombia necesitaría para capitalizar la oportunidad minera. No es geopolítica de gran potencia en sentido estricto, pero es la variable regional que más directamente puede limitar el ancho de banda del Estado para ejecutar todo lo demás.
+
+**El riesgo del sobre-alineamiento.** Ligarse de forma exclusiva al bloque liderado por EE. UU. tiene un costo de oportunidad real: China sigue siendo un comprador relevante de materias primas colombianas en otros sectores. El patrón más resiliente que han seguido países medianos dentro del Escenario A —Vietnam, India, los Emiratos Árabes Unidos— es de *hedging* activo: capitalizar la inversión occidental en minerales críticos sin cerrar por completo las puertas comerciales con China en el resto de la relación bilateral. Esta es, en última instancia, una decisión de política exterior que corresponde al Estado colombiano, no algo que el sector minero resuelve por sí solo.
+
+**Lo más probable hacia 2030, si no se produce ninguna ruptura mayor:** Colombia habrá avanzado en exploración y marco regulatorio, pero con producción de cobre todavía muy limitada, dados los tiempos de maduración de proyecto — funcionando más como una apuesta estratégica ya confirmada que como productor relevante en el mercado mundial. El punto de inflexión productivo real es más plausible entre **2032 y 2038**, siempre que el marco institucional y de seguridad se sostenga durante ese intervalo.
+
+## 5. Límites de este análisis
+
+- Los pesos relativos asignados a cada escenario en la sección 2 son una síntesis del rango de consenso publicado por centros de análisis internacionales, no el resultado de un modelo cuantitativo propio — este documento no pretende tener uno.
+- El análisis se apoya en información pública disponible hasta la fecha de redacción; no incorpora inteligencia clasificada ni fuentes privilegiadas, y cualquier evento posterior a esa fecha puede alterar los pesos relativos de los escenarios sin invalidar el marco de análisis en sí.
+- La proyección sobre Colombia en la sección 4 es una lectura propia derivada de cruzar los datos ya verificados en el resto de este repositorio (tiempos de maduración de proyecto, extensión de la minería ilegal, cifras del marco bilateral) con la literatura de geopolítica de recursos — no es una cifra oficial de ninguna entidad de gobierno, colombiana o estadounidense.
+
+---
+*Ver también: [Análisis ampliado 2026-2050](01-analisis-ampliado-2026-2050.md) · [Estudios y ejecución en Colombia](03-estudios-colombia-y-ejecucion.md) · [Soluciones jurídicas e institucionales](06-soluciones-juridicas-e-institucionales.md)*
