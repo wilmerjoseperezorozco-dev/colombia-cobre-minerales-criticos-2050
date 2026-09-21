@@ -1,0 +1,38 @@
+{
+  "generado_utc": "2026-09-21T15:43:27.182481+00:00",
+  "semana_actual": "2026_W39",
+  "comparado_contra": "dataset_maestro_2026_W38.json",
+  "campos": [
+    {
+      "campo": "precio_cobre_ultimo_valor_usd_por_tonelada",
+      "valor_previo": 13542.82,
+      "valor_actual": 13542.82,
+      "variacion_pct": 0.0
+    },
+    {
+      "campo": "precio_cobre_cagr_5_anos_pct",
+      "valor_previo": 7.46,
+      "valor_actual": 7.46,
+      "variacion_pct": 0.0
+    },
+    {
+      "campo": "potencial_colombia_total_mt_cu",
+      "valor_previo": 17.4,
+      "valor_actual": 17.4,
+      "variacion_pct": 0.0
+    },
+    {
+      "campo": "iea_demanda_mundial_2025_linea_base_kt",
+      "valor_previo": 27775,
+      "valor_actual": 27775,
+      "variacion_pct": 0.0
+    },
+    {
+      "campo": "usgs_pct_potencial_colombia_sobre_reservas_mundiales",
+      "valor_previo": 1.776,
+      "valor_actual": 1.776,
+      "variacion_pct": 0.0
+    }
+  ],
+  "alertas": []
+}

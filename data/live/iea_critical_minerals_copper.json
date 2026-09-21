@@ -1,9 +1,9 @@
 {
   "fuente": "IEA, Critical Minerals Data Explorer, edición 2026 (archivo Excel oficial)",
   "metodo_de_obtencion": "aportado_manualmente_por_usuario — descargado desde su cuenta gratuita de IEA; no existe API pública equivalente (ver docstring de este script)",
-  "archivo_origen": "pipeline\\_manual_uploads\\IEA_Critical_Minerals_Dataset_2026.xlsx",
+  "archivo_origen": "pipeline/_manual_uploads/IEA_Critical_Minerals_Dataset_2026.xlsx",
   "archivo_sha256": "43bd9338a08ac8399c65471115f30ffc10dca7117e62f03cca86d49224717935",
-  "procesado_utc": "2026-09-15T02:00:18.388960+00:00",
+  "procesado_utc": "2026-09-21T15:42:44.951309+00:00",
   "aviso_licencia": "Dataset con cuenta gratuita de IEA. Uso personal/no comercial. No redistribuir el archivo crudo fuera de este repositorio privado.",
   "demanda_cobre": {
     "unidad": "kt (miles de toneladas)",

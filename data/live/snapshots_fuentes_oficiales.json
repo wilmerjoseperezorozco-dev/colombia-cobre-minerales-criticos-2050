@@ -1,12 +1,12 @@
 {
   "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
-  "ultima_corrida_utc": "2026-09-15T02:00:19.333358+00:00",
+  "ultima_corrida_utc": "2026-09-21T15:42:49.150433+00:00",
   "fuentes": [
     {
       "id": "anm_ronda_cobre",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/ronda-minera-cobre",
-      "consultado_utc": "2026-09-15T02:00:16.377034+00:00",
+      "consultado_utc": "2026-09-21T15:42:44.704287+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 8186,
       "hash_sha256": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
@@ -17,7 +17,7 @@
       "id": "anm_mapa_sitio_mineria",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
-      "consultado_utc": "2026-09-15T02:00:16.852822+00:00",
+      "consultado_utc": "2026-09-21T15:42:46.184352+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 2974,
       "hash_sha256": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
@@ -28,56 +28,53 @@
       "id": "upme_home",
       "institucion": "Unidad de Planeación Minero-Energética (UPME)",
       "url": "https://www.upme.gov.co",
-      "consultado_utc": "2026-09-15T02:00:17.207251+00:00",
+      "consultado_utc": "2026-09-21T15:42:46.902058+00:00",
       "http_status": 200,
-      "longitud_texto_caracteres": 17812,
-      "hash_sha256": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
-      "cambio_detectado_desde_ultima_corrida": false,
+      "longitud_texto_caracteres": 18762,
+      "hash_sha256": "7d192dbfa1da2c917c76f227eed74b1c9a9d34e689734c8912a2453707f4231f",
+      "cambio_detectado_desde_ultima_corrida": true,
       "extracto_primeros_500_caracteres": "Home UPME - UPME Argo Inicio Nosotros Nuestra entidad ¿Quiénes somos? Nuestra historia Funciones y deberes Información de contacto, sedes y horarios Planeación institucional Financiero y Contable Proyectos de Inversión CIO UPME Gestión de Información Estadística Talento humano Asignación salarial Estructura organizacional Directorio de Servidores Contratistas Manual de Funciones Trabaje con nosotros Sintraminerales Contratación Documentos asociados a la contratación Procesos de contratación Cont"
     },
     {
       "id": "sgc_home",
       "institucion": "Servicio Geológico Colombiano (SGC)",
       "url": "https://www.sgc.gov.co",
-      "consultado_utc": "2026-09-15T02:00:17.881220+00:00",
-      "http_status": 200,
-      "longitud_texto_caracteres": 3,
-      "hash_sha256": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
-      "cambio_detectado_desde_ultima_corrida": false,
-      "extracto_primeros_500_caracteres": "SGC"
+      "consultado_utc": "2026-09-21T15:42:47.696100+00:00",
+      "http_status": null,
+      "error": "403 Client Error: Forbidden for url: https://www.sgc.gov.co/"
     },
     {
       "id": "anla_home",
       "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
       "url": "https://www.anla.gov.co",
-      "consultado_utc": "2026-09-15T02:00:18.233643+00:00",
+      "consultado_utc": "2026-09-21T15:42:47.774990+00:00",
       "http_status": 200,
-      "longitud_texto_caracteres": 11513,
-      "hash_sha256": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
-      "cambio_detectado_desde_ultima_corrida": false,
+      "longitud_texto_caracteres": 12147,
+      "hash_sha256": "8152d75ee59269baca03576dabbf2c3a0aae06fdb09e15b2e2a4b2a5716779f7",
+      "cambio_detectado_desde_ultima_corrida": true,
       "extracto_primeros_500_caracteres": "ANLA Se abre en una nueva ventana. Accesibilidad Buscar Buscar Inicio Interprete de lengua de señas del título Inicio Volver al Inicio Enlaces directos a las secciones del inicio - Temás de Interés - Proyectos ANLA - Ingresa a - Noticias - Enlaces Directos - Redes Sociales Transparencia Interprete de lengua de señas del título Transparencia Transparencia y Acceso a la Información Pública En esta sección usted encontrará información de los siguientes temas: Información de Entidad Normativa Contra"
     }
   ],
   "historial": {
     "anm_ronda_cobre": {
       "hash": "7f1ff23117844fc4a2a36cf40b37fcf76d483569a6871b2645d4f953ae5d2d10",
-      "ultima_corrida_utc": "2026-09-15T02:00:16.377034+00:00"
+      "ultima_corrida_utc": "2026-09-21T15:42:44.704287+00:00"
     },
     "anm_mapa_sitio_mineria": {
       "hash": "9a1cf8911149a67848465c4de06b3c11b02f467dae7c78d87fdc1c47fd8bb664",
-      "ultima_corrida_utc": "2026-09-15T02:00:16.852822+00:00"
+      "ultima_corrida_utc": "2026-09-21T15:42:46.184352+00:00"
     },
     "upme_home": {
-      "hash": "4d08539f6d244173ccfb031a2071dadaaf58fc38b6caa73f1f161ff79a8f2a80",
-      "ultima_corrida_utc": "2026-09-15T02:00:17.207251+00:00"
+      "hash": "7d192dbfa1da2c917c76f227eed74b1c9a9d34e689734c8912a2453707f4231f",
+      "ultima_corrida_utc": "2026-09-21T15:42:46.902058+00:00"
     },
     "sgc_home": {
       "hash": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
       "ultima_corrida_utc": "2026-09-15T02:00:17.881220+00:00"
     },
     "anla_home": {
-      "hash": "febadb611f1e4ae04a89ad9f6832e1c932e2a825528ff95f7ba05134e5695c16",
-      "ultima_corrida_utc": "2026-09-15T02:00:18.233643+00:00"
+      "hash": "8152d75ee59269baca03576dabbf2c3a0aae06fdb09e15b2e2a4b2a5716779f7",
+      "ultima_corrida_utc": "2026-09-21T15:42:47.774990+00:00"
     }
   }
 }
