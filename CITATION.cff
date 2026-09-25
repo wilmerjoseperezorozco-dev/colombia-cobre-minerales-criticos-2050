@@ -26,13 +26,13 @@ keywords:
   - geopolítica
   - reproducibilidad
 license: CC-BY-4.0
-version: 0.3.0
-date-released: "2026-09-17"
-doi: 10.5281/zenodo.22814733
+version: 1.0.0
+date-released: "2026-09-25"
+doi: 10.5281/zenodo.22814732
 identifiers:
   - type: doi
     value: 10.5281/zenodo.22814733
-    description: "DOI de esta versión (v0.3.0) en Zenodo."
+    description: "DOI de la versión v0.3.0 (primer release citable) en Zenodo."
   - type: doi
     value: 10.5281/zenodo.22814732
     description: "DOI conceptual — resuelve siempre a la última versión publicada."

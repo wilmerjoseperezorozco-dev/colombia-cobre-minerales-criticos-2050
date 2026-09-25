@@ -1,6 +1,6 @@
 [project]
 name = "colombia-cobre-minerales-criticos-2050"
-version = "0.3.0"
+version = "1.0.0"
 description = "Pipeline de datos e investigación sobre cobre y minerales críticos en Colombia (2026-2050)"
 requires-python = ">=3.10"
 

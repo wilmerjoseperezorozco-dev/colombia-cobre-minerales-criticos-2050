@@ -4,7 +4,7 @@
 
 **Repositorio de investigación estratégica con pipeline de datos ejecutable.** Cobre, minerales críticos, alianza Colombia–EE. UU. y manufactura avanzada global — investigación primero, automatización después.
 
-> Última corrida del pipeline: ver `data/consolidado/dataset_maestro.json → generado_utc` · Curación de investigación: 14-sep-2026 · Primer release citable: [v0.3.0](https://github.com/wilmerjoseperezorozco-dev/colombia-cobre-minerales-criticos-2050/releases/tag/v0.3.0) (DOI [10.5281/zenodo.22814733](https://doi.org/10.5281/zenodo.22814733))
+> Última corrida del pipeline: ver `data/consolidado/dataset_maestro.json → generado_utc` · Curación de investigación: 14-sep-2026 · Release actual: [v1.0.0](https://github.com/wilmerjoseperezorozco-dev/colombia-cobre-minerales-criticos-2050/releases/tag/v1.0.0) · [Changelog](CHANGELOG.md)
 
 ## 🔴🟢 Estado del pipeline
 
@@ -151,11 +151,12 @@ Estructurados en JSON para reutilizar en cualquier análisis posterior con IA:
 
 | Elemento | Estado |
 |---|---|
-| Milestones | [v0.1 y v0.2 completados](../../milestones?state=closed) · [v0.3, v1.0, v2.0 en curso](../../milestones) |
-| Issues abiertos | [14 issues reales](../../issues) — pipeline, investigación, monitoreo regulatorio/de mercado, y la ruta a Zenodo |
+| Milestones | [v0.1, v0.2, v0.3 y v1.0 completados](../../milestones?state=closed) · [v2.0 en curso](../../milestones) |
+| Issues abiertos | [10 issues reales](../../issues) — investigación, monitoreo regulatorio/de mercado, y expansión a otros minerales críticos |
 | Topics | `copper` `critical-minerals` `colombia` `mining` `data-pipeline` `open-data` `energy-transition` `geopolitics` `reproducible-research` `usgs` `iea` `python` |
+| Changelog | [`CHANGELOG.md`](CHANGELOG.md) — historial de versiones, hallazgos y correcciones metodológicas |
 | Citación | [`CITATION.cff`](CITATION.cff) — botón "Cite this repository" activo en GitHub |
-| DOI (Zenodo) | [10.5281/zenodo.22814732](https://doi.org/10.5281/zenodo.22814732) — resuelve siempre a la última versión; la de este release (v0.3.0) es [10.5281/zenodo.22814733](https://doi.org/10.5281/zenodo.22814733) |
+| DOI (Zenodo) | [10.5281/zenodo.22814732](https://doi.org/10.5281/zenodo.22814732) — resuelve siempre a la última versión (v1.0.0) |
 | Licencia | [`LICENSE`](LICENSE) — CC BY 4.0 (con excepción explícita para el archivo de IEA) |
 | Zenodo/DOI | **Pendiente de decisión** — ver [issue #4](../../issues/4): la integración automática de Zenodo solo archiva repositorios **públicos**; este repo es privado hoy |
 
