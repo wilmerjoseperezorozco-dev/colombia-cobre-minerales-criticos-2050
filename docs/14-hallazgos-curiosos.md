@@ -42,5 +42,9 @@ Un vehículo eléctrico usa en promedio 83 kg de cobre. Un único centro de dato
 
 La cifra original (mal citada por este mismo repositorio antes de corregirse) mezclaba el potencial propio de Colombia con el promedio de tres regiones geológicas *compartidas* con Ecuador, Perú y Panamá (37,3 Mt). El potencial real y exclusivamente colombiano —17,4 Mt— resultó ser *mayor* que la cifra que se citaba como si fuera el total, no menor: la corrección fue hacia arriba, no hacia abajo. *(`docs/01-analisis-ampliado-2026-2050.md`, corrección del 14-sep-2026)*
 
+## 11. La respuesta a una duda geológica de este repositorio llevaba 45 años publicada — solo que en Naciones Unidas, no en Colombia
+
+Este mismo repositorio documentaba "El Infierno-Chili" como un prospecto de ubicación incierta, posiblemente en Huila o en la frontera con Ecuador. La respuesta real —Tolima, alojado en el Batolito de Ibagué— ya estaba en un informe técnico de Naciones Unidas de **1981**, redescubierto al triangularlo con una evaluación conjunta USGS-INGEOMINAS de 2008 y los límites del Páramo de Anaime-Chilí documentados por CORTOLIMA. De paso, se corrigió un error propio: este repositorio tenía el prospecto agrupado como parte del cinturón "Jurásico" cuando en realidad es Cretácico — una diferencia de más de 130 millones de años que nadie había cuestionado hasta cruzar la fuente primaria. *(`docs/11-geografia-sitios-candidatos.md`, sección 3, issue #15)*
+
 ---
 *Ver también: [Análisis ampliado 2026-2050](01-analisis-ampliado-2026-2050.md) · [Metodología del pipeline](09-metodologia-pipeline.md) · [README / dashboard](../README.md)*
