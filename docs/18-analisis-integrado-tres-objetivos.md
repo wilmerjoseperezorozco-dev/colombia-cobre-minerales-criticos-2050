@@ -65,6 +65,8 @@ En procesamiento de sulfuros de cobre por flotación, existe un compromiso estru
 
 **Resultado de este análisis:** la hipótesis nula queda **debilitada, no confirmada ni rechazada de forma limpia**. Existe evidencia publicada real (no solo un argumento por analogía con Chile) de que el batolito que aloja Infierno-Chili tiene una historia geocronológica de al menos 33 millones de años de duración (171,5 a 137,9 Ma) — y el único número que describe la mineralización de cobre en sí (131 Ma) nunca se contrastó contra esa complejidad ya conocida. El siguiente paso concreto, ahora mejor justificado que antes de este documento, es datar específicamente las fases mineralizadas (no solo el batolito regional) con ⁴⁰Ar/³⁹Ar o U-Pb en fases hidrotermales, para saber si el evento de cobre es realmente un pulso aislado de 131 Ma o parte de la misma secuencia de 33 millones de años que Rodríguez-García et al. ya documentaron.
 
+**Dato ejecutado, no solo propuesto (25-sep-2026) — el mineral necesario para datar el evento SÍ existe y está confirmado por fuente oficial:** se descargó y filtró en vivo el dataset público *Anomalías Geoquímicas Históricas de Colombia* (SGC/INGEOMINAS, CC-BY 4.0, `data/anomalias_geoquimicas_infierno_chili_ingeominas.json`) — 923 registros nacionales, compilados de más de 4.000 informes históricos de INGEOMINAS (1917-2008). Dos prospectos en Rovira, Valle de San Juan, Tolima (la misma ubicación del issue #15) tienen **molibdenita confirmada por el SGC**: "El Infierno" (con zonación de alteración potásica→fílica→propilítica, el patrón clásico de un pórfido cuprífero) y "Los Andes" (con "PERFORACIONES" explícitas en su descripción temática). **Confirmación cruzada real:** el USGS Open-File Report 2008-1253, ya citado en este repositorio, menciona independientemente que "Los Andes" tuvo 3 taladros históricos con hasta 800 ppm Cu y 200 ppm Mo — dos fuentes sin relación editorial entre sí (una colombiana, una estadounidense) describiendo el mismo prospecto con el mismo mineral clave. La molibdenita es, precisamente, el mineral que permite datación **Re-Os** — el método estándar para fechar directamente la mineralización de pórfidos cupríferos (a diferencia de datar circón de la roca huésped, que no data el cobre en sí). Ver la sección 6 para la proyección de qué haría falta para llevar esto a una edad publicable.
+
 ### 4.2 Objetivo 2 — Plata en calcopirita: Cerro Pabellón frente a Quebradona y Soto Norte (no El Roble)
 
 **Corrección explícita antes de continuar:** una versión anterior de este análisis proponía comparar Cerro Pabellón (epitermal) contra El Roble. Se retractó al verificar que El Roble es un **VMS** — el análogo moderno correcto de un VMS es un *black smoker* submarino, no un sistema geotermal subaéreo. Esa comparación se elimina aquí, no se repite.
@@ -102,11 +104,27 @@ Los 3 análisis comparten un patrón: en ninguno de los 3 casos los datos dispon
 
 Lo que sí queda establecido con certeza, no como hipótesis:
 - El batolito de Ibagué (roca huésped de Infierno-Chili) es Jurásico tardío, con al menos 3 fases entre 171,5 y 137,9 Ma — confirmado por Rodríguez-García et al. (2022) con U-Pb en circón, literatura que ya existía y que este repositorio no había encontrado hasta este documento.
+- **Molibdenita confirmada por el SGC en "El Infierno" y "Los Andes" (Rovira, Tolima)** — el mineral necesario para datación Re-Os del evento de cobre existe realmente ahí, no es una suposición; verificado ejecutando una descarga real del dataset abierto de INGEOMINAS y cruzado independientemente contra el USGS OFR 2008-1253.
 - El `null` de plata de El Roble en la Tabla 28 de UPME es un vacío de reporte, no un hecho geológico — hallazgo verificable y ya corregible.
 - Soto Norte es ~33,7 veces más rico en plata por tonelada de cobre que Quebradona — dato aritmético directo de cifras que ya estaban en el repositorio, nunca antes calculado explícitamente.
 - El Roble opera en la mitad baja de su propio rango contractual de ley de concentrado — un hecho operativo real, no una opinión.
 
-## 6. Propuesta innovadora: Protocolo de Triple Huella para priorizar dónde explorar primero
+## 6. Proyección a éxito: de molibdenita confirmada a una edad publicable
+
+Esta sección proyecta, con honestidad sobre lo que depende de terceros y lo que no, qué tendría que pasar para que el Objetivo 1 termine en un resultado publicable — no es una promesa de que vaya a ocurrir, es la ruta más corta ya identificada.
+
+| Etapa | Qué se necesita | Quién lo controla | Ya resuelto / pendiente |
+|---|---|---|---|
+| 1. Confirmar que el mineral datable existe | Presencia de molibdenita en el prospecto | — | **Resuelto (25-sep-2026)** — dataset SGC/INGEOMINAS, cruzado contra USGS |
+| 2. Localizar una muestra física | Núcleos del programa de exploración ONU (1970s) si siguen archivados, o muestra de superficie nueva | SGC (archivo/núcleoteca), o campo | Pendiente — siguiente paso ejecutable: consulta MIIG (buscador roto, ver hallazgo de infraestructura más abajo) o derecho de petición directo |
+| 3. Análisis Re-Os de la molibdenita | Laboratorio con espectrometría de masas de alta precisión para Re-Os | Ninguno confirmado en Colombia; candidatos: grupos que ya trabajan el batolito de Ibagué (Villagómez, Cochrane) en universidades con esa capacidad | Pendiente — requiere colaboración académica, no solo presupuesto |
+| 4. Publicación / registro del resultado | Journal revisado por pares (ej. *Boletín de Geología*, donde ya publicó Rodríguez-García et al. 2022) o informe técnico del SGC | Autores del estudio | Pendiente, condicionado a las etapas 2-3 |
+
+**Hallazgo de infraestructura adicional, verificado al intentar la etapa 2:** el buscador del portal MIIG del SGC (`miig.sgc.gov.co`) está roto — el archivo JavaScript que renderiza resultados de búsqueda devuelve HTTP 404, confirmado inspeccionando las peticiones de red del navegador, no una sospecha. Es la misma clase de hallazgo que ya documentó este repositorio con `www1.upme.gov.co` (DNS roto) — una brecha real de infraestructura de datos abiertos colombiana, no un error de búsqueda. La vía alterna que sí funcionó fue el portal nacional `datos.gov.co`, que aloja el mismo dataset del SGC de forma independiente.
+
+**Qué significaría un "éxito" real, sin inflar la expectativa:** no es necesariamente una fecha nueva y sorprendente — el escenario más probable, dado que 131 Ma ya es más joven que la fase más reciente datada del batolito regional (138,48 Ma), es que una redatación moderna **confirme** el número de Sillitoe 1982 con mayor precisión (menor margen de error) en vez de cambiarlo drásticamente. Eso también sería un resultado publicable y útil — cerraría el issue #18 con certeza en vez de con una cifra de 44 años sin repetir, incluso si el número final es casi el mismo.
+
+## 7. Propuesta innovadora: Protocolo de Triple Huella para priorizar dónde explorar primero
 
 Ninguno de los 3 objetivos, por separado, es una novedad metodológica — cada técnica (geocronología multi-isótopo, geoquímica de traza en calcopirita, benchmarking metalúrgico) es estándar en la industria. **Lo que no existe todavía —ni en este repositorio, ni, hasta donde se pudo verificar, en la literatura pública sobre el cinturón cuprífero colombiano— es un protocolo que combine las 3 dimensiones para decidir, con criterio explícito, en qué orden explorar el 97% del territorio sin caracterizar.**
 
@@ -118,12 +136,13 @@ Ninguno de los 3 objetivos, por separado, es una novedad metodológica — cada 
 
 **Por qué esto es genuinamente nuevo, no una recombinación forzada:** cada paso usa un dato de bajo costo para decidir si vale la pena invertir en el siguiente, más caro — geocronología (el paso más caro de los tres, reservado solo para el Objetivo 1) nunca aparece en este protocolo de triaje inicial, precisamente porque el Objetivo 1 de este mismo documento mostró que su valor es resolver una duda genética profunda, no filtrar prospectos rápidamente. Es un uso deliberado y diferenciado de cada técnica según su costo y su pregunta, no la aplicación de las tres a todo por igual.
 
-## 7. Limitaciones honestas de este documento
+## 8. Limitaciones honestas de este documento
 
 - Ninguna muestra colombiana fue analizada en este documento — todo el análisis es comparativo, sobre datos ya publicados de Colombia, Chile y Perú. Es un ejercicio de síntesis, no un nuevo dato de laboratorio.
 - La cifra de plata de El Roble queda pendiente de extraer del informe técnico completo (Tabla 14.2) — no se inventó un número para completarla.
 - La comparación metalúrgica del Objetivo 3 queda parcial por falta del dato de recuperación de Pachacayo.
-- El Protocolo de Triple Huella (sección 6) es una propuesta de diseño, no un protocolo ya ejecutado ni validado contra un caso real colombiano.
+- El Protocolo de Triple Huella (sección 7) es una propuesta de diseño, no un protocolo ya ejecutado ni validado contra un caso real colombiano.
+- La proyección de éxito (sección 6) es una hoja de ruta razonada, no un compromiso de que la etapa 3 (análisis Re-Os) vaya a ejecutarse — depende de conseguir muestra física y colaboración de laboratorio, ninguna de las dos bajo control de este repositorio.
 - La búsqueda de estado del arte (sección 2) no es exhaustiva — se hizo con motores de búsqueda web, no con acceso a Scopus/Web of Science completo; es posible que exista más literatura sobre geocronología del cinturón andino colombiano que esta pasada no encontró.
 
 ---

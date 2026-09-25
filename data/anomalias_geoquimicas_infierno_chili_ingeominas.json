@@ -1,0 +1,51 @@
+{
+  "origen": "api_publica_en_vivo",
+  "nota_origen": "Extraído en vivo el 25-sep-2026 del dataset público 'Anomalías Geoquímicas Históricas de Colombia' (SGC/INGEOMINAS, vía datos.gov.co). Es una descarga manual puntual durante investigación, no una fase automatizada del pipeline -- candidato a Fase 10 si se decide integrar de forma recurrente (ver docs/09, sección de roadmap).",
+  "fuente": "Servicio Geológico Colombiano (SGC), compilación histórica de informes de INGEOMINAS 1917-2008 (más de 4.000 documentos revisados)",
+  "dataset_url": "https://www.datos.gov.co/geospatial/Anomal-as-Geoqu-micas-Hist-ricas-de-Colombia/vwgx-4s3f",
+  "descarga_directa_csv": "https://datos-sgcolombiano.opendata.arcgis.com/api/download/v1/items/f8f1ce10c2144caea7268713506e1ed3/csv?layers=0",
+  "licencia": "CC-BY 4.0",
+  "fecha_extraccion_utc": "2026-09-25",
+  "total_registros_dataset_completo": 923,
+  "total_registros_zona_batolito_ibague": 41,
+  "hallazgo_principal": "El prospecto 'El Infierno' y el prospecto vecino 'Los Andes' (ambos en Rovira, Valle de San Juan, Tolima -- la ubicación ya georreferenciada en el issue #15 de este repositorio) tienen molibdenita confirmada por el propio SGC/INGEOMINAS, con zonación de alteración hidrotermal típica de pórfido cuprífero (potásica-fílica-propilítica). Esto confirma, de forma independiente y con fuente oficial distinta, la mención del USGS Open-File Report 2008-1253 sobre perforaciones históricas en 'Los Andes' con hasta 800 ppm Cu y 200 ppm Mo -- dos fuentes no relacionadas entre sí llegando al mismo prospecto. La molibdenita confirmada es la pieza que faltaba para proponer datación Re-Os del evento mineralizante (ver docs/18, sección 4.1 y sección de proyección a éxito).",
+  "registros": [
+    {
+      "anomalia": "Los Andes",
+      "ubicacion": "Tolima, Rovira, Valle de San Juan",
+      "tema": "Mineralización, pórfido cuprífero, cobre, perforaciones",
+      "tipo_mineralizacion": "Pórfidos",
+      "elementos_principales": "Cu, Mo",
+      "minerales_confirmados": ["pirita", "galena", "molibdenita", "magnesita", "calcopirita", "calcosina"],
+      "alteracion": ["propilítica", "silícea", "silicificación"],
+      "potencial_asignado_por_sgc": "Medio",
+      "id_agq": "P244_24",
+      "grupo": "Grupo 2"
+    },
+    {
+      "anomalia": "El Infierno",
+      "ubicacion": "Tolima, Rovira, Valle de San Juan",
+      "tema": "Metales básicos, exploración, mineralizaciones, pórfido cuprífero",
+      "tipo_mineralizacion": "Pórfidos, vetas, estobercas, brechas",
+      "elementos_principales": "Cu, Zn, Pb, Cu-Mo, Pb-Zn, Zn-Pb, Mo",
+      "minerales_confirmados": ["pirita", "molibdenita", "blenda", "galena"],
+      "alteracion": ["potásica", "fílica", "propilítica", "silicificación"],
+      "nota_alteracion": "Zonación potásica (núcleo) -> fílica (intermedia) -> propilítica (externa) es el patrón clásico de un sistema de pórfido cuprífero, consistente con la clasificación USGS del tracto SA04PC.",
+      "potencial_asignado_por_sgc": "Medio",
+      "id_agq": "P263_18",
+      "grupo": "Grupo 2"
+    },
+    {
+      "anomalia": "El Infierno",
+      "ubicacion": "Suroccidente colombiano, Tolima, Rovira, Río Chilí",
+      "tema": "Metales básicos, exploración, mineralizaciones, laterita niquelífera, níquel, hierro",
+      "tipo_mineralizacion": "Pórfidos, lateritas niquelíferas",
+      "elementos_principales": "Mo, Ni, Fe",
+      "minerales_confirmados": ["pirita", "calcopirita", "blenda"],
+      "nota": "Registro distinto al anterior dentro del mismo dataset -- misma zona, perfil de meteorización (laterita niquelífera) en vez de pórfido primario. Confirma que la zona de Río Chilí específicamente (de donde toma su nombre 'Infierno-Chili') tiene tanto mineralización primaria de Cu-Mo como un perfil de alteración/meteorización superficial distinto.",
+      "potencial_asignado_por_sgc": "Bajo",
+      "id_agq": "P263_12",
+      "grupo": "Grupo 3"
+    }
+  ]
+}
