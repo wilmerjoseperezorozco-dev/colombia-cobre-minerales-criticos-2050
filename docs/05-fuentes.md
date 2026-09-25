@@ -97,3 +97,37 @@
 - [Puerto de Barranquilla — Qué se mueve por el puerto](https://www.puertodebarranquilla.com/index.php/que-se-mueve-por-el-puerto-de-barranquilla/)
 - [Portafolio — Data centers: Colombia gana atractivo para la inversión](https://www.portafolio.co/tecnologia/data-centers-colombia-gana-atractivo-para-la-inversion-pero-enfrenta-un-reto-energetico-501405)
 - [Portafolio — La oportunidad digital del Caribe colombiano: de los puertos a los GPUs](https://www.portafolio.co/tecnologia/la-oportunidad-digital-del-caribe-colombiano-de-los-puertos-a-los-gpus-498174)
+
+## Estrategia de búsqueda para literatura científica (para ampliar esta lista fase a fase)
+
+Estas son las cadenas de búsqueda a usar en bases de literatura científica (Lens.org, Scopus, Web of Science, Google Scholar, Semantic Scholar) para encontrar artículos revisados por pares que respalden o cuestionen los hallazgos de este repositorio. El inglés indexa mucho mejor que el español en estas bases — se da como término principal, con el equivalente en español como alternativa cuando la base lo permita.
+
+**1. Potencial geológico del cobre colombiano**
+`("porphyry copper" OR "copper deposit") AND (Colombia OR "Andean copper belt")`
+Español: `"cobre pórfido" Colombia` · `"cinturón cuprífero andino"`
+
+**2. Minerales críticos y geopolítica de cadenas de suministro**
+`("critical minerals" OR "critical raw materials") AND ("supply chain" OR "friend-shoring" OR "de-risking") AND (China OR geopolitics)`
+Español: `"minerales críticos" cadena de suministro geopolítica`
+
+**3. Sismicidad inducida por minería y reinyección de fluidos**
+`("induced seismicity" OR "triggered seismicity") AND (mining OR "wastewater injection" OR "block caving")`
+Español: `"sismicidad inducida" minería inyección`
+
+**4. Seguridad en minería de hundimiento de bloques (block caving)**
+`"block caving" AND (safety OR "rockburst" OR "ground control" OR collapse)`
+
+**5. Demanda de cobre: transición energética y centros de datos de IA**
+`("copper demand" OR "copper intensity") AND ("energy transition" OR "data center" OR "electric vehicle" OR "AI infrastructure")`
+
+**6. Minería ilegal y economías criminales extractivas**
+`("illegal mining" OR "artisanal and small-scale mining" OR ASM) AND (Colombia OR "organized crime" OR "criminal governance")`
+Español: `"minería ilegal" Colombia crimen organizado`
+
+**7. Gestión de relaves y estándar GISTM post-Brumadinho**
+`("tailings dam" OR "tailings storage facility") AND (GISTM OR monitoring OR InSAR OR failure)`
+
+**8. Consulta previa y derechos territoriales frente a minería (relevante para docs/06)**
+`("free, prior and informed consent" OR "prior consultation") AND (mining OR extractive) AND (Colombia OR indigenous OR Afro-Colombian)`
+
+Se recomienda anotar en este mismo documento los artículos que resulten relevantes de cada búsqueda, con su DOI, para que queden trazables como el resto de las fuentes de este repositorio.
