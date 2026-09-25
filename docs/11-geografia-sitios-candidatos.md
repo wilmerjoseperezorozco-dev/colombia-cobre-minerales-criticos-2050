@@ -11,19 +11,26 @@
 | Cinturón | Edad | Departamentos | Municipios / distritos de referencia | Coordenadas aprox. (cabecera de referencia) |
 |---|---|---|---|---|
 | **Occidental** | Eoceno | Antioquia – Chocó | Pantanos-Pegadorcito, Andagueda, Murindó, Acandí, Piedrancha, El Roble | Ciudad Bolívar (Ant.): 5,85 N / -76,02 W · El Carmen de Atrato (Chocó): 5,91 N / -76,15 W |
-| **Oriental** | Jurásico | Santander/Norte de Santander, Putumayo, (Huila-Nariño-Cauca-Putumayo, ver nota) | California, Dolores, Mocoa, El Infierno-Chili | California (Sant.): 7,35 N / -72,94 W · Mocoa (Put.): 1,15 N / -76,65 W |
+| **Oriental** | Jurásico | Santander/Norte de Santander, Putumayo/Ecuador | California, Dolores, Mocoa | California (Sant.): 7,35 N / -72,94 W · Mocoa (Put.): 1,15 N / -76,65 W |
 | **Central** | Mioceno | Nariño – Cauca | El Tambo, Dominical, Piedrasentada, El Pisno | Región general El Tambo, Cauca: 2,45 N / -76,81 W |
 
-**Nota de honestidad sobre "El Infierno-Chili":** no se pudo verificar con precisión en qué municipio exacto queda este prospecto — una fuente primaria de UPME lo ubica implícitamente en el cinturón Oriental (Jurásico), pero una síntesis secundaria lo sitúa en Huila, en la zona geológicamente compleja donde confluyen Huila, Cauca, Putumayo y Nariño (Sistema de Fallas de Algeciras). Se reporta la incertidumbre en vez de fijar una ubicación falsa — pendiente de verificación directa con el SGC (candidato a issue de GitHub).
+**Corrección (25-sep-2026) — "El Infierno-Chili" no pertenece al cinturón Oriental:** la versión anterior de esta tabla agrupaba "El Infierno-Chili" junto con California/Dolores/Mocoa bajo el cinturón Oriental (Jurásico), siguiendo una lectura implícita de UPME. Verificación directa contra la fuente primaria conjunta USGS-INGEOMINAS (*Quantitative Mineral Resource Assessment... in the Andes Mountains of South America*, USGS Open-File Report 2008-1253, tracto SA04PC) muestra que esto es geológica y geográficamente incorrecto: el prospecto está alojado en el **Batolito de Ibagué, de edad Cretácica (131 Ma, Sillitoe et al., 1982)**, no en rocas jurásicas, y queda a más de 600 km al norte de California (Santander) y Mocoa (Putumayo) — no forma parte de ese mismo cinturón. Es, en la práctica, un cuarto foco aislado, cubierto en la sección 3 con su ubicación ya corregida.
 
 ## 3. Los dos únicos lugares "100% propios de Colombia" (los 17,4 Mt de potencial, sección 3.5 del artículo científico)
 
 | Región USGS | Recursos hipotéticos | Departamento | Zona de referencia | Coordenadas aprox. |
 |---|---|---|---|---|
-| Plate 25 — Cretácico Infierno-Chili | 7,7 Mt | Frontera Colombia-Ecuador (suroccidente) | Zona fronteriza sur de Nariño/Putumayo | ~1,0 N / -77,3 W (aproximado, sin verificar municipio exacto) |
+| Plate 25 — Cretácico Infierno-Chili | 7,7 Mt | **Tolima** (corregido 25-sep-2026; antes se listaba erróneamente como Nariño/Putumayo) | Batolito de Ibagué — complejo de páramo Anaime-Chilí, compartido entre Rovira, Roncesvalles, Cajamarca, San Antonio, Chaparral e Ibagué; el punto de coordenadas queda a ~8 km de la cabecera de Rovira, el municipio más cercano | 4,18 N / -75,30 W (USGS OFR 2008-1253, tracto SA04PC — no aproximado, es la coordenada de la fuente primaria) |
 | Plate 26 — Jurásico California | 9,7 Mt | Santander / Norte de Santander | California (Sant.), extendiéndose hacia el oriente fronterizo con Venezuela | 7,35 N / -72,94 W |
 
 Si hay que señalar **un solo punto de partida** para un programa de exploración de detalle 100% nacional (sin depender de coordinación con Ecuador o Venezuela para modelar el depósito), es la franja de **California, Santander** — ya tiene un proyecto activo cerca (Soto Norte) y estudios geológicos previos de esa cuenca.
+
+**Verificación de "El Infierno-Chili" (issue #15, resuelto 25-sep-2026):** la ubicación se reconstruyó cruzando 3 fuentes independientes, ninguna del mismo origen que las demás — el estándar más alto de verificación que usa este repositorio:
+1. Un informe técnico de Naciones Unidas de 1981 titulado *"Colombia: mineralization of porphyry copper type in the area of El Infierno, Tolima Department"* — ya sitúa el prospecto en Tolima desde hace más de 40 años.
+2. El *USGS Open-File Report 2008-1253*, evaluación conjunta con INGEOMINAS (antecesor del SGC), da la coordenada exacta del tracto SA04PC (4°11'0"N, 75°17'0"W), confirma que está alojado en el Batolito de Ibagué (131 Ma, Cretácico, Sillitoe et al. 1982), y registra que la zona fue parte de un programa de exploración por sedimentos de quebrada de Naciones Unidas en los años 1970 — el mismo origen documental que el informe de 1981.
+3. CORTOLIMA (autoridad ambiental del Tolima) documenta el "Páramo de Anaime-Chilí" como un complejo declarado Parque Natural Regional en 2017, ubicado exactamente en los municipios de Rovira, Roncesvalles, Cajamarca, San Antonio, Chaparral e Ibagué — el mismo nombre ("Chilí") y la misma región que la coordenada del USGS, a solo ~8 km de la cabecera de Rovira.
+
+**Lo que queda sin resolver, honestamente:** el complejo de páramo se reparte entre 6 municipios; la coordenada puntual cae más cerca de Rovira, pero sin una visita de campo o un mapa catastral minero exacto no se puede descartar que el polígono real del prospecto cruce hacia el territorio de Roncesvalles o Cajamarca. Eso ya no es una duda sobre el departamento o la región (resuelta), es una duda de precisión de límite municipal — un nivel de incertidumbre ordinario en minería, no comparable con la ambigüedad original de "¿Huila, Nariño o Putumayo?".
 
 ## 4. Dónde sí hay extensión grande y baja densidad poblacional — Cesar y La Guajira (son dos zonas distintas, no una)
 
@@ -81,8 +88,8 @@ La recomendación central de esta sección: **cualquier inversión energética p
 1. Completar el estudio geológico de detalle en los 3 cinturones — hoy solo hay geología de superficie/regional.
 2. Rehabilitar el Ferrocarril del Pacífico (recomendación oficial de UPME, `docs/03`) **y** evaluar formalmente el corredor Cesar-Guajira como alternativa Caribe antes de construir infraestructura nueva desde cero.
 3. Estudio de balance hídrico específico para Cesar/La Guajira antes de adjudicar cualquier bloque a fundición — el agua ahí es el recurso más disputado, no el más disponible.
-4. Mapeo de prospectividad con IA (`docs/02`) para resolver la incertidumbre de ubicación exacta de prospectos como "El Infierno-Chili" sin esperar años de exploración de campo tradicional.
-5. Verificación directa con el SGC de la ubicación exacta de los prospectos que este documento no pudo confirmar con precisión (candidato a issue de GitHub).
+4. Mapeo de prospectividad con IA (`docs/02`) para acotar la incertidumbre de límite municipal que queda sobre "El Infierno-Chili" (ver sección 3) sin esperar años de exploración de campo tradicional — el ejercicio de triangulación de fuentes que resolvió este caso (issue #15) es exactamente el tipo de verificación que un pipeline de prospectividad con IA podría sistematizar para el resto de los prospectos aún no verificados con precisión.
+5. Verificación directa con el SGC (o el mismo método de triangulación de fuentes primarias usado en la sección 3) de la ubicación exacta de los demás prospectos que este documento aún no pudo confirmar con precisión.
 6. Diseño energético de doble uso (sección 7) como requisito de licitación, no como beneficio opcional del operador.
 
 ---

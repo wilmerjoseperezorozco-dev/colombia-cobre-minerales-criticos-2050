@@ -16,11 +16,12 @@
     {"municipio": "San Diego", "departamento": "Cesar", "lat": 10.33, "lon": -73.18, "proyecto_o_zona": "Ronda ANM cobre — Bloques 1, 2 ampliado, 3, 15 (Serranía del Perijá)"},
     {"municipio": "La Paz", "departamento": "Cesar", "lat": 10.35, "lon": -73.17, "proyecto_o_zona": "Ronda ANM cobre — Bloques 3, 15 (Serranía del Perijá)"},
     {"municipio": "Uribia (Puerto Bolívar)", "departamento": "La Guajira", "lat": 12.23, "lon": -71.98, "proyecto_o_zona": "Infraestructura pesada ya construida (puerto de aguas profundas + ferrocarril de Cerrejón) — no es zona de recurso de cobre conocido, es candidata de infraestructura conectable a Cesar"},
-    {"municipio": "El Tambo", "departamento": "Cauca", "lat": 2.45, "lon": -76.81, "proyecto_o_zona": "Cinturón Central (Mioceno) — región general, sin proyecto formal identificado"}
+    {"municipio": "El Tambo", "departamento": "Cauca", "lat": 2.45, "lon": -76.81, "proyecto_o_zona": "Cinturón Central (Mioceno) — región general, sin proyecto formal identificado"},
+    {"municipio": "Rovira (municipio más cercano; el complejo de páramo también toca Roncesvalles, Cajamarca, San Antonio, Chaparral e Ibagué)", "departamento": "Tolima", "lat": 4.18, "lon": -75.30, "proyecto_o_zona": "El Infierno-Chili (Plate 25 USGS, 7.7 Mt propios de Colombia) — Batolito de Ibagué, Cretácico (131 Ma). Coordenada exacta de USGS Open-File Report 2008-1253, tracto SA04PC, no una cabecera municipal aproximada como el resto de esta lista."}
   ],
-  "ubicacion_no_verificada": {
-    "prospecto": "El Infierno-Chili (Plate 25 USGS, 7.7 Mt propios de Colombia)",
-    "problema": "Fuente primaria de UPME lo asocia al cinturón Oriental (Jurásico) sin precisar municipio; una síntesis secundaria lo ubica en Huila, en la zona de confluencia geológica Huila-Cauca-Putumayo-Nariño (Sistema de Fallas de Algeciras). No se fija una coordenada para evitar falsa precisión.",
-    "accion_pendiente": "Verificar directamente con el Servicio Geológico Colombiano (SGC) — ver issue de GitHub correspondiente."
+  "verificacion_el_infierno_chili": {
+    "estado": "Resuelto 25-sep-2026 (issue #15 de GitHub) — antes figuraba como 'ubicacion_no_verificada' con incertidumbre entre Huila, Nariño y Putumayo.",
+    "metodo": "Triangulación de 3 fuentes independientes: (1) informe técnico de Naciones Unidas de 1981 'Colombia: mineralization of porphyry copper type in the area of El Infierno, Tolima Department'; (2) USGS Open-File Report 2008-1253 (evaluación conjunta USGS-INGEOMINAS), que da la coordenada exacta del tracto SA04PC y confirma el Batolito de Ibagué como roca huésped; (3) CORTOLIMA, que documenta el Páramo de Anaime-Chilí (declarado Parque Natural Regional en 2017) en los municipios de Rovira/Roncesvalles/Cajamarca/San Antonio/Chaparral/Ibagué -- el mismo nombre y la misma región que la coordenada del USGS.",
+    "incertidumbre_restante": "El complejo de páramo se reparte entre 6 municipios; la coordenada cae más cerca de Rovira (~8 km de su cabecera) pero no se puede descartar sin un mapa catastral minero que el polígono real cruce hacia Roncesvalles o Cajamarca. Es una duda de límite municipal, no de departamento o región."
   }
 }

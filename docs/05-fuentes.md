@@ -35,6 +35,9 @@
 - [Universidad Nacional — 70% de la explotación minera en manos de multinacionales](https://periodico.unal.edu.co/articulos/en-colombia-el-70-de-la-explotacion-minera-esta-en-manos-de-las-multinacionales/)
 - [Universidad de Antioquia — Gestión del agua en minería informal de oro](https://doi.org/10.17533/udea.redin.n79a16)
 - [El Tiempo — Qué es el Servicio Geológico Colombiano](https://www.eltiempo.com/economia/empresas/que-es-y-que-funcion-tiene-el-servicio-geologico-colombiano-792746)
+- [USGS Open-File Report 2008-1253 — Quantitative Mineral Resource Assessment of Copper, Molybdenum, Gold, and Silver in Undiscovered Porphyry Copper Deposits in the Andes Mountains of South America](https://pubs.usgs.gov/of/2008/1253/ofr2008-1253.pdf) — evaluación conjunta USGS/SEGEMAR(Argentina)/SERNAGEOMIN(Chile)/INGEOMINAS(Colombia)/INGEMMET(Perú); fuente primaria de la coordenada exacta y la edad geológica (Cretácico, Batolito de Ibagué) del prospecto "Infierno-Chilí" (issue #15, ver `docs/11-geografia-sitios-candidatos.md`)
+- [United Nations Digital Library — record 755140: "Colombia: mineralization of porphyry copper type in the area of El Infierno, Tolima Department" (1981)](https://digitallibrary.un.org/record/755140) — informe técnico que ya situaba el prospecto en Tolima hace más de 40 años; corrobora de forma independiente la fuente USGS de 2008
+- [CORTOLIMA — El complejo de Chilí Barragán, un ecosistema protegido](https://cortolima.gov.co/sala-de-prensa/noticias/721-el-complejo-de-chili-barragan-un-ecosistema-protegido) — confirma la ubicación del Páramo de Anaime-Chilí en los municipios de Rovira, Roncesvalles, Cajamarca, San Antonio, Chaparral e Ibagué (Tolima)
 
 ## Manufactura avanzada global
 - [CNBC — Why Nvidia's AI boom needs ASML](https://www.cnbc.com/2026/01/29/-ai-boom-nvidia-asml-dutch-chip-equipment-maker-lithography-.html)
