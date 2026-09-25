@@ -1,6 +1,6 @@
 # Análisis integrado de 3 objetivos de investigación: geocronología, geoquímica de plata y benchmarking metalúrgico
 
-> Este documento aplica, con justificación teórica explícita, 5 fuentes académicas y técnicas (2 de Chile, 1 de Perú, y los datos primarios ya verificados de UPME/Atico Mining en este mismo repositorio) a 3 preguntas concretas sobre el cobre colombiano. Sigue la misma disciplina del resto del repositorio: cada inferencia distingue entre **dato verificado**, **hipótesis razonada** y **vacío de información real**, sin forzar conexiones entre sistemas geológicos que no las tienen (ver la corrección explícita en la sección 3.2).
+> Este documento aplica, con justificación teórica explícita, 5 fuentes académicas y técnicas (2 de Chile, 1 de Colombia, 1 de Perú, y el informe técnico de Atico Mining) más los datos primarios ya verificados de UPME en este mismo repositorio, a 3 preguntas concretas sobre el cobre colombiano. Sigue la misma disciplina del resto del repositorio: cada inferencia distingue entre **dato verificado**, **hipótesis razonada** y **vacío de información real**, sin forzar conexiones entre sistemas geológicos que no las tienen (ver la corrección explícita en la sección 4.2).
 
 ## 1. Justificación
 
@@ -10,11 +10,27 @@ Tres brechas concretas, ya identificadas y documentadas en este repositorio, que
 2. **Inconsistencia no resuelta en los datos de plata:** la Tabla 28 de UPME (`data/upme_informe_cobre_hallazgos_curados.json`) reporta plata como dato no disponible (`null`) para El Roble, mientras que sí reporta cifras para Quebradona (1.405.309 oz troy/año) y Soto Norte (2.950.000 oz troy/año) — sin que este repositorio hubiera verificado si esa ausencia es real o es un vacío de la fuente.
 3. **Sin punto de comparación metalúrgico:** El Roble es la única mina de cobre en producción del país, pero hasta la sesión anterior este repositorio no tenía ningún dato de su eficiencia real de procesamiento (ley de concentrado, recuperación).
 
-Este documento no busca confirmar una tesis previa — cada objetivo parte de una hipótesis nula explícita (sección 3) y se reporta el resultado la haya confirmado o no.
+Este documento no busca confirmar una tesis previa — cada objetivo parte de una hipótesis nula explícita (sección 4) y se reporta el resultado la haya confirmado o no.
 
-## 2. Marco teórico
+## 2. Estado del arte
 
-### 2.1 Genética de depósitos de cobre y por qué el tipo de depósito importa
+Una cosa es el marco teórico general (los principios científicos que explican por qué un método funciona, sección 3) y otra distinta es qué se ha publicado ya, específicamente, sobre estas 3 preguntas en Colombia. Esta sección responde lo segundo — y encontró algo que cambia, con precisión, lo que se puede afirmar en el Objetivo 1.
+
+### 2.1 Geocronología del cinturón cuprífero colombiano: lo que ya existe (y lo que este repositorio no había encontrado hasta ahora)
+
+La revisión de literatura de `docs/15` (auditoría de rigor evidencial) señaló que la única referencia de edad para el cinturón andino colombiano era Sillitoe et al. 1982 — sin verificar si existía trabajo posterior. **Sí existe, y es sustancial:** Rodríguez-García et al. (2022), *Boletín de Geología* (Universidad Industrial de Santander), 44(3), 65-93, [10.18273/revbol.v44n3-2022003](https://doi.org/10.18273/revbol.v44n3-2022003) — redefinición completa del Batolito de Ibagué (el mismo cuerpo ígneo que aloja Infierno-Chili) usando geocronología U-Pb en circón, el método de mayor precisión disponible hoy para datar cristalización magmática.
+
+**Resultado publicado de esa redatación:** el batolito completo cristalizó entre **171,5±1,3 y 137,9±1,0 Ma** (pico de actividad hacia 160 Ma) — enteramente **Jurásico tardío a límite con el Cretácico más temprano**, con al menos 3 unidades internas de edades distintas (Batolito de Ibagué redefinido, Metatonalita de Anzoátegui: 158,2 a 150,17 Ma, y Tonalita de Ibagué: 145,71 a 138,48 Ma). **El paper no menciona Infierno-Chili ni mineralización de cobre en ningún punto** — es exclusivamente sobre la petrología, geoquímica y tectónica regional del batolito como cuerpo ígneo.
+
+**Por qué esto no reemplaza directamente el dato de Sillitoe 1982, y por qué tampoco lo contradice necesariamente:** Sillitoe (1982, citado en USGS OFR 2008-1253) dató específicamente el evento asociado a la mineralización de cobre en Infierno-Chili en 131 Ma — un número **más joven** que la fase más reciente que Rodríguez-García et al. lograron datar en el batolito regional (138,48 Ma). En pórfidos cupríferos es normal, no anómalo, que el evento mineralizante sea más joven que la roca huésped que intruye — un pulso hidrotermal tardío puede ocurrir varios millones de años después de la cristalización principal del batolito. **Lo que sí se puede afirmar con esta nueva fuente:** el batolito de Ibagué, como cuerpo regional, es genuinamente Jurásico — la clasificación de "Infierno-Chili" que este repositorio usa en `docs/11` (roca huésped Cretácica) describe únicamente el evento de mineralización de Sillitoe 1982, no la edad de la roca que lo aloja, y esa distinción no estaba hecha con esta claridad antes de encontrar este paper. Se corrige en la sección 4.1 y en `docs/11`.
+
+### 2.2 Geoquímica de calcopirita y geocronología en Chile/Perú: el estado del arte es metodológico, no de Colombia
+
+Para los Objetivos 2 y 3, la búsqueda no encontró trabajo previo específico de Colombia — ni estudios de elementos traza en calcopirita de yacimientos colombianos, ni benchmarking metalúrgico publicado de El Roble. El estado del arte aquí es **metodológico y regional** (Reich et al. 2020 en Chile; Guerra Vadillo 2019 en Perú), no un antecedente colombiano que este documento esté actualizando — es, en sentido estricto, la primera vez que se cruzan estos datos para un caso colombiano.
+
+## 3. Marco teórico
+
+### 3.1 Genética de depósitos de cobre y por qué el tipo de depósito importa
 
 Un depósito de cobre no es una categoría única — el mecanismo de formación determina su geometría, su ley, sus elementos asociados y hasta su riesgo geotécnico. Los 3 tipos relevantes para este análisis, verificados contra fuente primaria (no supuestos):
 
@@ -25,19 +41,19 @@ Un depósito de cobre no es una categoría única — el mecanismo de formación
 | Estratoligado (*manto-type*) | Fluidos ascendiendo por fallas lístricas invertidas, precipitando el mineral al cruzar un frente redox en rocas favorables — sin relación directa con una intrusión centrada | Lo Aguirre (Chile) |
 | Epitermal (análogo geotermal activo) | Fluidos hidrotermales someros (<1,5 km, <300°C) en sistemas volcánicos activos — el "análogo vivo" de yacimientos fósiles de Au-Ag de baja/intermedia sulfuración | Cerro Pabellón (Chile) |
 
-**Por qué esto restringe qué comparaciones son válidas:** la práctica estándar en geología económica es comparar un depósito fósil contra su análogo moderno *del mismo mecanismo* — un VMS fósil se compara contra sistemas de *black smokers* submarinos activos, no contra un sistema geotermal subaéreo epitermal. Ignorar esta restricción fue, precisamente, el error que se corrigió en la conversación previa a este documento (ver sección 3.2).
+**Por qué esto restringe qué comparaciones son válidas:** la práctica estándar en geología económica es comparar un depósito fósil contra su análogo moderno *del mismo mecanismo* — un VMS fósil se compara contra sistemas de *black smokers* submarinos activos, no contra un sistema geotermal subaéreo epitermal. Ignorar esta restricción fue, precisamente, el error que se corrigió en la conversación previa a este documento (ver sección 4.2).
 
-### 2.2 Partición de elementos traza en calcopirita — por qué la plata es el trazador relevante aquí
+### 3.2 Partición de elementos traza en calcopirita — por qué la plata es el trazador relevante aquí
 
-La calcopirita (CuFeS₂) admite sustituciones acopladas de iones monovalentes (Cu⁺, Ag⁺), bivalentes (Zn²⁺, Cd²⁺, Pb²⁺), trivalentes (Fe³⁺, In³⁺, Sb³⁺) y tetravalentes (Se⁴⁺, Bi⁴⁺, Ge⁴⁺) — mecanismo descrito explícitamente en Reich et al. (2020) sobre Cerro Pabellón. La plata, en particular, entra en solución sólida junto con estas sustituciones y su concentración varía según la temperatura y la fuente magmática del fluido — en Cerro Pabellón, la razón Co/Ni baja se interpretó como indicio de una fuente magmática más félsica que en el sistema de referencia (Reykjanes, Islandia). **La teoría, entonces, predice que la plata en calcopirita no es un dato aislado — es un indicador del tipo de fuente magmática**, lo cual es exactamente lo que hace útil comparar sistemas epitermales/pórfido-epitermales entre sí (nunca un VMS contra un epitermal, ver 2.1).
+La calcopirita (CuFeS₂) admite sustituciones acopladas de iones monovalentes (Cu⁺, Ag⁺), bivalentes (Zn²⁺, Cd²⁺, Pb²⁺), trivalentes (Fe³⁺, In³⁺, Sb³⁺) y tetravalentes (Se⁴⁺, Bi⁴⁺, Ge⁴⁺) — mecanismo descrito explícitamente en Reich et al. (2020) sobre Cerro Pabellón. La plata, en particular, entra en solución sólida junto con estas sustituciones y su concentración varía según la temperatura y la fuente magmática del fluido — en Cerro Pabellón, la razón Co/Ni baja se interpretó como indicio de una fuente magmática más félsica que en el sistema de referencia (Reykjanes, Islandia). **La teoría, entonces, predice que la plata en calcopirita no es un dato aislado — es un indicador del tipo de fuente magmática**, lo cual es exactamente lo que hace útil comparar sistemas epitermales/pórfido-epitermales entre sí (nunca un VMS contra un epitermal, ver 3.1).
 
-### 2.3 Balance ley-recuperación en flotación — el marco para comparar plantas de distinta escala
+### 3.3 Balance ley-recuperación en flotación — el marco para comparar plantas de distinta escala
 
 En procesamiento de sulfuros de cobre por flotación, existe un compromiso estructural entre **ley del concentrado** y **recuperación metalúrgica**: maximizar la ley (concentrado más puro, menos costo de fundición) tiende a sacrificar recuperación (se pierde más cobre en la cola), y viceversa. Por eso comparar solo la ley del concentrado entre dos plantas sin considerar su recuperación simultánea puede llevar a una conclusión errónea sobre cuál es "más eficiente" — el criterio correcto es una comparación conjunta, no una sola cifra aislada.
 
-## 3. Análisis por objetivo
+## 4. Análisis por objetivo
 
-### 3.1 Objetivo 1 — Geocronología: ¿la edad de 1982 para Infierno-Chili se sostiene?
+### 4.1 Objetivo 1 — Geocronología: ¿la edad de 1982 para Infierno-Chili se sostiene?
 
 **Hipótesis nula:** la edad Cretácica reportada por USGS (131 Ma, Batolito de Ibagué, citando Sillitoe et al. 1982) es consistente con lo que un método de datación multi-isotópico moderno encontraría.
 
@@ -45,9 +61,11 @@ En procesamiento de sulfuros de cobre por flotación, existe un compromiso estru
 
 **Lo que el caso de Lo Aguirre muestra que es posible, no lo que se espera encontrar en Colombia:** en Lo Aguirre, los 3 métodos radiométricos dieron edades escalonadas pero cercanas (113±3, 110±4, y 102±5 Ma) — una diferencia de 11 millones de años entre el método más antiguo (Rb/Sr, que data la cristalización inicial) y el más joven (⁴⁰Ar/³⁹Ar en albita, que data el cierre isotópico de una fase secundaria). El δ³⁴S (+0,5 a -3,6 ‰, cercano a cero) apuntó a azufre de origen magmático primario, y la razón ⁸⁷Sr/⁸⁶Sr inicial (0,7047) confirmó un componente magmático dominante con influencia de agua meteórica.
 
-**Resultado de este análisis (no es un resultado de laboratorio, es la inferencia metodológica que justifica el paso siguiente):** si Infierno-Chili se dató una sola vez, con un solo método, en 1982 — la probabilidad de que ese único número capture correctamente tanto la edad de cristalización como cualquier evento hidrotermal secundario es baja, precisamente por lo que muestra el caso chileno: un solo depósito puede tener 11+ millones de años de diferencia entre eventos según qué mineral y qué sistema isotópico se date. **La hipótesis nula no puede confirmarse ni rechazarse con la información actual — solo se puede decir que es poco probable que una sola medición de 1982 sea la historia geocronológica completa.** Este es el resultado real: no "la edad está mal", sino "la incertidumbre alrededor de la edad es mayor de lo que el repositorio había asumido implícitamente al citar un solo número."
+**Confirmación parcial ya publicada, encontrada en el estado del arte (sección 2.1) — no hay que esperar a un nuevo laboratorio para ver el patrón repetirse:** Rodríguez-García et al. (2022) redataron el Batolito de Ibagué completo con U-Pb en circón y encontraron, dentro del mismo cuerpo ígneo, al menos 3 unidades con edades distintas entre 171,5 y 137,9 Ma — es decir, exactamente el tipo de complejidad multi-pulso que Lo Aguirre mostró que es posible, ya documentada en la roca huésped real de Infierno-Chili, sin que este repositorio tuviera que generar un solo dato nuevo. Lo que el estudio de 2022 **no** resolvió es la edad del evento mineralizante específico (131 Ma, Sillitoe 1982) — un número más joven que la fase más reciente que ellos lograron datar (138,48 Ma), consistente con un pulso hidrotermal tardío posterior a la cristalización principal del batolito, pero nunca vuelto a medir con métodos modernos.
 
-### 3.2 Objetivo 2 — Plata en calcopirita: Cerro Pabellón frente a Quebradona y Soto Norte (no El Roble)
+**Resultado de este análisis:** la hipótesis nula queda **debilitada, no confirmada ni rechazada de forma limpia**. Existe evidencia publicada real (no solo un argumento por analogía con Chile) de que el batolito que aloja Infierno-Chili tiene una historia geocronológica de al menos 33 millones de años de duración (171,5 a 137,9 Ma) — y el único número que describe la mineralización de cobre en sí (131 Ma) nunca se contrastó contra esa complejidad ya conocida. El siguiente paso concreto, ahora mejor justificado que antes de este documento, es datar específicamente las fases mineralizadas (no solo el batolito regional) con ⁴⁰Ar/³⁹Ar o U-Pb en fases hidrotermales, para saber si el evento de cobre es realmente un pulso aislado de 131 Ma o parte de la misma secuencia de 33 millones de años que Rodríguez-García et al. ya documentaron.
+
+### 4.2 Objetivo 2 — Plata en calcopirita: Cerro Pabellón frente a Quebradona y Soto Norte (no El Roble)
 
 **Corrección explícita antes de continuar:** una versión anterior de este análisis proponía comparar Cerro Pabellón (epitermal) contra El Roble. Se retractó al verificar que El Roble es un **VMS** — el análogo moderno correcto de un VMS es un *black smoker* submarino, no un sistema geotermal subaéreo. Esa comparación se elimina aquí, no se repite.
 
@@ -62,7 +80,7 @@ En procesamiento de sulfuros de cobre por flotación, existe un compromiso estru
 
 **Sobre la hipótesis nula (Quebradona/Soto Norte vs. Cerro Pabellón):** no se pudo rechazar ni confirmar con los datos disponibles — se necesitaría el dato real de elementos traza en calcopirita de Quebradona/Soto Norte (que no existe públicamente, es exactamente el tipo de análisis que un piloto como el de `docs/17` generaría). Lo que sí se puede afirmar, calculando directamente desde los mismos datos de la Tabla 28 (Soto Norte: 4.680 t Cu/año, 2.950.000 oz Ag/año → 630,3 oz Ag por tonelada de Cu; Quebradona: 75.020 t Cu/año, 1.405.309 oz Ag/año → 18,7 oz Ag por tonelada de Cu), es que **Soto Norte es ~33,7 veces más rico en plata por tonelada de cobre que Quebradona** — una diferencia mucho mayor de lo que una lectura superficial de "ambos tienen plata" sugeriría, y un dato aritmético directo que este repositorio nunca había calculado explícitamente pese a tener ambas cifras desde hace semanas.
 
-### 3.3 Objetivo 3 — Comparación metalúrgica real: El Roble frente a Pachacayo (Perú)
+### 4.3 Objetivo 3 — Comparación metalúrgica real: El Roble frente a Pachacayo (Perú)
 
 **Hipótesis nula:** El Roble opera en un rango de eficiencia metalúrgica comparable al reportado en la literatura para minas de escala similar; no hay una brecha real que justifique inversión adicional en optimización de planta.
 
@@ -76,18 +94,19 @@ En procesamiento de sulfuros de cobre por flotación, existe un compromiso estru
 | Método | Trituración + molienda (80% pasante malla 200) + flotación, 4 bancos × 6 celdas, 850 tpd | Flotación experimental, muestreo aleatorio simple |
 | Rango contractual exigido (El Roble) | 18-24% Cu | No aplica |
 
-**Resultado real de este análisis:** El Roble opera dentro de su propio rango contractual (18-24% Cu) pero en la mitad baja, 2,13 puntos porcentuales por debajo de la ley de Pachacayo. **Esto no confirma la hipótesis nula de forma limpia, pero tampoco la rechaza con contundencia**, por la razón teórica de la sección 2.3: no se conoce la recuperación de Pachacayo, así que no se puede saber si esa mina logra mayor ley sacrificando recuperación (lo cual no sería, en neto, "más eficiente") o si de verdad supera a El Roble en ambos frentes. La comparación queda parcial, marcada como tal — no se completa con una conclusión que los datos no sostienen.
+**Resultado real de este análisis:** El Roble opera dentro de su propio rango contractual (18-24% Cu) pero en la mitad baja, 2,13 puntos porcentuales por debajo de la ley de Pachacayo. **Esto no confirma la hipótesis nula de forma limpia, pero tampoco la rechaza con contundencia**, por la razón teórica de la sección 3.3: no se conoce la recuperación de Pachacayo, así que no se puede saber si esa mina logra mayor ley sacrificando recuperación (lo cual no sería, en neto, "más eficiente") o si de verdad supera a El Roble en ambos frentes. La comparación queda parcial, marcada como tal — no se completa con una conclusión que los datos no sostienen.
 
-## 4. Discusión integrada
+## 5. Discusión integrada
 
-Los 3 análisis comparten un patrón: en ninguno de los 3 casos los datos disponibles permiten una conclusión cerrada — y eso, en sí mismo, es información útil. Cada uno señala con precisión qué dato exacto falta para cerrar la pregunta (edad multi-isotópica real de Infierno-Chili; cifra de plata de El Roble; recuperación de Pachacayo), en vez de rellenar el vacío con una estimación no verificada — exactamente la disciplina que el resto de este repositorio ya exige de sí mismo (ver `docs/15`, principio general).
+Los 3 análisis comparten un patrón: en ninguno de los 3 casos los datos disponibles permiten una conclusión cerrada — y eso, en sí mismo, es información útil. Cada uno señala con precisión qué dato exacto falta para cerrar la pregunta (datación moderna del evento mineralizante de Infierno-Chili, no solo del batolito regional; cifra de plata de El Roble; recuperación de Pachacayo), en vez de rellenar el vacío con una estimación no verificada — exactamente la disciplina que el resto de este repositorio ya exige de sí mismo (ver `docs/15`, principio general).
 
 Lo que sí queda establecido con certeza, no como hipótesis:
+- El batolito de Ibagué (roca huésped de Infierno-Chili) es Jurásico tardío, con al menos 3 fases entre 171,5 y 137,9 Ma — confirmado por Rodríguez-García et al. (2022) con U-Pb en circón, literatura que ya existía y que este repositorio no había encontrado hasta este documento.
 - El `null` de plata de El Roble en la Tabla 28 de UPME es un vacío de reporte, no un hecho geológico — hallazgo verificable y ya corregible.
 - Soto Norte es ~33,7 veces más rico en plata por tonelada de cobre que Quebradona — dato aritmético directo de cifras que ya estaban en el repositorio, nunca antes calculado explícitamente.
 - El Roble opera en la mitad baja de su propio rango contractual de ley de concentrado — un hecho operativo real, no una opinión.
 
-## 5. Propuesta innovadora: Protocolo de Triple Huella para priorizar dónde explorar primero
+## 6. Propuesta innovadora: Protocolo de Triple Huella para priorizar dónde explorar primero
 
 Ninguno de los 3 objetivos, por separado, es una novedad metodológica — cada técnica (geocronología multi-isótopo, geoquímica de traza en calcopirita, benchmarking metalúrgico) es estándar en la industria. **Lo que no existe todavía —ni en este repositorio, ni, hasta donde se pudo verificar, en la literatura pública sobre el cinturón cuprífero colombiano— es un protocolo que combine las 3 dimensiones para decidir, con criterio explícito, en qué orden explorar el 97% del territorio sin caracterizar.**
 
@@ -99,12 +118,13 @@ Ninguno de los 3 objetivos, por separado, es una novedad metodológica — cada 
 
 **Por qué esto es genuinamente nuevo, no una recombinación forzada:** cada paso usa un dato de bajo costo para decidir si vale la pena invertir en el siguiente, más caro — geocronología (el paso más caro de los tres, reservado solo para el Objetivo 1) nunca aparece en este protocolo de triaje inicial, precisamente porque el Objetivo 1 de este mismo documento mostró que su valor es resolver una duda genética profunda, no filtrar prospectos rápidamente. Es un uso deliberado y diferenciado de cada técnica según su costo y su pregunta, no la aplicación de las tres a todo por igual.
 
-## 6. Limitaciones honestas de este documento
+## 7. Limitaciones honestas de este documento
 
 - Ninguna muestra colombiana fue analizada en este documento — todo el análisis es comparativo, sobre datos ya publicados de Colombia, Chile y Perú. Es un ejercicio de síntesis, no un nuevo dato de laboratorio.
 - La cifra de plata de El Roble queda pendiente de extraer del informe técnico completo (Tabla 14.2) — no se inventó un número para completarla.
 - La comparación metalúrgica del Objetivo 3 queda parcial por falta del dato de recuperación de Pachacayo.
-- El Protocolo de Triple Huella (sección 5) es una propuesta de diseño, no un protocolo ya ejecutado ni validado contra un caso real colombiano.
+- El Protocolo de Triple Huella (sección 6) es una propuesta de diseño, no un protocolo ya ejecutado ni validado contra un caso real colombiano.
+- La búsqueda de estado del arte (sección 2) no es exhaustiva — se hizo con motores de búsqueda web, no con acceso a Scopus/Web of Science completo; es posible que exista más literatura sobre geocronología del cinturón andino colombiano que esta pasada no encontró.
 
 ---
 *Ver también: [Diseño del piloto de prospectividad con IA](17-diseno-piloto-prospectividad-ia.md) · [Especificación técnica de monitoreo](16-especificacion-tecnica-monitoreo-relaves.md) · [Fuentes y estrategia de búsqueda](05-fuentes.md)*
