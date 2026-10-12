@@ -1,6 +1,6 @@
 {
   "nota_metodologica": "Auditoría por catálogo, no extracción profunda — ver docstring de pipeline/phase9_upme_auditoria/audit_upme_docs_adicionales.py. Las tablas en 'tablas_prioritarias_para_revision_manual' son candidatas a contener cifras no capturadas todavía; el resto son mayormente análisis social/demográfico por municipio, ya cubierto cualitativamente en el repositorio.",
-  "procesado_utc": "2026-10-05T18:01:11.734176+00:00",
+  "procesado_utc": "2026-10-12T18:41:36.132569+00:00",
   "documentos": [
     {
       "id": "documento_cobre_2023",
@@ -42,8 +42,8 @@
       ],
       "conteo_por_categoria": {
         "ya_cubierta_por_fase_7": 1,
-        "economico_financiero": 5,
         "demografico_social": 113,
+        "economico_financiero": 5,
         "ambiental": 11,
         "otro_sin_clasificar": 35
       },
@@ -1145,8 +1145,8 @@
       ],
       "conteo_por_categoria": {
         "ya_cubierta_por_fase_7": 2,
-        "economico_financiero": 5,
         "demografico_social": 116,
+        "economico_financiero": 5,
         "ambiental": 13,
         "otro_sin_clasificar": 32
       },
