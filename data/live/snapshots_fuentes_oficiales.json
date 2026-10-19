@@ -1,23 +1,23 @@
 {
   "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
-  "ultima_corrida_utc": "2026-10-12T18:40:57.056849+00:00",
+  "ultima_corrida_utc": "2026-10-19T16:16:12.875555+00:00",
   "fuentes": [
     {
       "id": "anm_ronda_cobre",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/ronda-minera-cobre",
-      "consultado_utc": "2026-10-12T18:40:47.242354+00:00",
+      "consultado_utc": "2026-10-19T16:15:17.986649+00:00",
       "http_status": 200,
-      "longitud_texto_caracteres": 8484,
-      "hash_sha256": "1217906cd179d3dbd4fef933f1986f15362467366cd941822459c9b334a9a893",
-      "cambio_detectado_desde_ultima_corrida": false,
-      "extracto_primeros_500_caracteres": "Ronda minera Cobre | Agencia Nacional de Minería ANM Skip to main content Ingreso intranet Formulario PQRS Línea de atención (601) 795 8080 A- A+ Trámites y servicios Participación Entidades Trámites y servicios Participación Entidades Mapa del sitio Mapa del sitio Menú Mapa del sitio MIC_MN_Menu principal micrositios Inicio Sector minero colombiano Rondas mineras Cadenas productivas Minería en cifras Actualidad Buscador Ronda minera Cobre Inicio Inicio El 15 de diciembre de 2025, la Agencia Nac"
+      "longitud_texto_caracteres": 8547,
+      "hash_sha256": "17b2f101dff910406fc85bd174c2977e86d21f8ee7e31d36c1cf92f04bd4e283",
+      "cambio_detectado_desde_ultima_corrida": true,
+      "extracto_primeros_500_caracteres": "Ronda minera Cobre | Agencia Nacional de Minería ANM Skip to main content Ingreso intranet Formulario PQRS Línea de atención (601) 795 8080 A- A+ Trámites y servicios Participación Entidades Trámites y servicios Participación Entidades Mapa del sitio Mapa del sitio Menú Mapa del sitio MIC_MN_Menu principal micrositios Inicio Sector minero colombiano Rondas mineras Cadenas productivas Minería en cifras Actualidad Buscador Ronda minera Cobre Inicio Inicio Conozca toda la información sobre la ronda"
     },
     {
       "id": "anm_mapa_sitio_mineria",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
-      "consultado_utc": "2026-10-12T18:40:48.027741+00:00",
+      "consultado_utc": "2026-10-19T16:15:18.928165+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 2956,
       "hash_sha256": "298ed2c679d50cc926ba4f73ac2b0467b059f38e62aca80f902d05705c5fcf40",
@@ -28,41 +28,38 @@
       "id": "upme_home",
       "institucion": "Unidad de Planeación Minero-Energética (UPME)",
       "url": "https://www.upme.gov.co",
-      "consultado_utc": "2026-10-12T18:40:48.592536+00:00",
-      "http_status": 200,
-      "longitud_texto_caracteres": 11062,
-      "hash_sha256": "2c952b90d9d97824fa0fea18187560180f2472590e63a282fb73378d805dd274",
-      "cambio_detectado_desde_ultima_corrida": true,
-      "extracto_primeros_500_caracteres": "Home UPME - UPME Argo Inicio Nosotros Nuestra entidad ¿Quiénes somos? Nuestra historia Funciones y deberes Información de contacto, sedes y horarios Planeación institucional Financiero y Contable Proyectos de Inversión CIO UPME Gestión de Información Estadística Talento humano Asignación salarial Estructura organizacional Directorio de Servidores Contratistas Manual de Funciones Trabaje con nosotros Sintraminerales Contratación Documentos asociados a la contratación Procesos de contratación Cont"
+      "consultado_utc": "2026-10-19T16:15:19.529696+00:00",
+      "http_status": null,
+      "error": "HTTPSConnectionPool(host='www.upme.gov.co', port=443): Read timed out. (read timeout=15)"
     },
     {
       "id": "sgc_home",
       "institucion": "Servicio Geológico Colombiano (SGC)",
       "url": "https://www.sgc.gov.co",
-      "consultado_utc": "2026-10-12T18:40:49.415046+00:00",
+      "consultado_utc": "2026-10-19T16:16:11.370380+00:00",
       "http_status": null,
-      "error": "HTTPSConnectionPool(host='www.sgc.gov.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "error": "403 Client Error: Forbidden for url: https://www.sgc.gov.co/"
     },
     {
       "id": "anla_home",
       "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
       "url": "https://www.anla.gov.co",
-      "consultado_utc": "2026-10-12T18:40:55.622843+00:00",
+      "consultado_utc": "2026-10-19T16:16:11.466087+00:00",
       "http_status": 200,
-      "longitud_texto_caracteres": 12147,
-      "hash_sha256": "537cab284dbc6a66cce16ee25af4bbe6654777d04994bbf2c1dc862f4d8f8a9e",
-      "cambio_detectado_desde_ultima_corrida": false,
+      "longitud_texto_caracteres": 12379,
+      "hash_sha256": "0cf7575fd4f3ece0e2046a70223478e0a0004e9d4ab37fda02f075da0bad2584",
+      "cambio_detectado_desde_ultima_corrida": true,
       "extracto_primeros_500_caracteres": "ANLA Se abre en una nueva ventana. Accesibilidad Buscar Buscar Inicio Interprete de lengua de señas del título Inicio Volver al Inicio Enlaces directos a las secciones del inicio - Temás de Interés - Proyectos ANLA - Ingresa a - Noticias - Enlaces Directos - Redes Sociales Transparencia Interprete de lengua de señas del título Transparencia Transparencia y Acceso a la Información Pública En esta sección usted encontrará información de los siguientes temas: Información de Entidad Normativa Contra"
     }
   ],
   "historial": {
     "anm_ronda_cobre": {
-      "hash": "1217906cd179d3dbd4fef933f1986f15362467366cd941822459c9b334a9a893",
-      "ultima_corrida_utc": "2026-10-12T18:40:47.242354+00:00"
+      "hash": "17b2f101dff910406fc85bd174c2977e86d21f8ee7e31d36c1cf92f04bd4e283",
+      "ultima_corrida_utc": "2026-10-19T16:15:17.986649+00:00"
     },
     "anm_mapa_sitio_mineria": {
       "hash": "298ed2c679d50cc926ba4f73ac2b0467b059f38e62aca80f902d05705c5fcf40",
-      "ultima_corrida_utc": "2026-10-12T18:40:48.027741+00:00"
+      "ultima_corrida_utc": "2026-10-19T16:15:18.928165+00:00"
     },
     "upme_home": {
       "hash": "2c952b90d9d97824fa0fea18187560180f2472590e63a282fb73378d805dd274",
@@ -73,8 +70,8 @@
       "ultima_corrida_utc": "2026-09-15T02:00:17.881220+00:00"
     },
     "anla_home": {
-      "hash": "537cab284dbc6a66cce16ee25af4bbe6654777d04994bbf2c1dc862f4d8f8a9e",
-      "ultima_corrida_utc": "2026-10-12T18:40:55.622843+00:00"
+      "hash": "0cf7575fd4f3ece0e2046a70223478e0a0004e9d4ab37fda02f075da0bad2584",
+      "ultima_corrida_utc": "2026-10-19T16:16:11.466087+00:00"
     }
   }
 }
