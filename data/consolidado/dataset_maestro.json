@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-10-19T16:16:17.140631+00:00",
+  "generado_utc": "2026-10-26T15:55:16.248099+00:00",
   "esquema_version": "1.0",
   "bloques": {
     "proyectos_cobre_colombia": {
@@ -420,9 +420,9 @@
       "origen": "api_publica_en_vivo",
       "confiabilidad": "alta — FRED/FMI, dato oficial actualizado en cada corrida del pipeline",
       "metricas_calculadas": {
-        "cagr_5_anos_pct": 7.46,
-        "volatilidad_desv_estandar_ultimo_ano": 1509.97,
-        "volatilidad_desv_estandar_5_anos": 1517.1,
+        "cagr_5_anos_pct": 9.191,
+        "volatilidad_desv_estandar_ultimo_ano": 1401.98,
+        "volatilidad_desv_estandar_5_anos": 1743.31,
         "n_observaciones_5_anos": 61
       },
       "datos": {
@@ -430,25 +430,25 @@
         "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM",
         "unidad": "USD por tonelada métrica",
         "frecuencia": "mensual",
-        "extraido_utc": "2026-10-19T16:15:17.689139+00:00",
-        "num_observaciones": 415,
+        "extraido_utc": "2026-10-26T15:54:24.991481+00:00",
+        "num_observaciones": 417,
         "rango_fechas": [
           "1992-01-01",
-          "2026-07-01"
+          "2026-09-01"
         ],
         "ultimo_dato": {
-          "fecha": "2026-07-01",
-          "precio_usd_por_tonelada": 13542.82
+          "fecha": "2026-09-01",
+          "precio_usd_por_tonelada": 14473.06
         },
         "estadisticas_ultimo_ano": {
-          "promedio": 11903.42,
-          "minimo": 9671.88,
-          "maximo": 13552.04
+          "promedio": 12623.57,
+          "minimo": 9994.77,
+          "maximo": 14473.06
         },
         "estadisticas_5_anos": {
-          "promedio": 9608.58,
+          "promedio": 9772.24,
           "minimo": 7544.81,
-          "maximo": 13552.04
+          "maximo": 14473.06
         },
         "serie_completa": [
           {
@@ -2110,6 +2110,14 @@
           {
             "fecha": "2026-07-01",
             "precio_usd_por_tonelada": 13542.82
+          },
+          {
+            "fecha": "2026-08-01",
+            "precio_usd_por_tonelada": 14331.26
+          },
+          {
+            "fecha": "2026-09-01",
+            "precio_usd_por_tonelada": 14473.06
           }
         ]
       }
@@ -2119,16 +2127,16 @@
       "confiabilidad": "solo como sensor de cambios — no usar como fuente de cifras sin verificación humana",
       "datos": {
         "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
-        "ultima_corrida_utc": "2026-10-19T16:16:12.875555+00:00",
+        "ultima_corrida_utc": "2026-10-26T15:54:28.666708+00:00",
         "fuentes": [
           {
             "id": "anm_ronda_cobre",
             "institucion": "Agencia Nacional de Minería (ANM)",
             "url": "https://www.anm.gov.co/ronda-minera-cobre",
-            "consultado_utc": "2026-10-19T16:15:17.986649+00:00",
+            "consultado_utc": "2026-10-26T15:54:25.296132+00:00",
             "http_status": 200,
-            "longitud_texto_caracteres": 8547,
-            "hash_sha256": "17b2f101dff910406fc85bd174c2977e86d21f8ee7e31d36c1cf92f04bd4e283",
+            "longitud_texto_caracteres": 8598,
+            "hash_sha256": "0e701e5af0df698b3d730a232e3db1a1847dfecb2d5854a13b221c19fb4ee420",
             "cambio_detectado_desde_ultima_corrida": true,
             "extracto_primeros_500_caracteres": "Ronda minera Cobre | Agencia Nacional de Minería ANM Skip to main content Ingreso intranet Formulario PQRS Línea de atención (601) 795 8080 A- A+ Trámites y servicios Participación Entidades Trámites y servicios Participación Entidades Mapa del sitio Mapa del sitio Menú Mapa del sitio MIC_MN_Menu principal micrositios Inicio Sector minero colombiano Rondas mineras Cadenas productivas Minería en cifras Actualidad Buscador Ronda minera Cobre Inicio Inicio Conozca toda la información sobre la ronda"
           },
@@ -2136,26 +2144,29 @@
             "id": "anm_mapa_sitio_mineria",
             "institucion": "Agencia Nacional de Minería (ANM)",
             "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
-            "consultado_utc": "2026-10-19T16:15:18.928165+00:00",
+            "consultado_utc": "2026-10-26T15:54:25.929581+00:00",
             "http_status": 200,
-            "longitud_texto_caracteres": 2956,
-            "hash_sha256": "298ed2c679d50cc926ba4f73ac2b0467b059f38e62aca80f902d05705c5fcf40",
-            "cambio_detectado_desde_ultima_corrida": false,
+            "longitud_texto_caracteres": 3007,
+            "hash_sha256": "0000bbe8867561be03151827d6c3b531f337bc6f5519edd0fe479d9c4f6cb7f0",
+            "cambio_detectado_desde_ultima_corrida": true,
             "extracto_primeros_500_caracteres": "Mapa de sitio de minería en Colombia | Agencia Nacional de Minería ANM Skip to main content Ingreso intranet Formulario PQRS Línea de atención (601) 795 8080 A- A+ Trámites y servicios Participación Entidades Trámites y servicios Participación Entidades Mapa del sitio Mapa del sitio Menú Mapa del sitio MIC_MN_Menu principal micrositios Inicio Sector minero colombiano Rondas mineras Cadenas productivas Minería en cifras Actualidad Buscador Menú principal Minería en Colombia Potencial mineral Pote"
           },
           {
             "id": "upme_home",
             "institucion": "Unidad de Planeación Minero-Energética (UPME)",
             "url": "https://www.upme.gov.co",
-            "consultado_utc": "2026-10-19T16:15:19.529696+00:00",
-            "http_status": null,
-            "error": "HTTPSConnectionPool(host='www.upme.gov.co', port=443): Read timed out. (read timeout=15)"
+            "consultado_utc": "2026-10-26T15:54:26.508612+00:00",
+            "http_status": 200,
+            "longitud_texto_caracteres": 14612,
+            "hash_sha256": "6c446f9dfc95a813e03f6e805cc849bd76a86e2a855903c4067edc4ec319aa14",
+            "cambio_detectado_desde_ultima_corrida": true,
+            "extracto_primeros_500_caracteres": "Home UPME - UPME Argo Inicio Nosotros Nuestra entidad ¿Quiénes somos? Nuestra historia Funciones y deberes Información de contacto, sedes y horarios Planeación institucional Financiero y Contable Proyectos de Inversión CIO UPME Gestión de Información Estadística Talento humano Asignación salarial Estructura organizacional Directorio de Servidores Contratistas Manual de Funciones Trabaje con nosotros Sintraminerales Contratación Documentos asociados a la contratación Procesos de contratación Cont"
           },
           {
             "id": "sgc_home",
             "institucion": "Servicio Geológico Colombiano (SGC)",
             "url": "https://www.sgc.gov.co",
-            "consultado_utc": "2026-10-19T16:16:11.370380+00:00",
+            "consultado_utc": "2026-10-26T15:54:27.166585+00:00",
             "http_status": null,
             "error": "403 Client Error: Forbidden for url: https://www.sgc.gov.co/"
           },
@@ -2163,34 +2174,34 @@
             "id": "anla_home",
             "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
             "url": "https://www.anla.gov.co",
-            "consultado_utc": "2026-10-19T16:16:11.466087+00:00",
+            "consultado_utc": "2026-10-26T15:54:27.278596+00:00",
             "http_status": 200,
-            "longitud_texto_caracteres": 12379,
-            "hash_sha256": "0cf7575fd4f3ece0e2046a70223478e0a0004e9d4ab37fda02f075da0bad2584",
+            "longitud_texto_caracteres": 12266,
+            "hash_sha256": "8eeb8e0b180c6b3b6ac38e4c9fc4152f7e39ab90c326d3c26728396e9dc3f86a",
             "cambio_detectado_desde_ultima_corrida": true,
             "extracto_primeros_500_caracteres": "ANLA Se abre en una nueva ventana. Accesibilidad Buscar Buscar Inicio Interprete de lengua de señas del título Inicio Volver al Inicio Enlaces directos a las secciones del inicio - Temás de Interés - Proyectos ANLA - Ingresa a - Noticias - Enlaces Directos - Redes Sociales Transparencia Interprete de lengua de señas del título Transparencia Transparencia y Acceso a la Información Pública En esta sección usted encontrará información de los siguientes temas: Información de Entidad Normativa Contra"
           }
         ],
         "historial": {
           "anm_ronda_cobre": {
-            "hash": "17b2f101dff910406fc85bd174c2977e86d21f8ee7e31d36c1cf92f04bd4e283",
-            "ultima_corrida_utc": "2026-10-19T16:15:17.986649+00:00"
+            "hash": "0e701e5af0df698b3d730a232e3db1a1847dfecb2d5854a13b221c19fb4ee420",
+            "ultima_corrida_utc": "2026-10-26T15:54:25.296132+00:00"
           },
           "anm_mapa_sitio_mineria": {
-            "hash": "298ed2c679d50cc926ba4f73ac2b0467b059f38e62aca80f902d05705c5fcf40",
-            "ultima_corrida_utc": "2026-10-19T16:15:18.928165+00:00"
+            "hash": "0000bbe8867561be03151827d6c3b531f337bc6f5519edd0fe479d9c4f6cb7f0",
+            "ultima_corrida_utc": "2026-10-26T15:54:25.929581+00:00"
           },
           "upme_home": {
-            "hash": "2c952b90d9d97824fa0fea18187560180f2472590e63a282fb73378d805dd274",
-            "ultima_corrida_utc": "2026-10-12T18:40:48.592536+00:00"
+            "hash": "6c446f9dfc95a813e03f6e805cc849bd76a86e2a855903c4067edc4ec319aa14",
+            "ultima_corrida_utc": "2026-10-26T15:54:26.508612+00:00"
           },
           "sgc_home": {
             "hash": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
             "ultima_corrida_utc": "2026-09-15T02:00:17.881220+00:00"
           },
           "anla_home": {
-            "hash": "0cf7575fd4f3ece0e2046a70223478e0a0004e9d4ab37fda02f075da0bad2584",
-            "ultima_corrida_utc": "2026-10-19T16:16:11.466087+00:00"
+            "hash": "8eeb8e0b180c6b3b6ac38e4c9fc4152f7e39ab90c326d3c26728396e9dc3f86a",
+            "ultima_corrida_utc": "2026-10-26T15:54:27.278596+00:00"
           }
         }
       }
@@ -2202,7 +2213,7 @@
         "fuente": "U.S. Geological Survey — Mineral Commodity Summaries (ficha de Copper)",
         "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf",
         "edicion_reportada_por_el_pdf": "February 2026",
-        "extraido_utc": "2026-10-19T16:15:19.336473+00:00",
+        "extraido_utc": "2026-10-26T15:54:26.346557+00:00",
         "designacion_mineral_critico_eeuu": {
           "encontrado": true,
           "fecha_texto_original": "November 7, 2025",
@@ -2417,7 +2428,7 @@
         "metodo_de_obtencion": "aportado_manualmente_por_usuario — descargado desde su cuenta gratuita de IEA; no existe API pública equivalente (ver docstring de este script)",
         "archivo_origen": "pipeline/_manual_uploads/IEA_Critical_Minerals_Dataset_2026.xlsx",
         "archivo_sha256": "43bd9338a08ac8399c65471115f30ffc10dca7117e62f03cca86d49224717935",
-        "procesado_utc": "2026-10-19T16:15:18.373734+00:00",
+        "procesado_utc": "2026-10-26T15:54:25.546189+00:00",
         "aviso_licencia": "Dataset con cuenta gratuita de IEA. Uso personal/no comercial. No redistribuir el archivo crudo fuera de este repositorio privado.",
         "demanda_cobre": {
           "unidad": "kt (miles de toneladas)",
@@ -2536,7 +2547,7 @@
         "url_pagina": "https://www.usgs.gov/media/files/copper-historical-statistics-data-series-140",
         "url_archivo_descargado": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/files/ds140-copper-2020.xlsx",
         "ultima_modificacion_reportada_por_usgs": "June 27, 2023",
-        "extraido_utc": "2026-10-19T16:15:21.799718+00:00",
+        "extraido_utc": "2026-10-26T15:54:29.279657+00:00",
         "unidad": "toneladas métricas (t) de contenido de cobre, salvo el valor unitario en USD/t",
         "cobertura_geografica": "Estados Unidos (excepto la columna 'produccion_mundial_t', que es global)",
         "rango_anos": [
@@ -4398,7 +4409,7 @@
       "confiabilidad": "alta para el catálogo de tablas y el PIB minero regional (regex directo sobre texto limpio); auditoría, no extracción profunda de las 402 páginas combinadas",
       "datos": {
         "nota_metodologica": "Auditoría por catálogo, no extracción profunda — ver docstring de pipeline/phase9_upme_auditoria/audit_upme_docs_adicionales.py. Las tablas en 'tablas_prioritarias_para_revision_manual' son candidatas a contener cifras no capturadas todavía; el resto son mayormente análisis social/demográfico por municipio, ya cubierto cualitativamente en el repositorio.",
-        "procesado_utc": "2026-10-19T16:16:16.692196+00:00",
+        "procesado_utc": "2026-10-26T15:55:15.865288+00:00",
         "documentos": [
           {
             "id": "documento_cobre_2023",
@@ -4439,11 +4450,11 @@
               }
             ],
             "conteo_por_categoria": {
-              "economico_financiero": 5,
-              "otro_sin_clasificar": 35,
+              "demografico_social": 113,
               "ya_cubierta_por_fase_7": 1,
               "ambiental": 11,
-              "demografico_social": 113
+              "economico_financiero": 5,
+              "otro_sin_clasificar": 35
             },
             "pib_explotacion_minas_y_canteras_por_departamento": {
               "nota_interpretacion": "Porcentaje tal como aparece en la tabla fuente de UPME/DANE; el documento no aclara explícitamente si es participación en el PIB departamental o en el PIB nacional de esa actividad — no inferido, transcrito literal.",
@@ -5542,11 +5553,11 @@
               }
             ],
             "conteo_por_categoria": {
-              "economico_financiero": 5,
-              "otro_sin_clasificar": 32,
+              "demografico_social": 116,
               "ya_cubierta_por_fase_7": 2,
               "ambiental": 13,
-              "demografico_social": 116
+              "economico_financiero": 5,
+              "otro_sin_clasificar": 32
             },
             "pib_explotacion_minas_y_canteras_por_departamento": {
               "nota_interpretacion": "Porcentaje tal como aparece en la tabla fuente de UPME/DANE; el documento no aclara explícitamente si es participación en el PIB departamental o en el PIB nacional de esa actividad — no inferido, transcrito literal.",
@@ -6634,7 +6645,7 @@
         "fuente": "UPME, Subdirección de Minería — Informe Cobre",
         "url_efectivamente_usada": "https://docs.upme.gov.co/SIMEC/SIMCO/Cifras-Sectoriales/EstudiosPublicaciones/Informe_Cobre_subdireccion_VD.pdf",
         "url_citada_en_bibliografia_del_documento_pero_no_resuelve_dns": "http://www1.upme.gov.co/simco/Cifras-Sectoriales/Paginas/inter-cobre.aspx",
-        "extraido_utc": "2026-10-19T16:15:30.817008+00:00",
+        "extraido_utc": "2026-10-26T15:54:36.397838+00:00",
         "num_paginas_documento": 95,
         "potencial_nacional_cobre": {
           "fuente_original": "USGS Assessment of Undiscovered Copper Resources of the World, 2015 (Scientific Investigations Report 2018-5160, v1.1, mayo 2019), citado por UPME",

@@ -3,25 +3,25 @@
   "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM",
   "unidad": "USD por tonelada métrica",
   "frecuencia": "mensual",
-  "extraido_utc": "2026-10-19T16:15:17.689139+00:00",
-  "num_observaciones": 415,
+  "extraido_utc": "2026-10-26T15:54:24.991481+00:00",
+  "num_observaciones": 417,
   "rango_fechas": [
     "1992-01-01",
-    "2026-07-01"
+    "2026-09-01"
   ],
   "ultimo_dato": {
-    "fecha": "2026-07-01",
-    "precio_usd_por_tonelada": 13542.82
+    "fecha": "2026-09-01",
+    "precio_usd_por_tonelada": 14473.06
   },
   "estadisticas_ultimo_ano": {
-    "promedio": 11903.42,
-    "minimo": 9671.88,
-    "maximo": 13552.04
+    "promedio": 12623.57,
+    "minimo": 9994.77,
+    "maximo": 14473.06
   },
   "estadisticas_5_anos": {
-    "promedio": 9608.58,
+    "promedio": 9772.24,
     "minimo": 7544.81,
-    "maximo": 13552.04
+    "maximo": 14473.06
   },
   "serie_completa": [
     {
@@ -1683,6 +1683,14 @@
     {
       "fecha": "2026-07-01",
       "precio_usd_por_tonelada": 13542.82
+    },
+    {
+      "fecha": "2026-08-01",
+      "precio_usd_por_tonelada": 14331.26
+    },
+    {
+      "fecha": "2026-09-01",
+      "precio_usd_por_tonelada": 14473.06
     }
   ]
 }
