@@ -1,12 +1,12 @@
 {
   "nota_metodologica": "Snapshot de texto visible de páginas públicas sin API estructurada. No sustituye la lectura humana de los documentos oficiales (PDFs de UPME/SGC citados en docs/05-fuentes.md); su función es detectar cambios entre corridas.",
-  "ultima_corrida_utc": "2026-11-02T19:14:35.740344+00:00",
+  "ultima_corrida_utc": "2026-11-09T19:33:25.334593+00:00",
   "fuentes": [
     {
       "id": "anm_ronda_cobre",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/ronda-minera-cobre",
-      "consultado_utc": "2026-11-02T19:14:30.327374+00:00",
+      "consultado_utc": "2026-11-09T19:33:18.891331+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 8598,
       "hash_sha256": "0e701e5af0df698b3d730a232e3db1a1847dfecb2d5854a13b221c19fb4ee420",
@@ -17,7 +17,7 @@
       "id": "anm_mapa_sitio_mineria",
       "institucion": "Agencia Nacional de Minería (ANM)",
       "url": "https://www.anm.gov.co/mapa-sitio-mineria-en-colombia",
-      "consultado_utc": "2026-11-02T19:14:32.410988+00:00",
+      "consultado_utc": "2026-11-09T19:33:22.242382+00:00",
       "http_status": 200,
       "longitud_texto_caracteres": 3007,
       "hash_sha256": "0000bbe8867561be03151827d6c3b531f337bc6f5519edd0fe479d9c4f6cb7f0",
@@ -28,10 +28,10 @@
       "id": "upme_home",
       "institucion": "Unidad de Planeación Minero-Energética (UPME)",
       "url": "https://www.upme.gov.co",
-      "consultado_utc": "2026-11-02T19:14:33.446658+00:00",
+      "consultado_utc": "2026-11-09T19:33:23.371951+00:00",
       "http_status": 200,
-      "longitud_texto_caracteres": 15254,
-      "hash_sha256": "71066af65bc92994f48cce060f400c187ae16150ae9e4995f966eab7edbb68d5",
+      "longitud_texto_caracteres": 16727,
+      "hash_sha256": "4f02b3095be6c1136bb85b1a2e18efd5fb8569535a51a97ee5ca7251af9c5997",
       "cambio_detectado_desde_ultima_corrida": true,
       "extracto_primeros_500_caracteres": "Home UPME - UPME Argo Inicio Nosotros Nuestra entidad ¿Quiénes somos? Nuestra historia Funciones y deberes Información de contacto, sedes y horarios Planeación institucional Financiero y Contable Proyectos de Inversión CIO UPME Gestión de Información Estadística Talento humano Asignación salarial Estructura organizacional Directorio de Servidores Contratistas Manual de Funciones Trabaje con nosotros Sintraminerales Contratación Documentos asociados a la contratación Procesos de contratación Cont"
     },
@@ -39,7 +39,7 @@
       "id": "sgc_home",
       "institucion": "Servicio Geológico Colombiano (SGC)",
       "url": "https://www.sgc.gov.co",
-      "consultado_utc": "2026-11-02T19:14:34.301033+00:00",
+      "consultado_utc": "2026-11-09T19:33:24.057868+00:00",
       "http_status": null,
       "error": "403 Client Error: Forbidden for url: https://www.sgc.gov.co/"
     },
@@ -47,34 +47,34 @@
       "id": "anla_home",
       "institucion": "Autoridad Nacional de Licencias Ambientales (ANLA)",
       "url": "https://www.anla.gov.co",
-      "consultado_utc": "2026-11-02T19:14:34.359549+00:00",
+      "consultado_utc": "2026-11-09T19:33:24.157072+00:00",
       "http_status": 200,
-      "longitud_texto_caracteres": 12266,
-      "hash_sha256": "8eeb8e0b180c6b3b6ac38e4c9fc4152f7e39ab90c326d3c26728396e9dc3f86a",
-      "cambio_detectado_desde_ultima_corrida": false,
+      "longitud_texto_caracteres": 12493,
+      "hash_sha256": "200a87f1be3307b8afca710ff77c15eea67275a5687d9f8145982598b69ea245",
+      "cambio_detectado_desde_ultima_corrida": true,
       "extracto_primeros_500_caracteres": "ANLA Se abre en una nueva ventana. Accesibilidad Buscar Buscar Inicio Interprete de lengua de señas del título Inicio Volver al Inicio Enlaces directos a las secciones del inicio - Temás de Interés - Proyectos ANLA - Ingresa a - Noticias - Enlaces Directos - Redes Sociales Transparencia Interprete de lengua de señas del título Transparencia Transparencia y Acceso a la Información Pública En esta sección usted encontrará información de los siguientes temas: Información de Entidad Normativa Contra"
     }
   ],
   "historial": {
     "anm_ronda_cobre": {
       "hash": "0e701e5af0df698b3d730a232e3db1a1847dfecb2d5854a13b221c19fb4ee420",
-      "ultima_corrida_utc": "2026-11-02T19:14:30.327374+00:00"
+      "ultima_corrida_utc": "2026-11-09T19:33:18.891331+00:00"
     },
     "anm_mapa_sitio_mineria": {
       "hash": "0000bbe8867561be03151827d6c3b531f337bc6f5519edd0fe479d9c4f6cb7f0",
-      "ultima_corrida_utc": "2026-11-02T19:14:32.410988+00:00"
+      "ultima_corrida_utc": "2026-11-09T19:33:22.242382+00:00"
     },
     "upme_home": {
-      "hash": "71066af65bc92994f48cce060f400c187ae16150ae9e4995f966eab7edbb68d5",
-      "ultima_corrida_utc": "2026-11-02T19:14:33.446658+00:00"
+      "hash": "4f02b3095be6c1136bb85b1a2e18efd5fb8569535a51a97ee5ca7251af9c5997",
+      "ultima_corrida_utc": "2026-11-09T19:33:23.371951+00:00"
     },
     "sgc_home": {
       "hash": "d1cfcdacbd31dc53f42e45de8156924b9f3aca85e66fe4b91b21550e24257f26",
       "ultima_corrida_utc": "2026-09-15T02:00:17.881220+00:00"
     },
     "anla_home": {
-      "hash": "8eeb8e0b180c6b3b6ac38e4c9fc4152f7e39ab90c326d3c26728396e9dc3f86a",
-      "ultima_corrida_utc": "2026-11-02T19:14:34.359549+00:00"
+      "hash": "200a87f1be3307b8afca710ff77c15eea67275a5687d9f8145982598b69ea245",
+      "ultima_corrida_utc": "2026-11-09T19:33:24.157072+00:00"
     }
   }
 }
