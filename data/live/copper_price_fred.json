@@ -3,7 +3,7 @@
   "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCOPPUSDM",
   "unidad": "USD por tonelada métrica",
   "frecuencia": "mensual",
-  "extraido_utc": "2026-11-16T19:20:13.891174+00:00",
+  "extraido_utc": "2026-11-23T20:55:05.428487+00:00",
   "num_observaciones": 417,
   "rango_fechas": [
     "1992-01-01",
